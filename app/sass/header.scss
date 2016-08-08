@@ -26,8 +26,22 @@ header {
   }
   #header-menu {
     float: right;
+    margin: 0;
+    padding: 0;
+    @include clearfix;
     menuitem {
       color: #fff;
+      float: left;
+      .dropdown-handler {
+
+      }
+      .dropdown {
+        background: #fff;
+        position: absolute;
+        a {
+          display: block;
+        }
+      }
     }
   }
 }

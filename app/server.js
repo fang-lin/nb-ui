@@ -18,7 +18,7 @@ app.use('/css', express.static('./app/style'));
 
 app.use('/:page', function (req, res, next) {
     app.render('index', {
-        page: req.params.page || 'home'
+        page: `page-${req.params.page || 'home'}`
     }, function (err, html) {
         if (err) {
             logger.error(err);
@@ -32,7 +32,7 @@ app.use('/:page', function (req, res, next) {
 
 app.use('/', function (req, res, next) {
     res.status(200).render('index', {
-        page: 'home'
+        page: 'page-home'
     });
 });
 

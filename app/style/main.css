@@ -400,6 +400,18 @@ header {
       header #header-search-form #header-search-input:-ms-input-placeholder {
         color: #515254; }
   header #header-menu {
-    float: right; }
+    float: right;
+    margin: 0;
+    padding: 0; }
+    header #header-menu::after {
+      clear: both;
+      content: "";
+      display: table; }
     header #header-menu menuitem {
-      color: #fff; }
+      color: #fff;
+      float: left; }
+      header #header-menu menuitem .dropdown {
+        background: #fff;
+        position: absolute; }
+        header #header-menu menuitem .dropdown a {
+          display: block; }
