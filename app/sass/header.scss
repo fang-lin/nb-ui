@@ -1,0 +1,33 @@
+header {
+  background: #2a2a36;
+  height: 50px;
+  #header-logo {
+    float: left;
+    height: 28px;
+    width: 100px;
+    border: medium none;
+  }
+  #header-search-form {
+    float: left;
+    margin: 0;
+    padding: 0;
+    #header-search-input {
+      border: medium none;
+      height: 28px;
+      padding: 0 10px;
+      outline: medium none;
+      background: #343440;
+      color: #fff;
+      border-radius: 14px;
+      @include placeholder {
+        color: #515254;
+      }
+    }
+  }
+  #header-menu {
+    float: right;
+    menuitem {
+      color: #fff;
+    }
+  }
+}

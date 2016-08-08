@@ -1,0 +1,25 @@
+{
+  "name": "nb-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bourbon": "^4.2.7",
+    "ejs": "^2.5.1",
+    "errorhandler": "^1.4.3",
+    "express": "^4.14.0",
+    "gulp": "^3.9.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-nodemon": "^2.1.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-util": "^3.0.7",
+    "lodash": "^4.14.1",
+    "normalize.css": "^4.2.0",
+    "winston": "^2.2.0"
+  }
+}
