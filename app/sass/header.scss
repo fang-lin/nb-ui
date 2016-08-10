@@ -5,23 +5,46 @@ header {
     float: left;
     height: 28px;
     width: 100px;
+    margin: 11px 38px 0 32px;
     border: medium none;
   }
   #header-search-form {
     float: left;
-    margin: 0;
+    margin: 11px 0 0 0;
     padding: 0;
+    position: relative;
     #header-search-input {
+      display: block;
       border: medium none;
       height: 28px;
-      padding: 0 10px;
+      padding: 0 28px 0 14px;
       outline: medium none;
-      background: #343440;
       color: #fff;
       border-radius: 14px;
+      box-sizing: border-box;
+      font-size: 12px;
+      width: 350px;
+      background: #343440;
       @include placeholder {
         color: #515254;
       }
+    }
+    #header-search-submit {
+      display: block;
+      border: medium none;
+      font-size: 0;
+      line-height: 0;
+      color: transparent;
+      cursor: pointer;
+      background: transparent url('/images/icon_search@3x.png') no-repeat;
+      background-size: 20px 20px;
+      background-position: 4px 4px;
+      height: 28px;
+      width: 28px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      outline: medium none;
     }
   }
   #header-menu {
@@ -32,14 +55,125 @@ header {
     menuitem {
       color: #fff;
       float: left;
-      .dropdown-handler {
-
+      margin: 0 5px;
+      line-height: 50px;
+      cursor: pointer;
+      position: relative;
+      .button {
+        display: block;
+        width: 100%;
+        font-size: 13px;
+        padding: 0 20px;
+        box-sizing: border-box;
+        &:hover {
+          color: #ea6264;
+        }
       }
       .dropdown {
         background: #fff;
         position: absolute;
-        a {
+        right: 20px;
+        top: 58px;
+        box-shadow: 0 5px 30px rgba(0, 0, 0, .1);
+        border: solid 1px #e0e0e0;
+        border-radius: 2px;
+        padding: 0;
+        &:before {
+          top: -6px;
+          right: 20px;
+          border-style: solid;
+          border-color: #e0e0e0 #fff #fff #e0e0e0;
+          border-width: 1px;
+          content: ' ';
           display: block;
+          height: 10px;
+          width: 10px;
+          background: #fff;
+          position: absolute;
+          @include transform(rotate(45deg));
+        }
+        .list {
+          padding: 5px 0;
+          a {
+            display: block;
+            color: #515254;
+            text-decoration: none;
+            font-size: 12px;
+            padding: 12px 30px;
+            line-height: 12px;
+            white-space: nowrap;
+            text-align: center;
+            &:hover {
+              color: #ea6264;
+            }
+          }
+        }
+        .checkout-list {
+          //width: 310px;
+          .goods {
+            border-bottom: solid 1px #e0e0e0;
+            @include clearfix;
+            padding: 3px;
+            .icon {
+              width: 60px;
+              height: 60px;
+              border: medium none;
+              background: #999;
+              border-radius: 4px;
+              float: left;
+              margin: 5px
+            }
+            .info {
+              zoom: 1;
+              overflow: hidden;
+              padding: 5px;
+              .title {
+                color: #515254;
+                font-size: 12px;
+                display: block;
+                line-height: 12px;
+              }
+              .name {
+                font-size: 11px;
+                color: #adadad;
+                display: block;
+                line-height: 12px;
+              }
+              .price {
+                float: right;
+                font-size: 11px;
+                color: #adadad;
+                line-height: 12px;
+              }
+            }
+          }
+          .buttons {
+            white-space: nowrap;
+            font-size: 0;
+            line-height: 0;
+            padding: 6px;
+            a {
+              display: inline-block;
+              font-size: 12px;
+              line-height: 12px;
+              text-decoration: none;
+              box-sizing: border-box;
+              color: #ea6264;
+              &.checkout {
+                background: #ea6264;
+                color: #fff;
+                font-size: 12px;
+                height: 22px;
+                line-height: 22px;
+                border-radius: 11px;
+                padding: 0 16px;
+              }
+              &.continue,
+              &.subtotal {
+                margin: 0 8px;
+              }
+            }
+          }
         }
       }
     }

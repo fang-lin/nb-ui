@@ -1,19 +1,53 @@
 <header>
-    <img src="" alt="" id="header-logo">
+    <a href=""><img src="images/logo@3x.png" alt="" id="header-logo"></a>
     <form action="" id="header-search-form">
         <input type="text" id="header-search-input" placeholder="search">
+        <input type="submit" id="header-search-submit">
     </form>
     <menu id="header-menu">
         <menuitem>
-            <a class="dropdown-handler">Element</a>
+            <a class="button">Element</a>
             <div class="dropdown">
                 <a href="">AAA</a>
                 <a href="">BBB</a>
                 <a href="">CCC</a>
             </div>
         </menuitem>
-        <menuitem>Checkout</menuitem>
-        <menuitem>Notice</menuitem>
-        <menuitem>Login</menuitem>
+        <menuitem>
+            <a class="button">Checkout</a>
+            <div class="dropdown">
+                <div class="checkout-list">
+                    <div class="goods">
+                        <img src="upload/large_ch47d_chinook_helicopter_3d_model_fbx_ma_mb_17f490ce-4034-4b3d-815d-889e05f5413f.jpg" alt="" class="icon">
+                        <div class="info">
+                            <span class="price">US$49</span>
+                            <span class="title">Transforms</span>
+                            <span class="name">Troy Lindsey</span>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <a href="" class="checkout">Checkout</a>
+                        <a href="" class="continue">Continue shopping</a>
+                        <a href="" class="subtotal">Subtotal: <span>49 USD</span></a>
+                    </div>
+                </div>
+            </div>
+        </menuitem>
+        <menuitem>
+            <a class="button">Notice</a>
+        </menuitem>
+        <menuitem>
+            <a class="button">Login</a>
+            <div class="dropdown">
+                <div class="list">
+                    <a href="">Edit Profile</a>
+                    <a href="">Settings</a>
+                    <a href="">Purchases</a>
+                    <a href="">Sales</a>
+                    <a href="">Products</a>
+                    <a href="">Logout</a>
+                </div>
+            </div>
+        </menuitem>
     </menu>
 </header>

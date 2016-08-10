@@ -15,6 +15,9 @@ app.set('view engine', 'ejs');
 
 app.use(errorHandler());
 app.use('/css', express.static('./app/style'));
+app.use('/images', express.static('./app/images'));
+app.use('/fonts', express.static('./app/fonts'));
+app.use('/upload', express.static('./app/upload'));
 
 app.use('/:page', function (req, res, next) {
     app.render('index', {
