@@ -21,7 +21,7 @@ app.use('/upload', express.static('./app/upload'));
 
 app.use('/:page', function (req, res, next) {
     app.render('index', {
-        page: `page-${req.params.page || 'home'}`
+        page: `page-${req.params.page || 'element'}`
     }, function (err, html) {
         if (err) {
             logger.error(err);

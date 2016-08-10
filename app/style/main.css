@@ -377,17 +377,23 @@ body {
   font-family: 'Open Sans', sans-serif; }
 
 header {
-  background: #2a2a36;
-  height: 50px; }
+  background: #2a2a36; }
+  header::after {
+    clear: both;
+    content: "";
+    display: table; }
   header #header-logo {
     float: left;
-    height: 28px;
-    width: 100px;
-    margin: 11px 38px 0 32px;
-    border: medium none; }
+    display: block;
+    margin: 11px 0 11px 30px; }
+    header #header-logo img {
+      display: block;
+      height: 28px;
+      width: 100px;
+      border: medium none; }
   header #header-search-form {
     float: left;
-    margin: 11px 0 0 0;
+    margin: 11px 38px;
     padding: 0;
     position: relative; }
     header #header-search-form #header-search-input {
@@ -428,7 +434,7 @@ header {
       outline: medium none; }
   header #header-menu {
     float: right;
-    margin: 0;
+    margin: 0 5px;
     padding: 0; }
     header #header-menu::after {
       clear: both;
@@ -446,10 +452,51 @@ header {
         width: 100%;
         font-size: 13px;
         padding: 0 20px;
-        box-sizing: border-box; }
+        box-sizing: border-box;
+        position: relative;
+        color: #fff;
+        text-decoration: none; }
+        header #header-menu menuitem .button .balloon {
+          position: absolute;
+          background: #4a90e2;
+          border-radius: 7px;
+          padding: 0 3px;
+          line-height: 12px;
+          font-size: 8px;
+          min-width: 6px;
+          text-align: center;
+          color: #fff;
+          top: 6px;
+          left: 39px; }
+          header #header-menu menuitem .button .balloon.cart {
+            background: #ea6264; }
         header #header-menu menuitem .button:hover {
           color: #ea6264; }
+          header #header-menu menuitem .button:hover .element {
+            background-image: url("/images/icon_element_selected@3x.png"); }
+          header #header-menu menuitem .button:hover .cart {
+            background-image: url("/images/icon_cart_selected@3x.png"); }
+          header #header-menu menuitem .button:hover .account {
+            background-image: url("/images/icon_account_selected@3x.png"); }
+          header #header-menu menuitem .button:hover .notice {
+            background-image: url("/images/icon_notice_selected@3x.png"); }
+        header #header-menu menuitem .button .icon {
+          height: 20px;
+          width: 20px;
+          display: inline-block;
+          background-size: 20px 20px;
+          vertical-align: -4px;
+          margin: 0 10px 0 0; }
+        header #header-menu menuitem .button .element {
+          background-image: url("/images/icon_element@3x.png"); }
+        header #header-menu menuitem .button .cart {
+          background-image: url("/images/icon_cart@3x.png"); }
+        header #header-menu menuitem .button .account {
+          background-image: url("/images/icon_account@3x.png"); }
+        header #header-menu menuitem .button .notice {
+          background-image: url("/images/icon_notice@3x.png"); }
       header #header-menu menuitem .dropdown {
+        z-index: 10;
         background: #fff;
         position: absolute;
         right: 20px;
@@ -508,20 +555,23 @@ header {
             overflow: hidden;
             padding: 5px; }
             header #header-menu menuitem .dropdown .checkout-list .goods .info .title {
+              padding: 6px 0 0 0;
               color: #515254;
               font-size: 12px;
               display: block;
-              line-height: 12px; }
+              line-height: 24px; }
             header #header-menu menuitem .dropdown .checkout-list .goods .info .name {
               font-size: 11px;
               color: #adadad;
               display: block;
-              line-height: 12px; }
+              line-height: 24px;
+              padding: 0 0 6px 0; }
             header #header-menu menuitem .dropdown .checkout-list .goods .info .price {
+              padding: 6px 10px 0 0;
               float: right;
               font-size: 11px;
               color: #adadad;
-              line-height: 12px; }
+              line-height: 24px; }
         header #header-menu menuitem .dropdown .checkout-list .buttons {
           white-space: nowrap;
           font-size: 0;
@@ -544,6 +594,84 @@ header {
               padding: 0 16px; }
             header #header-menu menuitem .dropdown .checkout-list .buttons a.continue, header #header-menu menuitem .dropdown .checkout-list .buttons a.subtotal {
               margin: 0 8px; }
+
+#channel-bar-wrap {
+  background: #fff;
+  border-bottom: solid 1px #efeff1;
+  min-height: 50px;
+  position: relative; }
+  #channel-bar-wrap #channel-bar {
+    font-size: 0;
+    line-height: 0;
+    text-align: center; }
+    #channel-bar-wrap #channel-bar a {
+      display: inline-block;
+      color: #2a2a36;
+      font-size: 12px;
+      line-height: 50px;
+      text-decoration: none;
+      border-bottom: solid 1px #fff;
+      margin: 0 18px; }
+      #channel-bar-wrap #channel-bar a.selected {
+        color: #ea6264;
+        border-bottom: solid 1px #ea6264; }
+  #channel-bar-wrap #upload-button {
+    position: absolute;
+    top: 11px;
+    right: 30px;
+    outline: medium none;
+    cursor: pointer;
+    background: #ea6264;
+    line-height: 28px;
+    font-size: 12px;
+    color: #fff;
+    border-radius: 14px;
+    padding: 0 14px;
+    border: medium none; }
+    #channel-bar-wrap #upload-button:hover {
+      background: #cd5355; }
+    #channel-bar-wrap #upload-button .icon.upload {
+      height: 12px;
+      width: 12px;
+      display: inline-block;
+      vertical-align: -1px;
+      margin: 0 2px 0 0;
+      background-image: url("/images/icon_upload@3x.png");
+      background-size: 12px 12px; }
+
+.container {
+  width: 1220px;
+  margin: 0 auto; }
+  .container > .grid {
+    margin: 0 -15px; }
+    .container > .grid::after {
+      clear: both;
+      content: "";
+      display: table; }
+    .container > .grid > .column {
+      box-sizing: border-box;
+      padding: 0 15px;
+      float: left;
+      margin: -30px 0; }
+      .container > .grid > .column > .cell {
+        margin: 30px 0; }
+  .container > .grid.five > .column {
+    width: 20%; }
+
+.product-card {
+  background: #fff;
+  border-radius: 4px;
+  min-height: 100px; }
+  .product-card .product-card-thumbnail {
+    border-radius: 4px 4px 0 0; }
+    .product-card .product-card-thumbnail img {
+      border-radius: 4px 4px 0 0;
+      width: 100%; }
+  .product-card .product-card-describe {
+    border-style: solid;
+    border-color: #efeff1;
+    border-width: 0 1px 1px 1px;
+    border-radius: 0 0 4px 4px; }
 
 #signin-form,
 #signup-form {

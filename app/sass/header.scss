@@ -1,16 +1,20 @@
 header {
-  background: #2a2a36;
-  height: 50px;
+  background: $theGray1;
+  @include clearfix;
   #header-logo {
     float: left;
-    height: 28px;
-    width: 100px;
-    margin: 11px 38px 0 32px;
-    border: medium none;
+    display: block;
+    margin: 11px 0 11px 30px;
+    img {
+      display: block;
+      height: 28px;
+      width: 100px;
+      border: medium none;
+    }
   }
   #header-search-form {
     float: left;
-    margin: 11px 0 0 0;
+    margin: 11px 38px;
     padding: 0;
     position: relative;
     #header-search-input {
@@ -24,9 +28,9 @@ header {
       box-sizing: border-box;
       font-size: 12px;
       width: 350px;
-      background: #343440;
+      background: $theGray2;
       @include placeholder {
-        color: #515254;
+        color: $theGray3;
       }
     }
     #header-search-submit {
@@ -49,7 +53,7 @@ header {
   }
   #header-menu {
     float: right;
-    margin: 0;
+    margin: 0 5px;
     padding: 0;
     @include clearfix;
     menuitem {
@@ -65,11 +69,63 @@ header {
         font-size: 13px;
         padding: 0 20px;
         box-sizing: border-box;
+        position: relative;
+        color: #fff;
+        text-decoration: none;
+        .balloon {
+          position: absolute;
+          background: #4a90e2;
+          border-radius: 7px;
+          padding: 0 3px;
+          line-height: 12px;
+          font-size: 8px;
+          min-width: 6px;
+          text-align: center;
+          color: #fff;
+          top: 6px;
+          left: 39px;
+          &.cart {
+            background: $thePink1;
+          }
+        }
         &:hover {
-          color: #ea6264;
+          color: $thePink1;
+          .element {
+            background-image: url("/images/icon_element_selected@3x.png");
+          }
+          .cart {
+            background-image: url("/images/icon_cart_selected@3x.png");
+          }
+          .account {
+            background-image: url("/images/icon_account_selected@3x.png");
+          }
+          .notice {
+            background-image: url("/images/icon_notice_selected@3x.png");
+          }
+        }
+        .icon {
+          height: 20px;
+          width: 20px;
+          display: inline-block;
+          background-size: 20px 20px;
+          vertical-align: -4px;
+          margin: 0 10px 0 0;
+        }
+        .element {
+          background-image: url("/images/icon_element@3x.png");
+        }
+        .cart {
+          background-image: url("/images/icon_cart@3x.png");
+        }
+        .account {
+          background-image: url("/images/icon_account@3x.png");
+        }
+        .notice {
+          background-image: url("/images/icon_notice@3x.png");
         }
       }
       .dropdown {
+        z-index: 10;
         background: #fff;
         position: absolute;
         right: 20px;
@@ -96,7 +152,7 @@ header {
           padding: 5px 0;
           a {
             display: block;
-            color: #515254;
+            color: $theGray3;
             text-decoration: none;
             font-size: 12px;
             padding: 12px 30px;
@@ -104,12 +160,11 @@ header {
             white-space: nowrap;
             text-align: center;
             &:hover {
-              color: #ea6264;
+              color: $thePink1;
             }
           }
         }
         .checkout-list {
-          //width: 310px;
           .goods {
             border-bottom: solid 1px #e0e0e0;
             @include clearfix;
@@ -128,22 +183,25 @@ header {
               overflow: hidden;
               padding: 5px;
               .title {
-                color: #515254;
+                padding: 6px 0 0 0;
+                color: $theGray3;
                 font-size: 12px;
                 display: block;
-                line-height: 12px;
+                line-height: 24px;
               }
               .name {
                 font-size: 11px;
-                color: #adadad;
+                color: $theGray4;
                 display: block;
-                line-height: 12px;
+                line-height: 24px;
+                padding: 0 0 6px 0;
               }
               .price {
+                padding: 6px 10px 0 0;
                 float: right;
                 font-size: 11px;
-                color: #adadad;
-                line-height: 12px;
+                color: $theGray4;
+                line-height: 24px;
               }
             }
           }
@@ -158,9 +216,9 @@ header {
               line-height: 12px;
               text-decoration: none;
               box-sizing: border-box;
-              color: #ea6264;
+              color: $thePink1;
               &.checkout {
-                background: #ea6264;
+                background: $thePink1;
                 color: #fff;
                 font-size: 12px;
                 height: 22px;

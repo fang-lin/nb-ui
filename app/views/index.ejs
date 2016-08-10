@@ -9,11 +9,11 @@
     <script>
         $(function () {
             $('.dropdown').hide();
-            $('.button').hover(function () {
-                $(this).next('.dropdown').show();
-            }, function () {
-                $(this).next('.dropdown').hide();
-            })
+            $('.button').click(function () {
+                $(this).next('.dropdown:visible').length ?
+                        $(this).next('.dropdown:visible').hide() :
+                        $(this).next('.dropdown:hidden').show();
+            });
         });
     </script>
     <title>Document</title>

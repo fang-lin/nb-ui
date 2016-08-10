@@ -1,0 +1,48 @@
+.container {
+  width: 1220px;
+  margin: 0 auto;
+  & > .grid {
+    margin: 0 -15px;
+    @include clearfix;
+    & > .column {
+      box-sizing: border-box;
+      padding: 0 15px;
+      float: left;
+      margin: -30px 0;
+      & > .cell {
+        margin: 30px 0;
+      }
+    }
+  }
+  & > .grid.five {
+    & > .column {
+      width: 20%;
+    }
+  }
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 4px;
+  min-height: 100px;
+  .product-card-thumbnail {
+    border-radius: 4px 4px 0 0;
+    img {
+      border-radius: 4px 4px 0 0;
+      width: 100%;
+    }
+  }
+  .product-card-describe {
+    border-style: solid;
+    border-color: $theGray5;
+    border-width: 0 1px 1px 1px;
+    border-radius: 0 0 4px 4px;
+    .product-card-title {
+
+    }
+    .product-card-author {
+    }
+    .product-card-follow {
+    }
+  }
+}
