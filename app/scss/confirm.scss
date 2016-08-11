@@ -1,0 +1,55 @@
+#confirm-wrap {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  #confirm {
+    border-radius: 4px 4px 0 0;
+    background: #fff;
+    margin: 0 auto;
+    width: 500px;
+    padding: 36px 50px;
+    @include clearfix;
+    #confirm-message {
+      color: $theGray3;
+      font-size: 18px;
+      line-height: 38px;
+      zoom: 1;
+      overflow: hidden;
+      p {
+        margin: 0;
+      }
+    }
+    #confirm-form {
+      float: right;
+      font-size: 0;
+      line-height: 0;
+      margin: 0 -7px;
+      button {
+        line-height: 38px;
+        font-size: 18px;
+        margin: 0 7px;
+        padding: 0 28px;
+        border-radius: 4px;
+        border: medium none;
+        cursor: pointer;
+        outline: medium none;
+        &#confirm-yes-btn {
+          background: $theGray5;
+          color: $theGray7;
+          &:hover {
+            background: $theGray6;
+          }
+        }
+        &#confirm-no-btn {
+          background: $thePink1;
+          color: #fff;
+          &:hover {
+            background: $thePink2;
+          }
+        }
+      }
+    }
+  }
+}

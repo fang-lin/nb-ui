@@ -13,12 +13,46 @@
                         $(this).next('.dropdown:visible').hide() :
                         $(this).next('.dropdown:hidden').show();
             });
+
+            $('#page-content').addClass('blur');
+            $('#mask').show();
+            $('#confirm-wrap').show();
+
+            function switchMask() {
+                if ($('#mask:visible').length) {
+                    $('#page-content').removeClass('blur');
+                    $('#mask').hide();
+                } else {
+                    $('#page-content').addClass('blur');
+                    $('#mask').show();
+                }
+            }
+
+            function swtichConfirm() {
+                switchMask()
+                if ($('#confirm-wrap:visible').length) {
+                    $('#confirm-wrap').hide();
+                } else {
+                    $('#confirm-wrap').show();
+                }
+            }
+
+            $('#confirm-form').click(function () {
+                swtichConfirm();
+            })
         });
     </script>
     <title>Document</title>
 </head>
 <body>
-<%- include('partial-header'); %>
-<%- include(page); %>
+<div id="page-content" class="">
+    <%- include('partial-header'); %>
+    <%- include(page); %>
+</div>
+<div id="mask">
+    <%- include('partial-signin'); %>
+    <%- include('partial-signup'); %>
+    <%- include('partial-confirm'); %>
+</div>
 </body>
 </html>

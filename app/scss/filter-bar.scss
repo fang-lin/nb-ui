@@ -1,0 +1,51 @@
+#filter-bar-wrap {
+  text-align: center;
+  margin: 18px 0;
+  #filter-bar {
+    display: inline-block;
+    border-radius: 4px;
+    border: solid 1px $theGray5;
+    background: #fff;
+    list-style: none;
+    @include clearfix;
+    padding: 14px 10px;
+    margin: 0;
+    li {
+      display: inline-block;
+      padding: 0 28px;
+      font-size: 0;
+      line-height: 0;
+      border-right: solid 1px $theGray5;
+      &:last-child {
+        border-right: medium none;
+      }
+      .button {
+        line-height: 22px;
+        text-decoration: none;
+        color: $theGray4;
+        font-size: 14px;
+        .icon {
+          display: inline-block;
+          background-image: url(/images/sprite@3x.png);
+          background-size: $spritesheet-width $spritesheet-height;
+          &.arrow-down {
+            vertical-align: 2px;
+            margin: 0 0 0 6px;
+            height: 4px;
+            width: 10px;
+            @include sprite-position($icon-arrow-down);
+            line-height: 22px;
+          }
+          &.checkbox {
+            vertical-align: -2px;
+            margin: 0 6px 0 0;
+            height: 14px;
+            width: 14px;
+            @include sprite-position($icon-checkbox);
+            line-height: 22px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -790,9 +790,35 @@ The `sprites` mixin generates identical output to the CSS template
   font-family: Bebas Neue;
   src: url(/fonts/BebasNeue.otf); }
 
-body {
+html, body {
   background: #f7f8fa;
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  height: 100%;
+  width: 100%;
+  overflow: hidden; }
+
+#page-content {
+  height: 100%;
+  width: 100%;
+  overflow: scroll; }
+
+.blur {
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+  overflow: hidden; }
+
+.show {
+  display: block; }
+
+#mask {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  overflow: scroll; }
 
 header {
   background: #2a2a36; }
@@ -856,8 +882,8 @@ header {
         height: 20px;
         width: 20px;
         background: url("/images/sprite@3x.png");
-        background-size: 81px 61px;
-        background-position: -20px -41px; }
+        background-size: 121px 84px;
+        background-position: -61px -31px; }
   header #header-menu {
     float: right;
     margin: 0 5px;
@@ -899,29 +925,29 @@ header {
         header #header-menu menuitem .button:hover {
           color: #ea6264; }
           header #header-menu menuitem .button:hover .element {
-            background-position: -41px -20px; }
+            background-position: -101px -31px; }
           header #header-menu menuitem .button:hover .cart {
-            background-position: -20px -21px; }
+            background-position: -41px -31px; }
           header #header-menu menuitem .button:hover .account {
-            background-position: 0px -41px; }
+            background-position: 0px -52px; }
           header #header-menu menuitem .button:hover .notice {
-            background-position: -40px -41px; }
+            background-position: -40px -52px; }
         header #header-menu menuitem .button .icon {
           height: 20px;
           width: 20px;
           display: inline-block;
-          background-size: 81px 61px;
+          background-size: 121px 84px;
           background-image: url(/images/sprite@3x.png);
           vertical-align: -4px;
           margin: 0 10px 0 0; }
         header #header-menu menuitem .button .element {
-          background-position: -41px 0px; }
+          background-position: -81px -31px; }
         header #header-menu menuitem .button .cart {
-          background-position: 0px -21px; }
+          background-position: -20px -52px; }
         header #header-menu menuitem .button .account {
-          background-position: -21px 0px; }
+          background-position: -21px -31px; }
         header #header-menu menuitem .button .notice {
-          background-position: -61px 0px; }
+          background-position: -60px -52px; }
       header #header-menu menuitem .dropdown {
         z-index: 10;
         background: #fff;
@@ -1064,8 +1090,104 @@ header {
       vertical-align: -1px;
       margin: 0 2px 0 0;
       background-image: url(/images/sprite@3x.png);
-      background-size: 81px 61px;
-      background-position: -61px -48px; }
+      background-size: 121px 84px;
+      background-position: -12px -72px; }
+
+#filter-bar-wrap {
+  text-align: center;
+  margin: 18px 0; }
+  #filter-bar-wrap #filter-bar {
+    display: inline-block;
+    border-radius: 4px;
+    border: solid 1px #efeff1;
+    background: #fff;
+    list-style: none;
+    padding: 14px 10px;
+    margin: 0; }
+    #filter-bar-wrap #filter-bar::after {
+      clear: both;
+      content: "";
+      display: table; }
+    #filter-bar-wrap #filter-bar li {
+      display: inline-block;
+      padding: 0 28px;
+      font-size: 0;
+      line-height: 0;
+      border-right: solid 1px #efeff1; }
+      #filter-bar-wrap #filter-bar li:last-child {
+        border-right: medium none; }
+      #filter-bar-wrap #filter-bar li .button {
+        line-height: 22px;
+        text-decoration: none;
+        color: #adadad;
+        font-size: 14px; }
+        #filter-bar-wrap #filter-bar li .button .icon {
+          display: inline-block;
+          background-image: url(/images/sprite@3x.png);
+          background-size: 121px 84px; }
+          #filter-bar-wrap #filter-bar li .button .icon.arrow-down {
+            vertical-align: 2px;
+            margin: 0 0 0 6px;
+            height: 4px;
+            width: 10px;
+            background-position: -110px -52px;
+            line-height: 22px; }
+          #filter-bar-wrap #filter-bar li .button .icon.checkbox {
+            vertical-align: -2px;
+            margin: 0 6px 0 0;
+            height: 14px;
+            width: 14px;
+            background-position: -96px -52px;
+            line-height: 22px; }
+
+#confirm-wrap {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+  #confirm-wrap #confirm {
+    border-radius: 4px 4px 0 0;
+    background: #fff;
+    margin: 0 auto;
+    width: 500px;
+    padding: 36px 50px; }
+    #confirm-wrap #confirm::after {
+      clear: both;
+      content: "";
+      display: table; }
+    #confirm-wrap #confirm #confirm-message {
+      color: #515254;
+      font-size: 18px;
+      line-height: 38px;
+      zoom: 1;
+      overflow: hidden; }
+      #confirm-wrap #confirm #confirm-message p {
+        margin: 0; }
+    #confirm-wrap #confirm #confirm-form {
+      float: right;
+      font-size: 0;
+      line-height: 0;
+      margin: 0 -7px; }
+      #confirm-wrap #confirm #confirm-form button {
+        line-height: 38px;
+        font-size: 18px;
+        margin: 0 7px;
+        padding: 0 28px;
+        border-radius: 4px;
+        border: medium none;
+        cursor: pointer;
+        outline: medium none; }
+        #confirm-wrap #confirm #confirm-form button#confirm-yes-btn {
+          background: #efeff1;
+          color: #95979a; }
+          #confirm-wrap #confirm #confirm-form button#confirm-yes-btn:hover {
+            background: #c3c9cf; }
+        #confirm-wrap #confirm #confirm-form button#confirm-no-btn {
+          background: #ea6264;
+          color: #fff; }
+          #confirm-wrap #confirm #confirm-form button#confirm-no-btn:hover {
+            background: #cd5355; }
 
 .container {
   width: 1220px;
@@ -1128,10 +1250,10 @@ header {
           height: 12px;
           width: 12px;
           background-image: url(/images/sprite@3x.png);
-          background-size: 81px 61px;
+          background-size: 121px 84px;
           vertical-align: -2px; }
         .product-card .product-card-describe .product-card-title label .label {
-          background-position: -61px -36px; }
+          background-position: 0px -72px; }
     .product-card .product-card-describe .product-card-author {
       padding: 10px 0;
       margin: 0 10px;
@@ -1174,22 +1296,23 @@ header {
         width: 16px;
         height: 16px;
         background-image: url(/images/sprite@3x.png);
-        background-size: 81px 61px; }
+        background-size: 121px 84px; }
       .product-card .product-card-describe .product-card-follow .favorite {
         float: left; }
         .product-card .product-card-describe .product-card-follow .favorite .icon.favor {
           vertical-align: -3px;
-          background-position: -61px -20px; }
+          background-position: -80px -52px; }
       .product-card .product-card-describe .product-card-follow .watch {
         float: right; }
         .product-card .product-card-describe .product-card-follow .watch .icon.eye {
           vertical-align: -6px;
           width: 21px;
           height: 21px;
-          background-position: 0px 0px; }
+          background-position: 0px -31px; }
 
 #signin-form,
 #signup-form {
+  display: none;
   margin: 0 auto;
   border-radius: 4px;
   box-sizing: border-box;
