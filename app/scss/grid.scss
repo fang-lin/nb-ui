@@ -28,6 +28,9 @@
   .product-card-thumbnail {
     border-radius: 4px 4px 0 0;
     img {
+      display: block;
+      padding: 0;
+      margin: 0;
       border-radius: 4px 4px 0 0;
       width: 100%;
     }
@@ -72,10 +75,61 @@
       padding: 10px 0;
       margin: 0 10px;
       border-bottom: solid 1px $theGray5;
+      @include clearfix;
+      .portrait {
+        float: left;
+        height: 28px;
+        width: 28px;
+        border-radius: 14px;
+      }
+      h3 {
+        margin: 0 0 0 10px;
+        font-size: 14px;
+        line-height: 28px;
+        color: $theGray7;
+        font-weight: normal;
+        float: left;
+      }
+      .time {
+        float: right;
+        font-size: 10px;
+        line-height: 28px;
+        color: $theGray6;
+      }
     }
     .product-card-follow {
       padding: 10px 0;
       margin: 0 10px;
+      @include clearfix;
+      label {
+        color: $theGray7;
+        font-size: 12px;
+        line-height: 21px;
+        cursor: pointer;
+      }
+      .icon {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background-image: url(/images/sprite@3x.png);
+        background-size: $spritesheet-width $spritesheet-height;
+      }
+      .favorite {
+        float: left;
+        .icon.favor {
+          vertical-align: -3px;
+          @include sprite-position($icon-favor);
+        }
+      }
+      .watch {
+        float: right;
+        .icon.eye {
+          vertical-align: -6px;
+          width: 21px;
+          height: 21px;
+          @include sprite-position($icon-eye);
+        }
+      }
     }
   }
 }
