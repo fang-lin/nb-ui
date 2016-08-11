@@ -19,9 +19,11 @@ app.use('/images', express.static('./app/images'));
 app.use('/fonts', express.static('./app/fonts'));
 app.use('/upload', express.static('./app/upload'));
 
+const defaultPage = 'element'
+
 app.use('/:page', function (req, res, next) {
     app.render('index', {
-        page: `page-${req.params.page || 'element'}`
+        page: `page-${req.params.page || defaultPage}`
     }, function (err, html) {
         if (err) {
             logger.error(err);
@@ -35,7 +37,7 @@ app.use('/:page', function (req, res, next) {
 
 app.use('/', function (req, res, next) {
     res.status(200).render('index', {
-        page: 'page-home'
+        page: 'page-' + defaultPage
     });
 });
 

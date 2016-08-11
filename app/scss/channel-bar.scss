@@ -44,8 +44,9 @@
       display: inline-block;
       vertical-align: -1px;
       margin: 0 2px 0 0;
-      background-image: url("/images/icon_upload@3x.png");
-      background-size: 12px 12px;
+      background-image: url(/images/sprite@3x.png);
+      background-size: $spritesheet-width $spritesheet-height;
+      @include sprite-position($icon-upload);
     }
   }
 }

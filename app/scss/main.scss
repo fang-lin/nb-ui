@@ -1,5 +1,8 @@
+@import "../fonts/Open-Sans";
 @import "../../node_modules/normalize.css/normalize";
 @import "bourbon";
+//@import "sprite@3x";
+@import "sprite@1x";
 @import "common";
 @import "header";
 @import "channel-bar";
