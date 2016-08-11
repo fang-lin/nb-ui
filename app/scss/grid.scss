@@ -38,11 +38,44 @@
     border-width: 0 1px 1px 1px;
     border-radius: 0 0 4px 4px;
     .product-card-title {
-
+      padding: 10px 0;
+      margin: 0 10px;
+      border-bottom: solid 1px $theGray5;
+      @include clearfix;
+      h3 {
+        margin: 0;
+        font-size: 18px;
+        line-height: 18px;
+        color: $theGray3;
+        font-weight: normal;
+        float: left;
+      }
+      label {
+        float: right;
+        color: $theGray6;
+        font-size: 10px;
+        line-height: 18px;
+        .icon {
+          display: inline-block;
+          height: $icon-label-height;
+          width: $icon-label-width;
+          background-image: url(/images/sprite@3x.png);
+          background-size: $spritesheet-width $spritesheet-height;
+          vertical-align: -2px;
+        }
+        .label {
+          @include sprite-position($icon-label);
+        }
+      }
     }
     .product-card-author {
+      padding: 10px 0;
+      margin: 0 10px;
+      border-bottom: solid 1px $theGray5;
     }
     .product-card-follow {
+      padding: 10px 0;
+      margin: 0 10px;
     }
   }
 }
