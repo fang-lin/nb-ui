@@ -1,0 +1,44 @@
+#to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 19px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, .1);
+  background: #fff;
+  .to-top-btn {
+    border-radius: 19px 19px 0 0;
+  }
+  .help-btn {
+    border-radius: 0 0 19px 19px;
+  }
+  a {
+    display: block;
+    margin: 0;
+    padding: 12px 13px;
+    cursor: pointer;
+    &:hover {
+      background: #f1f1f1;
+    }
+    .icon {
+      display: block;
+      height: 12px;
+      width: 12px;
+      background-image: url(/images/sprite@3x.png);
+      background-size: $spritesheet-width $spritesheet-height;
+      &.arrow-top {
+        @include sprite-position($icon-to-top);
+      }
+      &.alert {
+        @include sprite-position($icon-alert);
+      }
+    }
+  }
+  hr {
+    display: block;
+    height: 1px;
+    border: medium none;
+    background: #f1f1f1;
+    margin: -1px auto;
+    width: 18px;
+  }
+}

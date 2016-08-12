@@ -882,8 +882,8 @@ header {
         height: 20px;
         width: 20px;
         background: url("/images/sprite@3x.png");
-        background-size: 121px 84px;
-        background-position: -61px -31px; }
+        background-size: 121px 86px;
+        background-position: -81px -31px; }
   header #header-menu {
     float: right;
     margin: 0 5px;
@@ -925,29 +925,29 @@ header {
         header #header-menu menuitem .button:hover {
           color: #ea6264; }
           header #header-menu menuitem .button:hover .element {
-            background-position: -101px -31px; }
-          header #header-menu menuitem .button:hover .cart {
-            background-position: -41px -31px; }
-          header #header-menu menuitem .button:hover .account {
             background-position: 0px -52px; }
+          header #header-menu menuitem .button:hover .cart {
+            background-position: -61px -31px; }
+          header #header-menu menuitem .button:hover .account {
+            background-position: -20px -52px; }
           header #header-menu menuitem .button:hover .notice {
             background-position: -40px -52px; }
         header #header-menu menuitem .button .icon {
           height: 20px;
           width: 20px;
           display: inline-block;
-          background-size: 121px 84px;
+          background-size: 121px 86px;
           background-image: url(/images/sprite@3x.png);
           vertical-align: -4px;
           margin: 0 10px 0 0; }
         header #header-menu menuitem .button .element {
-          background-position: -81px -31px; }
+          background-position: -101px -31px; }
         header #header-menu menuitem .button .cart {
-          background-position: -20px -52px; }
+          background-position: -41px -31px; }
         header #header-menu menuitem .button .account {
           background-position: -21px -31px; }
         header #header-menu menuitem .button .notice {
-          background-position: -60px -52px; }
+          background-position: -80px -52px; }
       header #header-menu menuitem .dropdown {
         z-index: 10;
         background: #fff;
@@ -1090,8 +1090,8 @@ header {
       vertical-align: -1px;
       margin: 0 2px 0 0;
       background-image: url(/images/sprite@3x.png);
-      background-size: 121px 84px;
-      background-position: -12px -72px; }
+      background-size: 121px 86px;
+      background-position: -38px -72px; }
 
 #filter-bar-wrap {
   text-align: center;
@@ -1124,21 +1124,57 @@ header {
         #filter-bar-wrap #filter-bar li .button .icon {
           display: inline-block;
           background-image: url(/images/sprite@3x.png);
-          background-size: 121px 84px; }
+          background-size: 121px 86px; }
           #filter-bar-wrap #filter-bar li .button .icon.arrow-down {
             vertical-align: 2px;
             margin: 0 0 0 6px;
             height: 4px;
             width: 10px;
-            background-position: -110px -52px;
+            background-position: -100px -68px;
             line-height: 22px; }
           #filter-bar-wrap #filter-bar li .button .icon.checkbox {
             vertical-align: -2px;
             margin: 0 6px 0 0;
             height: 14px;
             width: 14px;
-            background-position: -96px -52px;
+            background-position: 0px -72px;
             line-height: 22px; }
+
+#to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 19px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  background: #fff; }
+  #to-top .to-top-btn {
+    border-radius: 19px 19px 0 0; }
+  #to-top .help-btn {
+    border-radius: 0 0 19px 19px; }
+  #to-top a {
+    display: block;
+    margin: 0;
+    padding: 12px 13px;
+    cursor: pointer; }
+    #to-top a:hover {
+      background: #f1f1f1; }
+    #to-top a .icon {
+      display: block;
+      height: 12px;
+      width: 12px;
+      background-image: url(/images/sprite@3x.png);
+      background-size: 121px 86px; }
+      #to-top a .icon.arrow-top {
+        background-position: -26px -72px; }
+      #to-top a .icon.alert {
+        background-position: -50px -72px; }
+  #to-top hr {
+    display: block;
+    height: 1px;
+    border: medium none;
+    background: #f1f1f1;
+    margin: -1px auto;
+    width: 18px; }
 
 #confirm-wrap {
   display: none;
@@ -1189,24 +1225,116 @@ header {
           #confirm-wrap #confirm #confirm-form button#confirm-no-btn:hover {
             background: #cd5355; }
 
+#personal-detail .portrait {
+  display: block;
+  height: 120px;
+  width: 120px;
+  border-radius: 60px;
+  margin: 32px auto; }
+
+#personal-detail .username {
+  text-align: center;
+  margin: 20px 0; }
+  #personal-detail .username h2 {
+    display: inline-block;
+    position: relative;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #515254;
+    margin: 0; }
+  #personal-detail .username .icon.gear {
+    position: absolute;
+    display: block;
+    height: 20px;
+    width: 20px;
+    top: 2px;
+    right: -40px;
+    background-image: url(/images/sprite@3x.png);
+    background-size: 121px 86px;
+    background-position: -60px -52px; }
+
+#personal-detail .job {
+  text-align: center;
+  font-size: 0;
+  line-height: 0;
+  margin: 20px 0; }
+  #personal-detail .job span {
+    margin: 0 25px;
+    font-size: 14px;
+    line-height: 14px;
+    display: inline-block;
+    color: #95979a; }
+
+#personal-detail .operate {
+  text-align: center;
+  font-size: 0;
+  line-height: 0;
+  margin: 20px 0; }
+  #personal-detail .operate button {
+    margin: 0 5px;
+    font-size: 14px;
+    line-height: 26px;
+    height: 26px;
+    display: inline-block;
+    color: #fff;
+    background: #ea6264;
+    border: medium none;
+    border-radius: 12px;
+    padding: 0 18px;
+    cursor: pointer; }
+
+#personal-regard-wrap {
+  border-bottom: solid 1px #d8d8d8;
+  height: 20px;
+  margin: 26px 0 46px 0;
+  text-align: center; }
+  #personal-regard-wrap #personal-regard {
+    display: inline-block;
+    list-style: none;
+    padding: 0 6px;
+    margin: 0;
+    background: #f7f8fa;
+    font-size: 0;
+    line-height: 0; }
+    #personal-regard-wrap #personal-regard li {
+      z-index: 20;
+      padding: 0;
+      margin: 0 16px;
+      display: inline-block;
+      text-align: center;
+      line-height: 20px;
+      color: #515254; }
+      #personal-regard-wrap #personal-regard li .count {
+        font-size: 20px;
+        display: block; }
+      #personal-regard-wrap #personal-regard li label {
+        font-size: 12px;
+        display: block; }
+
+#personal-products {
+  margin: 30px 0; }
+
 .container {
   width: 1220px;
-  margin: 20px auto; }
-  .container > .grid {
-    margin: 0 -15px; }
-    .container > .grid::after {
-      clear: both;
-      content: "";
-      display: table; }
-    .container > .grid > .column {
-      box-sizing: border-box;
-      padding: 0 15px;
-      float: left;
-      margin: -30px 0; }
-      .container > .grid > .column > .cell {
-        margin: 30px 0; }
-  .container > .grid.five > .column {
-    width: 20%; }
+  margin: 0 auto; }
+
+.grid {
+  margin: 0 -15px; }
+  .grid::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .grid > .column {
+    box-sizing: border-box;
+    padding: 0 15px;
+    float: left;
+    margin: -30px 0; }
+    .grid > .column > .cell {
+      margin: 30px 0; }
+
+.grid.five > .column {
+  width: 20%; }
 
 .product-card {
   background: #fff;
@@ -1250,10 +1378,10 @@ header {
           height: 12px;
           width: 12px;
           background-image: url(/images/sprite@3x.png);
-          background-size: 121px 84px;
+          background-size: 121px 86px;
           vertical-align: -2px; }
         .product-card .product-card-describe .product-card-title label .label {
-          background-position: 0px -72px; }
+          background-position: -14px -72px; }
     .product-card .product-card-describe .product-card-author {
       padding: 10px 0;
       margin: 0 10px;
@@ -1296,12 +1424,12 @@ header {
         width: 16px;
         height: 16px;
         background-image: url(/images/sprite@3x.png);
-        background-size: 121px 84px; }
+        background-size: 121px 86px; }
       .product-card .product-card-describe .product-card-follow .favorite {
         float: left; }
         .product-card .product-card-describe .product-card-follow .favorite .icon.favor {
           vertical-align: -3px;
-          background-position: -80px -52px; }
+          background-position: -100px -52px; }
       .product-card .product-card-describe .product-card-follow .watch {
         float: right; }
         .product-card .product-card-describe .product-card-follow .watch .icon.eye {

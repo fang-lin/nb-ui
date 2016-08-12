@@ -1,36 +1,44 @@
 <div id="channel-bar-wrap">
     <%- include('partial-channel-bar'); %>
 </div>
-<div class="container">
-    <img class="portrait" src="/upload/game_ready_fantasy_goat_3d_model_max_obj_3ds_fbx_c4d_lwo_lw_lws_376aeb90-9854-4611-b225-e401a5890400.jpg"/>
-    <div class="username">
-        <h2>Mike Barnes</h2>
-        <i class="icon gear"></i>
+<div class="container personal">
+    <div id="personal-detail">
+        <img class="portrait" src="/upload/game_ready_fantasy_goat_3d_model_max_obj_3ds_fbx_c4d_lwo_lw_lws_376aeb90-9854-4611-b225-e401a5890400.jpg"/>
+        <div class="username">
+            <h2>
+                Mike Barnes
+                <i class="icon gear"></i>
+            </h2>
+        </div>
+        <div class="job">
+            <span>UX designer</span>
+            <span>Germany</span>
+        </div>
+        <div class="operate">
+            <button>Follow</button>
+        </div>
     </div>
-    <div>
-        <span>UX designer</span>
-        <span>Germany</span>
+    <div id="personal-regard-wrap">
+        <ul id="personal-regard">
+            <li>
+                <span class="count">12</span>
+                <label for="" class="item">Works</label>
+            </li>
+            <li>
+                <span class="count">815123</span>
+                <label for="" class="item">Likes</label>
+            </li>
+            <li>
+                <span class="count">1837</span>
+                <label for="" class="item">Follows</label>
+            </li>
+            <li>
+                <span class="count">71</span>
+                <label for="" class="item">Following</label>
+            </li>
+        </ul>
     </div>
-    <div>
-        <button>Follow</button>
+    <div id="personal-products">
+        <%- include('partial-grid'); %>
     </div>
-    <ul id="personal-regard">
-        <li>
-            <span class="count">12</span>
-            <label for="" class="item">Works</label>
-        </li>
-        <li>
-            <span class="count">815123</span>
-            <label for="" class="item">Likes</label>
-        </li>
-        <li>
-            <span class="count">1837</span>
-            <label for="" class="item">Follows</label>
-        </li>
-        <li>
-            <span class="count">71</span>
-            <label for="" class="item">Following</label>
-        </li>
-    </ul>
-    <%- include('partial-grid'); %>
 </div>

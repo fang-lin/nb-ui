@@ -8,15 +8,11 @@
     <script>
         $(function () {
             $('.dropdown').hide();
-            $('.button').click(function () {
+            $('.button').hover(function () {
                 $(this).next('.dropdown:visible').length ?
                         $(this).next('.dropdown:visible').hide() :
                         $(this).next('.dropdown:hidden').show();
             });
-
-            $('#page-content').addClass('blur');
-            $('#mask').show();
-            $('#confirm-wrap').show();
 
             function switchMask() {
                 if ($('#mask:visible').length) {
@@ -28,7 +24,9 @@
                 }
             }
 
-            function swtichConfirm() {
+//            switchConfirm();
+
+            function switchConfirm() {
                 switchMask()
                 if ($('#confirm-wrap:visible').length) {
                     $('#confirm-wrap').hide();
@@ -38,7 +36,7 @@
             }
 
             $('#confirm-form').click(function () {
-                swtichConfirm();
+                switchConfirm();
             })
         });
     </script>

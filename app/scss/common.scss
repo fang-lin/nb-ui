@@ -12,9 +12,11 @@ $theGray4: #adadad;
 $theGray5: #efeff1;
 $theGray6: #c3c9cf;
 $theGray7: #95979a;
+$theGray8: #d8d8d8;
+$theGray9: #f7f8fa;
 
 html, body {
-  background: #f7f8fa;
+  background: $theGray9;
   font-family: 'Open Sans', sans-serif;
   height: 100%;
   width: 100%;
