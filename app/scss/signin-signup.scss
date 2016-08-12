@@ -1,24 +1,74 @@
-#signin-form,
-#signup-form {
+.sign-form-wrap {
   display: none;
-  margin: 0 auto;
+  margin: 80px auto 0 auto;
   border-radius: 4px;
-  box-sizing: border-box;
+  padding: 22px 18px;
   @include background-image(linear-gradient(rgba(61, 61, 75, 1), rgba(25, 25, 34, 1)));
   h2 {
     color: #fff;
     text-align: center;
-    font-size: 36px;
+    font-size: 48px;
     font-family: Bebas Neue, sans-serif;
+    font-weight: normal;
+    margin: 45px 0;
+  }
+  .link-wrap {
+    @include clearfix;
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 14px;
+    }
+    .left {
+      float: left;
+    }
+    .right {
+      float: right;
+    }
+  }
+}
+
+#signin-form,
+#signup-form {
+  margin: 0 auto;
+  .checkbox-btn {
+    line-height: 12px;
+  }
+  .checkbox-wrap {
+    @include clearfix;
+    margin: 20px 0;
+  }
+  .error-msg {
+    display: block;
+    color: $thePink1;
+    font-size: 12px;
+    line-height: 14px;
+    margin: -7px 0;
+    padding: 0 3px;
+  }
+  .icon {
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    background-image: url(/images/sprite@3x.png);
+    background-size: $spritesheet-width $spritesheet-height;
+    vertical-align: -2px;
+    margin: 0 6px 0 0;
+    &.checkbox {
+      @include sprite-position($checkbox);
+      &.selected {
+        @include sprite-position($checkbox-selected);
+      }
+    }
   }
   label {
-    color: #91919f;
+    color: $theBlue3;
     font-size: 12px;
   }
   input[type=text],
   input[type=submit],
   input[type=password] {
-    font-size: 12px;
+    font-size: 14px;
     height: 36px;
     padding: 0 18px;
     margin: 20px 0;
@@ -26,37 +76,72 @@
     border-radius: 18px;
     border: medium none;
     outline: medium none;
-    color: #fff;
+    color: $theBlue1;
     display: block;
     width: 100%;
     box-sizing: border-box;
   }
   input[type=text],
   input[type=password] {
-    @include placeholder {
-      color: #9292a0;
+    &.error {
+      border: solid 1px $thePink1;
+      background: $theBlue2;
     }
-  }
-  input[type=checkbox] {
+    @include placeholder {
+      color: $theBlue2;
+    }
   }
   input[type=submit] {
     background: #ea6264;
     margin: 40px 0;
+    color: #fff;
   }
 }
 
-#signin-form {
+#signin-form-wrap {
   width: 730px;
-  padding: 25px 240px 10px 240px;
-  h2 {
-    margin: 45px -200px;
+  #signin-form {
+    width: 260px;
+    #remember-me {
+      float: left;
+    }
+    #forget-password {
+      float: right;
+    }
   }
 }
 
-#signup-form {
-  width: 450px;
-  padding: 25px 80px 10px 80px;
+#signup-form-wrap {
+  width: 454px;
   h2 {
-    margin: 45px -60px;
+    font-size: 36px;
+  }
+  #signup-form {
+    width: 256px;
+    #i-agree {
+      float: right;
+    }
+  }
+  #signin-link {
+    color: $theBlue3;
+    font-size: 12px;
+    line-height: 22px;
+    text-align: center;
+    margin: 8px 0;
+    a {
+      display: inline-block;
+      line-height: 22px;
+      color: $theBlue3;
+      border: solid 1px $theBlue3;
+      padding: 0 10px;
+      border-radius: 12px;
+      cursor: pointer;
+      margin: 0 0 0 4px;
+      &:hover {
+        background: $thePink1;
+        border: solid 1px $thePink1;
+        color: #fff;
+      }
+    }
   }
 }

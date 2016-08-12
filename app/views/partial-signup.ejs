@@ -1,10 +1,22 @@
-<form action="" id="signup-form">
+<div class="sign-form-wrap" id="signup-form-wrap">
     <h2>REGISTER A NOVABY ACCOUNT</h2>
-    <input type="text" placeholder="Firstname">
-    <input type="text" placeholder="Lastname">
-    <input type="text" placeholder="Email">
-    <input type="password" placeholder="Password">
-    <input type="password" placeholder="Confirm Password">
-    <input type="checkbox" id="i-agree"><label for="remember-me">I agree the policy</label>
-    <input type="submit" value="Sign up">
-</form>
+    <form action="" id="signup-form">
+        <input type="text" placeholder="Firstname">
+        <input type="text" placeholder="Lastname">
+        <input type="text" placeholder="Email" class="error">
+        <span class="error-msg">Email format input error!</span>
+        <input type="password" placeholder="Password">
+        <input type="password" placeholder="Confirm Password">
+        <div class="checkbox-wrap">
+            <a class="checkbox-btn" id="i-agree">
+                <i class="icon checkbox"></i>
+                <label>I agree the policy</label>
+            </a>
+        </div>
+        <input type="submit" value="Sign up">
+    </form>
+    <div id="signin-link">
+        I am a already a member
+        <a>Sign in</a>
+    </div>
+</div>

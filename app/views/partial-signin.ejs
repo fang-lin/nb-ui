@@ -1,8 +1,24 @@
-<form action="" id="signin-form">
+<div id="signin-form-wrap" class="sign-form-wrap">
     <h2>WELCOME</h2>
-    <input type="text" placeholder="Email">
-    <input type="text" placeholder="Password">
-    <input type="checkbox" id="remember-me"><label for="remember-me">Remember me</label>
-    <input type="checkbox" id="forget-password"><label for="forget-password">forget password</label>
-    <input type="submit" value="Sign in">
-</form>
+    <form action="" id="signin-form">
+        <input type="text" placeholder="Email">
+        <span class="error-msg">Email format is wrong！</span>
+        <input type="password" placeholder="Password" class="error">
+        <span class="error-msg">Account and password do not Account and password do not match！</span>
+        <div class="checkbox-wrap">
+            <a class="checkbox-btn" id="remember-me">
+                <i class="icon checkbox"></i>
+                <label>Remember me</label>
+            </a>
+            <a class="checkbox-btn" id="forget-password">
+                <i class="icon checkbox"></i>
+                <label>forget password</label>
+            </a>
+        </div>
+        <input type="submit" value="Sign in">
+    </form>
+    <div class="link-wrap">
+        <a href="" class="left">I forgot password</a>
+        <a href="" class="right">Create new account</a>
+    </div>
+</div>

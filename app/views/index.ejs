@@ -35,10 +35,19 @@
 
             function switchSignIn() {
                 switchMask()
-                if ($('#signin-form:visible').length) {
-                    $('#signin-form').hide();
+                if ($('#signin-form-wrap:visible').length) {
+                    $('#signin-form-wrap').hide();
                 } else {
-                    $('#signin-form').show();
+                    $('#signin-form-wrap').show();
+                }
+            }
+
+            function switchSignUp() {
+                switchMask()
+                if ($('#signup-form-wrap:visible').length) {
+                    $('#signup-form-wrap').hide();
+                } else {
+                    $('#signup-form-wrap').show();
                 }
             }
 
@@ -46,9 +55,27 @@
                 switchConfirm();
             });
 
+            $('.checkbox-btn').click(function () {
+                $(this).children('.checkbox').toggleClass('selected');
+            });
 
-//            switchConfirm();
-//            switchSignIn();
+            $('#showcase li').click(function () {
+
+                $('#page-content').removeClass('blur');
+                $('#mask, #confirm-wrap, .sign-form-wrap').hide();
+
+                switch ($(this).html()) {
+                    case 'Sign In':
+                        switchSignIn();
+                        break;
+                    case 'Sign Up':
+                        switchSignUp();
+                        break;
+                    case 'Confirm':
+                        switchConfirm();
+                        break;
+                }
+            });
         });
     </script>
     <title>Document</title>
@@ -62,6 +89,13 @@
     <%- include('partial-signin'); %>
     <%- include('partial-signup'); %>
     <%- include('partial-confirm'); %>
+</div>
+<div id="showcase">
+    <ul>
+        <li>Sign In</li>
+        <li>Sign Up</li>
+        <li>Confirm</li>
+    </ul>
 </div>
 </body>
 </html>
