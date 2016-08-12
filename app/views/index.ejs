@@ -24,8 +24,6 @@
                 }
             }
 
-//            switchConfirm();
-
             function switchConfirm() {
                 switchMask()
                 if ($('#confirm-wrap:visible').length) {
@@ -35,9 +33,22 @@
                 }
             }
 
+            function switchSignIn() {
+                switchMask()
+                if ($('#signin-form:visible').length) {
+                    $('#signin-form').hide();
+                } else {
+                    $('#signin-form').show();
+                }
+            }
+
             $('#confirm-form').click(function () {
                 switchConfirm();
-            })
+            });
+
+
+//            switchConfirm();
+//            switchSignIn();
         });
     </script>
     <title>Document</title>
