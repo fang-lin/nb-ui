@@ -1,0 +1,77 @@
+h2 {
+  font-size: 24px;
+  color: $thePink1;
+  font-weight: normal;
+}
+
+#goods-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  li {
+    .icon.check {
+      height: 26px;
+      width: 26px;
+      float: left;
+      background-image: url(/images/sprite@3x.png);
+      background-size: $spritesheet-width $spritesheet-height;
+      @include sprite-position($icon-check);
+    }
+    .goods-card-wrap {
+      padding: 0 0 0 20px;
+      zoom: 1;
+      overflow: hidden;
+      .goods-card {
+        background: #fff;
+        border: solid 1px $theGray8;
+        border-radius: 4px;
+        padding: 10px;
+        @include clearfix;
+        .goods-thumbnail {
+          height: 140px;
+          width: 140px;
+          float: left;
+          border-radius: 4px;
+        }
+        .goods-info-wrap {
+          overflow: hidden;
+          zoom: 1;
+          padding: 0 30px;
+          position: relative;
+          color: $theGray3;
+          .goods-title {
+            font-size: 24px;
+            font-weight: normal;
+            margin: 15px 0;
+          }
+          .goods-abs, .goods-detail {
+            font-size: 16px;
+            margin: 3px -10px;
+            line-height: 24px;
+            span {
+              display: inline-block;
+              margin: 0 10px;
+            }
+          }
+          .goods-detail {
+            color: $theGray4;
+            font-size: 16px;
+          }
+          .goods-price {
+            font-size: 20px;
+            right: 0;
+            top: 0;
+            position: absolute;
+          }
+        }
+      }
+    }
+  }
+}
+
+hr {
+  border: medium none;
+  height: 1px;
+  background: $theGray8;
+  margin: 25px 0;
+}
