@@ -57,8 +57,6 @@
     display: inline-block;
     height: 12px;
     width: 12px;
-    background-image: url(/images/sprite@3x.png);
-    background-size: $spritesheet-width $spritesheet-height;
     vertical-align: -2px;
     margin: 0 6px 0 0;
     &.checkbox {
@@ -78,7 +76,6 @@
     background: #676774;
     border-radius: 18px;
     border: medium none;
-    outline: medium none;
     color: $theBlue1;
     display: block;
     width: 100%;

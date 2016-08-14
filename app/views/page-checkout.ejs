@@ -20,8 +20,40 @@
                             <span>Texture: No</span>
                             <span>Style: Cartoon</span>
                         </div>
-                        <span class="goods-price">US $149</span>
                     </div>
+                    <span class="goods-price">US $149</span>
+                    <span class="goods-remove">
+                        <i class="icon cross"></i>
+                        Remove
+                    </span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <i class="icon check selected"></i>
+            <div class="goods-card-wrap">
+                <div class="goods-card">
+                    <img class="goods-thumbnail" src="upload/large_ch47d_chinook_helicopter_3d_model_fbx_ma_mb_17f490ce-4034-4b3d-815d-889e05f5413f.jpg" alt="">
+                    <div class="goods-info-wrap">
+                        <h3 class="goods-title">Transformer</h3>
+                        <div class="goods-abs">
+                            <span>License: Exclusive</span>
+                            <span>File size: 500MB</span>
+                        </div>
+                        <div class="goods-detail">
+                            <span>Category: Role</span>
+                            <span>Level: Movie</span>
+                            <span>Format: 3DMAX</span>
+                            <span>Animation: No</span>
+                            <span>Texture: No</span>
+                            <span>Style: Cartoon</span>
+                        </div>
+                    </div>
+                    <span class="goods-price">US $149</span>
+                    <span class="goods-remove">
+                        <i class="icon cross"></i>
+                        Remove
+                    </span>
                 </div>
             </div>
         </li>
@@ -30,8 +62,94 @@
     <div id="total-price">
         TOTAL: 206USD
     </div>
-
-    <div id="payment">
-
+    <h2>
+        Payment
+    </h2>
+    <div id="payment-tabs">
+        <ul id="payment-way">
+            <li id="payment-by-creditcard">
+                <i class="icon creditcard"></i>
+            </li>
+            <li id="payment-by-alipay">
+                <i class="icon alipay"></i>
+            </li>
+            <li id="payment-by-paypal">
+                <i class="icon paypal"></i>
+            </li>
+        </ul>
+        <div id="payment-form-wrap">
+            <form id="payment-creditcard-form">
+                <label>Card Number</label>
+                <div class="line monopoly">
+                    <input type="text">
+                </div>
+                <label>
+                    Expiry Date
+                    <span>CVC</span>
+                </label>
+                <div class="line fill">
+                    <input type="text" id="creditcard-expiry-month" placeholder="MM">
+                    <input type="text" id="creditcard-cvc">
+                    <div class="cork">
+                        <input type="text" placeholder="YEAR">
+                    </div>
+                </div>
+                <label>Billing Address</label>
+                <div class="line fill">
+                    <label>First name</label>
+                    <div>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="line fill">
+                    <label>Last name</label>
+                    <div>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="line fill">
+                    <label>Address 1</label>
+                    <div>
+                        <textarea type="text"></textarea>
+                    </div>
+                </div>
+                <div class="line fill">
+                    <label>Address 2</label>
+                    <div>
+                        <textarea type="text"></textarea>
+                    </div>
+                </div>
+                <div class="line fill">
+                    <label>City</label>
+                    <div>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="line fill">
+                    <label>Postcode</label>
+                    <div>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="line fill">
+                    <label>Country</label>
+                    <div>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="line fill">
+                    <label>Mobile</label>
+                    <div>
+                        <input type="text">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div id="submit-wrap">
+            <button id="payment-creditcard-form-submit">
+                <i class="icon bank-card"></i>
+                Pay 206USD
+            </button>
+        </div>
     </div>
 </div>

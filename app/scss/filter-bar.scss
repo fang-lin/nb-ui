@@ -26,8 +26,6 @@
         font-size: 14px;
         .icon {
           display: inline-block;
-          background-image: url(/images/sprite@3x.png);
-          background-size: $spritesheet-width $spritesheet-height;
           &.arrow-down {
             vertical-align: 2px;
             margin: 0 0 0 6px;

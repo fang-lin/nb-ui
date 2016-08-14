@@ -1,8 +1,3 @@
-.container {
-  width: 1220px;
-  margin: 0 auto;
-}
-
 .grid {
   @include clearfix;
   & > .column {
@@ -67,8 +62,6 @@
           display: inline-block;
           height: $icon-label-height;
           width: $icon-label-width;
-          background-image: url(/images/sprite@3x.png);
-          background-size: $spritesheet-width $spritesheet-height;
           vertical-align: -2px;
         }
         .label {
@@ -116,8 +109,6 @@
         display: inline-block;
         width: 16px;
         height: 16px;
-        background-image: url(/images/sprite@3x.png);
-        background-size: $spritesheet-width $spritesheet-height;
       }
       .favorite {
         float: left;

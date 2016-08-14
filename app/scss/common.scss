@@ -91,3 +91,20 @@ html, body {
     }
   }
 }
+
+.container {
+  width: 1200px;
+  //padding: 0 50px;
+  margin: 0 auto;
+  padding: 1px 0;
+}
+
+.icon {
+  background-image: url(/images/sprite@3x.png);
+  background-size: $spritesheet-width $spritesheet-height;
+}
+
+input,
+textarea {
+  outline: medium none;
+}

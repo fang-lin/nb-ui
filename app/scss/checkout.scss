@@ -1,6 +1,6 @@
 h2 {
   font-size: 24px;
-  color: $thePink1;
+  color: $theGray3;
   font-weight: normal;
 }
 
@@ -9,13 +9,16 @@ h2 {
   padding: 0;
   margin: 0;
   li {
+    margin: 20px 0;
     .icon.check {
       height: 26px;
       width: 26px;
       float: left;
-      background-image: url(/images/sprite@3x.png);
-      background-size: $spritesheet-width $spritesheet-height;
+      cursor: pointer;
       @include sprite-position($icon-check);
+      &.selected {
+        @include sprite-position($icon-check-selected);
+      }
     }
     .goods-card-wrap {
       padding: 0 0 0 20px;
@@ -26,6 +29,7 @@ h2 {
         border: solid 1px $theGray8;
         border-radius: 4px;
         padding: 10px;
+        position: relative;
         @include clearfix;
         .goods-thumbnail {
           height: 140px;
@@ -37,7 +41,6 @@ h2 {
           overflow: hidden;
           zoom: 1;
           padding: 0 30px;
-          position: relative;
           color: $theGray3;
           .goods-title {
             font-size: 24px;
@@ -57,11 +60,26 @@ h2 {
             color: $theGray4;
             font-size: 16px;
           }
-          .goods-price {
-            font-size: 20px;
-            right: 0;
-            top: 0;
-            position: absolute;
+        }
+        .goods-price {
+          color: $theGray3;
+          font-size: 20px;
+          right: 30px;
+          top: 25px;
+          position: absolute;
+        }
+        .goods-remove {
+          color: $theGray10;
+          font-size: 12px;
+          right: 30px;
+          bottom: 10px;
+          position: absolute;
+          .icon.cross {
+            height: 14px;
+            width: 14px;
+            display: inline-block;
+            @include sprite-position($icon-cross);
+            vertical-align: -2px;
           }
         }
       }
@@ -74,4 +92,179 @@ hr {
   height: 1px;
   background: $theGray8;
   margin: 25px 0;
+}
+
+#total-price {
+  color: $theGray3;
+  text-align: right;
+  font-size: 20px;
+}
+
+#payment-tabs {
+  width: 726px;
+  margin: 55px auto;
+  #payment-way {
+    list-style: none;
+    padding: 0;
+    margin: 0 -60px;
+    @include clearfix;
+    #payment-by-creditcard {
+      border: solid 1px $thePink1;
+    }
+    li {
+      float: left;
+      height: 160px;
+      width: 160px;
+      background: #fff;
+      border-radius: 4px;
+      border: solid 1px $theGray8;
+      margin: 0 60px;
+      .icon {
+        display: block;
+        margin: 64px auto 0 auto;
+        &.creditcard {
+          height: 42px;
+          width: 66px;
+          @include sprite-position($icon-creditcard);
+        }
+        &.alipay {
+          height: 39px;
+          width: 107px;
+          @include sprite-position($icon-alipay);
+        }
+        &.paypal {
+          height: 36px;
+          width: 120px;
+          @include sprite-position($icon-paypal);
+        }
+      }
+    }
+  }
+  #payment-form-wrap {
+    width: 540px;
+    padding: 18px;
+    background: #fff;
+    border: solid 1px $theGray8;
+    border-radius: 2px;
+    position: relative;
+    margin: 20px 0 0 0;
+    &:before {
+      top: -6px;
+      left: 75px;
+      border-style: solid;
+      border-color: #e0e0e0 #fff #fff #e0e0e0;
+      border-width: 1px;
+      content: ' ';
+      display: block;
+      height: 10px;
+      width: 10px;
+      background: #fff;
+      position: absolute;
+      @include transform(rotate(45deg));
+    }
+    #payment-creditcard-form {
+      margin: -10px 0 -15px 0;
+      #creditcard-expiry-year {
+        width: 120px;
+      }
+      #creditcard-cvc {
+        width: 120px;
+      }
+      & > label {
+        display: block;
+        color: $theGray3;
+        font-size: 18px;
+        margin: 10px 0;
+        span {
+          width: 120px;
+          float: right;
+        }
+      }
+      & > .line {
+        margin: 15px 0;
+        input,
+        textarea {
+          display: block;
+          box-sizing: border-box;
+          border: solid 1px $theGray10;
+          border-radius: 2px;
+          font-size: 12px;
+          color: $theGray3;
+          @include placeholder {
+            color: $theGray10;
+          }
+        }
+        textarea {
+          line-height: 150%;
+          padding: 5px 10px;
+          height: 70px;
+        }
+        input {
+          padding: 0 14px;
+          line-height: 36px;
+        }
+        &.monopoly {
+          input {
+            width: 100%;
+          }
+        }
+        &.fill {
+          & > label {
+            width: 93px;
+            color: $theGray7;
+            line-height: 36px;
+          }
+          & > *:first-child {
+            float: left;
+          }
+          & > *:nth-child(2) {
+            float: right;
+          }
+          & > *:last-child {
+            float: none;
+            zoom: 1;
+            overflow: hidden;
+            & > input {
+              display: block;
+              width: 100%;
+            }
+            & > textarea {
+              width: 100%;
+              resize: none;
+            }
+          }
+          & > .cork {
+            padding: 0 10px;
+          }
+        }
+      }
+    }
+  }
+  #submit-wrap {
+    text-align: center;
+  }
+  #payment-creditcard-form-submit {
+    .icon.bank-card {
+      height: 17px;
+      width: 24px;
+      display: inline-block;
+      vertical-align: -2px;
+      margin: 0 12px 0 0;
+      @include sprite-position($icon-bank-card);
+    }
+    border: medium none;
+    background: $thePink1;
+    line-height: 46px;
+    border-radius: 23px;
+    box-shadow: 0 5px 30px rgba(234, 98, 100, 1);
+    padding: 0 64px;
+    font-size: 16px;
+    color: #fff;
+    margin: 40px 0;
+    cursor: pointer;
+    &:disabled {
+      background: $theGray8;
+      box-shadow: none;
+    }
+  }
 }

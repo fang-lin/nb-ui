@@ -23,8 +23,6 @@
       display: block;
       height: 12px;
       width: 12px;
-      background-image: url(/images/sprite@3x.png);
-      background-size: $spritesheet-width $spritesheet-height;
       &.arrow-top {
         @include sprite-position($icon-to-top);
       }

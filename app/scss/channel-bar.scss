@@ -26,7 +26,6 @@
     position: absolute;
     top: 11px;
     right: 30px;
-    outline: medium none;
     cursor: pointer;
     background: $thePink1;
     line-height: 28px;
@@ -44,8 +43,6 @@
       display: inline-block;
       vertical-align: -1px;
       margin: 0 2px 0 0;
-      background-image: url(/images/sprite@3x.png);
-      background-size: $spritesheet-width $spritesheet-height;
       @include sprite-position($icon-upload);
     }
   }
