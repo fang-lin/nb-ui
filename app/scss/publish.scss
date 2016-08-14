@@ -1,0 +1,154 @@
+.container.publish {
+  margin: 20px auto;
+  & > .grid {
+    margin: 0 -5px;
+    & > .column {
+      width: 50%;
+      padding: 0 5px;
+      $leftWidth: .75;
+      &.left {
+        width: percentage($leftWidth);
+      }
+      &.right {
+        width: percentage(1 - $leftWidth);
+      }
+      & > .cell {
+        background: #ff0;
+        height: 300px;
+      }
+    }
+  }
+}
+
+#product-form {
+  border-radius: 4px;
+  background: #fff;
+  border: solid 1px $theGray5;
+  padding: 16px;
+  hr {
+    border: medium none;
+    height: 1px;
+    background: $theGray8;
+    margin: 25px 0;
+  }
+  #product-price-wrap {
+    padding: 0 20px;
+  }
+  .monopoly {
+    line-height: 34px;
+    margin: 10px 0;
+  }
+  .align-center {
+    text-align: center;
+  }
+  #watermark-label-wrap {
+    line-height: 16px;
+    padding: 0 0 0 10px;
+    label {
+      color: $theGray6;
+      font-size: 12px;
+    }
+  }
+  & > .grid {
+    margin: 0 -8px;
+    & > .column {
+      padding: 0 8px;
+    }
+  }
+  .line {
+    color: $theGray3;
+    line-height: 34px;
+    font-size: 16px;
+    &.justify {
+      @include clearfix;
+      .item:first-child {
+        float: left;
+      }
+      .item:last-child {
+        float: right;
+      }
+    }
+    &.fill {
+      & > *:first-child {
+        float: left;
+      }
+      & > *:nth-child(2) {
+        float: right;
+      }
+      & > *:last-child {
+        float: none;
+        zoom: 1;
+        overflow: hidden;
+        & > * {
+          display: block;
+        }
+      }
+    }
+    input {
+      font-size: 16px;
+      margin: 0 !important;
+    }
+    .item {
+      line-height: 34px;
+      display: inline-block;
+      label {
+        padding: 0;
+        margin: 0;
+      }
+    }
+    label {
+      font-size: 16px;
+      display: inline !important;
+      padding: 0;
+      margin: 0;
+    }
+    input {
+      display: inline-block !important;
+    }
+  }
+  label {
+    display: block;
+    color: $theGray3;
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  input[type=text],
+  input[type=submit],
+  textarea {
+    margin: 10px 0;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border: medium none;
+    outline: medium none;
+    resize: none;
+    font-size: 12px;
+    color: $theGray3;
+    padding: 0 10px;
+    @include placeholder {
+      color: $theGray8;
+    }
+  }
+  input[type=text],
+  textarea {
+    line-height: 34px;
+    border: solid 1px $theGray10;
+    border-radius: 2px;
+  }
+  input[type=submit] {
+    background: $thePink1;
+    line-height: 46px;
+    border-radius: 23px;
+    box-shadow: 0 5px 30px rgba(234, 98, 100, 1);
+    padding: 0 10px;
+    font-size: 16px;
+    color: #fff;
+    margin: 10px 0 20px 0;
+    cursor: pointer;
+  }
+  textarea {
+    line-height: 18px;
+    padding: 10px;
+    height: 130px;
+  }
+}

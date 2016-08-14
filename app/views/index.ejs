@@ -8,10 +8,14 @@
     <script>
         $(function () {
             $('.dropdown').hide();
-            $('.button').hover(function () {
-                $(this).next('.dropdown:visible').length ?
-                        $(this).next('.dropdown:visible').hide() :
-                        $(this).next('.dropdown:hidden').show();
+            $('.button').click(function () {
+                if ($(this).next('.dropdown:visible').length) {
+                    $('.dropdown').hide();
+                    $(this).next('.dropdown:visible').hide();
+                } else {
+                    $('.dropdown').hide();
+                    $(this).next('.dropdown:hidden').show();
+                }
             });
 
             function switchMask() {
@@ -92,9 +96,14 @@
 </div>
 <div id="showcase">
     <ul>
+        <li><a href="element">Home</a></li>
+        <li><a href="publish">Publish</a></li>
+        <li><a href="personal">Personal</a></li>
+        <li><a href="checkout">Checkout</a></li>
         <li>Sign In</li>
         <li>Sign Up</li>
         <li>Confirm</li>
+        <li>Dialogs</li>
     </ul>
 </div>
 </body>

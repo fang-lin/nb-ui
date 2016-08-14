@@ -1,0 +1,160 @@
+<div id="channel-bar-wrap">
+    <%- include('partial-channel-bar'); %>
+</div>
+<div class="container publish">
+    <div class="grid">
+        <div class="column left">
+            <form id="upload-form">
+                <h2>Step 1：upload photos</h2>
+                <ul>
+                    <% [
+                        'Front View',
+                        'Back View',
+                        'Left Side View',
+                        'Right Side View',
+                        'Top View'
+                    ].map(function(title){ %>
+                    <li>
+                        <button>
+                            <i class="icon plus"></i>
+                            <label><%= title %></label>
+                        </button>
+                    </li>
+                    <% }) %>
+                </ul>
+                <h2>Step 2: upload a model file</h2>
+                <button>Choose file</button>
+                <div class="progress" id="upload-progress">
+                    <div class="value"></div>
+                </div>
+                <label for="upload-progress">Uploaded 30%</label>
+                <button id="">
+                    <span></span>
+                </button>
+            </form>
+        </div>
+        <div class="column right">
+            <form id="product-form">
+                <input type="submit" value="Publish">
+                <div class="grid">
+                    <div class="column">
+                        <label for="product-title">Title:</label>
+                        <input type="text" id="product-title">
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="column">
+                        <label for="product-geometry">Geometry:</label>
+                        <input type="text" id="product-geometry">
+                    </div>
+                </div>
+                <div class="grid two">
+                    <div class="column">
+                        <label for="product-polygons">Polygons:</label>
+                        <input type="text" id="product-polygons" placeholder="polygons">
+                    </div>
+                    <div class="column">
+                        <label for="product-vertices">Vertices:</label>
+                        <input type="text" id="product-vertices" placeholder="vertices">
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="column">
+                        <label for="product-category">Category:</label>
+                        <input type="text" id="product-category">
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="column">
+                        <label for="product-format">Format:</label>
+                        <input type="text" id="product-format">
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="column">
+                        <div class="line justify">
+                            <a class="item">
+                                <input type="checkbox" id="product-animation">
+                                <label for="product-animation">Animation</label>
+                            </a>
+                            <a class="item">
+                                <input type="checkbox" id="product-low-poly">
+                                <label for="product-low-poly">low-poly</label>
+                            </a>
+                        </div>
+                        <div class="line justify">
+                            <a class="item">
+                                <input type="checkbox" id="product-texture">
+                                <label for="product-texture">Texture</label>
+                            </a>
+                            <a class="item">
+                                <input type="checkbox" id="product-material">
+                                <label for="product-material">Material</label>
+                            </a>
+                        </div>
+                        <div class="line justify">
+                            <a class="item">
+                                <input type="checkbox" id="product-rigged">
+                                <label for="product-rigged">Rigged</label>
+                            </a>
+                            <a class="item">
+                                <input type="checkbox" id="product-uvw">
+                                <label for="product-uvw">UVW mapping</label>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="grid">
+                    <div class="column">
+                        <div class="line fill">
+                            <label for="product-price">Price:</label>
+                            <span>US dollars</span>
+                            <div id="product-price-wrap"><input type="text" id="product-price"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="column">
+                        <label class="monopoly">License & Legal information</label>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="column">
+                        <div class="line fill">
+                            <label for="product-editorial">License*</label>
+                            <a class="item">
+                                <input type="checkbox" id="product-editorial">
+                                <label for="product-editorial">Editorial</label>
+                            </a>
+                            <div class="align-center">
+                                <a class="item">
+                                    <input type="checkbox" id="product-general">
+                                    <label for="product-general">General</label>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="grid">
+                    <div class="column">
+                        <label>Watermark:</label>
+                        <div class="line fill monopoly">
+                            <input type="checkbox" id="product-watermark">
+                            <div id="watermark-label-wrap">
+                                <label for="product-watermark">Add a your watermark to the photos when displayed</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="column">
+                        <label for="product-description">Description(Optional):</label>
+                        <textarea type="text" id="product-description"></textarea>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

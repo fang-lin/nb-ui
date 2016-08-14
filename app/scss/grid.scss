@@ -4,16 +4,19 @@
 }
 
 .grid {
-  margin: 0 -15px;
   @include clearfix;
   & > .column {
     box-sizing: border-box;
-    padding: 0 15px;
     float: left;
-    margin: -30px 0;
+    width: 100%;
     & > .cell {
-      margin: 30px 0;
     }
+  }
+}
+
+.grid.two {
+  & > .column {
+    width: 50%;
   }
 }
 
