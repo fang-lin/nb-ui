@@ -5,17 +5,124 @@
     & > .column {
       width: 50%;
       padding: 0 5px;
-      $leftWidth: .75;
+      //$leftWidth: .75;
       &.left {
-        width: percentage($leftWidth);
+        //width: percentage($leftWidth);
+        zoom: 1;
+        overflow: hidden;
+        float: none;
+        width: auto;
       }
       &.right {
-        width: percentage(1 - $leftWidth);
+        //width: percentage(1 - $leftWidth);
+        width: 300px;
+        float: right;
       }
       & > .cell {
         background: #ff0;
         height: 300px;
       }
+    }
+  }
+}
+
+#upload-form {
+  h2 {
+    color: $theGray3;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 20px 0;
+  }
+  hr {
+    height: 1px;
+    border: medium none;
+    background: $theGray8;
+    margin: 40px 0;
+  }
+  #upload-images-wrap {
+    overflow: hidden;
+    margin: 40px 0;
+    #upload-images {
+      list-style: none;
+      padding: 0;
+      margin: -24px;
+      @include clearfix;
+      li {
+        float: left;
+        margin: 24px;
+        background: #fff;
+        border: solid 1px $theGray5;
+        border-radius: 4px;
+        padding: 0;
+        cursor: pointer;
+        height: 180px;
+        width: 180px;
+        position: relative;
+        .icon.plus {
+          height: 47px;
+          width: 47px;
+          display: block;
+          margin: 67px auto;
+          background-image: url(/images/sprite@3x.png);
+          background-size: $spritesheet-width $spritesheet-height;
+          @include sprite-position($icon-plus);
+        }
+        img {
+          display: block;
+          height: 164px;
+          width: 164px;
+          margin: 8px auto;
+        }
+      }
+    }
+  }
+  #upload-choose-file-wrap {
+    text-align: center;
+    margin: 30px 0;
+    #upload-choose-file {
+      line-height: 44px;
+      font-size: 16px;
+      border-radius: 22px;
+      border: solid 1px $thePink1;
+      color: $thePink1;
+      padding: 0 90px;
+      background: none;
+      cursor: pointer;
+      outline: medium none;
+    }
+  }
+  .progress {
+    height: 10px;
+    border-radius: 6px;
+    border: solid 1px $theGray5;
+    background: #fff;
+    .value {
+      background: $thePink1;
+      height: 10px;
+      border-radius: 5px;
+      box-shadow: 0 3px 20px rgba(234, 98, 100, .7);
+    }
+  }
+  #upload-progress-wrap {
+    text-align: center;
+    #upload-progress {
+      margin: 0 140px;
+    }
+    .icon.upload-giant {
+      height: 50px;
+      width: 60px;
+      margin: 20px auto;
+      display: block;
+      background-image: url(/images/sprite@3x.png);
+      background-size: $spritesheet-width $spritesheet-height;
+      @include sprite-position($icon-upload-giant);
+    }
+    label {
+      display: block;
+      color: $thePink1;
+      font-size: 16px;
+      line-height: 16px;
+      margin: 20px 0 0 0;
     }
   }
 }

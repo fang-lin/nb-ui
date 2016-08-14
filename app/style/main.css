@@ -892,7 +892,7 @@ header {
       display: block;
       border: medium none;
       cursor: pointer;
-      background: transparent;
+      background: none;
       height: 28px;
       width: 28px;
       padding: 4px;
@@ -909,8 +909,8 @@ header {
         height: 20px;
         width: 20px;
         background: url("/images/sprite@3x.png");
-        background-size: 121px 110px;
-        background-position: -88px -31px; }
+        background-size: 141px 118px;
+        background-position: -41px -81px; }
   header #header-menu {
     float: right;
     margin: 0 5px;
@@ -952,29 +952,29 @@ header {
         header #header-menu menuitem .button:hover {
           color: #ea6264; }
           header #header-menu menuitem .button:hover .element {
-            background-position: -20px -78px; }
+            background-position: -121px 0px; }
           header #header-menu menuitem .button:hover .cart {
-            background-position: -67px -52px; }
+            background-position: -61px -81px; }
           header #header-menu menuitem .button:hover .account {
-            background-position: -68px -31px; }
+            background-position: -81px -81px; }
           header #header-menu menuitem .button:hover .notice {
-            background-position: -40px -78px; }
+            background-position: -121px -80px; }
         header #header-menu menuitem .button .icon {
           height: 20px;
           width: 20px;
           display: inline-block;
-          background-size: 121px 110px;
+          background-size: 141px 118px;
           background-image: url(/images/sprite@3x.png);
           vertical-align: -4px;
           margin: 0 10px 0 0; }
         header #header-menu menuitem .button .element {
-          background-position: 0px -78px; }
+          background-position: -101px -81px; }
         header #header-menu menuitem .button .cart {
-          background-position: -47px -52px; }
+          background-position: -121px -20px; }
         header #header-menu menuitem .button .account {
-          background-position: -87px -52px; }
+          background-position: -121px -40px; }
         header #header-menu menuitem .button .notice {
-          background-position: -60px -78px; }
+          background-position: -121px -60px; }
       header #header-menu menuitem .dropdown {
         z-index: 10;
         background: #fff;
@@ -1117,8 +1117,8 @@ header {
       vertical-align: -1px;
       margin: 0 2px 0 0;
       background-image: url(/images/sprite@3x.png);
-      background-size: 121px 110px;
-      background-position: -36px -98px; }
+      background-size: 141px 118px;
+      background-position: -40px -102px; }
 
 #filter-bar-wrap {
   text-align: center;
@@ -1151,20 +1151,20 @@ header {
         #filter-bar-wrap #filter-bar li .button .icon {
           display: inline-block;
           background-image: url(/images/sprite@3x.png);
-          background-size: 121px 110px; }
+          background-size: 141px 118px; }
           #filter-bar-wrap #filter-bar li .button .icon.arrow-down {
             vertical-align: 2px;
             margin: 0 0 0 6px;
             height: 4px;
             width: 10px;
-            background-position: -108px -43px;
+            background-position: -107px -69px;
             line-height: 22px; }
           #filter-bar-wrap #filter-bar li .button .icon.checkbox {
             vertical-align: -2px;
             margin: 0 6px 0 0;
             height: 14px;
             width: 14px;
-            background-position: -107px -52px;
+            background-position: -107px -31px;
             line-height: 22px; }
 
 #to-top {
@@ -1190,11 +1190,11 @@ header {
       height: 12px;
       width: 12px;
       background-image: url(/images/sprite@3x.png);
-      background-size: 121px 110px; }
+      background-size: 141px 118px; }
       #to-top a .icon.arrow-top {
-        background-position: -24px -98px; }
+        background-position: -28px -102px; }
       #to-top a .icon.alert {
-        background-position: 0px -98px; }
+        background-position: -16px -102px; }
   #to-top hr {
     display: block;
     height: 1px;
@@ -1286,8 +1286,8 @@ header {
     top: 2px;
     right: -40px;
     background-image: url(/images/sprite@3x.png);
-    background-size: 121px 110px;
-    background-position: -80px -78px; }
+    background-size: 141px 118px;
+    background-position: -21px -81px; }
 
 #personal-detail .job {
   text-align: center;
@@ -1366,12 +1366,108 @@ header {
       width: 50%;
       padding: 0 5px; }
       .container.publish > .grid > .column.left {
-        width: 75%; }
+        zoom: 1;
+        overflow: hidden;
+        float: none;
+        width: auto; }
       .container.publish > .grid > .column.right {
-        width: 25%; }
+        width: 300px;
+        float: right; }
       .container.publish > .grid > .column > .cell {
         background: #ff0;
         height: 300px; }
+
+#upload-form h2 {
+  color: #515254;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 20px 0; }
+
+#upload-form hr {
+  height: 1px;
+  border: medium none;
+  background: #d8d8d8;
+  margin: 40px 0; }
+
+#upload-form #upload-images-wrap {
+  overflow: hidden;
+  margin: 40px 0; }
+  #upload-form #upload-images-wrap #upload-images {
+    list-style: none;
+    padding: 0;
+    margin: -24px; }
+    #upload-form #upload-images-wrap #upload-images::after {
+      clear: both;
+      content: "";
+      display: table; }
+    #upload-form #upload-images-wrap #upload-images li {
+      float: left;
+      margin: 24px;
+      background: #fff;
+      border: solid 1px #efeff1;
+      border-radius: 4px;
+      padding: 0;
+      cursor: pointer;
+      height: 180px;
+      width: 180px;
+      position: relative; }
+      #upload-form #upload-images-wrap #upload-images li .icon.plus {
+        height: 47px;
+        width: 47px;
+        display: block;
+        margin: 67px auto;
+        background-image: url(/images/sprite@3x.png);
+        background-size: 141px 118px;
+        background-position: -60px -31px; }
+      #upload-form #upload-images-wrap #upload-images li img {
+        display: block;
+        height: 164px;
+        width: 164px;
+        margin: 8px auto; }
+
+#upload-form #upload-choose-file-wrap {
+  text-align: center;
+  margin: 30px 0; }
+  #upload-form #upload-choose-file-wrap #upload-choose-file {
+    line-height: 44px;
+    font-size: 16px;
+    border-radius: 22px;
+    border: solid 1px #ea6264;
+    color: #ea6264;
+    padding: 0 90px;
+    background: none;
+    cursor: pointer;
+    outline: medium none; }
+
+#upload-form .progress {
+  height: 10px;
+  border-radius: 6px;
+  border: solid 1px #efeff1;
+  background: #fff; }
+  #upload-form .progress .value {
+    background: #ea6264;
+    height: 10px;
+    border-radius: 5px;
+    box-shadow: 0 3px 20px rgba(234, 98, 100, 0.7); }
+
+#upload-form #upload-progress-wrap {
+  text-align: center; }
+  #upload-form #upload-progress-wrap #upload-progress {
+    margin: 0 140px; }
+  #upload-form #upload-progress-wrap .icon.upload-giant {
+    height: 50px;
+    width: 60px;
+    margin: 20px auto;
+    display: block;
+    background-image: url(/images/sprite@3x.png);
+    background-size: 141px 118px;
+    background-position: 0px -31px; }
+  #upload-form #upload-progress-wrap label {
+    display: block;
+    color: #ea6264;
+    font-size: 16px;
+    line-height: 16px;
+    margin: 20px 0 0 0; }
 
 #product-form {
   border-radius: 4px;
@@ -1554,10 +1650,10 @@ header {
           height: 12px;
           width: 12px;
           background-image: url(/images/sprite@3x.png);
-          background-size: 121px 110px;
+          background-size: 141px 118px;
           vertical-align: -2px; }
         .product-card .product-card-describe .product-card-title label .label {
-          background-position: -108px -31px; }
+          background-position: -107px -57px; }
     .product-card .product-card-describe .product-card-author {
       padding: 10px 0;
       margin: 0 10px;
@@ -1600,19 +1696,19 @@ header {
         width: 16px;
         height: 16px;
         background-image: url(/images/sprite@3x.png);
-        background-size: 121px 110px; }
+        background-size: 141px 118px; }
       .product-card .product-card-describe .product-card-follow .favorite {
         float: left; }
         .product-card .product-card-describe .product-card-follow .favorite .icon.favor {
           vertical-align: -3px;
-          background-position: -100px -78px; }
+          background-position: 0px -102px; }
       .product-card .product-card-describe .product-card-follow .watch {
         float: right; }
         .product-card .product-card-describe .product-card-follow .watch .icon.eye {
           vertical-align: -6px;
           width: 21px;
           height: 21px;
-          background-position: -47px -31px; }
+          background-position: 0px -81px; }
 
 .sign-form-wrap {
   display: none;
@@ -1669,15 +1765,15 @@ header {
     height: 12px;
     width: 12px;
     background-image: url(/images/sprite@3x.png);
-    background-size: 121px 110px;
+    background-size: 141px 118px;
     vertical-align: -2px;
     margin: 0 6px 0 0; }
     #signin-form .icon.checkbox,
     #signup-form .icon.checkbox {
-      background-position: -12px -98px; }
+      background-position: -107px -45px; }
       #signin-form .icon.checkbox.selected,
       #signup-form .icon.checkbox.selected {
-        background-position: -48px -98px; }
+        background-position: -52px -102px; }
   #signin-form label,
   #signup-form label {
     color: #91919f;

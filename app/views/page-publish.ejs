@@ -3,39 +3,9 @@
 </div>
 <div class="container publish">
     <div class="grid">
-        <div class="column left">
-            <form id="upload-form">
-                <h2>Step 1：upload photos</h2>
-                <ul>
-                    <% [
-                        'Front View',
-                        'Back View',
-                        'Left Side View',
-                        'Right Side View',
-                        'Top View'
-                    ].map(function(title){ %>
-                    <li>
-                        <button>
-                            <i class="icon plus"></i>
-                            <label><%= title %></label>
-                        </button>
-                    </li>
-                    <% }) %>
-                </ul>
-                <h2>Step 2: upload a model file</h2>
-                <button>Choose file</button>
-                <div class="progress" id="upload-progress">
-                    <div class="value"></div>
-                </div>
-                <label for="upload-progress">Uploaded 30%</label>
-                <button id="">
-                    <span></span>
-                </button>
-            </form>
-        </div>
         <div class="column right">
             <form id="product-form">
-                <input type="submit" value="Publish">
+                <input type="submit" value="Publish" id="product-form-submit">
                 <div class="grid">
                     <div class="column">
                         <label for="product-title">Title:</label>
@@ -153,6 +123,42 @@
                         <label for="product-description">Description(Optional):</label>
                         <textarea type="text" id="product-description"></textarea>
                     </div>
+                </div>
+            </form>
+        </div>
+        <div class="column left">
+            <form id="upload-form">
+                <h2>Step 1：upload photos</h2>
+                <div id="upload-images-wrap">
+                    <ul id="upload-images">
+                        <li>
+                            <img src="upload/large_ch47d_chinook_helicopter_3d_model_fbx_ma_mb_17f490ce-4034-4b3d-815d-889e05f5413f.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="upload/large_ch47d_chinook_helicopter_3d_model_fbx_ma_mb_17f490ce-4034-4b3d-815d-889e05f5413f.jpg" alt="">
+                        </li>
+                        <li>
+                            <i class="icon plus"></i>
+                        </li>
+                        <li>
+                            <i class="icon plus"></i>
+                        </li>
+                        <li>
+                            <i class="icon plus"></i>
+                        </li>
+                    </ul>
+                </div>
+                <hr>
+                <h2>Step 2: upload a model file</h2>
+                <div id="upload-choose-file-wrap">
+                    <button id="upload-choose-file">Choose file</button>
+                </div>
+                <div id="upload-progress-wrap">
+                    <div class="progress" id="upload-progress">
+                        <div class="value" style="width: 30%;"></div>
+                    </div>
+                    <i class="icon upload-giant"></i>
+                    <label for="upload-progress">30%</label>
                 </div>
             </form>
         </div>
