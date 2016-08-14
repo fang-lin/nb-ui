@@ -37,11 +37,13 @@ gulp.task('sprite', function () {
     return merge(
         gulp.src('app/slices/3x/*.png').pipe(spritesmith({
             imgName: 'images/sprite@3x.png',
-            cssName: 'scss/sprite@3x.scss'
+            cssName: 'scss/sprite@3x.scss',
+            algorithm: 'binary-tree'
         })).pipe(gulp.dest('./app/')),
         gulp.src('app/slices/1x/*.png').pipe(spritesmith({
             imgName: 'images/sprite@1x.png',
-            cssName: 'scss/sprite.scss'
+            cssName: 'scss/sprite.scss',
+            algorithm: 'binary-tree'
         })).pipe(gulp.dest('./app/'))
     );
 });

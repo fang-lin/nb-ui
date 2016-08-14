@@ -1,0 +1,52 @@
+<div class="container products">
+    <h2 id="personal-title">
+        <span>My Products</span>
+    </h2>
+    <div id="upload-more">
+        <a href="">Upload more products</a>
+    </div>
+    <table id="products-table" cellspacing="0">
+        <thead>
+        <tr>
+            <th>Product</th>
+            <th>Status</th>
+            <th>Price</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <% [1, 2, 3, 4, 5, 6].map(function () { %>
+        <tr>
+            <td class="product-table-major">
+                <div class="product-major">
+                    <img class="thumbnail" src="upload/large_ch47d_chinook_helicopter_3d_model_fbx_ma_mb_17f490ce-4034-4b3d-815d-889e05f5413f.jpg" alt="">
+                    <div class="product-info">
+                        <div class="product-title">Transformers</div>
+                        <div class="product-date">4, July, 2016</div>
+                        <div class="product-follow">
+                            <label class="watch">
+                                <i class="icon eye"></i>
+                                945
+                            </label>
+                            <label class="favorite">
+                                <i class="icon favor-selected"></i>
+                                21
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td class="product-table-status">
+                <span>Published</span>
+            </td>
+            <td class="product-table-price">
+                <span>900</span>
+            </td>
+            <td class="product-table-actions">
+                <a href="">Edit delete</a>
+            </td>
+        </tr>
+        <% }); %>
+        </tbody>
+    </table>
+</div>

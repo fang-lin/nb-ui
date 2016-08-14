@@ -1,0 +1,140 @@
+#purchases-filter {
+  margin: 40px -25px;
+  a {
+    display: inline-block;
+    margin: 0 25px;
+    color: $theGray3;
+    padding: 15px 3px;
+    cursor: pointer;
+    &.selected {
+      color: $thePink1;
+      border-bottom: solid 1px $thePink1;
+    }
+  }
+}
+
+#purchases-table {
+  border: solid 1px $theGray5;
+  border-radius: 4px;
+  background: #fff;
+  width: 100%;
+  border-collapse: collapse;
+  th {
+    font-size: 16px;
+    color: $theGray3;
+    font-weight: normal;
+    padding: 14px;
+    border-bottom: solid 1px $theGray5;
+  }
+  td {
+    position: relative;
+    padding: 20px;
+    &:after {
+      content: '';
+      height: 1px;
+      background: $theGray5;
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+    &:first-child {
+      &:after {
+        left: 20px;
+      }
+    }
+    &:last-child {
+      &:after {
+        right: 20px;
+      }
+    }
+  }
+  .purchases-table-major {
+    width: 30%;
+  }
+  .purchases-major {
+    .thumbnail {
+      height: 100px;
+      width: 100px;
+      border-radius: 4px;
+      float: left;
+    }
+    .purchases-info {
+      zoom: 1;
+      overflow: hidden;
+      padding: 0 20px;
+      .purchases-title {
+        font-size: 20px;
+        line-height: 30px;
+        margin: 5px 0 0 0;
+      }
+      .purchases-date,
+      .purchases-user {
+        line-height: 30px;
+        img {
+          height: 28px;
+          width: 28px;
+          border-radius: 14px;
+          vertical-align: -9px;
+        }
+        color: $theGray7;
+        font-size: 14px;
+      }
+    }
+  }
+  .purchases-table-price {
+    font-size: 20px;
+    text-align: center;
+  }
+  .purchases-table-download {
+    font-size: 18px;
+    text-align: center;
+    line-height: 50px;
+    a {
+      display: block;
+      text-decoration: underline;
+      &.download-product {
+        color: $thePink1;
+      }
+      &.download-invoice {
+        color: $theBlue4;
+      }
+    }
+  }
+  .purchases-table-rate {
+    text-align: center;
+    .icon {
+      height: 20px;
+      width: 20px;
+      display: inline-block;
+      &.star {
+        @include sprite-position($icon-star);
+      }
+      &.star-twinkle {
+        @include sprite-position($icon-star-twinkle);
+      }
+    }
+  }
+  .purchases-table-order {
+    text-align: center;
+    a {
+      font-size: 18px;
+      color: $thePink1;
+      text-decoration: none;
+    }
+  }
+  .purchases-table-support {
+    text-align: center;
+    .icon.talk {
+      height: 64px;
+      width: 64px;
+      display: inline-block;
+      @include sprite-position($icon-talk);
+      &:hover {
+        @include sprite-position($icon-talk-selected);
+      }
+    }
+  }
+
+}

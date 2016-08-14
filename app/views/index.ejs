@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/css/main.css">
-    <!--<script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>-->
-    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <script src="//upcdn.b0.upaiyun.com/libs/jquery/jquery-2.0.3.min.js"></script>
     <script>
         $(function () {
             $('.dropdown').hide();
@@ -67,7 +66,7 @@
                 $(this).attr('disabled', true);
             });
 
-            $('#showcase li').click(function () {
+            $('#showcase li > a').click(function () {
 
                 $('#page-content').removeClass('blur');
                 $('#mask, #confirm-wrap, .sign-form-wrap').hide();
@@ -104,10 +103,17 @@
         <li><a href="publish">Publish</a></li>
         <li><a href="personal">Personal</a></li>
         <li><a href="checkout">Checkout</a></li>
-        <li>Sign In</li>
-        <li>Sign Up</li>
-        <li>Confirm</li>
-        <li>Dialogs</li>
+        <li><a href="products">Products</a></li>
+        <li><a href="purchases">Purchases</a></li>
+        <li><a href="sales">Sales</a></li>
+        <li><a href="settings">Settings</a></li>
+        <li><a href="profile">Profile</a></li>
+        <li><a href="following">Following</a></li>
+        <li><a href="model">Model</a></li>
+        <li><a>Sign In</a></li>
+        <li><a>Sign Up</a></li>
+        <li><a>Confirm</a></li>
+        <li><a>Dialogs</a></li>
     </ul>
 </div>
 </body>

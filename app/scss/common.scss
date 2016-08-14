@@ -18,6 +18,7 @@ $theGray10: #d2d2d2;
 $theBlue1: #2A2A35;
 $theBlue2: #93939e;
 $theBlue3: #91919f;
+$theBlue4: #4A90E2;
 
 html, body {
   background: $theGray9;
@@ -60,7 +61,7 @@ html, body {
 
 #showcase {
   position: fixed;
-  top: 140px;
+  top: 60px;
   left: 0;
   h2 {
     font-size: 8px;
@@ -76,17 +77,18 @@ html, body {
       font-size: 10px;
       border-radius: 0 10px 10px 0;
       color: #666;
-      //border: solid 1px #eee;
-      padding: 0 6px;
       margin: 4px 0;
       cursor: pointer;
       box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
-      &:hover {
-        background: #f6f6f6;
-      }
       a {
+        padding: 0 6px;
+        display: block;
         text-decoration: none;
         color: #666;
+        border-radius: 0 10px 10px 0;
+        &:hover {
+          background: #f6f6f6;
+        }
       }
     }
   }

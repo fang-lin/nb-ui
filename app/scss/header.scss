@@ -48,7 +48,7 @@ header {
       &:hover {
         background: $theGray4;
       }
-      i {
+      i.icon.search {
         display: block;
         cursor: pointer;
         height: $icon-search-height;

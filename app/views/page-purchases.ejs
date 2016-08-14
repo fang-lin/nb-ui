@@ -1,0 +1,63 @@
+<div class="container purchases">
+    <h2 id="personal-title">
+        <span>My Purchases</span>
+    </h2>
+    <nav id="purchases-filter">
+        <a class="selected">All orders</a>
+        <a>Has paid the order</a>
+        <a>Did not pay the order</a>
+    </nav>
+    <table id="purchases-table" cellspacing="0">
+        <thead>
+        <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Download</th>
+            <th>Rate</th>
+            <th>Order No.</th>
+            <th>Support</th>
+        </tr>
+        </thead>
+        <tbody>
+        <% [1, 2, 3, 4, 5, 6].map(function () { %>
+        <tr>
+            <td class="purchases-table-major">
+                <div class="purchases-major">
+                    <img class="thumbnail" src="upload/large_ch47d_chinook_helicopter_3d_model_fbx_ma_mb_17f490ce-4034-4b3d-815d-889e05f5413f.jpg" alt="">
+                    <div class="purchases-info">
+                        <div class="purchases-title">Transformers</div>
+                        <div class="purchases-user">
+                            <img src="upload/large_ch47d_chinook_helicopter_3d_model_fbx_ma_mb_17f490ce-4034-4b3d-815d-889e05f5413f.jpg" alt="">
+                            Troy Lindsey
+                        </div>
+                        <div class="purchases-date">4, July, 2016</div>
+                    </div>
+                </div>
+            </td>
+            <td class="purchases-table-price">
+                <span>$49</span>
+            </td>
+            <td class="purchases-table-download">
+                <a class="download-product">Product</a>
+                <a class="download-invoice">Invoice</a>
+            </td>
+            <td class="purchases-table-rate">
+                <i class="icon star-twinkle"></i>
+                <i class="icon star-twinkle"></i>
+                <i class="icon star-twinkle"></i>
+                <i class="icon star"></i>
+                <i class="icon star"></i>
+            </td>
+            <td class="purchases-table-order">
+                <span>679373</span>
+            </td>
+            <td class="purchases-table-support">
+                <a>
+                    <i class="icon talk"></i>
+                </a>
+            </td>
+        </tr>
+        <% }); %>
+        </tbody>
+    </table>
+</div>

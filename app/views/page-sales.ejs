@@ -1,0 +1,42 @@
+<div class="container sales">
+    <h2 id="personal-title">
+        <span>My Sales</span>
+    </h2>
+    <div id="upload-more">
+        <a href="">Upload more products</a>
+    </div>
+    <table id="sales-table" cellspacing="0">
+        <thead>
+        <tr>
+            <th>Product</th>
+            <th>Sales</th>
+            <th>Revenue</th>
+            <th>Sale’s details</th>
+        </tr>
+        </thead>
+        <tbody>
+        <% [1, 2, 3, 4, 5, 6].map(function () { %>
+        <tr>
+            <td class="sales-table-major">
+                <div class="sales-major">
+                    <img class="thumbnail" src="upload/large_ch47d_chinook_helicopter_3d_model_fbx_ma_mb_17f490ce-4034-4b3d-815d-889e05f5413f.jpg" alt="">
+                    <div class="sales-info">
+                        <div class="sales-title">Transformers</div>
+                        <div class="sales-date">4, July, 2016</div>
+                    </div>
+                </div>
+            </td>
+            <td class="sales-table-sales">
+                <span>20</span>
+            </td>
+            <td class="sales-table-revenue">
+                <span>900</span>
+            </td>
+            <td class="sales-table-details">
+                <a href="">Download</a>
+            </td>
+        </tr>
+        <% }); %>
+        </tbody>
+    </table>
+</div>
