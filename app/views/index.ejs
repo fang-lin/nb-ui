@@ -59,8 +59,12 @@
                 switchConfirm();
             });
 
-            $('.checkbox-btn').click(function () {
-                $(this).children('.checkbox').toggleClass('selected');
+            $('.checkbox-btn, .radio-btn').click(function () {
+                $(this).children('.checkbox, .radio').toggleClass('selected');
+            });
+
+            $('#product-form-submit').click(function () {
+                $(this).attr('disabled', true);
             });
 
             $('#showcase li').click(function () {

@@ -33,6 +33,11 @@ html, body {
   overflow: scroll;
 }
 
+.radio-btn,
+.checkbox-btn {
+  cursor: pointer;
+}
+
 .blur {
   @include filter(blur(3px));
   overflow: hidden;

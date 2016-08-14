@@ -15,7 +15,7 @@ gulp.task('serve', function () {
     });
 });
 
-gulp.task('sass', function () {
+gulp.task('sass', ['sprite'], function () {
     return gulp.src('app/scss/main.scss')
         .pipe(sass({
             includePaths: [
@@ -34,14 +34,17 @@ gulp.task('watch-sprite', function () {
 });
 
 gulp.task('sprite', function () {
-    return merge(gulp.src('app/slices/3x/*.png').pipe(spritesmith({
-        imgName: 'images/sprite@3x.png',
-        cssName: 'scss/sprite@3x.scss'
-    })).pipe(gulp.dest('./app/')), gulp.src('app/slices/1x/*.png').pipe(spritesmith({
-        imgName: 'images/sprite@1x.png',
-        cssName: 'scss/sprite.scss'
-    })).pipe(gulp.dest('./app/')));
+    return merge(
+        gulp.src('app/slices/3x/*.png').pipe(spritesmith({
+            imgName: 'images/sprite@3x.png',
+            cssName: 'scss/sprite@3x.scss'
+        })).pipe(gulp.dest('./app/')),
+        gulp.src('app/slices/1x/*.png').pipe(spritesmith({
+            imgName: 'images/sprite@1x.png',
+            cssName: 'scss/sprite.scss'
+        })).pipe(gulp.dest('./app/'))
+    );
 });
 
-gulp.task('default', ['serve', 'sass', 'watch-sass', 'sprite', 'watch-sprite']);
+gulp.task('default', ['serve', 'sass', 'watch-sass', 'watch-sprite']);
 

@@ -156,10 +156,40 @@
       font-size: 12px;
     }
   }
+  #product-watermark {
+    margin: 8px 0 0 0;
+  }
+  #product-license-label > sup {
+    color: $thePink1;
+  }
   & > .grid {
     margin: 0 -8px;
     & > .column {
       padding: 0 8px;
+    }
+  }
+  .icon.checkbox,
+  .icon.radio {
+    background-image: url(/images/sprite@3x.png);
+    background-size: $spritesheet-width $spritesheet-height;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    vertical-align: -4px;
+    margin: 0 5px 0 0;
+  }
+  .icon {
+    &.checkbox {
+      @include sprite-position($icon-checkbox-large);
+      &.selected {
+        @include sprite-position($icon-checkbox-large-selected);
+      }
+    }
+    &.radio {
+      @include sprite-position($icon-radio-large);
+      &.selected {
+        @include sprite-position($icon-radio-large-selected);
+      }
     }
   }
   .line {
@@ -218,6 +248,19 @@
     color: $theGray3;
     font-size: 16px;
     margin: 10px 0;
+    .icon {
+      background-image: url(/images/sprite@3x.png);
+      background-size: $spritesheet-width $spritesheet-height;
+      height: 18px;
+      width: 18px;
+      display: inline-block;
+      &.polygons {
+        @include sprite-position($icon_polygons);
+      }
+      &.vertices {
+        @include sprite-position($icon_vertices);
+      }
+    }
   }
   input[type=text],
   input[type=submit],
@@ -242,7 +285,7 @@
     border: solid 1px $theGray10;
     border-radius: 2px;
   }
-  input[type=submit] {
+  #product-form-submit {
     background: $thePink1;
     line-height: 46px;
     border-radius: 23px;
@@ -252,6 +295,10 @@
     color: #fff;
     margin: 10px 0 20px 0;
     cursor: pointer;
+    &:disabled {
+      background: $theGray8;
+      box-shadow: none;
+    }
   }
   textarea {
     line-height: 18px;

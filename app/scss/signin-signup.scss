@@ -31,12 +31,19 @@
 #signin-form,
 #signup-form {
   margin: 0 auto;
-  .checkbox-btn {
-    line-height: 12px;
-  }
   .checkbox-wrap {
     @include clearfix;
     margin: 20px 0;
+    line-height: 16px;
+    font-size: 12px;
+    color: $theBlue3;
+    a {
+      color: $theBlue3;
+      text-decoration: none;
+    }
+    #forget-password:hover {
+      text-decoration: underline;
+    }
   }
   .error-msg {
     display: block;
@@ -55,15 +62,11 @@
     vertical-align: -2px;
     margin: 0 6px 0 0;
     &.checkbox {
-      @include sprite-position($checkbox);
+      @include sprite-position($icon-checkbox-dark);
       &.selected {
-        @include sprite-position($checkbox-selected);
+        @include sprite-position($icon-checkbox-dark-selected);
       }
     }
-  }
-  label {
-    color: $theBlue3;
-    font-size: 12px;
   }
   input[type=text],
   input[type=submit],
