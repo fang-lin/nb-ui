@@ -6,6 +6,8 @@ const sass = require('gulp-sass');
 const nodemon = require('gulp-nodemon');
 const spritesmith = require('gulp.spritesmith');
 const merge = require('merge-stream');
+const fs = require('fs');
+const path = require('path');
 
 gulp.task('serve', function () {
     return nodemon({
@@ -33,7 +35,60 @@ gulp.task('watch-sprite', function () {
     return gulp.watch('app/watch-slices/**', ['sprite']);
 });
 
-gulp.task('sprite', function () {
+gulp.task('check-slices', function (done) {
+    let slices = {
+        files: {},
+        keys: []
+    };
+
+    const defaultSuffix = '@x1';
+
+    function readSlices(slicesOpt, ext) {
+        slicesOpt.map((opt) => {
+            fs.readdir(opt.path, (err, files) => {
+                if (err) {
+                    done(err);
+                } else {
+                    checkSlices(files.filter(f => f.match(ext)), opt.suffix, slicesOpt.length, ext, defaultSuffix);
+                }
+            });
+        });
+    }
+
+    function checkSlices(files, suffix, max, ext, originalKey) {
+        const key = suffix ? suffix : originalKey;
+        slices.files[key] = files.map(f => path.basename(f, ext));
+        slices.keys.push(key);
+
+        if (slices.keys.length === max) {
+            let mismatches = [];
+            const slices1x = slices.files[originalKey];
+            slices.keys.forEach((suffix) => {
+                if (suffix !== originalKey) {
+                    mismatches = mismatches.concat(slices.files[suffix].filter((f) => {
+                        return slices1x.indexOf(f.replace(suffix, '')) < 0;
+                    }));
+                }
+            });
+            if (mismatches.length > 0) {
+                done(`Not found original image of "${mismatches.join(', ')}"`);
+            } else {
+                done();
+            }
+        }
+    }
+
+    readSlices([{
+        path: './app/slices/1x',
+        suffix: defaultSuffix
+    }, {
+        path: './app/slices/3x',
+        suffix: '@3x'
+    }], '.png');
+});
+
+gulp.task('sprite', ['check-slices'], function () {
+
     return merge(
         gulp.src('app/slices/3x/*.png').pipe(spritesmith({
             imgName: 'images/sprite@3x.png',
