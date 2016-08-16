@@ -87,7 +87,7 @@ html, body {
         color: #666;
         border-radius: 0 10px 10px 0;
         &:hover {
-          background: #f6f6f6;
+          background: #f0f0f0;
         }
       }
     }
@@ -107,6 +107,13 @@ html, body {
 }
 
 input,
+button,
 textarea {
   outline: medium none;
+}
+
+hr {
+  height: 1px;
+  border: medium none;
+  background: $theGray8;
 }

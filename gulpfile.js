@@ -88,7 +88,6 @@ gulp.task('check-slices', function (done) {
 });
 
 gulp.task('sprite', ['check-slices'], function () {
-
     return merge(
         gulp.src('app/slices/3x/*.png').pipe(spritesmith({
             imgName: 'images/sprite@3x.png',
