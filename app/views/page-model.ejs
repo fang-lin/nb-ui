@@ -157,12 +157,9 @@
                         <span>Harry Meyer</span>
                     </h2>
                     <div class="model-thumbnails">
+                        <% [1, 2, 3, 4, 5, 6].map(function () { %>
                         <a href="" class="model-thumbnail"><img src="/upload/large_fantasy_village_and_tower_defense_3d_model_fbx_e3bf7909-f1a4-4f7e-8468-7dbe307a68a7.png" alt=""></a>
-                        <a href="" class="model-thumbnail"><img src="/upload/large_fantasy_village_and_tower_defense_3d_model_fbx_e3bf7909-f1a4-4f7e-8468-7dbe307a68a7.png" alt=""></a>
-                        <a href="" class="model-thumbnail"><img src="/upload/large_fantasy_village_and_tower_defense_3d_model_fbx_e3bf7909-f1a4-4f7e-8468-7dbe307a68a7.png" alt=""></a>
-                        <a href="" class="model-thumbnail"><img src="/upload/large_fantasy_village_and_tower_defense_3d_model_fbx_e3bf7909-f1a4-4f7e-8468-7dbe307a68a7.png" alt=""></a>
-                        <a href="" class="model-thumbnail"><img src="/upload/large_fantasy_village_and_tower_defense_3d_model_fbx_e3bf7909-f1a4-4f7e-8468-7dbe307a68a7.png" alt=""></a>
-                        <a href="" class="model-thumbnail"><img src="/upload/large_fantasy_village_and_tower_defense_3d_model_fbx_e3bf7909-f1a4-4f7e-8468-7dbe307a68a7.png" alt=""></a>
+                        <% }); %>
                     </div>
                 </div>
             </div>
@@ -183,6 +180,35 @@
                         <% }); %>
                     </ul>
                 </div>
+            </div>
+            <div id="model-comments-form-wrap">
+                <h2><span>20</span> Responses</h2>
+                <form action="" id="model-comments-form">
+                    <img class="portrait" src="upload/large_ch47d_chinook_helicopter_3d_model_fbx_ma_mb_17f490ce-4034-4b3d-815d-889e05f5413f.jpg" alt="">
+                    <input type="submit" value="Comments">
+                    <div class="cord">
+                        <input type="text" placeholder="Your assessment">
+                    </div>
+                </form>
+            </div>
+            <div id="model-comments">
+                <ul>
+                    <% [1, 2, 3, 4, 5].map(function () { %>
+                    <li class="model-comment">
+                        <img class="portrait" src="upload/large_ch47d_chinook_helicopter_3d_model_fbx_ma_mb_17f490ce-4034-4b3d-815d-889e05f5413f.jpg" alt="">
+                        <div class="cord">
+                            <h3>
+                                <span class="username">Julian Rodriquez</span>
+                                <span class="datetime">10:57AM</span>
+                            </h3>
+                            <div class="text">
+                                Let’s face it, cooking is not a top priority in the lives of every man, woman, or child on the planet. In fact, far too people have made learning to cook a priority in their lives. This means that we often
+                                exist on convenience foods and boxed mixes rather than taking the effort to prepare healthy meals for our families.
+                            </div>
+                        </div>
+                    </li>
+                    <% }); %>
+                </ul>
             </div>
         </div>
     </div>
