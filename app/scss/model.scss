@@ -379,8 +379,74 @@
   }
 
   #model-comments {
-    .model-comment{
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: -10px 0;
+      .model-comment {
+        margin: 34px 0;
+        .portrait {
+          height: 60px;
+          width: 60px;
+          border-radius: 30px;
+          float: left;
+        }
+        .cord {
+          padding: 0 0 0 14px;
+          overflow: hidden;
+          zoom: 1;
+          h3 {
+            color: $theGray3;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 20px;
+            margin: 5px 0;
+            .datetime {
+              float: right;
+              font-size: 14px;
+              color: $theGray8;
+            }
+          }
+          .text {
+            color: $theGray7;
+            line-height: 22px;
+            margin: 10px 0 0 0;
+          }
+        }
+      }
+    }
+  }
 
+  .pagination {
+    padding: 20px 0;
+    line-height: 0;
+    font-size: 0;
+    text-align: center;
+    a {
+      display: inline-block;
+      color: $theGray6;
+      font-size: 12px;
+      padding: 0 5px;
+      margin: 0 10px;
+      line-height: 22px;
+      text-decoration: none;
+      &:hover {
+        color: $theGray1;
+      }
+      &.selected {
+        background: #fff;
+        color: $theGray1;
+        border-radius: 4px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, .2);
+      }
+      &.perv,
+      &.next {
+        background: #fff;
+        border-radius: 4px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, .2);
+      }
+      &.num {
+      }
     }
   }
 }

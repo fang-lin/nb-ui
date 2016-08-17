@@ -1940,6 +1940,59 @@ header {
       margin: 0;
       border: medium none;
       cursor: pointer; }
+  .container.model #model-comments ul {
+    list-style: none;
+    padding: 0;
+    margin: -10px 0; }
+    .container.model #model-comments ul .model-comment {
+      margin: 34px 0; }
+      .container.model #model-comments ul .model-comment .portrait {
+        height: 60px;
+        width: 60px;
+        border-radius: 30px;
+        float: left; }
+      .container.model #model-comments ul .model-comment .cord {
+        padding: 0 0 0 14px;
+        overflow: hidden;
+        zoom: 1; }
+        .container.model #model-comments ul .model-comment .cord h3 {
+          color: #515254;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 20px;
+          margin: 5px 0; }
+          .container.model #model-comments ul .model-comment .cord h3 .datetime {
+            float: right;
+            font-size: 14px;
+            color: #d8d8d8; }
+        .container.model #model-comments ul .model-comment .cord .text {
+          color: #95979a;
+          line-height: 22px;
+          margin: 10px 0 0 0; }
+  .container.model .pagination {
+    padding: 20px 0;
+    line-height: 0;
+    font-size: 0;
+    text-align: center; }
+    .container.model .pagination a {
+      display: inline-block;
+      color: #c3c9cf;
+      font-size: 12px;
+      padding: 0 5px;
+      margin: 0 10px;
+      line-height: 22px;
+      text-decoration: none; }
+      .container.model .pagination a:hover {
+        color: #2a2a36; }
+      .container.model .pagination a.selected {
+        background: #fff;
+        color: #2a2a36;
+        border-radius: 4px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2); }
+      .container.model .pagination a.perv, .container.model .pagination a.next {
+        background: #fff;
+        border-radius: 4px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2); }
 
 .container.publish {
   margin: 20px auto; }
