@@ -1,0 +1,65 @@
+<div id="channel-bar-wrap">
+    <%- include('partial-channel-bar'); %>
+</div>
+
+<div class="container following">
+    <div class="grid">
+        <div class="column right">
+            <div class="cell">
+                <div class="card" id="following-author-profile">
+                    <div id="following-author-detail">
+                        <img class="portrait" src="upload/large_ch47d_chinook_helicopter_3d_model_fbx_ma_mb_17f490ce-4034-4b3d-815d-889e05f5413f.jpg" alt="">
+                        <div class="cord">
+                            <span class="author-name">Harry Meyer</span>
+                            <button class="follow-btn">Follow</button>
+                        </div>
+                        <i class="icon talk"></i>
+                    </div>
+                    <div id="following-author-regard">
+                        <a>
+                            <span>42</span>
+                            <label>Works</label>
+                        </a>
+                        <a>
+                            <span>126</span>
+                            <label>Follower</label>
+                        </a>
+                        <a>
+                            <span>231</span>
+                            <label>Following</label>
+                        </a>
+                    </div>
+                </div>
+                <div class="card" id="following-who">
+                    <h2>Who to follow</h2>
+                    <ul>
+                        <% [1, 2, 3, 4, 5].forEach(function () { %>
+                        <li>
+                            <div class="following-who-user">
+                                <img class="portrait" src="upload/large_ch47d_chinook_helicopter_3d_model_fbx_ma_mb_17f490ce-4034-4b3d-815d-889e05f5413f.jpg" alt="">
+                                <button>Follow</button>
+                                <div class="cord">
+                                    <h3>Joseph Griffin</h3>
+                                    <span>150 works</span>
+                                </div>
+                            </div>
+                            <div class="following-who-images">
+                                <% [1, 2, 3, 4, 5].forEach(function () { %>
+                                <a href="">
+                                    <img src="upload/large_ch47d_chinook_helicopter_3d_model_fbx_ma_mb_17f490ce-4034-4b3d-815d-889e05f5413f.jpg" alt="">
+                                </a>
+                                <% }); %>
+                            </div>
+                        </li>
+                        <% }); %>
+                    </ul>
+                    <div id="following-who-footer">In a batch</div>
+                </div>
+            </div>
+        </div>
+        <div class="column left">
+        </div>
+    </div>
+</div>
+
+<%- include('partial-to-top'); %>

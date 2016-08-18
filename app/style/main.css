@@ -1994,6 +1994,165 @@ header {
         border-radius: 4px;
         box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2); }
 
+.container.following {
+  width: 1040px;
+  margin: 20px auto; }
+  .container.following > .grid {
+    margin: 0 -5px; }
+    .container.following > .grid > .column {
+      width: 50%;
+      padding: 0 5px; }
+      .container.following > .grid > .column.left {
+        zoom: 1;
+        overflow: hidden;
+        float: none;
+        width: auto; }
+      .container.following > .grid > .column.right {
+        width: 300px;
+        float: right; }
+        .container.following > .grid > .column.right .cell {
+          margin: -13px 0; }
+  .container.following .card {
+    background: #fff;
+    border: solid 1px #efeff1;
+    border-radius: 4px;
+    margin: 12px 0; }
+  .container.following #following-author-profile {
+    position: relative;
+    padding: 0; }
+    .container.following #following-author-profile #following-author-detail {
+      padding: 14px; }
+      .container.following #following-author-profile #following-author-detail::after {
+        clear: both;
+        content: "";
+        display: table; }
+      .container.following #following-author-profile #following-author-detail .portrait {
+        height: 70px;
+        width: 70px;
+        border-radius: 35px;
+        float: left; }
+      .container.following #following-author-profile #following-author-detail .cord {
+        overflow: hidden;
+        zoom: 1;
+        padding: 0 0 0 16px; }
+        .container.following #following-author-profile #following-author-detail .cord .author-name {
+          font-size: 20px;
+          color: #515254;
+          display: block;
+          margin: 5px 0 10px 0; }
+        .container.following #following-author-profile #following-author-detail .cord .follow-btn {
+          display: block;
+          line-height: 26px;
+          padding: 0 18px;
+          border: medium none;
+          border-radius: 13px;
+          background: #ea6264;
+          color: #fff;
+          font-size: 14px; }
+      .container.following #following-author-profile #following-author-detail .icon.talk {
+        position: absolute;
+        top: 10px;
+        right: 12px;
+        height: 46px;
+        width: 46px;
+        display: inline-block;
+        cursor: pointer;
+        background-position: -196px -89px; }
+        .container.following #following-author-profile #following-author-detail .icon.talk:hover {
+          background-position: 0px -171px; }
+    .container.following #following-author-profile #following-author-regard {
+      border-top: solid 1px #efeff1;
+      color: #515254; }
+      .container.following #following-author-profile #following-author-regard::after {
+        clear: both;
+        content: "";
+        display: table; }
+      .container.following #following-author-profile #following-author-regard a {
+        float: left;
+        width: 33.33%;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 20px 5px; }
+        .container.following #following-author-profile #following-author-regard a span {
+          display: block;
+          font-size: 26px;
+          line-height: 32px; }
+        .container.following #following-author-profile #following-author-regard a label {
+          display: block;
+          font-size: 14px;
+          line-height: 28px; }
+        .container.following #following-author-profile #following-author-regard a:nth-child(2) {
+          border-width: 0 1px;
+          border-style: solid;
+          border-color: #efeff1; }
+  .container.following #following-who {
+    padding: 14px; }
+    .container.following #following-who h2 {
+      font-size: 20px;
+      font-weight: normal;
+      color: #515254;
+      margin: 0; }
+    .container.following #following-who ul {
+      list-style: none;
+      padding: 0;
+      margin: 0; }
+      .container.following #following-who ul li {
+        padding: 0;
+        margin: 10px 0; }
+        .container.following #following-who ul li .following-who-user {
+          margin: 10px 0; }
+          .container.following #following-who ul li .following-who-user .portrait {
+            height: 28px;
+            width: 28px;
+            border-radius: 14px;
+            float: left;
+            margin: 5px 0; }
+          .container.following #following-who ul li .following-who-user .cord {
+            overflow: hidden;
+            zoom: 1;
+            padding: 0 0 0 10px; }
+            .container.following #following-who ul li .following-who-user .cord h3 {
+              display: block;
+              color: #515254;
+              font-weight: normal;
+              margin: 0;
+              font-size: 14px;
+              line-height: 20px; }
+            .container.following #following-who ul li .following-who-user .cord span {
+              display: block;
+              color: #adadad;
+              font-size: 12px;
+              line-height: 18px; }
+          .container.following #following-who ul li .following-who-user button {
+            float: right;
+            line-height: 26px;
+            font-size: 12px;
+            border-radius: 13px;
+            color: #ea6264;
+            border: solid 1px #ea6264;
+            background: transparent;
+            margin: 0;
+            padding: 0 10px; }
+        .container.following #following-who ul li .following-who-images {
+          margin: 0 -2px; }
+          .container.following #following-who ul li .following-who-images::after {
+            clear: both;
+            content: "";
+            display: table; }
+          .container.following #following-who ul li .following-who-images a {
+            float: left;
+            width: 20%;
+            padding: 0 2px;
+            box-sizing: border-box; }
+            .container.following #following-who ul li .following-who-images a img {
+              height: 100%;
+              width: 100%;
+              border-radius: 2px; }
+    .container.following #following-who #following-who-footer {
+      text-align: right;
+      font-size: 14px;
+      color: #515254; }
+
 .container.publish {
   margin: 20px auto; }
   .container.publish > .grid {

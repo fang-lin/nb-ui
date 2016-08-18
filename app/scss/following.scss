@@ -1,0 +1,528 @@
+.container.following {
+  width: 1040px;
+  margin: 20px auto;
+  & > .grid {
+    margin: 0 -5px;
+    & > .column {
+      width: 50%;
+      padding: 0 5px;
+      &.left {
+        zoom: 1;
+        overflow: hidden;
+        float: none;
+        width: auto;
+      }
+      &.right {
+        width: 300px;
+        float: right;
+        .cell {
+          margin: -13px 0;
+        }
+      }
+    }
+  }
+
+  .card {
+    background: #fff;
+    border: solid 1px $theGray5;
+    border-radius: 4px;
+    margin: 12px 0;
+  }
+
+  #following-author-profile {
+    position: relative;
+    padding: 0;
+    #following-author-detail {
+      padding: 14px;
+      @include clearfix;
+      .portrait {
+        height: 70px;
+        width: 70px;
+        border-radius: 35px;
+        float: left;
+      }
+      .cord {
+        overflow: hidden;
+        zoom: 1;
+        padding: 0 0 0 16px;
+        .author-name {
+          font-size: 20px;
+          color: $theGray3;
+          display: block;
+          margin: 5px 0 10px 0;
+        }
+        .follow-btn {
+          display: block;
+          line-height: 26px;
+          padding: 0 18px;
+          border: medium none;
+          border-radius: 13px;
+          background: $thePink1;
+          color: #fff;
+          font-size: 14px;
+
+        }
+      }
+      .icon.talk {
+        position: absolute;
+        top: 10px;
+        right: 12px;
+        height: 46px;
+        width: 46px;
+        display: inline-block;
+        cursor: pointer;
+        @include sprite-position($icon-talk-mini);
+        &:hover {
+          @include sprite-position($icon-talk-mini-selected);
+        }
+      }
+    }
+    #following-author-regard {
+      @include clearfix;
+      border-top: solid 1px $theGray5;
+      color: $theGray3;
+      a {
+        float: left;
+        width: 33.33%;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 20px 5px;
+        span {
+          display: block;
+          font-size: 26px;
+          line-height: 32px;
+        }
+        label {
+          display: block;
+          font-size: 14px;
+          line-height: 28px;
+        }
+        &:nth-child(2) {
+          border-width: 0 1px;
+          border-style: solid;
+          border-color: $theGray5;
+        }
+      }
+    }
+  }
+
+  #following-who {
+    padding: 14px;
+    h2 {
+      font-size: 20px;
+      font-weight: normal;
+      color: $theGray3;
+      margin: 0;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li {
+        padding: 0;
+        margin: 10px 0;
+        .following-who-user {
+          margin: 10px 0;
+          .portrait {
+            height: 28px;
+            width: 28px;
+            border-radius: 14px;
+            float: left;
+            margin: 5px 0;
+          }
+          .cord {
+            overflow: hidden;
+            zoom: 1;
+            padding: 0 0 0 10px;
+            h3 {
+              display: block;
+              color: $theGray3;
+              font-weight: normal;
+              margin: 0;
+              font-size: 14px;
+              line-height: 20px;
+            }
+            span {
+              display: block;
+              color: $theGray4;
+              font-size: 12px;
+              line-height: 18px;
+            }
+          }
+          button {
+            float: right;
+            line-height: 26px;
+            font-size: 12px;
+            border-radius: 13px;
+            color: $thePink1;
+            border: solid 1px $thePink1;
+            background: transparent;
+            margin: 0;
+            padding: 0 10px;
+          }
+        }
+        .following-who-images {
+          @include clearfix;
+          margin: 0 -2px;
+          a {
+            float: left;
+            width: 20%;
+            padding: 0 2px;
+            box-sizing: border-box;
+            img {
+              height: 100%;
+              width: 100%;
+              border-radius: 2px;
+            }
+          }
+        }
+      }
+    }
+    #following-who-footer {
+      text-align: right;
+      font-size: 14px;
+      color: $theGray3;
+    }
+  }
+  //#model-detail {
+  //  padding: 14px;
+  //  hr {
+  //    margin: 20px 0;
+  //  }
+  //  #model-detail-major {
+  //    h2 {
+  //      font-size: 20px;
+  //      line-height: 24px;
+  //      color: $theGray3;
+  //      font-weight: normal;
+  //      margin: 0;
+  //      .watch {
+  //        float: right;
+  //        font-size: 14px;
+  //        color: $theGray7;
+  //        .icon.eye {
+  //          vertical-align: -6px;
+  //          width: 21px;
+  //          height: 21px;
+  //          @include sprite-position($icon-eye);
+  //        }
+  //      }
+  //    }
+  //    .btn-wrap {
+  //      @include clearfix;
+  //      margin: 20px 0;
+  //      .star-btn,
+  //      .share-btn {
+  //        line-height: 40px;
+  //        font-size: 16px;
+  //        border-radius: 20px;
+  //        border: solid 1px $thePink1;
+  //        color: $thePink1;
+  //        padding: 0 5px;
+  //        background: none;
+  //        cursor: pointer;
+  //        width: 45%;
+  //        text-align: center;
+  //        .icon {
+  //          height: 18px;
+  //          width: 18px;
+  //          display: inline-block;
+  //          cursor: pointer;
+  //          &.share {
+  //            @include sprite-position($icon-share);
+  //          }
+  //          &.favor {
+  //            @include sprite-position($icon-favor-large);
+  //          }
+  //        }
+  //      }
+  //      .star-btn {
+  //        float: left;
+  //      }
+  //      .share-btn {
+  //        float: right;
+  //      }
+  //    }
+  //    h3 {
+  //      font-weight: normal;
+  //      color: $theGray3;
+  //      font-size: 16px;
+  //      margin: 20px 0;
+  //    }
+  //    #model-detail-desc {
+  //      color: $theGray7;
+  //      font-size: 14px;
+  //      line-height: 18px;
+  //    }
+  //    #model-detail-price {
+  //      span {
+  //        font-size: 26px;
+  //      }
+  //    }
+  //    .icon {
+  //      height: 20px;
+  //      width: 20px;
+  //      display: inline-block;
+  //      vertical-align: -4px;
+  //      &.star {
+  //        @include sprite-position($icon-star);
+  //      }
+  //      &.star-twinkle {
+  //        @include sprite-position($icon-star-twinkle);
+  //      }
+  //    }
+  //  }
+  //  .attr-list {
+  //    h3 {
+  //      color: $thePink1;
+  //      font-size: 16px;
+  //      line-height: 32px;
+  //      margin: 10px 0;
+  //      font-weight: normal;
+  //    }
+  //    ul {
+  //      list-style: none;
+  //      padding: 0;
+  //      margin: 0;
+  //      li {
+  //        line-height: 30px;
+  //        font-size: 14px;
+  //        color: $theGray7;
+  //        span {
+  //          float: right;
+  //          color: $theGray3;
+  //          &.red {
+  //            color: $thePink1;
+  //          }
+  //          &.blue {
+  //            color: $theBlue4;
+  //          }
+  //        }
+  //      }
+  //    }
+  //  }
+  //  #add-cart-submit {
+  //    display: block;
+  //    width: 100%;
+  //    border: medium none;
+  //    background: $thePink1;
+  //    line-height: 46px;
+  //    border-radius: 23px;
+  //    box-shadow: 0 5px 30px rgba(234, 98, 100, 1);
+  //    font-size: 16px;
+  //    color: #fff;
+  //    margin: 14px 0;
+  //    padding: 0;
+  //    cursor: pointer;
+  //    .icon.cart {
+  //      height: 17px;
+  //      width: 24px;
+  //      display: inline-block;
+  //      vertical-align: -2px;
+  //      margin: 0 6px 0 0;
+  //      @include sprite-position($icon-cart);
+  //    }
+  //    &:disabled {
+  //      background: $theGray8;
+  //      box-shadow: none;
+  //    }
+  //  }
+  //}
+  //
+  //#model-more {
+  //  padding: 20px;
+  //  h2 {
+  //    line-height: 18px;
+  //    color: $theGray3;
+  //    font-weight: normal;
+  //    font-size: 12px;
+  //    margin: 0 0 15px 0;
+  //    span {
+  //      font-size: 16px;
+  //    }
+  //  }
+  //  .model-thumbnails {
+  //    @include clearfix;
+  //    margin: -10px;
+  //    .model-thumbnail {
+  //      width: 50%;
+  //      float: left;
+  //      padding: 10px;
+  //      box-sizing: border-box;
+  //      img {
+  //        border-radius: 4px;
+  //        display: block;
+  //        height: 114px;
+  //        width: 100%;
+  //      }
+  //    }
+  //  }
+  //}
+  //
+  //#model-images {
+  //
+  //  #model-image-current {
+  //    img {
+  //      height: 550px;
+  //      width: 100%;
+  //      display: block;
+  //      border-radius: 4px;
+  //    }
+  //  }
+  //
+  //  #model-image-thumbnails {
+  //    margin: 16px 0;
+  //    ul {
+  //      list-style: none;
+  //      margin: -8px;
+  //      padding: 0;
+  //      @include clearfix;
+  //      li {
+  //        float: left;
+  //        width: 20%;
+  //        padding: 6px;
+  //        box-sizing: border-box;
+  //        a {
+  //          display: block;
+  //          border-radius: 4px;
+  //          width: 100%;
+  //          height: 138px;
+  //          padding: 2px;
+  //          box-sizing: border-box;
+  //          &.selected {
+  //            background: $thePink1;
+  //          }
+  //          img {
+  //            width: 100%;
+  //            height: 100%;
+  //            display: block;
+  //            border-radius: 3px;
+  //          }
+  //        }
+  //      }
+  //    }
+  //  }
+  //}
+  //
+  //#model-comments-form-wrap {
+  //  border-bottom: solid 1px $theGray8;
+  //  padding: 0 0 26px 0;
+  //  h2 {
+  //    font-size: 16px;
+  //    color: $theGray3;
+  //    margin: 20px 0;
+  //    font-weight: normal;
+  //  }
+  //
+  //  #model-comments-form {
+  //    .portrait {
+  //      height: 44px;
+  //      width: 44px;
+  //      border-radius: 22px;
+  //      float: left;
+  //    }
+  //    .cord {
+  //      zoom: 1;
+  //      overflow: hidden;
+  //      padding: 0 16px;
+  //      input {
+  //        line-height: 44px;
+  //        border-radius: 22px;
+  //        border: solid 1px $theGray5;
+  //        width: 100%;
+  //        padding: 0 16px;
+  //        margin: 0;
+  //        color: $theGray3;
+  //        box-sizing: border-box;
+  //        @include placeholder {
+  //          color: $theGray6;
+  //        }
+  //      }
+  //    }
+  //    input[type=submit] {
+  //      display: block;
+  //      float: right;
+  //      background: $theBlue4;
+  //      color: #fff;
+  //      font-size: 14px;
+  //      line-height: 44px;
+  //      border-radius: 22px;
+  //      text-align: center;
+  //      padding: 0 16px;
+  //      margin: 0;
+  //      border: medium none;
+  //      cursor: pointer;
+  //    }
+  //  }
+  //}
+  //
+  //#model-comments {
+  //  ul {
+  //    list-style: none;
+  //    padding: 0;
+  //    margin: -10px 0;
+  //    .model-comment {
+  //      margin: 34px 0;
+  //      .portrait {
+  //        height: 60px;
+  //        width: 60px;
+  //        border-radius: 30px;
+  //        float: left;
+  //      }
+  //      .cord {
+  //        padding: 0 0 0 14px;
+  //        overflow: hidden;
+  //        zoom: 1;
+  //        h3 {
+  //          color: $theGray3;
+  //          font-weight: normal;
+  //          font-size: 16px;
+  //          line-height: 20px;
+  //          margin: 5px 0;
+  //          .datetime {
+  //            float: right;
+  //            font-size: 14px;
+  //            color: $theGray8;
+  //          }
+  //        }
+  //        .text {
+  //          color: $theGray7;
+  //          line-height: 22px;
+  //          margin: 10px 0 0 0;
+  //        }
+  //      }
+  //    }
+  //  }
+  //}
+  //
+  //.pagination {
+  //  padding: 20px 0;
+  //  line-height: 0;
+  //  font-size: 0;
+  //  text-align: center;
+  //  a {
+  //    display: inline-block;
+  //    color: $theGray6;
+  //    font-size: 12px;
+  //    padding: 0 5px;
+  //    margin: 0 10px;
+  //    line-height: 22px;
+  //    text-decoration: none;
+  //    &:hover {
+  //      color: $theGray1;
+  //    }
+  //    &.selected {
+  //      background: #fff;
+  //      color: $theGray1;
+  //      border-radius: 4px;
+  //      box-shadow: 0 1px 4px rgba(0, 0, 0, .2);
+  //    }
+  //    &.perv,
+  //    &.next {
+  //      background: #fff;
+  //      border-radius: 4px;
+  //      box-shadow: 0 1px 4px rgba(0, 0, 0, .2);
+  //    }
+  //  }
+  //}
+}
