@@ -103,4 +103,5 @@ gulp.task('sprite', ['check-slices'], function () {
 });
 
 gulp.task('default', ['serve', 'sass', 'watch-sass', 'watch-sprite']);
+gulp.task('build', ['sass', 'watch-sprite']);
 

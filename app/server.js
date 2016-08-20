@@ -1,6 +1,7 @@
 const express = require('express');
-const errorHandler = require('errorhandler');
 const winston = require('winston');
+const errorHandler = require('errorhandler');
+const program = require('commander');
 
 var logger = new (winston.Logger)({
     transports: [
@@ -41,8 +42,13 @@ app.use('/', function (req, res, next) {
     });
 });
 
-const post = 8080;
-const host = '0.0.0.0';
+program
+    .option('-p, --port <lang>', 'set express port', process.env.VCAP_APP_PORT || 8080)
+    .option('-h, --host <lang>', 'set express host', '0.0.0.0')
+    .parse(process.argv);
+
+const post = program.port;
+const host = program.host;
 
 app.listen(post, host, () => {
     console.log(`site server listening on http://${host}:${post}`);

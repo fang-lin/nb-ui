@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp build && node app/server.js -p 80"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bourbon": "^4.2.7",
+    "commander": "^2.9.0",
     "ejs": "^2.5.1",
     "errorhandler": "^1.4.3",
     "express": "^4.14.0",
