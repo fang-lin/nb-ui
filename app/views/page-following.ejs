@@ -33,11 +33,15 @@
                 <div class="card" id="following-who">
                     <h2>Who to follow</h2>
                     <ul>
-                        <% [1, 2, 3, 4, 5].forEach(function () { %>
+                        <% [1, 2, 3, 4, 5].forEach(function (i) { %>
                         <li>
                             <div class="following-who-user">
                                 <img class="portrait" src="upload/large_ch47d_chinook_helicopter_3d_model_fbx_ma_mb_17f490ce-4034-4b3d-815d-889e05f5413f.jpg" alt="">
+                                <% if(i % 2){ %>
                                 <button>Follow</button>
+                                <% }else{ %>
+                                <button class="following">Following</button>
+                                <% } %>
                                 <div class="cord">
                                     <h3>Joseph Griffin</h3>
                                     <span>150 works</span>
@@ -58,6 +62,36 @@
             </div>
         </div>
         <div class="column left">
+            <div class="cell">
+                <% [1, 2, 3, 4, 5].map(function () { %>
+                <div class="card following-product">
+                    <img class="thumbnail" src="upload/large_ch47d_chinook_helicopter_3d_model_fbx_ma_mb_17f490ce-4034-4b3d-815d-889e05f5413f.jpg" alt="">
+                    <h3>
+                        Felipeside
+                        <span class="datetime">3 hours</span>
+                    </h3>
+                    <div class="following-regard">
+                        <div class="following-product-users">
+                            <img class="portrait" src="upload/large_ch47d_chinook_helicopter_3d_model_fbx_ma_mb_17f490ce-4034-4b3d-815d-889e05f5413f.jpg" alt="">
+                            <span class="author">Nora Graves</span>
+                        </div>
+                        <div class="following-product-follow">
+                            <label class="favorite">
+                                <i class="icon favor"></i>
+                                21
+                            </label>
+                            <label class="watch">
+                                <i class="icon eye"></i>
+                                945
+                            </label>
+                            <label class="share">
+                                <i class="icon share"></i>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <% }); %>
+            </div>
         </div>
     </div>
 </div>
