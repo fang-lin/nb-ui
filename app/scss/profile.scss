@@ -1,0 +1,100 @@
+#profile-title {
+  color: $theGray3;
+  font-size: 30px;
+  line-height: 40px;
+  border-bottom: solid 1px $theGray3;
+  height: 20px;
+  margin: 60px auto;
+  width: 70%;
+  text-align: center;
+  font-weight: normal;
+  span {
+    display: inline-block;
+    padding: 0 35px;
+    background: $theGray9;
+  }
+}
+
+#profile-form-wrap {
+  #profile-form {
+    width: 720px;
+    margin: 0 auto;
+    .line {
+      position: relative;
+      line-height: 0;
+      margin: 70px 0;
+      font-size: 0;
+      text-align: center;
+      @include clearfix;
+      & > label {
+        float: left;
+        font-size: 20px;
+        line-height: 46px;
+        color: $theGray3;
+        width: 120px;
+        text-align: left;
+      }
+      &.picture {
+        line-height: 120px;
+        height: 120px;
+        .portrait {
+          height: 120px;
+          width: 120px;
+          float: left;
+          background: #d8d8d8;
+          border-radius: 60px;
+          margin: 0 60px 0 0;
+          img {
+            height: 100%;
+            width: 100%;
+            border-radius: 60px;
+          }
+        }
+        & > label {
+          line-height: 120px;
+        }
+      }
+      input[type=text] {
+        border: solid 1px $theGray10;
+        border-radius: 2px;
+        padding: 0 16px;
+        line-height: 46px;
+        font-size: 16px;
+        width: 280px;
+        box-sizing: border-box;
+        float: left;
+        color: $theGray3;
+      }
+      #homepage-prefix {
+        float: left;
+        line-height: 46px;
+        padding: 0 16px;
+        font-size: 20px;
+        box-sizing: border-box;
+        color: $theGray4;
+        width: 280px;
+      }
+
+      #change-btn,
+      #cancel-btn,
+      #save-btn {
+        border: solid 1px $thePink1;
+        color: $thePink1;
+        border-radius: 23px;
+        background: transparent;
+        padding: 0 50px;
+        font-size: 16px;
+        line-height: 46px;
+        cursor: pointer;
+      }
+      #cancel-btn,
+      #save-btn {
+        margin: 0 30px;
+      }
+      #change-btn {
+        margin: 36px 0;
+        float: left;
+      }
+    }
+  }
+}
