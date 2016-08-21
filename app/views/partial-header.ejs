@@ -14,11 +14,6 @@
                 <i class="icon element"></i>
                 Element
             </a>
-            <div class="dropdown">
-                <a href="">AAA</a>
-                <a href="">BBB</a>
-                <a href="">CCC</a>
-            </div>
         </menuitem>
         <menuitem>
             <a class="button">
@@ -50,6 +45,31 @@
                 <i class="icon notice"></i>
                 Notification
             </a>
+            <div class="dropdown">
+                <div id="notice-dropdown">
+                    <nav>
+                        <a href="">News</a>
+                        <a href="">You</a>
+                        <a href="" class="selected">Messages</a>
+                    </nav>
+                    <ul class="notice-dropdown-list">
+                        <% [1, 2, 3, 4].map(function () { %>
+                        <li>
+                            <img class="portrait" src="upload/large_ch47d_chinook_helicopter_3d_model_fbx_ma_mb_17f490ce-4034-4b3d-815d-889e05f5413f.jpg" alt="" class="icon">
+                            <div class="cork">
+                                <h3>
+                                    Fred Leonard
+                                    <span class="datetime">00:46AM</span>
+                                </h3>
+                                <p>
+                                    See The Unmatched Beauty Of The Great Lakes
+                                </p>
+                            </div>
+                        </li>
+                        <% }); %>
+                    </ul>
+                </div>
+            </div>
         </menuitem>
         <menuitem>
             <a class="button">

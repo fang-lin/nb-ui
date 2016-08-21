@@ -238,6 +238,69 @@ header {
             }
           }
         }
+        #notice-dropdown {
+          width: 320px;
+          padding: 15px;
+          .notice-dropdown-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            li {
+              color: $theGray3;
+              padding: 15px 0;
+              border-bottom: solid 1px $theGray5;
+              @include clearfix;
+              .portrait {
+                height: 56px;
+                width: 56px;
+                border-radius: 28px;
+                float: left;
+              }
+              .cork {
+                overflow: hidden;
+                zoom: 1;
+                padding: 0 0 0 13px;
+              }
+              h3 {
+                font-size: 14px;
+                font-weight: normal;
+                line-height: 22px;
+                margin: 0;
+                .datetime {
+                  font-size: 10px;
+                  color: $theBlue2;
+                  float: right;
+                }
+              }
+              p {
+                margin: 0;
+                font-size: 12px;
+                line-height: 18px;
+                color: $theGray7;
+              }
+            }
+          }
+          nav {
+            background: $theGray5;
+            border-radius: 15px;
+            padding: 3px;
+            @include clearfix;
+            a {
+              float: left;
+              width: 33.33%;
+              text-align: center;
+              font-size: 14px;
+              line-height: 24px;
+              color: $theGray4;
+              text-decoration: none;
+              &.selected {
+                background: #fff;
+                border-radius: 12px;
+                color: $theGray3;
+              }
+            }
+          }
+        }
       }
     }
   }

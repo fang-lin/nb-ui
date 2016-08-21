@@ -77,18 +77,19 @@
         font-size: 20px;
         margin: 5px 0;
         .icon {
-          height: 24px;
-          width: 24px;
+          height: 40px;
+          width: 40px;
           display: inline-block;
-          vertical-align: -5px;
+          vertical-align: -14px;
+          margin: 0 10px 0 0;
           &.facebook {
-            @include sprite-position($icon-facebook-share);
+            @include sprite-position($icon-facebook);
           }
           &.twitter {
-            @include sprite-position($icon-twitter-share);
+            @include sprite-position($icon-twitter);
           }
           &.linkedin {
-            @include sprite-position($icon-linkedin-share);
+            @include sprite-position($icon-linkedin);
           }
         }
       }
