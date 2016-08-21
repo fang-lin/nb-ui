@@ -1,9 +1,69 @@
 <div class="grid five">
-    <% [1, 2, 3, 4, 5].map(function(){ %>
+    <% [1, 2, 3, 4, 5].map(function(col){ %>
     <div class="column">
-        <% [1, 2, 3, 4].map(function(){ %>
+        <% [1, 2, 3, 4].map(function(row){ %>
         <div class="cell">
+            <% if(row === 1 && col === 2){ %>
             <%- include('partial-product-card'); %>
+            <div class="show-cart">
+                <div class="card-cart">
+                    <ul>
+                        <li>
+                            <label>Title:</label>
+                            <span>Carolyn Nguyen</span>
+                        </li>
+                        <li>
+                            <label>Category:</label>
+                            <span>game</span>
+                        </li>
+                        <li>
+                            <label>Format:</label>
+                            <span>3D MAX</span>
+                        </li>
+                        <li>
+                            <label>Style:</label>
+                            <span>Science fiction</span>
+                        </li>
+                        <li>
+                            <label>Animation:</label>
+                            <span>yes</span>
+                        </li>
+                        <li>
+                            <label>Texture: </label>
+                            <span>yes</span>
+                        </li>
+                        <li>
+                            <label>File size: </label>
+                            <span>500MB</span>
+                        </li>
+                        <li>
+                            <label>Description:</label>
+                            <p>
+                                Postcards have been consistently one of the more popular collectibles and used as promotional materials. More and more business owners are turning.
+                            </p>
+                        </li>
+                    </ul>
+                    <button class="add-cart-submit">
+                        <i class="icon cart"></i>
+                        Add to Cart
+                    </button>
+                </div>
+                <%- include('partial-product-card'); %>
+            </div>
+            <% } else if(row === 4 && col === 4) { %>
+            <%- include('partial-product-card'); %>
+            <div class="show-comment">
+                <div class="card-comment">
+                    <button class="send-comment-submit">
+                        <i class="icon fly"></i>
+                        Send comments
+                    </button>
+                </div>
+                <%- include('partial-product-card'); %>
+            </div>
+            <% } else { %>
+            <%- include('partial-product-card'); %>
+            <% } %>
         </div>
         <% }); %>
     </div>

@@ -931,7 +931,7 @@ header {
         cursor: pointer;
         height: 20px;
         width: 20px;
-        background-position: -60px -217px; }
+        background-position: -242px -89px; }
   header #header-menu {
     float: right;
     margin: 0 5px;
@@ -973,13 +973,13 @@ header {
         header #header-menu menuitem .button:hover {
           color: #ea6264; }
           header #header-menu menuitem .button:hover .element {
-            background-position: -242px -89px; }
-          header #header-menu menuitem .button:hover .cart {
             background-position: 0px -217px; }
+          header #header-menu menuitem .button:hover .cart {
+            background-position: -20px -217px; }
           header #header-menu menuitem .button:hover .account {
-            background-position: -80px -217px; }
+            background-position: -120px -217px; }
           header #header-menu menuitem .button:hover .notice {
-            background-position: -200px -217px; }
+            background-position: -20px -237px; }
         header #header-menu menuitem .button .icon, header #header-menu menuitem .button #product-form .dropdown-input:before, #product-form header #header-menu menuitem .button .dropdown-input:before {
           height: 20px;
           width: 20px;
@@ -987,13 +987,13 @@ header {
           vertical-align: -4px;
           margin: 0 10px 0 0; }
         header #header-menu menuitem .button .element {
-          background-position: -240px -217px; }
+          background-position: -242px -109px; }
         header #header-menu menuitem .button .cart {
-          background-position: -140px -217px; }
+          background-position: -240px -217px; }
         header #header-menu menuitem .button .account {
-          background-position: -20px -217px; }
+          background-position: -200px -217px; }
         header #header-menu menuitem .button .notice {
-          background-position: -180px -217px; }
+          background-position: 0px -237px; }
       header #header-menu menuitem .dropdown {
         z-index: 10;
         background: #fff;
@@ -1192,7 +1192,7 @@ header {
       display: inline-block;
       vertical-align: -1px;
       margin: 0 2px 0 0;
-      background-position: -183px -60px; }
+      background-position: -156px -126px; }
 
 #filter-bar-wrap {
   text-align: center;
@@ -1203,8 +1203,10 @@ header {
     border: solid 1px #efeff1;
     background: #fff;
     list-style: none;
-    padding: 14px 10px;
-    margin: 0; }
+    padding: 14px 0;
+    margin: 0;
+    font-size: 0;
+    line-height: 0; }
     #filter-bar-wrap #filter-bar::after {
       clear: both;
       content: "";
@@ -1212,9 +1214,8 @@ header {
     #filter-bar-wrap #filter-bar li {
       display: inline-block;
       padding: 0 28px;
-      font-size: 0;
-      line-height: 0;
-      border-right: solid 1px #efeff1; }
+      border-right: solid 1px #efeff1;
+      position: relative; }
       #filter-bar-wrap #filter-bar li:last-child {
         border-right: medium none; }
       #filter-bar-wrap #filter-bar li .button {
@@ -1224,20 +1225,52 @@ header {
         font-size: 14px; }
         #filter-bar-wrap #filter-bar li .button .icon, #filter-bar-wrap #filter-bar li .button #product-form .dropdown-input:before, #product-form #filter-bar-wrap #filter-bar li .button .dropdown-input:before {
           display: inline-block; }
-          #filter-bar-wrap #filter-bar li .button .icon.arrow-down, #filter-bar-wrap #filter-bar li .button #product-form .arrow-down.dropdown-input:before, #product-form #filter-bar-wrap #filter-bar li .button .arrow-down.dropdown-input:before {
+          #filter-bar-wrap #filter-bar li .button .icon.arrow-up, #filter-bar-wrap #filter-bar li .button #product-form .arrow-up.dropdown-input:before, #product-form #filter-bar-wrap #filter-bar li .button .arrow-up.dropdown-input:before, #filter-bar-wrap #filter-bar li .button .icon.arrow-down, #filter-bar-wrap #filter-bar li .button #product-form .arrow-down.dropdown-input:before, #product-form #filter-bar-wrap #filter-bar li .button .arrow-down.dropdown-input:before {
             vertical-align: 2px;
             margin: 0 0 0 6px;
             height: 4px;
             width: 10px;
-            background-position: -243px -85px;
             line-height: 22px; }
-          #filter-bar-wrap #filter-bar li .button .icon.checkbox, #filter-bar-wrap #filter-bar li .button #product-form .checkbox.dropdown-input:before, #product-form #filter-bar-wrap #filter-bar li .button .checkbox.dropdown-input:before {
+          #filter-bar-wrap #filter-bar li .button .icon.arrow-down, #filter-bar-wrap #filter-bar li .button #product-form .arrow-down.dropdown-input:before, #product-form #filter-bar-wrap #filter-bar li .button .arrow-down.dropdown-input:before {
+            background-position: -243px -85px; }
+          #filter-bar-wrap #filter-bar li .button .icon.arrow-up, #filter-bar-wrap #filter-bar li .button #product-form .arrow-up.dropdown-input:before, #product-form #filter-bar-wrap #filter-bar li .button .arrow-up.dropdown-input:before {
+            background-position: -242px -129px; }
+          #filter-bar-wrap #filter-bar li .button .icon.checkbox, #filter-bar-wrap #filter-bar li .button #product-form .checkbox.dropdown-input:before, #product-form #filter-bar-wrap #filter-bar li .button .checkbox.dropdown-input:before, #filter-bar-wrap #filter-bar li .button .icon.checkbox-selected, #filter-bar-wrap #filter-bar li .button #product-form .checkbox-selected.dropdown-input:before, #product-form #filter-bar-wrap #filter-bar li .button .checkbox-selected.dropdown-input:before {
             vertical-align: -2px;
             margin: 0 6px 0 0;
             height: 14px;
             width: 14px;
-            background-position: -248px -135px;
             line-height: 22px; }
+          #filter-bar-wrap #filter-bar li .button .icon.checkbox, #filter-bar-wrap #filter-bar li .button #product-form .checkbox.dropdown-input:before, #product-form #filter-bar-wrap #filter-bar li .button .checkbox.dropdown-input:before {
+            background-position: -142px -126px; }
+          #filter-bar-wrap #filter-bar li .button .icon.checkbox-selected, #filter-bar-wrap #filter-bar li .button #product-form .checkbox-selected.dropdown-input:before, #product-form #filter-bar-wrap #filter-bar li .button .checkbox-selected.dropdown-input:before {
+            background-position: -248px -135px; }
+      #filter-bar-wrap #filter-bar li .dropdown {
+        z-index: 20;
+        background: #fff;
+        position: absolute;
+        right: -2px;
+        top: 39px;
+        left: -1px;
+        box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+        border: solid 1px #efeff1;
+        border-radius: 4px;
+        padding: 0; }
+        #filter-bar-wrap #filter-bar li .dropdown ul {
+          list-style: none;
+          padding: 0;
+          margin: 0; }
+          #filter-bar-wrap #filter-bar li .dropdown ul li {
+            display: block;
+            font-size: 14px;
+            line-height: 20px;
+            padding: 10px 0; }
+            #filter-bar-wrap #filter-bar li .dropdown ul li a {
+              color: #adadad;
+              display: block;
+              cursor: pointer; }
+              #filter-bar-wrap #filter-bar li .dropdown ul li a:hover {
+                color: #ea6264; }
 
 #to-top {
   position: fixed;
@@ -1262,9 +1295,9 @@ header {
       height: 12px;
       width: 12px; }
       #to-top a .icon.arrow-top, #to-top a #product-form .arrow-top.dropdown-input:before, #product-form #to-top a .arrow-top.dropdown-input:before {
-        background-position: -183px -36px; }
+        background-position: -183px -48px; }
       #to-top a .icon.alert, #to-top a #product-form .alert.dropdown-input:before, #product-form #to-top a .alert.dropdown-input:before {
-        background-position: -156px -126px; }
+        background-position: -183px -60px; }
   #to-top hr {
     background: #f1f1f1;
     margin: -1px auto;
@@ -1324,7 +1357,99 @@ header {
     padding: 0 15px;
     margin: -30px 0; }
     .container.element > .grid > .column > .cell {
+      position: relative;
       margin: 30px 0; }
+
+.show-cart {
+  background: #2a2a36;
+  position: absolute;
+  top: -7px;
+  right: -320px;
+  bottom: -7px;
+  left: -7px;
+  z-index: 10;
+  border-radius: 4px; }
+  .show-cart .card-cart {
+    overflow: scroll;
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    bottom: 7px;
+    width: 300px;
+    color: #fff;
+    font-size: 14px; }
+    .show-cart .card-cart ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      line-height: 18px; }
+  .show-cart .product-card {
+    position: absolute;
+    top: 7px;
+    right: 320px;
+    bottom: 7px;
+    left: 7px; }
+
+.show-comment {
+  background: #2a2a36;
+  position: absolute;
+  top: -7px;
+  left: -320px;
+  bottom: -7px;
+  right: -7px;
+  z-index: 10;
+  border-radius: 4px; }
+  .show-comment .card-comment {
+    overflow: scroll;
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    bottom: 7px;
+    width: 300px;
+    color: #fff; }
+  .show-comment .product-card {
+    position: absolute;
+    top: 7px;
+    left: 320px;
+    bottom: 7px;
+    right: 7px; }
+
+.add-cart-submit,
+.send-comment-submit {
+  display: block;
+  width: 90%;
+  border: medium none;
+  background: #ea6264;
+  line-height: 46px;
+  border-radius: 23px;
+  font-size: 16px;
+  color: #fff;
+  margin: 14px auto;
+  padding: 0;
+  cursor: pointer; }
+  .add-cart-submit .icon, .add-cart-submit #product-form .dropdown-input:before, #product-form .add-cart-submit .dropdown-input:before,
+  .send-comment-submit .icon,
+  .send-comment-submit #product-form .dropdown-input:before, #product-form
+  .send-comment-submit .dropdown-input:before {
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    vertical-align: -4px;
+    margin: 0 6px 0 0; }
+  .add-cart-submit:disabled,
+  .send-comment-submit:disabled {
+    background: #d8d8d8;
+    box-shadow: none; }
+
+.add-cart-submit {
+  background: #ea6264; }
+  .add-cart-submit .icon.cart, .add-cart-submit #product-form .cart.dropdown-input:before, #product-form .add-cart-submit .cart.dropdown-input:before {
+    background-position: -240px -217px; }
+
+.send-comment-submit {
+  background: #4A90E2; }
+  .send-comment-submit .icon.fly, .send-comment-submit #product-form .fly.dropdown-input:before, #product-form .send-comment-submit .fly.dropdown-input:before {
+    background-position: -140px -217px; }
 
 #personal-detail .portrait {
   display: block;
@@ -1351,7 +1476,7 @@ header {
     width: 20px;
     top: 2px;
     right: -40px;
-    background-position: -100px -217px; }
+    background-position: -180px -217px; }
 
 #personal-detail .job {
   text-align: center;
@@ -1420,7 +1545,8 @@ header {
       padding: 0 15px;
       margin: -30px 0; }
       #personal-products > .grid > .column > .cell {
-        margin: 30px 0; }
+        margin: 30px 0;
+        position: relative; }
 
 #personal-title {
   color: #515254;
@@ -1503,7 +1629,7 @@ header {
         width: 16px;
         height: 16px;
         vertical-align: -3px;
-        background-position: -227px -171px; }
+        background-position: -211px -171px; }
   #products-table .product-table-status {
     font-size: 20px;
     text-align: center; }
@@ -1665,9 +1791,9 @@ header {
       width: 20px;
       display: inline-block; }
       #purchases-table .purchases-table-rate .icon.star, #purchases-table .purchases-table-rate #product-form .star.dropdown-input:before, #product-form #purchases-table .purchases-table-rate .star.dropdown-input:before {
-        background-position: -40px -217px; }
-      #purchases-table .purchases-table-rate .icon.star-twinkle, #purchases-table .purchases-table-rate #product-form .star-twinkle.dropdown-input:before, #product-form #purchases-table .purchases-table-rate .star-twinkle.dropdown-input:before {
         background-position: -220px -217px; }
+      #purchases-table .purchases-table-rate .icon.star-twinkle, #purchases-table .purchases-table-rate #product-form .star-twinkle.dropdown-input:before, #product-form #purchases-table .purchases-table-rate .star-twinkle.dropdown-input:before {
+        background-position: -160px -217px; }
   #purchases-table .purchases-table-order {
     text-align: center; }
     #purchases-table .purchases-table-order a {
@@ -1680,9 +1806,9 @@ header {
       height: 64px;
       width: 64px;
       display: inline-block;
-      background-position: 0px -76px; }
+      background-position: -64px -76px; }
       #purchases-table .purchases-table-support .icon.talk:hover, #purchases-table .purchases-table-support #product-form .talk.dropdown-input:hover:before, #product-form #purchases-table .purchases-table-support .talk.dropdown-input:hover:before {
-        background-position: -64px -76px; }
+        background-position: 0px -76px; }
 
 .container.model {
   width: 1040px;
@@ -1942,7 +2068,7 @@ header {
           .container.model #model-detail #model-detail-major .btn-wrap .share-btn .icon.share,
           .container.model #model-detail #model-detail-major .btn-wrap .share-btn #product-form .share.dropdown-input:before, #product-form
           .container.model #model-detail #model-detail-major .btn-wrap .share-btn .share.dropdown-input:before {
-            background-position: -166px -192px; }
+            background-position: -243px -42px; }
           .container.model #model-detail #model-detail-major .btn-wrap .star-btn .icon.favor, .container.model #model-detail #model-detail-major .btn-wrap .star-btn #product-form .favor.dropdown-input:before, #product-form .container.model #model-detail #model-detail-major .btn-wrap .star-btn .favor.dropdown-input:before,
           .container.model #model-detail #model-detail-major .btn-wrap .share-btn .icon.favor,
           .container.model #model-detail #model-detail-major .btn-wrap .share-btn #product-form .favor.dropdown-input:before, #product-form
@@ -2006,9 +2132,9 @@ header {
               .container.model #model-detail #model-detail-major .btn-wrap .dropdown ul li .icon.facebook, .container.model #model-detail #model-detail-major .btn-wrap .dropdown ul li #product-form .facebook.dropdown-input:before, #product-form .container.model #model-detail #model-detail-major .btn-wrap .dropdown ul li .facebook.dropdown-input:before {
                 background-position: -121px -140px; }
               .container.model #model-detail #model-detail-major .btn-wrap .dropdown ul li .icon.twitter, .container.model #model-detail #model-detail-major .btn-wrap .dropdown ul li #product-form .twitter.dropdown-input:before, #product-form .container.model #model-detail #model-detail-major .btn-wrap .dropdown ul li .twitter.dropdown-input:before {
-                background-position: -169px -140px; }
-              .container.model #model-detail #model-detail-major .btn-wrap .dropdown ul li .icon.linkedin, .container.model #model-detail #model-detail-major .btn-wrap .dropdown ul li #product-form .linkedin.dropdown-input:before, #product-form .container.model #model-detail #model-detail-major .btn-wrap .dropdown ul li .linkedin.dropdown-input:before {
                 background-position: -145px -140px; }
+              .container.model #model-detail #model-detail-major .btn-wrap .dropdown ul li .icon.linkedin, .container.model #model-detail #model-detail-major .btn-wrap .dropdown ul li #product-form .linkedin.dropdown-input:before, #product-form .container.model #model-detail #model-detail-major .btn-wrap .dropdown ul li .linkedin.dropdown-input:before {
+                background-position: -169px -140px; }
     .container.model #model-detail #model-detail-major h3 {
       font-weight: normal;
       color: #515254;
@@ -2026,9 +2152,9 @@ header {
       display: inline-block;
       vertical-align: -4px; }
       .container.model #model-detail #model-detail-major .icon.star, .container.model #model-detail #model-detail-major #product-form .star.dropdown-input:before, #product-form .container.model #model-detail #model-detail-major .star.dropdown-input:before {
-        background-position: -40px -217px; }
-      .container.model #model-detail #model-detail-major .icon.star-twinkle, .container.model #model-detail #model-detail-major #product-form .star-twinkle.dropdown-input:before, #product-form .container.model #model-detail #model-detail-major .star-twinkle.dropdown-input:before {
         background-position: -220px -217px; }
+      .container.model #model-detail #model-detail-major .icon.star-twinkle, .container.model #model-detail #model-detail-major #product-form .star-twinkle.dropdown-input:before, #product-form .container.model #model-detail #model-detail-major .star-twinkle.dropdown-input:before {
+        background-position: -160px -217px; }
     .container.model #model-detail .attr-list h3 {
       color: #ea6264;
       font-size: 16px;
@@ -2064,12 +2190,12 @@ header {
       padding: 0;
       cursor: pointer; }
       .container.model #model-detail #add-cart-submit .icon.cart, .container.model #model-detail #add-cart-submit #product-form .cart.dropdown-input:before, #product-form .container.model #model-detail #add-cart-submit .cart.dropdown-input:before {
-        height: 17px;
-        width: 24px;
+        height: 20px;
+        width: 20px;
         display: inline-block;
-        vertical-align: -2px;
+        vertical-align: -4px;
         margin: 0 6px 0 0;
-        background-position: -140px -217px; }
+        background-position: -240px -217px; }
       .container.model #model-detail #add-cart-submit:disabled {
         background: #d8d8d8;
         box-shadow: none; }
@@ -2451,7 +2577,7 @@ header {
           height: 16px; }
         .container.following .card.following-product .following-regard .following-product-follow .favorite .icon.favor, .container.following .card.following-product .following-regard .following-product-follow .favorite #product-form .favor.dropdown-input:before, #product-form .container.following .card.following-product .following-regard .following-product-follow .favorite .favor.dropdown-input:before {
           vertical-align: -3px;
-          background-position: -211px -171px; }
+          background-position: -227px -171px; }
         .container.following .card.following-product .following-regard .following-product-follow .watch .icon.eye, .container.following .card.following-product .following-regard .following-product-follow .watch #product-form .eye.dropdown-input:before, #product-form .container.following .card.following-product .following-regard .following-product-follow .watch .eye.dropdown-input:before {
           vertical-align: -6px;
           width: 21px;
@@ -2461,7 +2587,7 @@ header {
           vertical-align: -6px;
           width: 20px;
           height: 20px;
-          background-position: -166px -192px; }
+          background-position: -243px -42px; }
 
 .container.publish {
   margin: 20px auto; }
@@ -2603,13 +2729,13 @@ header {
     vertical-align: -4px;
     margin: 0 5px 0 0; }
   #product-form .icon.checkbox, #product-form .checkbox.dropdown-input:before {
-    background-position: -160px -217px; }
+    background-position: -40px -217px; }
     #product-form .icon.checkbox.selected, #product-form .checkbox.selected.dropdown-input:before {
-      background-position: -242px -109px; }
+      background-position: -60px -217px; }
   #product-form .icon.radio, #product-form .radio.dropdown-input:before {
-    background-position: 0px -237px; }
+    background-position: -100px -217px; }
     #product-form .icon.radio.selected, #product-form .radio.selected.dropdown-input:before {
-      background-position: -120px -217px; }
+      background-position: -80px -217px; }
   #product-form .line {
     color: #515254;
     line-height: 34px;
@@ -2658,9 +2784,9 @@ header {
       width: 18px;
       display: inline-block; }
       #product-form label .icon.polygons, #product-form label .polygons.dropdown-input:before {
-        background-position: -243px -42px; }
-      #product-form label .icon.vertices, #product-form label .vertices.dropdown-input:before {
         background-position: -184px -192px; }
+      #product-form label .icon.vertices, #product-form label .vertices.dropdown-input:before {
+        background-position: -166px -192px; }
   #product-form .dropdown-input {
     position: relative;
     margin: 10px 0; }
@@ -2927,11 +3053,11 @@ header {
         vertical-align: -14px;
         margin: 0 10px 0 0; }
         #settings-forms-wrap #social-form .line label .icon.facebook, #settings-forms-wrap #social-form .line label #product-form .facebook.dropdown-input:before, #product-form #settings-forms-wrap #social-form .line label .facebook.dropdown-input:before {
-          background-position: -126px -171px; }
-        #settings-forms-wrap #social-form .line label .icon.twitter, #settings-forms-wrap #social-form .line label #product-form .twitter.dropdown-input:before, #product-form #settings-forms-wrap #social-form .line label .twitter.dropdown-input:before {
           background-position: -46px -171px; }
-        #settings-forms-wrap #social-form .line label .icon.linkedin, #settings-forms-wrap #social-form .line label #product-form .linkedin.dropdown-input:before, #product-form #settings-forms-wrap #social-form .line label .linkedin.dropdown-input:before {
+        #settings-forms-wrap #social-form .line label .icon.twitter, #settings-forms-wrap #social-form .line label #product-form .twitter.dropdown-input:before, #product-form #settings-forms-wrap #social-form .line label .twitter.dropdown-input:before {
           background-position: -86px -171px; }
+        #settings-forms-wrap #social-form .line label .icon.linkedin, #settings-forms-wrap #social-form .line label #product-form .linkedin.dropdown-input:before, #product-form #settings-forms-wrap #social-form .line label .linkedin.dropdown-input:before {
+          background-position: -126px -171px; }
     #settings-forms-wrap #social-form .line button {
       float: right;
       border: solid 1px #ea6264;
@@ -3308,7 +3434,7 @@ header {
           width: 12px;
           vertical-align: -2px; }
         .product-card .product-card-describe .product-card-title label .label {
-          background-position: -183px -48px; }
+          background-position: -183px -36px; }
     .product-card .product-card-describe .product-card-author {
       padding: 10px 0;
       margin: 0 10px;
@@ -3354,7 +3480,7 @@ header {
         float: left; }
         .product-card .product-card-describe .product-card-follow .favorite .icon.favor, .product-card .product-card-describe .product-card-follow .favorite #product-form .favor.dropdown-input:before, #product-form .product-card .product-card-describe .product-card-follow .favorite .favor.dropdown-input:before {
           vertical-align: -3px;
-          background-position: -211px -171px; }
+          background-position: -227px -171px; }
       .product-card .product-card-describe .product-card-follow .watch {
         float: right; }
         .product-card .product-card-describe .product-card-follow .watch .icon.eye, .product-card .product-card-describe .product-card-follow .watch #product-form .eye.dropdown-input:before, #product-form .product-card .product-card-describe .product-card-follow .watch .eye.dropdown-input:before {
@@ -3432,12 +3558,12 @@ header {
     #signup-form .icon.checkbox,
     #signup-form #product-form .checkbox.dropdown-input:before, #product-form
     #signup-form .checkbox.dropdown-input:before {
-      background-position: -248px -149px; }
+      background-position: -168px -126px; }
       #signin-form .icon.checkbox.selected, #signin-form #product-form .checkbox.selected.dropdown-input:before, #product-form #signin-form .checkbox.selected.dropdown-input:before,
       #signup-form .icon.checkbox.selected,
       #signup-form #product-form .checkbox.selected.dropdown-input:before, #product-form
       #signup-form .checkbox.selected.dropdown-input:before {
-        background-position: -168px -126px; }
+        background-position: -248px -149px; }
   #signin-form input[type=text],
   #signin-form input[type=submit],
   #signin-form input[type=password],
