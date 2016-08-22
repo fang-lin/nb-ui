@@ -25,6 +25,7 @@
   background: #fff;
   border-radius: 4px;
   min-height: 100px;
+  position: relative;
   .product-card-thumbnail {
     border-radius: 4px 4px 0 0;
     img {
@@ -127,5 +128,42 @@
         }
       }
     }
+  }
+  &:hover {
+    .pop-card-fly,
+    .pop-card-cart {
+      display: block;
+      background: rgba(255, 255, 255, .5);
+    }
+  }
+  .pop-card-fly,
+  .pop-card-cart {
+    display: none;
+    position: absolute;
+    top: 6px;
+    height: 20px;
+    width: 20px;
+    border-radius: 2px;
+    cursor: pointer;
+    .icon {
+      height: 16px;
+      width: 16px;
+      display: block;
+      margin: 2px auto;
+      &.cart {
+        @include sprite-position($icon-cart-small);
+      }
+      &.fly {
+        @include sprite-position($icon-fly-small);
+      }
+    }
+  }
+  .pop-card-fly {
+    background: $theBlue4;
+    left: 6px;
+  }
+  .pop-card-cart {
+    background: $thePink1;
+    right: 6px;
   }
 }

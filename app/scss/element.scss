@@ -16,36 +16,102 @@
   background: #2a2a36;
   position: absolute;
   top: -7px;
-  right: -320px;
+  left: -320px;
   bottom: -7px;
-  left: -7px;
+  right: -7px;
   z-index: 10;
   border-radius: 4px;
+  .pop-card-cart {
+    display: block !important;
+    background: $thePink1 !important;
+  }
   .card-cart {
     overflow: scroll;
     position: absolute;
     top: 7px;
-    right: 7px;
+    left: 0;
     bottom: 7px;
-    width: 300px;
+    right: auto;
+    width: 316px;
+    padding: 10px 20px 10px 24px;
     color: #fff;
     font-size: 14px;
-    ul {
+    box-sizing: border-box;
+    .detail-list {
       list-style: none;
       padding: 0;
       margin: 0;
-      line-height: 18px;
+      line-height: 24px;
       li {
-
+        padding: 0;
+        p {
+          margin: 0;
+          font-size: 12px;
+          line-height: 18px;
+        }
+      }
+    }
+    hr {
+      background: #616176;
+      margin: 20px 0;
+    }
+    .license-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li {
+        line-height: 20px;
+        font-size: 16px;
+        margin: 20px 0;
+        &.selected {
+          color: #616176;
+        }
+        .icon {
+          height: 20px;
+          width: 20px;
+          vertical-align: -4px;
+          display: inline-block;
+          cursor: pointer;
+          margin: 0 6px 0 0;
+          &.radio {
+            @include sprite-position($icon-radio-dark);
+          }
+          &.radio-selected {
+            @include sprite-position($icon-radio-dark-selected);
+          }
+        }
+        .price {
+          float: right;
+        }
       }
     }
   }
   .product-card {
     position: absolute;
     top: 7px;
-    right: 320px;
+    left: 320px;
     bottom: 7px;
-    left: 7px;
+    right: 7px;
+  }
+  &.right {
+    top: -7px;
+    right: -320px;
+    bottom: -7px;
+    left: -7px;
+    .card-cart {
+      top: 7px;
+      right: 4px;
+      bottom: 7px;
+      left: auto;
+      width: 316px;
+      padding: 10px 20px 10px 24px;
+    }
+    .product-card {
+      top: 7px;
+      right: 320px;
+      bottom: 7px;
+      left: 7px;
+    }
   }
 }
 
@@ -58,14 +124,77 @@
   right: -7px;
   z-index: 10;
   border-radius: 4px;
+  .pop-card-fly {
+    display: block !important;
+    background: $theBlue4 !important;
+  }
   .card-comment {
     overflow: scroll;
     position: absolute;
     top: 7px;
-    left: 7px;
+    left: 0;
     bottom: 7px;
-    width: 300px;
-    color: #fff;
+    width: 316px;
+    padding: 10px 20px 10px 24px;
+    box-sizing: border-box;
+    .comments-list {
+      border-bottom: solid 1px $theBlue6;
+      list-style: none;
+      padding: 0;
+      margin: -12px 0 0 0;
+      li {
+        color: $theGray3;
+        padding: 12px 0;
+        @include clearfix;
+        .portrait {
+          height: 34px;
+          width: 34px;
+          border-radius: 17px;
+          float: left;
+        }
+        .cork {
+          overflow: hidden;
+          zoom: 1;
+          padding: 0 0 0 13px;
+        }
+        h3 {
+          font-size: 14px;
+          font-weight: normal;
+          line-height: 22px;
+          margin: 0;
+          color: $theBlue3;
+          .datetime {
+            font-size: 10px;
+            color: $theBlue6;
+            float: right;
+          }
+        }
+        p {
+          margin: 0;
+          font-size: 12px;
+          line-height: 18px;
+          color: #fff;
+        }
+      }
+    }
+    .comment-area {
+      resize: none;
+      background: $theGray9;
+      width: 96%;
+      height: 140px;
+      display: block;
+      box-sizing: border-box;
+      border: solid 1px $theGray7;
+      border-radius: 2px;
+      font-size: 14px;
+      line-height: 18px;
+      margin: 24px auto;
+      padding: 10px;
+      color: $theGray3;
+      @include placeholder {
+        color: $theGray10;
+      }
+    }
   }
   .product-card {
     position: absolute;
@@ -74,12 +203,32 @@
     bottom: 7px;
     right: 7px;
   }
+  &.right {
+    top: -7px;
+    right: -320px;
+    bottom: -7px;
+    left: -7px;
+    .card-comment {
+      top: 7px;
+      right: 4px;
+      bottom: 7px;
+      left: auto;
+      width: 316px;
+      padding: 10px 20px 10px 24px;
+    }
+    .product-card {
+      top: 7px;
+      right: 320px;
+      bottom: 7px;
+      left: 7px;
+    }
+  }
 }
 
 .add-cart-submit,
 .send-comment-submit {
   display: block;
-  width: 90%;
+  width: 96%;
   border: medium none;
   background: $thePink1;
   line-height: 46px;
