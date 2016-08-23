@@ -117,6 +117,12 @@
                         <div id="model-detail-desc">
                             There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope. It’s exciting to think about setting up your own viewing station whether.
                         </div>
+                        <div id="model-report-btn-wrap">
+                            <button id="model-report-btn">
+                                <i class="icon report"></i>
+                                Report
+                            </button>
+                        </div>
                     </div>
                     <hr>
                     <div class="attr-list">
@@ -221,16 +227,20 @@
                 <div id="model-image-current">
                     <img src="/upload/large_fantasy_village_and_tower_defense_3d_model_fbx_e3bf7909-f1a4-4f7e-8468-7dbe307a68a7.png" alt="">
                 </div>
-                <div id="model-image-thumbnails">
-                    <ul>
-                        <% [1, 2, 3, 4, 5].map(function(ele){ %>
-                        <li>
-                            <a>
-                                <img src="/upload/large_fantasy_village_and_tower_defense_3d_model_fbx_e3bf7909-f1a4-4f7e-8468-7dbe307a68a7.png" alt="">
-                            </a>
-                        </li>
-                        <% }); %>
-                    </ul>
+                <div id="model-image-thumbnails-wrap">
+                    <a class="to_prev"></a>
+                    <div id="model-image-thumbnails">
+                        <ul>
+                            <% [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(function(ele){ %>
+                            <li>
+                                <a>
+                                    <img src="/upload/large_fantasy_village_and_tower_defense_3d_model_fbx_e3bf7909-f1a4-4f7e-8468-7dbe307a68a7.png" alt="">
+                                </a>
+                            </li>
+                            <% }); %>
+                        </ul>
+                    </div>
+                    <a class="to_next"></a>
                 </div>
             </div>
             <div id="model-comments-form-wrap">

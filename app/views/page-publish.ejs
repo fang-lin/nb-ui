@@ -66,25 +66,6 @@
                 </div>
                 <div class="grid">
                     <div class="column">
-                        <label for="product-format">Format:</label>
-                        <div class="dropdown-input">
-                            <input type="text" class="dropdown-handle" id="product-format" readonly="readonly" value="AAA AAA">
-                            <ul class="dropdown-list">
-                                <li>
-                                    <span>AAA AAA</span>
-                                </li>
-                                <li>
-                                    <span>BBB BBB</span>
-                                </li>
-                                <li>
-                                    <span>CCC CCC</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid">
-                    <div class="column">
                         <div class="line justify">
                             <a class="item checkbox-btn">
                                 <i class="icon checkbox" id="product-animation"></i>
@@ -173,6 +154,11 @@
             <form id="upload-form">
                 <h2>Step 1：upload photos</h2>
                 <div id="upload-images-wrap">
+                    <div id="upload-image-btn-wrap">
+                        <a id="upload-image-btn">
+                            <i class="icon plus"></i>
+                        </a>
+                    </div>
                     <ul id="upload-images">
                         <li>
                             <img src="upload/large_ch47d_chinook_helicopter_3d_model_fbx_ma_mb_17f490ce-4034-4b3d-815d-889e05f5413f.jpg" alt="">
@@ -181,28 +167,83 @@
                             <img src="upload/large_ch47d_chinook_helicopter_3d_model_fbx_ma_mb_17f490ce-4034-4b3d-815d-889e05f5413f.jpg" alt="">
                         </li>
                         <li>
-                            <i class="icon plus"></i>
+                            <img src="upload/large_ch47d_chinook_helicopter_3d_model_fbx_ma_mb_17f490ce-4034-4b3d-815d-889e05f5413f.jpg" alt="">
                         </li>
                         <li>
-                            <i class="icon plus"></i>
-                        </li>
-                        <li>
-                            <i class="icon plus"></i>
+                            <img src="upload/large_ch47d_chinook_helicopter_3d_model_fbx_ma_mb_17f490ce-4034-4b3d-815d-889e05f5413f.jpg" alt="">
                         </li>
                     </ul>
                 </div>
                 <hr>
                 <h2>Step 2: upload a model file</h2>
-                <div id="upload-choose-file-wrap">
-                    <button id="upload-choose-file">Choose file</button>
+                <div id="upload-models-wrap">
+                    <ul>
+                        <li>
+                            <div class="format-wrap">
+                                <input type="text" class="dropdown-handle" id="product-geometry" readonly="readonly" value="Obj">
+                            </div>
+                            <div class="cork">
+                                <div id="upload-progress-wrap">
+                                    <h3>Transforms.obj</h3>
+                                    <div class="progress" id="upload-progress">
+                                        <div class="value" style="width: 30%;"></div>
+                                    </div>
+                                    <label for="upload-progress">Uploaded: 30%</label>
+                                    <a class="cross-wrap">
+                                        <i class="cross"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="format-wrap">
+                                <input type="text" class="dropdown-handle" id="product-geometry" readonly="readonly" value="MAX">
+                            </div>
+                            <div class="cork">
+                                <div id="upload-progress-wrap">
+                                    <h3>Transforms.obj</h3>
+                                    <div class="progress" id="upload-progress">
+                                        <div class="value" style="width: 30%;"></div>
+                                    </div>
+                                    <label for="upload-progress">Uploaded: 30%</label>
+                                    <a class="cross-wrap">
+                                        <i class="cross"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="format-wrap">
+                                <div class="dropdown-input">
+                                    <input type="text" class="dropdown-handle" id="product-geometry" readonly="readonly" value="AAA AAA">
+                                    <ul class="dropdown-list">
+                                        <li>
+                                            <span>AAA AAA</span>
+                                        </li>
+                                        <li>
+                                            <span>BBB BBB</span>
+                                        </li>
+                                        <li>
+                                            <span>CCC CCC</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="cork">
+                                <button id="upload-choose-file">Choose file</button>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                <div id="upload-progress-wrap">
-                    <div class="progress" id="upload-progress">
-                        <div class="value" style="width: 30%;"></div>
-                    </div>
-                    <i class="icon upload-giant"></i>
-                    <label for="upload-progress">30%</label>
-                </div>
+                <!--<div id="upload-choose-file-wrap">-->
+                <!--<button id="upload-choose-file">Choose file</button>-->
+                <!--</div>-->
+                <!--<div id="upload-progress-wrap">-->
+                <!--<div class="progress" id="upload-progress">-->
+                <!--<div class="value" style="width: 30%;"></div>-->
+                <!--</div>-->
+                <!--<label for="upload-progress">Uploaded: 30%</label>-->
+                <!--</div>-->
             </form>
         </div>
     </div>

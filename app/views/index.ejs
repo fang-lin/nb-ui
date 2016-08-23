@@ -54,6 +54,24 @@
                 }
             }
 
+            function switchAuthorized() {
+                switchMask()
+                if ($('#authorized-form-wrap:visible').length) {
+                    $('#authorized-form-wrap').hide();
+                } else {
+                    $('#authorized-form-wrap').show();
+                }
+            }
+
+            function switchPhoto() {
+                switchMask()
+                if ($('#photo-wrap:visible').length) {
+                    $('#photo-wrap').hide();
+                } else {
+                    $('#photo-wrap').show();
+                }
+            }
+
             $('#confirm-form').click(function () {
                 switchConfirm();
             });
@@ -69,7 +87,7 @@
             $('#showcase li > a').click(function () {
 
                 $('#page-content').removeClass('blur');
-                $('#mask, #confirm-wrap, .sign-form-wrap').hide();
+                $('#mask, #confirm-wrap, .sign-form-wrap, #authorized-form-wrap, #photo-wrap').hide();
 
                 switch ($(this).html()) {
                     case 'Sign In':
@@ -81,10 +99,16 @@
                     case 'Confirm':
                         switchConfirm();
                         break;
+                    case 'Authorized':
+                        switchAuthorized();
+                        break;
+                    case 'Photo':
+                        switchPhoto();
+                        break;
                 }
             });
 
-            $('#model-image-thumbnails a').eq(0).addClass('selected');
+            $('#model-image-thumbnails li a').eq(0).addClass('selected');
 
 
             $('.dropdown-input > .dropdown-handle').click(function () {
@@ -103,6 +127,8 @@
     <%- include('partial-signin'); %>
     <%- include('partial-signup'); %>
     <%- include('partial-confirm'); %>
+    <%- include('partial-authorized'); %>
+    <%- include('partial-photo'); %>
 </div>
 <div id="showcase">
     <ul>
@@ -117,10 +143,12 @@
         <li><a href="profile">Profile</a></li>
         <li><a href="following">Following</a></li>
         <li><a href="model">Model</a></li>
+        <li><a href="terms">Terms</a></li>
         <li><a>Sign In</a></li>
         <li><a>Sign Up</a></li>
         <li><a>Confirm</a></li>
-        <li><a>Dialogs</a></li>
+        <li><a>Photo</a></li>
+        <li><a>Authorized</a></li>
     </ul>
 </div>
 </body>

@@ -27,6 +27,11 @@ gulp.task('sass', ['sprite'], function () {
         .pipe(gulp.dest('./app/style'));
 });
 
+gulp.task('copy', function () {
+    return gulp.src('node_modules/font-awesome/fonts/*.*')
+        .pipe(gulp.dest('app/fonts'));
+});
+
 gulp.task('watch-sass', function () {
     return gulp.watch('app/scss/**', ['sass']);
 });

@@ -1,0 +1,79 @@
+#photo-wrap {
+  height: 100%;
+  @include display(flex);
+  @include align-items(center);
+  @include justify-content(center);
+  #photo-box {
+    position: relative;
+    .to-wrap {
+      position: absolute;
+      height: 0;
+      top: 50%;
+      left: -64px;
+      right: -64px;
+      .to_prev,
+      .to_next {
+        display: block;
+        height: 65px;
+        width: 65px;
+        margin-top: -33px;
+        cursor: pointer;
+        &:before {
+          position: relative;
+          top: 15px;
+          left: 15px;
+          content: '';
+          border-style: solid;
+          border-color: #fff;
+          height: 35px;
+          width: 35px;
+          display: block;
+          @include transform(rotate(45deg));
+        }
+      }
+      .to_prev {
+        float: left;
+        &:before {
+          border-width: 0 0 4px 4px;
+        }
+      }
+      .to_next {
+        float: right;
+        &:before {
+          border-width: 4px 4px 0 0;
+        }
+      }
+    }
+    .cross-wrap {
+      position: absolute;
+      display: block;
+      padding: 14px;
+      border-radius: 28px;
+      top: -18px;
+      right: -54px;
+      cursor: pointer;
+      .cross {
+        position: relative;
+        display: block;
+        height: 28px;
+        width: 28px;
+        &:before,
+        &:after {
+          content: '';
+          position: absolute;
+          display: block;
+          height: 2px;
+          background: #fff;
+          width: 28px;
+          top: 13px;
+        }
+        &:before {
+          @include transform(rotate(45deg));
+        }
+        &:after {
+          @include transform(rotate(-45deg));
+        }
+      }
+    }
+  }
+}

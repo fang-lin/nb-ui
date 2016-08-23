@@ -180,6 +180,7 @@
           border-top: solid 1px $theGray8;
           padding: 16px;
           input {
+            display: block;
             line-height: 30px;
             border-radius: 15px;
             border: solid 1px $theGray8;
@@ -359,6 +360,27 @@
         font-size: 14px;
         line-height: 18px;
       }
+      #model-report-btn-wrap {
+        margin: 10px 0;
+        @include clearfix;
+        #model-report-btn {
+          float: right;
+          cursor: pointer;
+          background: #b8e986;
+          font-size: 14px;
+          border: medium none;
+          color: #fff;
+          line-height: 34px;
+          border-radius: 17px;
+          padding: 0 10px;
+          .icon.report {
+            height: 20px;
+            width: 17px;
+            @include sprite-position($icon-report);
+            vertical-align: -5px;
+          }
+        }
+      }
       #model-detail-price {
         span {
           font-size: 26px;
@@ -474,34 +496,76 @@
         border-radius: 4px;
       }
     }
-
-    #model-image-thumbnails {
-      margin: 16px 0;
-      ul {
-        list-style: none;
-        margin: -8px;
-        padding: 0;
-        @include clearfix;
-        li {
-          float: left;
-          width: 20%;
-          padding: 6px;
-          box-sizing: border-box;
-          a {
-            display: block;
-            border-radius: 4px;
-            width: 100%;
-            height: 138px;
-            padding: 2px;
+    #model-image-thumbnails-wrap {
+      position: relative;
+      .to_prev,
+      .to_next {
+        display: block;
+        position: absolute;
+        height: 120px;
+        width: 36px;
+        cursor: pointer;
+        &:before {
+          position: relative;
+          top: 48px;
+          content: '';
+          border-style: solid;
+          border-color: $theGray4;
+          height: 20px;
+          width: 20px;
+          display: block;
+          @include transform(rotate(45deg));
+        }
+      }
+      .to_prev {
+        top: 2px;
+        left: 0;
+        &:before {
+          border-width: 0 0 2px 2px;
+          left: 13px;
+        }
+      }
+      .to_next {
+        top: 2px;
+        right: 0;
+        &:before {
+          border-width: 2px 2px 0 0;
+        }
+      }
+      #model-image-thumbnails {
+        margin: 16px auto;
+        width: 664px;
+        overflow: scroll;
+        padding: 2px 2px 16px 2px;
+        ul {
+          list-style: none;
+          margin: -8px;
+          padding: 0;
+          white-space: nowrap;
+          font-size: 0;
+          line-height: 0;
+          @include clearfix;
+          li {
+            display: inline-block;
+            width: 20%;
+            padding: 6px;
             box-sizing: border-box;
-            &.selected {
-              background: $thePink1;
-            }
-            img {
-              width: 100%;
-              height: 100%;
+            a {
               display: block;
-              border-radius: 3px;
+              border-radius: 4px;
+              width: 100%;
+              height: 124px;
+              padding: 2px;
+              box-sizing: border-box;
+              &.selected {
+                background: $thePink1;
+              }
+              img {
+                width: 100%;
+                height: 100%;
+                display: block;
+                border-radius: 3px;
+              }
             }
           }
         }

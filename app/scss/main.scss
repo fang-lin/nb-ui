@@ -1,5 +1,6 @@
 @import "../fonts/Open-Sans";
 @import "../../node_modules/normalize.css/normalize";
+@import "../../node_modules/font-awesome/scss/font-awesome";
 @import "bourbon";
 @import "sprite";
 @import "common";
@@ -19,7 +20,10 @@
 @import "profile";
 @import "settings";
 @import "checkout";
+@import "authorized";
+@import "terms";
 @import "grid";
+@import "photo";
 @import "signin-signup";
 
 
