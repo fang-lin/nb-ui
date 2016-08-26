@@ -116,10 +116,10 @@
                         </form>
                     </div>
                     -->
-
+                    <!--
                     <ul id="notice-dropdown-list">
                         <% [1, 2, 3, 4, 5, 6, 7, 8].map(function (i) { %>
-                        <li class="<%= i % 2 && 'new-msg' %>">
+                        <li class="<%= i % 2 ? 'new-msg' : '' %>">
                             <img class="portrait" src="upload/large_ch47d_chinook_helicopter_3d_model_fbx_ma_mb_17f490ce-4034-4b3d-815d-889e05f5413f.jpg" alt="" class="icon">
                             <div class="cork">
                                 <i class="fa fa-times" aria-hidden="true"></i>
@@ -134,7 +134,40 @@
                         </li>
                         <% }); %>
                     </ul>
-
+                    -->
+                    <ul id="news-dropdown-list">
+                        <% [1, 2, 3, 4, 5, 6, 7].map(function (i) { %>
+                         <li class="<%= i % 2 ? 'new-msg' : '' %>">
+                            <img class="portrait" src="upload/large_ch47d_chinook_helicopter_3d_model_fbx_ma_mb_17f490ce-4034-4b3d-815d-889e05f5413f.jpg" alt="" class="icon">
+                            <div class="cork">
+                                <h3>
+                                    Jane Morgan
+                                    <span class="datetime">00:46AM</span>
+                                </h3>
+                                <div class="portraits">
+                                    <img src="upload/large_ch47d_chinook_helicopter_3d_model_fbx_ma_mb_17f490ce-4034-4b3d-815d-889e05f5413f.jpg" alt="" class="icon">
+                                    <img src="upload/large_ch47d_chinook_helicopter_3d_model_fbx_ma_mb_17f490ce-4034-4b3d-815d-889e05f5413f.jpg" alt="" class="icon">
+                                    <img src="upload/large_ch47d_chinook_helicopter_3d_model_fbx_ma_mb_17f490ce-4034-4b3d-815d-889e05f5413f.jpg" alt="" class="icon">
+                                </div>
+                            </div>
+                        </li>
+                        <% }) %>
+                    </ul>
+                    <!--
+                    <ul id="you-dropdown-list">
+                        <% [1, 2, 3, 4, 5, 6, 7].map(function (i) { %>
+                        <li class="<%= i % 2 ? 'new-msg' : '' %>">
+                            <div class="portraits">
+                                <img src="upload/large_ch47d_chinook_helicopter_3d_model_fbx_ma_mb_17f490ce-4034-4b3d-815d-889e05f5413f.jpg" alt="" class="icon">
+                                <img src="upload/large_ch47d_chinook_helicopter_3d_model_fbx_ma_mb_17f490ce-4034-4b3d-815d-889e05f5413f.jpg" alt="" class="icon">
+                                <img src="upload/large_ch47d_chinook_helicopter_3d_model_fbx_ma_mb_17f490ce-4034-4b3d-815d-889e05f5413f.jpg" alt="" class="icon">
+                                <img src="upload/large_ch47d_chinook_helicopter_3d_model_fbx_ma_mb_17f490ce-4034-4b3d-815d-889e05f5413f.jpg" alt="" class="icon">
+                            </div>
+                            <p>and 12 users started following you</p>
+                        </li>
+                        <% }) %>
+                    </ul>
+                    -->
                 </div>
             </div>
         </menuitem>

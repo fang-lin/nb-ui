@@ -239,7 +239,7 @@ header {
           }
         }
         #notice-dropdown {
-          width: 320px;
+          width: 300px;
           padding: 15px;
           nav {
             background: $theGray5;
@@ -420,6 +420,128 @@ header {
                 @include placeholder {
                   color: $theGray8;
                 }
+              }
+            }
+          }
+          #news-dropdown-list {
+            list-style: none;
+            margin: 15px -15px -12px -15px;
+            padding: 0;
+            max-height: 350px;
+            overflow: auto;
+            li {
+              color: $theGray3;
+              padding: 15px 16px;
+              border-bottom: solid 1px $theGray5;
+              @include clearfix;
+              &:first-child {
+                padding: 0 16px 15px 16px !important;
+                &.new-msg {
+                  padding: 0 16px 15px 0 !important;
+                }
+              }
+              &.new-msg {
+                padding: 15px 16px 15px 0;
+                &:before {
+                  content: '';
+                  background: $thePink1;
+                  height: 6px;
+                  width: 6px;
+                  border-radius: 3px;
+                  display: block;
+                  float: left;
+                  margin: 25px 5px 0 5px;
+                }
+              }
+              .portrait {
+                height: 56px;
+                width: 56px;
+                border-radius: 28px;
+                float: left;
+              }
+              .cork {
+                overflow: hidden;
+                zoom: 1;
+                padding: 0 0 0 13px;
+              }
+              h3 {
+                font-size: 14px;
+                font-weight: normal;
+                line-height: 20px;
+                margin: 0 0 5px 0;
+                .datetime {
+                  font-size: 10px;
+                  color: $theBlue2;
+                  float: right;
+                }
+              }
+              .portraits {
+                margin: 0 -4px;
+                color: $theGray7;
+                line-height: 0;
+                font-size: 0;
+                img {
+                  height: 70px;
+                  width: 70px;
+                  border-radius: 4px;
+                  margin: 0 4px;
+                }
+              }
+            }
+          }
+          #you-dropdown-list {
+            list-style: none;
+            margin: 15px -15px -12px -15px;
+            padding: 0;
+            max-height: 350px;
+            overflow: auto;
+            li {
+              color: $theGray3;
+              padding: 15px 16px 10px 16px;
+              border-bottom: solid 1px $theGray5;
+              @include clearfix;
+              &:first-child {
+                padding: 0 16px 15px 16px !important;
+                &.new-msg {
+                  padding: 0 16px 15px 0 !important;
+                }
+              }
+              &.new-msg {
+                padding: 15px 16px 15px 0;
+                &:before {
+                  content: '';
+                  background: $thePink1;
+                  height: 6px;
+                  width: 6px;
+                  border-radius: 3px;
+                  display: block;
+                  float: left;
+                  margin: 25px 5px 0 5px;
+                }
+                p {
+                  padding: 5px 16px 0 16px;
+                }
+              }
+              .portraits {
+                line-height: 0;
+                font-size: 0;
+                height: 56px;
+                img {
+                  height: 56px;
+                  width: 56px;
+                  border-radius: 28px;
+                  margin: 0 0 0 24px;
+                  &:first-child {
+                    margin: 0 !important;
+                  }
+                }
+              }
+              p {
+                margin: 5px 0 0 0;
+                font-size: 12px;
+                line-height: 18px;
+                color: $theGray3;
+                padding: 5px 16px 0 0;
               }
             }
           }

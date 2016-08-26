@@ -3285,7 +3285,7 @@ header {
             header #header-menu menuitem .dropdown .checkout-list .buttons a.continue, header #header-menu menuitem .dropdown .checkout-list .buttons a.subtotal {
               margin: 0 8px; }
         header #header-menu menuitem .dropdown #notice-dropdown {
-          width: 320px;
+          width: 300px;
           padding: 15px; }
           header #header-menu menuitem .dropdown #notice-dropdown nav {
             background: #efeff1;
@@ -3449,6 +3449,111 @@ header {
                 color: #d8d8d8; }
               header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown .chat-form input:-ms-input-placeholder {
                 color: #d8d8d8; }
+          header #header-menu menuitem .dropdown #notice-dropdown #news-dropdown-list {
+            list-style: none;
+            margin: 15px -15px -12px -15px;
+            padding: 0;
+            max-height: 350px;
+            overflow: auto; }
+            header #header-menu menuitem .dropdown #notice-dropdown #news-dropdown-list li {
+              color: #515254;
+              padding: 15px 16px;
+              border-bottom: solid 1px #efeff1; }
+              header #header-menu menuitem .dropdown #notice-dropdown #news-dropdown-list li::after {
+                clear: both;
+                content: "";
+                display: table; }
+              header #header-menu menuitem .dropdown #notice-dropdown #news-dropdown-list li:first-child {
+                padding: 0 16px 15px 16px !important; }
+                header #header-menu menuitem .dropdown #notice-dropdown #news-dropdown-list li:first-child.new-msg {
+                  padding: 0 16px 15px 0 !important; }
+              header #header-menu menuitem .dropdown #notice-dropdown #news-dropdown-list li.new-msg {
+                padding: 15px 16px 15px 0; }
+                header #header-menu menuitem .dropdown #notice-dropdown #news-dropdown-list li.new-msg:before {
+                  content: '';
+                  background: #ea6264;
+                  height: 6px;
+                  width: 6px;
+                  border-radius: 3px;
+                  display: block;
+                  float: left;
+                  margin: 25px 5px 0 5px; }
+              header #header-menu menuitem .dropdown #notice-dropdown #news-dropdown-list li .portrait {
+                height: 56px;
+                width: 56px;
+                border-radius: 28px;
+                float: left; }
+              header #header-menu menuitem .dropdown #notice-dropdown #news-dropdown-list li .cork {
+                overflow: hidden;
+                zoom: 1;
+                padding: 0 0 0 13px; }
+              header #header-menu menuitem .dropdown #notice-dropdown #news-dropdown-list li h3 {
+                font-size: 14px;
+                font-weight: normal;
+                line-height: 20px;
+                margin: 0 0 5px 0; }
+                header #header-menu menuitem .dropdown #notice-dropdown #news-dropdown-list li h3 .datetime {
+                  font-size: 10px;
+                  color: #93939e;
+                  float: right; }
+              header #header-menu menuitem .dropdown #notice-dropdown #news-dropdown-list li .portraits {
+                margin: 0 -4px;
+                color: #95979a;
+                line-height: 0;
+                font-size: 0; }
+                header #header-menu menuitem .dropdown #notice-dropdown #news-dropdown-list li .portraits img {
+                  height: 70px;
+                  width: 70px;
+                  border-radius: 4px;
+                  margin: 0 4px; }
+          header #header-menu menuitem .dropdown #notice-dropdown #you-dropdown-list {
+            list-style: none;
+            margin: 15px -15px -12px -15px;
+            padding: 0;
+            max-height: 350px;
+            overflow: auto; }
+            header #header-menu menuitem .dropdown #notice-dropdown #you-dropdown-list li {
+              color: #515254;
+              padding: 15px 16px 10px 16px;
+              border-bottom: solid 1px #efeff1; }
+              header #header-menu menuitem .dropdown #notice-dropdown #you-dropdown-list li::after {
+                clear: both;
+                content: "";
+                display: table; }
+              header #header-menu menuitem .dropdown #notice-dropdown #you-dropdown-list li:first-child {
+                padding: 0 16px 15px 16px !important; }
+                header #header-menu menuitem .dropdown #notice-dropdown #you-dropdown-list li:first-child.new-msg {
+                  padding: 0 16px 15px 0 !important; }
+              header #header-menu menuitem .dropdown #notice-dropdown #you-dropdown-list li.new-msg {
+                padding: 15px 16px 15px 0; }
+                header #header-menu menuitem .dropdown #notice-dropdown #you-dropdown-list li.new-msg:before {
+                  content: '';
+                  background: #ea6264;
+                  height: 6px;
+                  width: 6px;
+                  border-radius: 3px;
+                  display: block;
+                  float: left;
+                  margin: 25px 5px 0 5px; }
+                header #header-menu menuitem .dropdown #notice-dropdown #you-dropdown-list li.new-msg p {
+                  padding: 5px 16px 0 16px; }
+              header #header-menu menuitem .dropdown #notice-dropdown #you-dropdown-list li .portraits {
+                line-height: 0;
+                font-size: 0;
+                height: 56px; }
+                header #header-menu menuitem .dropdown #notice-dropdown #you-dropdown-list li .portraits img {
+                  height: 56px;
+                  width: 56px;
+                  border-radius: 28px;
+                  margin: 0 0 0 24px; }
+                  header #header-menu menuitem .dropdown #notice-dropdown #you-dropdown-list li .portraits img:first-child {
+                    margin: 0 !important; }
+              header #header-menu menuitem .dropdown #notice-dropdown #you-dropdown-list li p {
+                margin: 5px 0 0 0;
+                font-size: 12px;
+                line-height: 18px;
+                color: #515254;
+                padding: 5px 16px 0 0; }
 
 #channel-bar-wrap {
   background: #fff;
