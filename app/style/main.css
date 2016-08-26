@@ -3186,7 +3186,7 @@ header {
         header #header-menu menuitem .button .notice {
           background-position: 0px -237px; }
       header #header-menu menuitem .dropdown {
-        z-index: 10;
+        z-index: 20;
         background: #fff;
         position: absolute;
         right: 20px;
@@ -3310,46 +3310,48 @@ header {
           header #header-menu menuitem .dropdown #notice-dropdown #notice-dropdown-list {
             list-style: none;
             padding: 0;
-            margin: 0; }
+            margin: 15px -15px -15px -15px;
+            max-height: 350px;
+            overflow: auto; }
             header #header-menu menuitem .dropdown #notice-dropdown #notice-dropdown-list li {
               color: #515254;
-              padding: 15px 0;
-              border-bottom: solid 1px #efeff1;
-              position: relative; }
+              padding: 0 0 15px 16px;
+              border-bottom: solid 1px #efeff1; }
               header #header-menu menuitem .dropdown #notice-dropdown #notice-dropdown-list li::after {
                 clear: both;
                 content: "";
                 display: table; }
-              header #header-menu menuitem .dropdown #notice-dropdown #notice-dropdown-list li.new-msg:before {
-                content: '';
-                background: #ea6264;
-                height: 6px;
-                width: 6px;
-                border-radius: 3px;
-                display: block;
-                position: absolute;
-                top: 40px;
-                left: -11px; }
+              header #header-menu menuitem .dropdown #notice-dropdown #notice-dropdown-list li.new-msg {
+                padding: 0 0 15px 0; }
+                header #header-menu menuitem .dropdown #notice-dropdown #notice-dropdown-list li.new-msg:before {
+                  content: '';
+                  background: #ea6264;
+                  height: 6px;
+                  width: 6px;
+                  border-radius: 3px;
+                  display: block;
+                  float: left;
+                  margin: 40px 5px 0 5px; }
               header #header-menu menuitem .dropdown #notice-dropdown #notice-dropdown-list li .fa-times {
-                position: absolute;
-                top: 5px;
-                right: 0;
+                float: right;
+                margin: 0;
                 color: #c3c9cf;
                 font-size: 10px; }
               header #header-menu menuitem .dropdown #notice-dropdown #notice-dropdown-list li .portrait {
                 height: 56px;
                 width: 56px;
                 border-radius: 28px;
-                float: left; }
+                float: left;
+                margin: 15px 0 0 0; }
               header #header-menu menuitem .dropdown #notice-dropdown #notice-dropdown-list li .cork {
                 overflow: hidden;
                 zoom: 1;
-                padding: 0 0 0 13px; }
+                padding: 5px 15px 0 13px; }
               header #header-menu menuitem .dropdown #notice-dropdown #notice-dropdown-list li h3 {
                 font-size: 14px;
                 font-weight: normal;
                 line-height: 22px;
-                margin: 0; }
+                margin: 10px 0 0 0; }
                 header #header-menu menuitem .dropdown #notice-dropdown #notice-dropdown-list li h3 .datetime {
                   font-size: 10px;
                   color: #93939e;
@@ -3359,96 +3361,94 @@ header {
                 font-size: 12px;
                 line-height: 18px;
                 color: #95979a; }
-          header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown {
-            position: relative; }
-            header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown .fa-caret-square-o-left {
-              position: absolute;
+          header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown .back-wrap {
+            line-height: 40px; }
+            header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown .back-wrap .fa-caret-square-o-left {
               color: #adadad;
-              font-size: 16px;
-              left: 0;
-              top: 7px; }
-            header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown ul {
-              padding: 10px 0 0 0;
-              margin: 0;
+              font-size: 16px; }
+          header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown .message-list-wrap {
+            overflow: auto;
+            max-height: 350px;
+            margin: 0 -12px 0 0;
+            padding: 0 12px 0 0; }
+            header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown .message-list-wrap .message-list {
+              padding: 0;
+              margin: -20px 0;
               list-style: none; }
-              header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown ul li {
+              header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown .message-list-wrap .message-list li {
                 padding: 0;
                 margin: 20px 0; }
-                header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown ul li::after {
+                header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown .message-list-wrap .message-list li::after {
                   clear: both;
                   content: "";
                   display: table; }
-                header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown ul li .portrait {
+                header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown .message-list-wrap .message-list li .portrait {
                   height: 38px;
                   width: 38px;
                   border-radius: 19px;
                   float: left; }
-                header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown ul li .cork {
+                header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown .message-list-wrap .message-list li .cork {
                   overflow: hidden;
                   zoom: 1;
                   padding: 0 0 0 10px;
                   margin: 0; }
-                  header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown ul li .cork .msg {
-                    position: relative;
+                  header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown .message-list-wrap .message-list li .cork .msg {
                     background: #4A90E2;
                     border-radius: 4px;
                     color: #fff;
                     font-size: 12px;
                     line-height: 18px;
                     padding: 8px 12px; }
-                    header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown ul li .cork .msg:before {
-                      left: -5px;
-                      top: 10px;
-                      content: ' ';
+                    header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown .message-list-wrap .message-list li .cork .msg:before {
+                      float: left;
+                      margin: 0 0 0 -29px;
+                      content: '';
                       display: block;
-                      height: 10px;
-                      width: 10px;
-                      background: #4A90E2;
-                      position: absolute;
-                      -webkit-transform: rotate(45deg);
-                      -moz-transform: rotate(45deg);
-                      -ms-transform: rotate(45deg);
-                      -o-transform: rotate(45deg);
-                      transform: rotate(45deg); }
-                  header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown ul li .cork .datetime {
+                      height: 0;
+                      width: 0;
+                      border-color: transparent #4A90E2 transparent transparent;
+                      border-width: 10px;
+                      border-style: solid; }
+                  header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown .message-list-wrap .message-list li .cork .datetime {
                     font-size: 8px;
                     color: #d8d8d8;
                     display: block;
                     line-height: 16px; }
-                header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown ul li.right .portrait {
+                header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown .message-list-wrap .message-list li.right .portrait {
                   float: right; }
-                header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown ul li.right .cork {
+                header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown .message-list-wrap .message-list li.right .cork {
                   padding: 0 10px 0 0; }
-                  header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown ul li.right .cork .msg {
+                  header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown .message-list-wrap .message-list li.right .cork .msg {
                     background: #adadad; }
-                    header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown ul li.right .cork .msg:before {
-                      right: -5px;
-                      top: 10px;
-                      left: auto;
-                      background: #adadad; }
-            header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown .chat-form {
-              border-top: solid 1px #d8d8d8;
-              padding: 15px 15px 0 15px;
-              margin: 0 -15px; }
-              header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown .chat-form input {
-                display: block;
-                line-height: 30px;
-                border-radius: 15px;
-                border: solid 1px #d8d8d8;
-                width: 100%;
-                padding: 0 16px;
-                margin: 0;
-                font-size: 14px;
-                color: #515254;
-                box-sizing: border-box; }
-                header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown .chat-form input::-webkit-input-placeholder {
-                  color: #d8d8d8; }
-                header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown .chat-form input::-moz-placeholder {
-                  color: #d8d8d8; }
-                header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown .chat-form input:-moz-placeholder {
-                  color: #d8d8d8; }
-                header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown .chat-form input:-ms-input-placeholder {
-                  color: #d8d8d8; }
+                    header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown .message-list-wrap .message-list li.right .cork .msg:before {
+                      margin: 0 -30px 0 0;
+                      float: right;
+                      border-color: transparent transparent transparent #adadad;
+                      border-width: 10px;
+                      border-style: solid; }
+          header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown .chat-form {
+            border-top: solid 1px #d8d8d8;
+            padding: 15px 15px 0 15px;
+            margin: 0 -15px; }
+            header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown .chat-form input {
+              display: block;
+              line-height: 30px;
+              border-radius: 15px;
+              border: solid 1px #d8d8d8;
+              width: 100%;
+              padding: 0 16px;
+              margin: 0;
+              font-size: 14px;
+              color: #515254;
+              box-sizing: border-box; }
+              header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown .chat-form input::-webkit-input-placeholder {
+                color: #d8d8d8; }
+              header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown .chat-form input::-moz-placeholder {
+                color: #d8d8d8; }
+              header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown .chat-form input:-moz-placeholder {
+                color: #d8d8d8; }
+              header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown .chat-form input:-ms-input-placeholder {
+                color: #d8d8d8; }
 
 #channel-bar-wrap {
   background: #fff;
