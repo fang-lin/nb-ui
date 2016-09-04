@@ -264,7 +264,6 @@
           padding: 0 5px;
           background: none;
           cursor: pointer;
-          width: 45%;
           text-align: center;
           .icon {
             height: 18px;
@@ -280,10 +279,40 @@
           }
         }
         .star-btn {
+          width: 45%;
           float: left;
+          &:hover {
+            .icon.favor {
+              @include sprite-position($icon-favor-large-selected);
+            }
+          }
+          &.selected {
+            .icon.favor {
+              @include sprite-position($icon-favor-large-selected);
+            }
+            &:hover {
+              .icon.favor {
+                @include sprite-position($icon-favor-large);
+              }
+            }
+          }
         }
-        .share-btn {
+        .share-btn-wrap {
+          width: 45%;
+          padding: 0 0 20px 0;
+          margin: 0 0 -20px 0;
           float: right;
+          .share-btn {
+            width: 100%;
+          }
+          &:hover {
+            .dropdown {
+              display: block;
+            }
+          }
+          .dropdown {
+            display: none;
+          }
         }
         .dropdown {
           z-index: 10;
@@ -454,6 +483,11 @@
         box-shadow: none;
       }
     }
+    //.dropdown-wrap {
+    //  float: right;
+    //  @include clearfix;
+    //
+    //}
   }
 
   #model-more {

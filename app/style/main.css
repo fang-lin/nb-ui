@@ -3135,6 +3135,7 @@ header {
       color: #fff;
       float: left;
       margin: 0 5px;
+      padding: 0;
       line-height: 50px;
       cursor: pointer;
       position: relative; }
@@ -3168,9 +3169,9 @@ header {
           header #header-menu menuitem .button:hover .cart {
             background-position: -20px -217px; }
           header #header-menu menuitem .button:hover .account {
-            background-position: -140px -217px; }
+            background-position: -160px -217px; }
           header #header-menu menuitem .button:hover .notice {
-            background-position: -20px -237px; }
+            background-position: -40px -237px; }
         header #header-menu menuitem .button .icon, header #header-menu menuitem .button #upload-form #upload-models-wrap .dropdown-input:before, #upload-form #upload-models-wrap header #header-menu menuitem .button .dropdown-input:before, header #header-menu menuitem .button #product-form .dropdown-input:before, #product-form header #header-menu menuitem .button .dropdown-input:before {
           height: 20px;
           width: 20px;
@@ -3180,380 +3181,386 @@ header {
         header #header-menu menuitem .button .element {
           background-position: -242px -109px; }
         header #header-menu menuitem .button .cart {
-          background-position: -40px -237px; }
+          background-position: 0px -237px; }
         header #header-menu menuitem .button .account {
           background-position: -220px -217px; }
         header #header-menu menuitem .button .notice {
-          background-position: 0px -237px; }
-      header #header-menu menuitem .dropdown {
+          background-position: -20px -237px; }
+      header #header-menu menuitem .dropdown-wrap {
+        display: none;
         z-index: 20;
-        background: #fff;
         position: absolute;
-        right: 20px;
-        top: 58px;
-        box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
-        border: solid 1px #e0e0e0;
-        border-radius: 2px;
-        padding: 0; }
-        header #header-menu menuitem .dropdown:before {
-          top: -6px;
-          right: 20px;
-          border-style: solid;
-          border-color: #e0e0e0 #fff #fff #e0e0e0;
-          border-width: 1px;
-          content: ' ';
-          display: block;
-          height: 10px;
-          width: 10px;
+        right: 18px;
+        top: 40px;
+        padding: 20px 0 0 0; }
+        header #header-menu menuitem .dropdown-wrap .dropdown {
+          position: relative;
           background: #fff;
-          position: absolute;
-          -webkit-transform: rotate(45deg);
-          -moz-transform: rotate(45deg);
-          -ms-transform: rotate(45deg);
-          -o-transform: rotate(45deg);
-          transform: rotate(45deg); }
-        header #header-menu menuitem .dropdown .list {
-          padding: 5px 0; }
-          header #header-menu menuitem .dropdown .list a {
+          box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+          border: solid 1px #e0e0e0;
+          border-radius: 2px;
+          padding: 0; }
+          header #header-menu menuitem .dropdown-wrap .dropdown:before {
+            top: -6px;
+            right: 20px;
+            border-style: solid;
+            border-color: #e0e0e0 #fff #fff #e0e0e0;
+            border-width: 1px;
+            content: ' ';
             display: block;
-            color: #515254;
-            text-decoration: none;
-            font-size: 12px;
-            padding: 12px 30px;
-            line-height: 12px;
-            white-space: nowrap;
-            text-align: center; }
-            header #header-menu menuitem .dropdown .list a:hover {
-              color: #ea6264; }
-        header #header-menu menuitem .dropdown .checkout-list .goods {
-          border-bottom: solid 1px #e0e0e0;
-          padding: 3px; }
-          header #header-menu menuitem .dropdown .checkout-list .goods::after {
-            clear: both;
-            content: "";
-            display: table; }
-          header #header-menu menuitem .dropdown .checkout-list .goods .icon, header #header-menu menuitem .dropdown .checkout-list .goods #upload-form #upload-models-wrap .dropdown-input:before, #upload-form #upload-models-wrap header #header-menu menuitem .dropdown .checkout-list .goods .dropdown-input:before, header #header-menu menuitem .dropdown .checkout-list .goods #product-form .dropdown-input:before, #product-form header #header-menu menuitem .dropdown .checkout-list .goods .dropdown-input:before {
-            width: 60px;
-            height: 60px;
-            border: medium none;
-            background: #999;
-            border-radius: 4px;
-            float: left;
-            margin: 5px; }
-          header #header-menu menuitem .dropdown .checkout-list .goods .info {
-            zoom: 1;
-            overflow: hidden;
-            padding: 5px; }
-            header #header-menu menuitem .dropdown .checkout-list .goods .info .title {
-              padding: 6px 0 0 0;
+            height: 10px;
+            width: 10px;
+            background: #fff;
+            position: absolute;
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg); }
+          header #header-menu menuitem .dropdown-wrap .dropdown .list {
+            padding: 5px 0; }
+            header #header-menu menuitem .dropdown-wrap .dropdown .list a {
+              display: block;
               color: #515254;
+              text-decoration: none;
               font-size: 12px;
-              display: block;
-              line-height: 24px; }
-            header #header-menu menuitem .dropdown .checkout-list .goods .info .name {
-              font-size: 11px;
-              color: #adadad;
-              display: block;
-              line-height: 24px;
-              padding: 0 0 6px 0; }
-            header #header-menu menuitem .dropdown .checkout-list .goods .info .price {
-              padding: 6px 10px 0 0;
-              float: right;
-              font-size: 11px;
-              color: #adadad;
-              line-height: 24px; }
-        header #header-menu menuitem .dropdown .checkout-list .buttons {
-          white-space: nowrap;
-          font-size: 0;
-          line-height: 0;
-          padding: 6px; }
-          header #header-menu menuitem .dropdown .checkout-list .buttons a {
-            display: inline-block;
-            font-size: 12px;
-            line-height: 12px;
-            text-decoration: none;
-            box-sizing: border-box;
-            color: #ea6264; }
-            header #header-menu menuitem .dropdown .checkout-list .buttons a.checkout {
-              background: #ea6264;
-              color: #fff;
-              font-size: 12px;
-              height: 22px;
-              line-height: 22px;
-              border-radius: 11px;
-              padding: 0 16px; }
-            header #header-menu menuitem .dropdown .checkout-list .buttons a.continue, header #header-menu menuitem .dropdown .checkout-list .buttons a.subtotal {
-              margin: 0 8px; }
-        header #header-menu menuitem .dropdown #notice-dropdown {
-          width: 300px;
-          padding: 15px; }
-          header #header-menu menuitem .dropdown #notice-dropdown nav {
-            background: #efeff1;
-            border-radius: 15px;
+              padding: 12px 30px;
+              line-height: 12px;
+              white-space: nowrap;
+              text-align: center; }
+              header #header-menu menuitem .dropdown-wrap .dropdown .list a:hover {
+                color: #ea6264; }
+          header #header-menu menuitem .dropdown-wrap .dropdown .checkout-list .goods {
+            border-bottom: solid 1px #e0e0e0;
             padding: 3px; }
-            header #header-menu menuitem .dropdown #notice-dropdown nav::after {
+            header #header-menu menuitem .dropdown-wrap .dropdown .checkout-list .goods::after {
               clear: both;
               content: "";
               display: table; }
-            header #header-menu menuitem .dropdown #notice-dropdown nav a {
+            header #header-menu menuitem .dropdown-wrap .dropdown .checkout-list .goods .icon, header #header-menu menuitem .dropdown-wrap .dropdown .checkout-list .goods #upload-form #upload-models-wrap .dropdown-input:before, #upload-form #upload-models-wrap header #header-menu menuitem .dropdown-wrap .dropdown .checkout-list .goods .dropdown-input:before, header #header-menu menuitem .dropdown-wrap .dropdown .checkout-list .goods #product-form .dropdown-input:before, #product-form header #header-menu menuitem .dropdown-wrap .dropdown .checkout-list .goods .dropdown-input:before {
+              width: 60px;
+              height: 60px;
+              border: medium none;
+              background: #999;
+              border-radius: 4px;
               float: left;
-              width: 33.33%;
-              text-align: center;
-              font-size: 14px;
-              line-height: 24px;
-              color: #adadad;
-              text-decoration: none; }
-              header #header-menu menuitem .dropdown #notice-dropdown nav a.selected {
-                background: #fff;
-                border-radius: 12px;
-                color: #515254; }
-          header #header-menu menuitem .dropdown #notice-dropdown #notice-dropdown-list {
-            list-style: none;
-            padding: 0;
-            margin: 15px -15px -15px -15px;
-            max-height: 350px;
-            overflow: auto; }
-            header #header-menu menuitem .dropdown #notice-dropdown #notice-dropdown-list li {
-              color: #515254;
-              padding: 0 0 15px 16px;
-              border-bottom: solid 1px #efeff1; }
-              header #header-menu menuitem .dropdown #notice-dropdown #notice-dropdown-list li::after {
+              margin: 5px; }
+            header #header-menu menuitem .dropdown-wrap .dropdown .checkout-list .goods .info {
+              zoom: 1;
+              overflow: hidden;
+              padding: 5px; }
+              header #header-menu menuitem .dropdown-wrap .dropdown .checkout-list .goods .info .title {
+                padding: 6px 0 0 0;
+                color: #515254;
+                font-size: 12px;
+                display: block;
+                line-height: 24px; }
+              header #header-menu menuitem .dropdown-wrap .dropdown .checkout-list .goods .info .name {
+                font-size: 11px;
+                color: #adadad;
+                display: block;
+                line-height: 24px;
+                padding: 0 0 6px 0; }
+              header #header-menu menuitem .dropdown-wrap .dropdown .checkout-list .goods .info .price {
+                padding: 6px 10px 0 0;
+                float: right;
+                font-size: 11px;
+                color: #adadad;
+                line-height: 24px; }
+          header #header-menu menuitem .dropdown-wrap .dropdown .checkout-list .buttons {
+            white-space: nowrap;
+            font-size: 0;
+            line-height: 0;
+            padding: 6px; }
+            header #header-menu menuitem .dropdown-wrap .dropdown .checkout-list .buttons a {
+              display: inline-block;
+              font-size: 12px;
+              line-height: 12px;
+              text-decoration: none;
+              box-sizing: border-box;
+              color: #ea6264; }
+              header #header-menu menuitem .dropdown-wrap .dropdown .checkout-list .buttons a.checkout {
+                background: #ea6264;
+                color: #fff;
+                font-size: 12px;
+                height: 22px;
+                line-height: 22px;
+                border-radius: 11px;
+                padding: 0 16px; }
+              header #header-menu menuitem .dropdown-wrap .dropdown .checkout-list .buttons a.continue, header #header-menu menuitem .dropdown-wrap .dropdown .checkout-list .buttons a.subtotal {
+                margin: 0 8px; }
+          header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown {
+            width: 300px;
+            padding: 15px; }
+            header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown nav {
+              background: #efeff1;
+              border-radius: 15px;
+              padding: 3px; }
+              header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown nav::after {
                 clear: both;
                 content: "";
                 display: table; }
-              header #header-menu menuitem .dropdown #notice-dropdown #notice-dropdown-list li.new-msg {
-                padding: 0 0 15px 0; }
-                header #header-menu menuitem .dropdown #notice-dropdown #notice-dropdown-list li.new-msg:before {
-                  content: '';
-                  background: #ea6264;
-                  height: 6px;
-                  width: 6px;
-                  border-radius: 3px;
-                  display: block;
-                  float: left;
-                  margin: 40px 5px 0 5px; }
-              header #header-menu menuitem .dropdown #notice-dropdown #notice-dropdown-list li .fa-times {
-                float: right;
-                margin: 0;
-                color: #c3c9cf;
-                font-size: 10px; }
-              header #header-menu menuitem .dropdown #notice-dropdown #notice-dropdown-list li .portrait {
-                height: 56px;
-                width: 56px;
-                border-radius: 28px;
+              header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown nav a {
                 float: left;
-                margin: 15px 0 0 0; }
-              header #header-menu menuitem .dropdown #notice-dropdown #notice-dropdown-list li .cork {
-                overflow: hidden;
-                zoom: 1;
-                padding: 5px 15px 0 13px; }
-              header #header-menu menuitem .dropdown #notice-dropdown #notice-dropdown-list li h3 {
+                width: 33.33%;
+                text-align: center;
                 font-size: 14px;
-                font-weight: normal;
-                line-height: 22px;
-                margin: 10px 0 0 0; }
-                header #header-menu menuitem .dropdown #notice-dropdown #notice-dropdown-list li h3 .datetime {
-                  font-size: 10px;
-                  color: #93939e;
-                  float: right; }
-              header #header-menu menuitem .dropdown #notice-dropdown #notice-dropdown-list li p {
-                margin: 0;
-                font-size: 12px;
-                line-height: 18px;
-                color: #95979a; }
-          header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown .back-wrap {
-            line-height: 40px; }
-            header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown .back-wrap .fa-caret-square-o-left {
-              color: #adadad;
-              font-size: 16px; }
-          header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown .message-list-wrap {
-            overflow: auto;
-            max-height: 350px;
-            margin: 0 -12px 0 0;
-            padding: 0 12px 0 0; }
-            header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown .message-list-wrap .message-list {
+                line-height: 24px;
+                color: #adadad;
+                text-decoration: none; }
+                header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown nav a.selected {
+                  background: #fff;
+                  border-radius: 12px;
+                  color: #515254; }
+            header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown #notice-dropdown-list {
+              list-style: none;
               padding: 0;
-              margin: -20px 0;
-              list-style: none; }
-              header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown .message-list-wrap .message-list li {
-                padding: 0;
-                margin: 20px 0; }
-                header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown .message-list-wrap .message-list li::after {
+              margin: 15px -15px -15px -15px;
+              max-height: 350px;
+              overflow: auto; }
+              header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown #notice-dropdown-list li {
+                color: #515254;
+                padding: 0 0 15px 16px;
+                border-bottom: solid 1px #efeff1; }
+                header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown #notice-dropdown-list li::after {
                   clear: both;
                   content: "";
                   display: table; }
-                header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown .message-list-wrap .message-list li .portrait {
-                  height: 38px;
-                  width: 38px;
-                  border-radius: 19px;
-                  float: left; }
-                header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown .message-list-wrap .message-list li .cork {
-                  overflow: hidden;
-                  zoom: 1;
-                  padding: 0 0 0 10px;
-                  margin: 0; }
-                  header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown .message-list-wrap .message-list li .cork .msg {
-                    background: #4A90E2;
-                    border-radius: 4px;
-                    color: #fff;
-                    font-size: 12px;
-                    line-height: 18px;
-                    padding: 8px 12px; }
-                    header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown .message-list-wrap .message-list li .cork .msg:before {
-                      float: left;
-                      margin: 0 0 0 -29px;
-                      content: '';
-                      display: block;
-                      height: 0;
-                      width: 0;
-                      border-color: transparent #4A90E2 transparent transparent;
-                      border-width: 10px;
-                      border-style: solid; }
-                  header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown .message-list-wrap .message-list li .cork .datetime {
-                    font-size: 8px;
-                    color: #d8d8d8;
+                header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown #notice-dropdown-list li.new-msg {
+                  padding: 0 0 15px 0; }
+                  header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown #notice-dropdown-list li.new-msg:before {
+                    content: '';
+                    background: #ea6264;
+                    height: 6px;
+                    width: 6px;
+                    border-radius: 3px;
                     display: block;
-                    line-height: 16px; }
-                header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown .message-list-wrap .message-list li.right .portrait {
-                  float: right; }
-                header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown .message-list-wrap .message-list li.right .cork {
-                  padding: 0 10px 0 0; }
-                  header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown .message-list-wrap .message-list li.right .cork .msg {
-                    background: #adadad; }
-                    header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown .message-list-wrap .message-list li.right .cork .msg:before {
-                      margin: 0 -30px 0 0;
-                      float: right;
-                      border-color: transparent transparent transparent #adadad;
-                      border-width: 10px;
-                      border-style: solid; }
-          header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown .chat-form {
-            border-top: solid 1px #d8d8d8;
-            padding: 15px 15px 0 15px;
-            margin: 0 -15px; }
-            header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown .chat-form input {
-              display: block;
-              line-height: 30px;
-              border-radius: 15px;
-              border: solid 1px #d8d8d8;
-              width: 100%;
-              padding: 0 16px;
-              margin: 0;
-              font-size: 14px;
-              color: #515254;
-              box-sizing: border-box; }
-              header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown .chat-form input::-webkit-input-placeholder {
-                color: #d8d8d8; }
-              header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown .chat-form input::-moz-placeholder {
-                color: #d8d8d8; }
-              header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown .chat-form input:-moz-placeholder {
-                color: #d8d8d8; }
-              header #header-menu menuitem .dropdown #notice-dropdown #message-dropdown .chat-form input:-ms-input-placeholder {
-                color: #d8d8d8; }
-          header #header-menu menuitem .dropdown #notice-dropdown #news-dropdown-list {
-            list-style: none;
-            margin: 15px -15px -12px -15px;
-            padding: 0;
-            max-height: 350px;
-            overflow: auto; }
-            header #header-menu menuitem .dropdown #notice-dropdown #news-dropdown-list li {
-              color: #515254;
-              padding: 15px 16px;
-              border-bottom: solid 1px #efeff1; }
-              header #header-menu menuitem .dropdown #notice-dropdown #news-dropdown-list li::after {
-                clear: both;
-                content: "";
-                display: table; }
-              header #header-menu menuitem .dropdown #notice-dropdown #news-dropdown-list li:first-child {
-                padding: 0 16px 15px 16px !important; }
-                header #header-menu menuitem .dropdown #notice-dropdown #news-dropdown-list li:first-child.new-msg {
-                  padding: 0 16px 15px 0 !important; }
-              header #header-menu menuitem .dropdown #notice-dropdown #news-dropdown-list li.new-msg {
-                padding: 15px 16px 15px 0; }
-                header #header-menu menuitem .dropdown #notice-dropdown #news-dropdown-list li.new-msg:before {
-                  content: '';
-                  background: #ea6264;
-                  height: 6px;
-                  width: 6px;
-                  border-radius: 3px;
-                  display: block;
-                  float: left;
-                  margin: 25px 5px 0 5px; }
-              header #header-menu menuitem .dropdown #notice-dropdown #news-dropdown-list li .portrait {
-                height: 56px;
-                width: 56px;
-                border-radius: 28px;
-                float: left; }
-              header #header-menu menuitem .dropdown #notice-dropdown #news-dropdown-list li .cork {
-                overflow: hidden;
-                zoom: 1;
-                padding: 0 0 0 13px; }
-              header #header-menu menuitem .dropdown #notice-dropdown #news-dropdown-list li h3 {
-                font-size: 14px;
-                font-weight: normal;
-                line-height: 20px;
-                margin: 0 0 5px 0; }
-                header #header-menu menuitem .dropdown #notice-dropdown #news-dropdown-list li h3 .datetime {
-                  font-size: 10px;
-                  color: #93939e;
-                  float: right; }
-              header #header-menu menuitem .dropdown #notice-dropdown #news-dropdown-list li .portraits {
-                margin: 0 -4px;
-                color: #95979a;
-                line-height: 0;
-                font-size: 0; }
-                header #header-menu menuitem .dropdown #notice-dropdown #news-dropdown-list li .portraits img {
-                  height: 70px;
-                  width: 70px;
-                  border-radius: 4px;
-                  margin: 0 4px; }
-          header #header-menu menuitem .dropdown #notice-dropdown #you-dropdown-list {
-            list-style: none;
-            margin: 15px -15px -12px -15px;
-            padding: 0;
-            max-height: 350px;
-            overflow: auto; }
-            header #header-menu menuitem .dropdown #notice-dropdown #you-dropdown-list li {
-              color: #515254;
-              padding: 15px 16px 10px 16px;
-              border-bottom: solid 1px #efeff1; }
-              header #header-menu menuitem .dropdown #notice-dropdown #you-dropdown-list li::after {
-                clear: both;
-                content: "";
-                display: table; }
-              header #header-menu menuitem .dropdown #notice-dropdown #you-dropdown-list li:first-child {
-                padding: 0 16px 15px 16px !important; }
-                header #header-menu menuitem .dropdown #notice-dropdown #you-dropdown-list li:first-child.new-msg {
-                  padding: 0 16px 15px 0 !important; }
-              header #header-menu menuitem .dropdown #notice-dropdown #you-dropdown-list li.new-msg {
-                padding: 15px 16px 15px 0; }
-                header #header-menu menuitem .dropdown #notice-dropdown #you-dropdown-list li.new-msg:before {
-                  content: '';
-                  background: #ea6264;
-                  height: 6px;
-                  width: 6px;
-                  border-radius: 3px;
-                  display: block;
-                  float: left;
-                  margin: 25px 5px 0 5px; }
-                header #header-menu menuitem .dropdown #notice-dropdown #you-dropdown-list li.new-msg p {
-                  padding: 5px 16px 0 16px; }
-              header #header-menu menuitem .dropdown #notice-dropdown #you-dropdown-list li .portraits {
-                line-height: 0;
-                font-size: 0;
-                height: 56px; }
-                header #header-menu menuitem .dropdown #notice-dropdown #you-dropdown-list li .portraits img {
+                    float: left;
+                    margin: 40px 5px 0 5px; }
+                header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown #notice-dropdown-list li .fa-times {
+                  float: right;
+                  margin: 0;
+                  color: #c3c9cf;
+                  font-size: 10px; }
+                header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown #notice-dropdown-list li .portrait {
                   height: 56px;
                   width: 56px;
                   border-radius: 28px;
-                  margin: 0 0 0 24px; }
-                  header #header-menu menuitem .dropdown #notice-dropdown #you-dropdown-list li .portraits img:first-child {
-                    margin: 0 !important; }
-              header #header-menu menuitem .dropdown #notice-dropdown #you-dropdown-list li p {
-                margin: 5px 0 0 0;
-                font-size: 12px;
-                line-height: 18px;
+                  float: left;
+                  margin: 15px 0 0 0; }
+                header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown #notice-dropdown-list li .cork {
+                  overflow: hidden;
+                  zoom: 1;
+                  padding: 5px 15px 0 13px; }
+                header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown #notice-dropdown-list li h3 {
+                  font-size: 14px;
+                  font-weight: normal;
+                  line-height: 22px;
+                  margin: 10px 0 0 0; }
+                  header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown #notice-dropdown-list li h3 .datetime {
+                    font-size: 10px;
+                    color: #93939e;
+                    float: right; }
+                header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown #notice-dropdown-list li p {
+                  margin: 0;
+                  font-size: 12px;
+                  line-height: 18px;
+                  color: #95979a; }
+            header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown #message-dropdown .back-wrap {
+              line-height: 40px; }
+              header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown #message-dropdown .back-wrap .fa-caret-square-o-left {
+                color: #adadad;
+                font-size: 16px; }
+            header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown #message-dropdown .message-list-wrap {
+              overflow: auto;
+              max-height: 350px;
+              margin: 0 -12px 0 0;
+              padding: 0 12px 0 0; }
+              header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown #message-dropdown .message-list-wrap .message-list {
+                padding: 0;
+                margin: -20px 0;
+                list-style: none; }
+                header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown #message-dropdown .message-list-wrap .message-list li {
+                  padding: 0;
+                  margin: 20px 0; }
+                  header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown #message-dropdown .message-list-wrap .message-list li::after {
+                    clear: both;
+                    content: "";
+                    display: table; }
+                  header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown #message-dropdown .message-list-wrap .message-list li .portrait {
+                    height: 38px;
+                    width: 38px;
+                    border-radius: 19px;
+                    float: left; }
+                  header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown #message-dropdown .message-list-wrap .message-list li .cork {
+                    overflow: hidden;
+                    zoom: 1;
+                    padding: 0 0 0 10px;
+                    margin: 0; }
+                    header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown #message-dropdown .message-list-wrap .message-list li .cork .msg {
+                      background: #4A90E2;
+                      border-radius: 4px;
+                      color: #fff;
+                      font-size: 12px;
+                      line-height: 18px;
+                      padding: 8px 12px; }
+                      header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown #message-dropdown .message-list-wrap .message-list li .cork .msg:before {
+                        float: left;
+                        margin: 0 0 0 -29px;
+                        content: '';
+                        display: block;
+                        height: 0;
+                        width: 0;
+                        border-color: transparent #4A90E2 transparent transparent;
+                        border-width: 10px;
+                        border-style: solid; }
+                    header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown #message-dropdown .message-list-wrap .message-list li .cork .datetime {
+                      font-size: 8px;
+                      color: #d8d8d8;
+                      display: block;
+                      line-height: 16px; }
+                  header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown #message-dropdown .message-list-wrap .message-list li.right .portrait {
+                    float: right; }
+                  header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown #message-dropdown .message-list-wrap .message-list li.right .cork {
+                    padding: 0 10px 0 0; }
+                    header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown #message-dropdown .message-list-wrap .message-list li.right .cork .msg {
+                      background: #adadad; }
+                      header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown #message-dropdown .message-list-wrap .message-list li.right .cork .msg:before {
+                        margin: 0 -30px 0 0;
+                        float: right;
+                        border-color: transparent transparent transparent #adadad;
+                        border-width: 10px;
+                        border-style: solid; }
+            header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown #message-dropdown .chat-form {
+              border-top: solid 1px #d8d8d8;
+              padding: 15px 15px 0 15px;
+              margin: 0 -15px; }
+              header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown #message-dropdown .chat-form input {
+                display: block;
+                line-height: 30px;
+                border-radius: 15px;
+                border: solid 1px #d8d8d8;
+                width: 100%;
+                padding: 0 16px;
+                margin: 0;
+                font-size: 14px;
                 color: #515254;
-                padding: 5px 16px 0 0; }
+                box-sizing: border-box; }
+                header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown #message-dropdown .chat-form input::-webkit-input-placeholder {
+                  color: #d8d8d8; }
+                header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown #message-dropdown .chat-form input::-moz-placeholder {
+                  color: #d8d8d8; }
+                header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown #message-dropdown .chat-form input:-moz-placeholder {
+                  color: #d8d8d8; }
+                header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown #message-dropdown .chat-form input:-ms-input-placeholder {
+                  color: #d8d8d8; }
+            header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown #news-dropdown-list {
+              list-style: none;
+              margin: 15px -15px -12px -15px;
+              padding: 0;
+              max-height: 350px;
+              overflow: auto; }
+              header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown #news-dropdown-list li {
+                color: #515254;
+                padding: 15px 16px;
+                border-bottom: solid 1px #efeff1; }
+                header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown #news-dropdown-list li::after {
+                  clear: both;
+                  content: "";
+                  display: table; }
+                header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown #news-dropdown-list li:first-child {
+                  padding: 0 16px 15px 16px !important; }
+                  header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown #news-dropdown-list li:first-child.new-msg {
+                    padding: 0 16px 15px 0 !important; }
+                header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown #news-dropdown-list li.new-msg {
+                  padding: 15px 16px 15px 0; }
+                  header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown #news-dropdown-list li.new-msg:before {
+                    content: '';
+                    background: #ea6264;
+                    height: 6px;
+                    width: 6px;
+                    border-radius: 3px;
+                    display: block;
+                    float: left;
+                    margin: 25px 5px 0 5px; }
+                header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown #news-dropdown-list li .portrait {
+                  height: 56px;
+                  width: 56px;
+                  border-radius: 28px;
+                  float: left; }
+                header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown #news-dropdown-list li .cork {
+                  overflow: hidden;
+                  zoom: 1;
+                  padding: 0 0 0 13px; }
+                header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown #news-dropdown-list li h3 {
+                  font-size: 14px;
+                  font-weight: normal;
+                  line-height: 20px;
+                  margin: 0 0 5px 0; }
+                  header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown #news-dropdown-list li h3 .datetime {
+                    font-size: 10px;
+                    color: #93939e;
+                    float: right; }
+                header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown #news-dropdown-list li .portraits {
+                  margin: 0 -4px;
+                  color: #95979a;
+                  line-height: 0;
+                  font-size: 0; }
+                  header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown #news-dropdown-list li .portraits img {
+                    height: 70px;
+                    width: 70px;
+                    border-radius: 4px;
+                    margin: 0 4px; }
+            header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown #you-dropdown-list {
+              list-style: none;
+              margin: 15px -15px -12px -15px;
+              padding: 0;
+              max-height: 350px;
+              overflow: auto; }
+              header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown #you-dropdown-list li {
+                color: #515254;
+                padding: 15px 16px 10px 16px;
+                border-bottom: solid 1px #efeff1; }
+                header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown #you-dropdown-list li::after {
+                  clear: both;
+                  content: "";
+                  display: table; }
+                header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown #you-dropdown-list li:first-child {
+                  padding: 0 16px 15px 16px !important; }
+                  header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown #you-dropdown-list li:first-child.new-msg {
+                    padding: 0 16px 15px 0 !important; }
+                header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown #you-dropdown-list li.new-msg {
+                  padding: 15px 16px 15px 0; }
+                  header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown #you-dropdown-list li.new-msg:before {
+                    content: '';
+                    background: #ea6264;
+                    height: 6px;
+                    width: 6px;
+                    border-radius: 3px;
+                    display: block;
+                    float: left;
+                    margin: 25px 5px 0 5px; }
+                  header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown #you-dropdown-list li.new-msg p {
+                    padding: 5px 16px 0 16px; }
+                header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown #you-dropdown-list li .portraits {
+                  line-height: 0;
+                  font-size: 0;
+                  height: 56px; }
+                  header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown #you-dropdown-list li .portraits img {
+                    height: 56px;
+                    width: 56px;
+                    border-radius: 28px;
+                    margin: 0 0 0 24px; }
+                    header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown #you-dropdown-list li .portraits img:first-child {
+                      margin: 0 !important; }
+                header #header-menu menuitem .dropdown-wrap .dropdown #notice-dropdown #you-dropdown-list li p {
+                  margin: 5px 0 0 0;
+                  font-size: 12px;
+                  line-height: 18px;
+                  color: #515254;
+                  padding: 5px 16px 0 0; }
+      header #header-menu menuitem:hover .dropdown-wrap {
+        display: block; }
 
 #channel-bar-wrap {
   background: #fff;
@@ -3595,7 +3602,7 @@ header {
       display: inline-block;
       vertical-align: -1px;
       margin: 0 2px 0 0;
-      background-position: -156px -126px; }
+      background-position: -183px -60px; }
 
 #filter-bar-wrap {
   text-align: center;
@@ -3606,7 +3613,7 @@ header {
     border: solid 1px #efeff1;
     background: #fff;
     list-style: none;
-    padding: 14px 0;
+    padding: 0;
     margin: 0;
     font-size: 0;
     line-height: 0; }
@@ -3616,7 +3623,8 @@ header {
       display: table; }
     #filter-bar-wrap #filter-bar li {
       display: inline-block;
-      padding: 0 28px;
+      padding: 14px 28px 20px 28px;
+      margin: 0 0 -6px 0;
       border-right: solid 1px #efeff1;
       position: relative; }
       #filter-bar-wrap #filter-bar li:last-child {
@@ -3635,9 +3643,9 @@ header {
             width: 10px;
             line-height: 22px; }
           #filter-bar-wrap #filter-bar li .button .icon.arrow-down, #filter-bar-wrap #filter-bar li .button #upload-form #upload-models-wrap .arrow-down.dropdown-input:before, #upload-form #upload-models-wrap #filter-bar-wrap #filter-bar li .button .arrow-down.dropdown-input:before, #filter-bar-wrap #filter-bar li .button #product-form .arrow-down.dropdown-input:before, #product-form #filter-bar-wrap #filter-bar li .button .arrow-down.dropdown-input:before {
-            background-position: -242px -129px; }
-          #filter-bar-wrap #filter-bar li .button .icon.arrow-up, #filter-bar-wrap #filter-bar li .button #upload-form #upload-models-wrap .arrow-up.dropdown-input:before, #upload-form #upload-models-wrap #filter-bar-wrap #filter-bar li .button .arrow-up.dropdown-input:before, #filter-bar-wrap #filter-bar li .button #product-form .arrow-up.dropdown-input:before, #product-form #filter-bar-wrap #filter-bar li .button .arrow-up.dropdown-input:before {
             background-position: -252px -129px; }
+          #filter-bar-wrap #filter-bar li .button .icon.arrow-up, #filter-bar-wrap #filter-bar li .button #upload-form #upload-models-wrap .arrow-up.dropdown-input:before, #upload-form #upload-models-wrap #filter-bar-wrap #filter-bar li .button .arrow-up.dropdown-input:before, #filter-bar-wrap #filter-bar li .button #product-form .arrow-up.dropdown-input:before, #product-form #filter-bar-wrap #filter-bar li .button .arrow-up.dropdown-input:before {
+            background-position: -242px -129px; }
           #filter-bar-wrap #filter-bar li .button .icon.checkbox, #filter-bar-wrap #filter-bar li .button #upload-form #upload-models-wrap .checkbox.dropdown-input:before, #upload-form #upload-models-wrap #filter-bar-wrap #filter-bar li .button .checkbox.dropdown-input:before, #filter-bar-wrap #filter-bar li .button #product-form .checkbox.dropdown-input:before, #product-form #filter-bar-wrap #filter-bar li .button .checkbox.dropdown-input:before, #filter-bar-wrap #filter-bar li .button .icon.checkbox-selected, #filter-bar-wrap #filter-bar li .button #upload-form #upload-models-wrap .checkbox-selected.dropdown-input:before, #upload-form #upload-models-wrap #filter-bar-wrap #filter-bar li .button .checkbox-selected.dropdown-input:before, #filter-bar-wrap #filter-bar li .button #product-form .checkbox-selected.dropdown-input:before, #product-form #filter-bar-wrap #filter-bar li .button .checkbox-selected.dropdown-input:before {
             vertical-align: -2px;
             margin: 0 6px 0 0;
@@ -3647,13 +3655,14 @@ header {
           #filter-bar-wrap #filter-bar li .button .icon.checkbox, #filter-bar-wrap #filter-bar li .button #upload-form #upload-models-wrap .checkbox.dropdown-input:before, #upload-form #upload-models-wrap #filter-bar-wrap #filter-bar li .button .checkbox.dropdown-input:before, #filter-bar-wrap #filter-bar li .button #product-form .checkbox.dropdown-input:before, #product-form #filter-bar-wrap #filter-bar li .button .checkbox.dropdown-input:before {
             background-position: -142px -126px; }
           #filter-bar-wrap #filter-bar li .button .icon.checkbox-selected, #filter-bar-wrap #filter-bar li .button #upload-form #upload-models-wrap .checkbox-selected.dropdown-input:before, #upload-form #upload-models-wrap #filter-bar-wrap #filter-bar li .button .checkbox-selected.dropdown-input:before, #filter-bar-wrap #filter-bar li .button #product-form .checkbox-selected.dropdown-input:before, #product-form #filter-bar-wrap #filter-bar li .button .checkbox-selected.dropdown-input:before {
-            background-position: -128px -126px; }
+            background-position: -248px -135px; }
       #filter-bar-wrap #filter-bar li .dropdown {
+        display: none;
         z-index: 20;
         background: #fff;
         position: absolute;
         right: -2px;
-        top: 39px;
+        top: 53px;
         left: -1px;
         box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
         border: solid 1px #efeff1;
@@ -3674,6 +3683,8 @@ header {
               cursor: pointer; }
               #filter-bar-wrap #filter-bar li .dropdown ul li a:hover {
                 color: #ea6264; }
+      #filter-bar-wrap #filter-bar li:hover .dropdown {
+        display: block; }
 
 #to-top {
   position: fixed;
@@ -3700,7 +3711,7 @@ header {
       #to-top a .icon.arrow-top, #to-top a #upload-form #upload-models-wrap .arrow-top.dropdown-input:before, #upload-form #upload-models-wrap #to-top a .arrow-top.dropdown-input:before, #to-top a #product-form .arrow-top.dropdown-input:before, #product-form #to-top a .arrow-top.dropdown-input:before {
         background-position: -183px -48px; }
       #to-top a .icon.alert, #to-top a #upload-form #upload-models-wrap .alert.dropdown-input:before, #upload-form #upload-models-wrap #to-top a .alert.dropdown-input:before, #to-top a #product-form .alert.dropdown-input:before, #product-form #to-top a .alert.dropdown-input:before {
-        background-position: -183px -60px; }
+        background-position: -156px -126px; }
   #to-top hr {
     background: #f1f1f1;
     margin: -1px auto;
@@ -3819,7 +3830,7 @@ header {
           cursor: pointer;
           margin: 0 6px 0 0; }
           .show-cart .card-cart .license-list li .icon.radio, .show-cart .card-cart .license-list li #upload-form #upload-models-wrap .radio.dropdown-input:before, #upload-form #upload-models-wrap .show-cart .card-cart .license-list li .radio.dropdown-input:before, .show-cart .card-cart .license-list li #product-form .radio.dropdown-input:before, #product-form .show-cart .card-cart .license-list li .radio.dropdown-input:before {
-            background-position: -160px -217px; }
+            background-position: -140px -217px; }
           .show-cart .card-cart .license-list li .icon.radio-selected, .show-cart .card-cart .license-list li #upload-form #upload-models-wrap .radio-selected.dropdown-input:before, #upload-form #upload-models-wrap .show-cart .card-cart .license-list li .radio-selected.dropdown-input:before, .show-cart .card-cart .license-list li #product-form .radio-selected.dropdown-input:before, #product-form .show-cart .card-cart .license-list li .radio-selected.dropdown-input:before {
             background-position: -120px -217px; }
         .show-cart .card-cart .license-list li .price {
@@ -3983,7 +3994,7 @@ header {
 .add-cart-submit {
   background: #ea6264; }
   .add-cart-submit .icon.cart, .add-cart-submit #upload-form #upload-models-wrap .cart.dropdown-input:before, #upload-form #upload-models-wrap .add-cart-submit .cart.dropdown-input:before, .add-cart-submit #product-form .cart.dropdown-input:before, #product-form .add-cart-submit .cart.dropdown-input:before {
-    background-position: -40px -237px; }
+    background-position: 0px -237px; }
 
 .send-comment-submit {
   background: #4A90E2; }
@@ -4015,7 +4026,7 @@ header {
     width: 20px;
     top: 2px;
     right: -40px;
-    background-position: -180px -217px; }
+    background-position: -200px -217px; }
 
 #personal-detail .job {
   text-align: center;
@@ -4055,9 +4066,9 @@ header {
     #personal-detail .operate .icon.facebook, #personal-detail .operate #upload-form #upload-models-wrap .facebook.dropdown-input:before, #upload-form #upload-models-wrap #personal-detail .operate .facebook.dropdown-input:before, #personal-detail .operate #product-form .facebook.dropdown-input:before, #product-form #personal-detail .operate .facebook.dropdown-input:before {
       background-position: -121px -140px; }
     #personal-detail .operate .icon.twitter, #personal-detail .operate #upload-form #upload-models-wrap .twitter.dropdown-input:before, #upload-form #upload-models-wrap #personal-detail .operate .twitter.dropdown-input:before, #personal-detail .operate #product-form .twitter.dropdown-input:before, #product-form #personal-detail .operate .twitter.dropdown-input:before {
-      background-position: -169px -140px; }
-    #personal-detail .operate .icon.linkedin, #personal-detail .operate #upload-form #upload-models-wrap .linkedin.dropdown-input:before, #upload-form #upload-models-wrap #personal-detail .operate .linkedin.dropdown-input:before, #personal-detail .operate #product-form .linkedin.dropdown-input:before, #product-form #personal-detail .operate .linkedin.dropdown-input:before {
       background-position: -145px -140px; }
+    #personal-detail .operate .icon.linkedin, #personal-detail .operate #upload-form #upload-models-wrap .linkedin.dropdown-input:before, #upload-form #upload-models-wrap #personal-detail .operate .linkedin.dropdown-input:before, #personal-detail .operate #product-form .linkedin.dropdown-input:before, #product-form #personal-detail .operate .linkedin.dropdown-input:before {
+      background-position: -169px -140px; }
 
 #personal-regard-wrap {
   border-bottom: solid 1px #d8d8d8;
@@ -4180,7 +4191,7 @@ header {
         width: 16px;
         height: 16px;
         vertical-align: -3px;
-        background-position: -243px -171px; }
+        background-position: -227px -171px; }
   #products-table .product-table-status {
     font-size: 20px;
     text-align: center; }
@@ -4344,7 +4355,7 @@ header {
       #purchases-table .purchases-table-rate .icon.star, #purchases-table .purchases-table-rate #upload-form #upload-models-wrap .star.dropdown-input:before, #upload-form #upload-models-wrap #purchases-table .purchases-table-rate .star.dropdown-input:before, #purchases-table .purchases-table-rate #product-form .star.dropdown-input:before, #product-form #purchases-table .purchases-table-rate .star.dropdown-input:before {
         background-position: -240px -217px; }
       #purchases-table .purchases-table-rate .icon.star-twinkle, #purchases-table .purchases-table-rate #upload-form #upload-models-wrap .star-twinkle.dropdown-input:before, #upload-form #upload-models-wrap #purchases-table .purchases-table-rate .star-twinkle.dropdown-input:before, #purchases-table .purchases-table-rate #product-form .star-twinkle.dropdown-input:before, #product-form #purchases-table .purchases-table-rate .star-twinkle.dropdown-input:before {
-        background-position: -200px -217px; }
+        background-position: -180px -217px; }
   #purchases-table .purchases-table-order {
     text-align: center; }
     #purchases-table .purchases-table-order a {
@@ -4357,9 +4368,9 @@ header {
       height: 64px;
       width: 64px;
       display: inline-block;
-      background-position: 0px -76px; }
+      background-position: -64px -76px; }
       #purchases-table .purchases-table-support .icon.talk:hover, #purchases-table .purchases-table-support #upload-form #upload-models-wrap .talk.dropdown-input:hover:before, #upload-form #upload-models-wrap #purchases-table .purchases-table-support .talk.dropdown-input:hover:before, #purchases-table .purchases-table-support #product-form .talk.dropdown-input:hover:before, #product-form #purchases-table .purchases-table-support .talk.dropdown-input:hover:before {
-        background-position: -64px -76px; }
+        background-position: 0px -76px; }
 
 .container.model {
   width: 1040px;
@@ -4425,9 +4436,9 @@ header {
         width: 46px;
         display: inline-block;
         cursor: pointer;
-        background-position: -196px -89px; }
+        background-position: 0px -171px; }
         .container.model #model-author-profile #model-author-detail .icon.talk:hover, .container.model #model-author-profile #model-author-detail #upload-form #upload-models-wrap .talk.dropdown-input:hover:before, #upload-form #upload-models-wrap .container.model #model-author-profile #model-author-detail .talk.dropdown-input:hover:before, .container.model #model-author-profile #model-author-detail #product-form .talk.dropdown-input:hover:before, #product-form .container.model #model-author-profile #model-author-detail .talk.dropdown-input:hover:before {
-          background-position: 0px -171px; }
+          background-position: -196px -89px; }
       .container.model #model-author-profile #model-author-detail #chat-dropdown {
         width: 320px;
         z-index: 10;
@@ -4606,7 +4617,6 @@ header {
         padding: 0 5px;
         background: none;
         cursor: pointer;
-        width: 45%;
         text-align: center; }
         .container.model #model-detail #model-detail-major .btn-wrap .star-btn .icon, .container.model #model-detail #model-detail-major .btn-wrap .star-btn #upload-form #upload-models-wrap .dropdown-input:before, #upload-form #upload-models-wrap .container.model #model-detail #model-detail-major .btn-wrap .star-btn .dropdown-input:before, .container.model #model-detail #model-detail-major .btn-wrap .star-btn #product-form .dropdown-input:before, #product-form .container.model #model-detail #model-detail-major .btn-wrap .star-btn .dropdown-input:before,
         .container.model #model-detail #model-detail-major .btn-wrap .share-btn .icon,
@@ -4624,7 +4634,7 @@ header {
           .container.model #model-detail #model-detail-major .btn-wrap .share-btn .share.dropdown-input:before,
           .container.model #model-detail #model-detail-major .btn-wrap .share-btn #product-form .share.dropdown-input:before, #product-form
           .container.model #model-detail #model-detail-major .btn-wrap .share-btn .share.dropdown-input:before {
-            background-position: -184px -192px; }
+            background-position: -220px -192px; }
           .container.model #model-detail #model-detail-major .btn-wrap .star-btn .icon.favor, .container.model #model-detail #model-detail-major .btn-wrap .star-btn #upload-form #upload-models-wrap .favor.dropdown-input:before, #upload-form #upload-models-wrap .container.model #model-detail #model-detail-major .btn-wrap .star-btn .favor.dropdown-input:before, .container.model #model-detail #model-detail-major .btn-wrap .star-btn #product-form .favor.dropdown-input:before, #product-form .container.model #model-detail #model-detail-major .btn-wrap .star-btn .favor.dropdown-input:before,
           .container.model #model-detail #model-detail-major .btn-wrap .share-btn .icon.favor,
           .container.model #model-detail #model-detail-major .btn-wrap .share-btn #upload-form #upload-models-wrap .favor.dropdown-input:before, #upload-form #upload-models-wrap
@@ -4633,9 +4643,25 @@ header {
           .container.model #model-detail #model-detail-major .btn-wrap .share-btn .favor.dropdown-input:before {
             background-position: -166px -192px; }
       .container.model #model-detail #model-detail-major .btn-wrap .star-btn {
+        width: 45%;
         float: left; }
-      .container.model #model-detail #model-detail-major .btn-wrap .share-btn {
+        .container.model #model-detail #model-detail-major .btn-wrap .star-btn:hover .icon.favor, .container.model #model-detail #model-detail-major .btn-wrap .star-btn:hover #upload-form #upload-models-wrap .favor.dropdown-input:before, #upload-form #upload-models-wrap .container.model #model-detail #model-detail-major .btn-wrap .star-btn:hover .favor.dropdown-input:before, .container.model #model-detail #model-detail-major .btn-wrap .star-btn:hover #product-form .favor.dropdown-input:before, #product-form .container.model #model-detail #model-detail-major .btn-wrap .star-btn:hover .favor.dropdown-input:before {
+          background-position: -243px -62px; }
+        .container.model #model-detail #model-detail-major .btn-wrap .star-btn.selected .icon.favor, .container.model #model-detail #model-detail-major .btn-wrap .star-btn.selected #upload-form #upload-models-wrap .favor.dropdown-input:before, #upload-form #upload-models-wrap .container.model #model-detail #model-detail-major .btn-wrap .star-btn.selected .favor.dropdown-input:before, .container.model #model-detail #model-detail-major .btn-wrap .star-btn.selected #product-form .favor.dropdown-input:before, #product-form .container.model #model-detail #model-detail-major .btn-wrap .star-btn.selected .favor.dropdown-input:before {
+          background-position: -243px -62px; }
+        .container.model #model-detail #model-detail-major .btn-wrap .star-btn.selected:hover .icon.favor, .container.model #model-detail #model-detail-major .btn-wrap .star-btn.selected:hover #upload-form #upload-models-wrap .favor.dropdown-input:before, #upload-form #upload-models-wrap .container.model #model-detail #model-detail-major .btn-wrap .star-btn.selected:hover .favor.dropdown-input:before, .container.model #model-detail #model-detail-major .btn-wrap .star-btn.selected:hover #product-form .favor.dropdown-input:before, #product-form .container.model #model-detail #model-detail-major .btn-wrap .star-btn.selected:hover .favor.dropdown-input:before {
+          background-position: -166px -192px; }
+      .container.model #model-detail #model-detail-major .btn-wrap .share-btn-wrap {
+        width: 45%;
+        padding: 0 0 20px 0;
+        margin: 0 0 -20px 0;
         float: right; }
+        .container.model #model-detail #model-detail-major .btn-wrap .share-btn-wrap .share-btn {
+          width: 100%; }
+        .container.model #model-detail #model-detail-major .btn-wrap .share-btn-wrap:hover .dropdown {
+          display: block; }
+        .container.model #model-detail #model-detail-major .btn-wrap .share-btn-wrap .dropdown {
+          display: none; }
       .container.model #model-detail #model-detail-major .btn-wrap .dropdown {
         z-index: 10;
         background: #fff;
@@ -4690,9 +4716,9 @@ header {
               .container.model #model-detail #model-detail-major .btn-wrap .dropdown ul li .icon.facebook, .container.model #model-detail #model-detail-major .btn-wrap .dropdown ul li #upload-form #upload-models-wrap .facebook.dropdown-input:before, #upload-form #upload-models-wrap .container.model #model-detail #model-detail-major .btn-wrap .dropdown ul li .facebook.dropdown-input:before, .container.model #model-detail #model-detail-major .btn-wrap .dropdown ul li #product-form .facebook.dropdown-input:before, #product-form .container.model #model-detail #model-detail-major .btn-wrap .dropdown ul li .facebook.dropdown-input:before {
                 background-position: -121px -140px; }
               .container.model #model-detail #model-detail-major .btn-wrap .dropdown ul li .icon.twitter, .container.model #model-detail #model-detail-major .btn-wrap .dropdown ul li #upload-form #upload-models-wrap .twitter.dropdown-input:before, #upload-form #upload-models-wrap .container.model #model-detail #model-detail-major .btn-wrap .dropdown ul li .twitter.dropdown-input:before, .container.model #model-detail #model-detail-major .btn-wrap .dropdown ul li #product-form .twitter.dropdown-input:before, #product-form .container.model #model-detail #model-detail-major .btn-wrap .dropdown ul li .twitter.dropdown-input:before {
-                background-position: -169px -140px; }
-              .container.model #model-detail #model-detail-major .btn-wrap .dropdown ul li .icon.linkedin, .container.model #model-detail #model-detail-major .btn-wrap .dropdown ul li #upload-form #upload-models-wrap .linkedin.dropdown-input:before, #upload-form #upload-models-wrap .container.model #model-detail #model-detail-major .btn-wrap .dropdown ul li .linkedin.dropdown-input:before, .container.model #model-detail #model-detail-major .btn-wrap .dropdown ul li #product-form .linkedin.dropdown-input:before, #product-form .container.model #model-detail #model-detail-major .btn-wrap .dropdown ul li .linkedin.dropdown-input:before {
                 background-position: -145px -140px; }
+              .container.model #model-detail #model-detail-major .btn-wrap .dropdown ul li .icon.linkedin, .container.model #model-detail #model-detail-major .btn-wrap .dropdown ul li #upload-form #upload-models-wrap .linkedin.dropdown-input:before, #upload-form #upload-models-wrap .container.model #model-detail #model-detail-major .btn-wrap .dropdown ul li .linkedin.dropdown-input:before, .container.model #model-detail #model-detail-major .btn-wrap .dropdown ul li #product-form .linkedin.dropdown-input:before, #product-form .container.model #model-detail #model-detail-major .btn-wrap .dropdown ul li .linkedin.dropdown-input:before {
+                background-position: -169px -140px; }
     .container.model #model-detail #model-detail-major h3 {
       font-weight: normal;
       color: #515254;
@@ -4733,7 +4759,7 @@ header {
       .container.model #model-detail #model-detail-major .icon.star, .container.model #model-detail #model-detail-major #upload-form #upload-models-wrap .star.dropdown-input:before, #upload-form #upload-models-wrap .container.model #model-detail #model-detail-major .star.dropdown-input:before, .container.model #model-detail #model-detail-major #product-form .star.dropdown-input:before, #product-form .container.model #model-detail #model-detail-major .star.dropdown-input:before {
         background-position: -240px -217px; }
       .container.model #model-detail #model-detail-major .icon.star-twinkle, .container.model #model-detail #model-detail-major #upload-form #upload-models-wrap .star-twinkle.dropdown-input:before, #upload-form #upload-models-wrap .container.model #model-detail #model-detail-major .star-twinkle.dropdown-input:before, .container.model #model-detail #model-detail-major #product-form .star-twinkle.dropdown-input:before, #product-form .container.model #model-detail #model-detail-major .star-twinkle.dropdown-input:before {
-        background-position: -200px -217px; }
+        background-position: -180px -217px; }
     .container.model #model-detail .attr-list h3 {
       color: #ea6264;
       font-size: 16px;
@@ -4774,7 +4800,7 @@ header {
         display: inline-block;
         vertical-align: -4px;
         margin: 0 6px 0 0;
-        background-position: -40px -237px; }
+        background-position: 0px -237px; }
       .container.model #model-detail #add-cart-submit:disabled {
         background: #d8d8d8;
         box-shadow: none; }
@@ -5019,16 +5045,16 @@ header {
         width: 70px;
         border-radius: 35px;
         float: left; }
-      .container.following #following-author-profile #following-author-detail .cord {
+      .container.following #following-author-profile #following-author-detail .cork {
         overflow: hidden;
         zoom: 1;
         padding: 0 0 0 16px; }
-        .container.following #following-author-profile #following-author-detail .cord .author-name {
+        .container.following #following-author-profile #following-author-detail .cork .author-name {
           font-size: 20px;
           color: #515254;
           display: block;
           margin: 5px 0 10px 0; }
-        .container.following #following-author-profile #following-author-detail .cord .follow-btn {
+        .container.following #following-author-profile #following-author-detail .cork .follow-btn {
           display: block;
           line-height: 26px;
           padding: 0 18px;
@@ -5045,9 +5071,9 @@ header {
         width: 46px;
         display: inline-block;
         cursor: pointer;
-        background-position: -196px -89px; }
+        background-position: 0px -171px; }
         .container.following #following-author-profile #following-author-detail .icon.talk:hover, .container.following #following-author-profile #following-author-detail #upload-form #upload-models-wrap .talk.dropdown-input:hover:before, #upload-form #upload-models-wrap .container.following #following-author-profile #following-author-detail .talk.dropdown-input:hover:before, .container.following #following-author-profile #following-author-detail #product-form .talk.dropdown-input:hover:before, #product-form .container.following #following-author-profile #following-author-detail .talk.dropdown-input:hover:before {
-          background-position: 0px -171px; }
+          background-position: -196px -89px; }
     .container.following #following-author-profile #following-author-regard {
       border-top: solid 1px #efeff1;
       color: #515254; }
@@ -5197,17 +5223,82 @@ header {
           height: 16px; }
         .container.following .card.following-product .following-regard .following-product-follow .favorite .icon.favor, .container.following .card.following-product .following-regard .following-product-follow .favorite #upload-form #upload-models-wrap .favor.dropdown-input:before, #upload-form #upload-models-wrap .container.following .card.following-product .following-regard .following-product-follow .favorite .favor.dropdown-input:before, .container.following .card.following-product .following-regard .following-product-follow .favorite #product-form .favor.dropdown-input:before, #product-form .container.following .card.following-product .following-regard .following-product-follow .favorite .favor.dropdown-input:before {
           vertical-align: -3px;
-          background-position: -227px -171px; }
+          background-position: -238px -192px; }
         .container.following .card.following-product .following-regard .following-product-follow .watch .icon.eye, .container.following .card.following-product .following-regard .following-product-follow .watch #upload-form #upload-models-wrap .eye.dropdown-input:before, #upload-form #upload-models-wrap .container.following .card.following-product .following-regard .following-product-follow .watch .eye.dropdown-input:before, .container.following .card.following-product .following-regard .following-product-follow .watch #product-form .eye.dropdown-input:before, #product-form .container.following .card.following-product .following-regard .following-product-follow .watch .eye.dropdown-input:before {
           vertical-align: -6px;
           width: 21px;
           height: 21px;
           background-position: -166px -171px; }
-        .container.following .card.following-product .following-regard .following-product-follow .share .icon.share, .container.following .card.following-product .following-regard .following-product-follow .share #upload-form #upload-models-wrap .share.dropdown-input:before, #upload-form #upload-models-wrap .container.following .card.following-product .following-regard .following-product-follow .share .share.dropdown-input:before, .container.following .card.following-product .following-regard .following-product-follow .share #product-form .share.dropdown-input:before, #product-form .container.following .card.following-product .following-regard .following-product-follow .share .share.dropdown-input:before {
-          vertical-align: -6px;
-          width: 20px;
-          height: 20px;
-          background-position: -184px -192px; }
+        .container.following .card.following-product .following-regard .following-product-follow .share-wrap {
+          position: relative;
+          padding-bottom: 20px;
+          margin-bottom: -20px; }
+          .container.following .card.following-product .following-regard .following-product-follow .share-wrap .icon.share, .container.following .card.following-product .following-regard .following-product-follow .share-wrap #upload-form #upload-models-wrap .share.dropdown-input:before, #upload-form #upload-models-wrap .container.following .card.following-product .following-regard .following-product-follow .share-wrap .share.dropdown-input:before, .container.following .card.following-product .following-regard .following-product-follow .share-wrap #product-form .share.dropdown-input:before, #product-form .container.following .card.following-product .following-regard .following-product-follow .share-wrap .share.dropdown-input:before {
+            vertical-align: -6px;
+            width: 18px;
+            height: 18px;
+            background-position: -220px -192px; }
+          .container.following .card.following-product .following-regard .following-product-follow .share-wrap .dropdown {
+            display: none;
+            z-index: 10;
+            background: #fff;
+            position: absolute;
+            right: -16px;
+            top: 30px;
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+            border: solid 1px #e0e0e0;
+            border-radius: 4px;
+            padding: 12px;
+            width: 120px; }
+            .container.following .card.following-product .following-regard .following-product-follow .share-wrap .dropdown span {
+              font-size: 12px;
+              color: #95979a;
+              display: block;
+              margin: 0;
+              padding: 0 0 10px 0; }
+            .container.following .card.following-product .following-regard .following-product-follow .share-wrap .dropdown:before {
+              top: -6px;
+              right: 20px;
+              border-style: solid;
+              border-color: #e0e0e0 #fff #fff #e0e0e0;
+              border-width: 1px;
+              content: ' ';
+              display: block;
+              height: 10px;
+              width: 10px;
+              background: #fff;
+              position: absolute;
+              -webkit-transform: rotate(45deg);
+              -moz-transform: rotate(45deg);
+              -ms-transform: rotate(45deg);
+              -o-transform: rotate(45deg);
+              transform: rotate(45deg); }
+            .container.following .card.following-product .following-regard .following-product-follow .share-wrap .dropdown ul {
+              list-style: none;
+              padding: 0;
+              margin: -16px 0; }
+              .container.following .card.following-product .following-regard .following-product-follow .share-wrap .dropdown ul li {
+                color: #515254;
+                font-size: 14px;
+                line-height: 24px;
+                margin: 16px 0; }
+                .container.following .card.following-product .following-regard .following-product-follow .share-wrap .dropdown ul li a {
+                  display: block;
+                  text-decoration: none;
+                  color: #515254; }
+                .container.following .card.following-product .following-regard .following-product-follow .share-wrap .dropdown ul li .icon, .container.following .card.following-product .following-regard .following-product-follow .share-wrap .dropdown ul li #upload-form #upload-models-wrap .dropdown-input:before, #upload-form #upload-models-wrap .container.following .card.following-product .following-regard .following-product-follow .share-wrap .dropdown ul li .dropdown-input:before, .container.following .card.following-product .following-regard .following-product-follow .share-wrap .dropdown ul li #product-form .dropdown-input:before, #product-form .container.following .card.following-product .following-regard .following-product-follow .share-wrap .dropdown ul li .dropdown-input:before {
+                  height: 24px;
+                  width: 24px;
+                  vertical-align: -7px;
+                  margin: 0 6px 0 0; }
+                  .container.following .card.following-product .following-regard .following-product-follow .share-wrap .dropdown ul li .icon.facebook, .container.following .card.following-product .following-regard .following-product-follow .share-wrap .dropdown ul li #upload-form #upload-models-wrap .facebook.dropdown-input:before, #upload-form #upload-models-wrap .container.following .card.following-product .following-regard .following-product-follow .share-wrap .dropdown ul li .facebook.dropdown-input:before, .container.following .card.following-product .following-regard .following-product-follow .share-wrap .dropdown ul li #product-form .facebook.dropdown-input:before, #product-form .container.following .card.following-product .following-regard .following-product-follow .share-wrap .dropdown ul li .facebook.dropdown-input:before {
+                    background-position: -121px -140px; }
+                  .container.following .card.following-product .following-regard .following-product-follow .share-wrap .dropdown ul li .icon.twitter, .container.following .card.following-product .following-regard .following-product-follow .share-wrap .dropdown ul li #upload-form #upload-models-wrap .twitter.dropdown-input:before, #upload-form #upload-models-wrap .container.following .card.following-product .following-regard .following-product-follow .share-wrap .dropdown ul li .twitter.dropdown-input:before, .container.following .card.following-product .following-regard .following-product-follow .share-wrap .dropdown ul li #product-form .twitter.dropdown-input:before, #product-form .container.following .card.following-product .following-regard .following-product-follow .share-wrap .dropdown ul li .twitter.dropdown-input:before {
+                    background-position: -145px -140px; }
+                  .container.following .card.following-product .following-regard .following-product-follow .share-wrap .dropdown ul li .icon.linkedin, .container.following .card.following-product .following-regard .following-product-follow .share-wrap .dropdown ul li #upload-form #upload-models-wrap .linkedin.dropdown-input:before, #upload-form #upload-models-wrap .container.following .card.following-product .following-regard .following-product-follow .share-wrap .dropdown ul li .linkedin.dropdown-input:before, .container.following .card.following-product .following-regard .following-product-follow .share-wrap .dropdown ul li #product-form .linkedin.dropdown-input:before, #product-form .container.following .card.following-product .following-regard .following-product-follow .share-wrap .dropdown ul li .linkedin.dropdown-input:before {
+                    background-position: -169px -140px; }
+          .container.following .card.following-product .following-regard .following-product-follow .share-wrap:hover .dropdown {
+            display: block; }
 
 .container.publish {
   margin: 20px auto; }
@@ -5557,7 +5648,7 @@ header {
       width: 18px;
       display: inline-block; }
       #product-form label .icon.polygons, #product-form label #upload-form #upload-models-wrap .polygons.dropdown-input:before, #upload-form #upload-models-wrap #product-form label .polygons.dropdown-input:before, #product-form label .polygons.dropdown-input:before {
-        background-position: -243px -62px; }
+        background-position: -184px -192px; }
       #product-form label .icon.vertices, #product-form label #upload-form #upload-models-wrap .vertices.dropdown-input:before, #upload-form #upload-models-wrap #product-form label .vertices.dropdown-input:before, #product-form label .vertices.dropdown-input:before {
         background-position: -202px -192px; }
   #product-form .dropdown-input {
@@ -5826,9 +5917,9 @@ header {
         vertical-align: -14px;
         margin: 0 10px 0 0; }
         #settings-forms-wrap #social-form .line label .icon.facebook, #settings-forms-wrap #social-form .line label #upload-form #upload-models-wrap .facebook.dropdown-input:before, #upload-form #upload-models-wrap #settings-forms-wrap #social-form .line label .facebook.dropdown-input:before, #settings-forms-wrap #social-form .line label #product-form .facebook.dropdown-input:before, #product-form #settings-forms-wrap #social-form .line label .facebook.dropdown-input:before {
-          background-position: -86px -171px; }
-        #settings-forms-wrap #social-form .line label .icon.twitter, #settings-forms-wrap #social-form .line label #upload-form #upload-models-wrap .twitter.dropdown-input:before, #upload-form #upload-models-wrap #settings-forms-wrap #social-form .line label .twitter.dropdown-input:before, #settings-forms-wrap #social-form .line label #product-form .twitter.dropdown-input:before, #product-form #settings-forms-wrap #social-form .line label .twitter.dropdown-input:before {
           background-position: -46px -171px; }
+        #settings-forms-wrap #social-form .line label .icon.twitter, #settings-forms-wrap #social-form .line label #upload-form #upload-models-wrap .twitter.dropdown-input:before, #upload-form #upload-models-wrap #settings-forms-wrap #social-form .line label .twitter.dropdown-input:before, #settings-forms-wrap #social-form .line label #product-form .twitter.dropdown-input:before, #product-form #settings-forms-wrap #social-form .line label .twitter.dropdown-input:before {
+          background-position: -86px -171px; }
         #settings-forms-wrap #social-form .line label .icon.linkedin, #settings-forms-wrap #social-form .line label #upload-form #upload-models-wrap .linkedin.dropdown-input:before, #upload-form #upload-models-wrap #settings-forms-wrap #social-form .line label .linkedin.dropdown-input:before, #settings-forms-wrap #social-form .line label #product-form .linkedin.dropdown-input:before, #product-form #settings-forms-wrap #social-form .line label .linkedin.dropdown-input:before {
           background-position: -126px -171px; }
     #settings-forms-wrap #social-form .line button {
@@ -5987,7 +6078,7 @@ header {
             height: 14px;
             width: 14px;
             display: inline-block;
-            background-position: -248px -135px;
+            background-position: -128px -126px;
             vertical-align: -2px; }
 
 .container.checkout hr {
@@ -6318,7 +6409,7 @@ header {
           width: 12px;
           vertical-align: -2px; }
         .product-card .product-card-describe .product-card-title label .label {
-          background-position: -248px -149px; }
+          background-position: -168px -126px; }
     .product-card .product-card-describe .product-card-author {
       padding: 10px 0;
       margin: 0 10px;
@@ -6364,7 +6455,13 @@ header {
         float: left; }
         .product-card .product-card-describe .product-card-follow .favorite .icon.favor, .product-card .product-card-describe .product-card-follow .favorite #upload-form #upload-models-wrap .favor.dropdown-input:before, #upload-form #upload-models-wrap .product-card .product-card-describe .product-card-follow .favorite .favor.dropdown-input:before, .product-card .product-card-describe .product-card-follow .favorite #product-form .favor.dropdown-input:before, #product-form .product-card .product-card-describe .product-card-follow .favorite .favor.dropdown-input:before {
           vertical-align: -3px;
-          background-position: -227px -171px; }
+          background-position: -238px -192px; }
+          .product-card .product-card-describe .product-card-follow .favorite .icon.favor:hover, .product-card .product-card-describe .product-card-follow .favorite #upload-form #upload-models-wrap .favor.dropdown-input:hover:before, #upload-form #upload-models-wrap .product-card .product-card-describe .product-card-follow .favorite .favor.dropdown-input:hover:before, .product-card .product-card-describe .product-card-follow .favorite #product-form .favor.dropdown-input:hover:before, #product-form .product-card .product-card-describe .product-card-follow .favorite .favor.dropdown-input:hover:before {
+            background-position: -227px -171px; }
+          .product-card .product-card-describe .product-card-follow .favorite .icon.favor.selected, .product-card .product-card-describe .product-card-follow .favorite #upload-form #upload-models-wrap .favor.selected.dropdown-input:before, #upload-form #upload-models-wrap .product-card .product-card-describe .product-card-follow .favorite .favor.selected.dropdown-input:before, .product-card .product-card-describe .product-card-follow .favorite #product-form .favor.selected.dropdown-input:before, #product-form .product-card .product-card-describe .product-card-follow .favorite .favor.selected.dropdown-input:before {
+            background-position: -227px -171px; }
+            .product-card .product-card-describe .product-card-follow .favorite .icon.favor.selected:hover, .product-card .product-card-describe .product-card-follow .favorite #upload-form #upload-models-wrap .favor.selected.dropdown-input:hover:before, #upload-form #upload-models-wrap .product-card .product-card-describe .product-card-follow .favorite .favor.selected.dropdown-input:hover:before, .product-card .product-card-describe .product-card-follow .favorite #product-form .favor.selected.dropdown-input:hover:before, #product-form .product-card .product-card-describe .product-card-follow .favorite .favor.selected.dropdown-input:hover:before {
+              background-position: -238px -192px; }
       .product-card .product-card-describe .product-card-follow .watch {
         float: right; }
         .product-card .product-card-describe .product-card-follow .watch .icon.eye, .product-card .product-card-describe .product-card-follow .watch #upload-form #upload-models-wrap .eye.dropdown-input:before, #upload-form #upload-models-wrap .product-card .product-card-describe .product-card-follow .watch .eye.dropdown-input:before, .product-card .product-card-describe .product-card-follow .watch #product-form .eye.dropdown-input:before, #product-form .product-card .product-card-describe .product-card-follow .watch .eye.dropdown-input:before {
@@ -6401,14 +6498,14 @@ header {
       .product-card .pop-card-cart .cart.dropdown-input:before,
       .product-card .pop-card-cart #product-form .cart.dropdown-input:before, #product-form
       .product-card .pop-card-cart .cart.dropdown-input:before {
-        background-position: -220px -192px; }
+        background-position: -211px -171px; }
       .product-card .pop-card-fly .icon.fly, .product-card .pop-card-fly #upload-form #upload-models-wrap .fly.dropdown-input:before, #upload-form #upload-models-wrap .product-card .pop-card-fly .fly.dropdown-input:before, .product-card .pop-card-fly #product-form .fly.dropdown-input:before, #product-form .product-card .pop-card-fly .fly.dropdown-input:before,
       .product-card .pop-card-cart .icon.fly,
       .product-card .pop-card-cart #upload-form #upload-models-wrap .fly.dropdown-input:before, #upload-form #upload-models-wrap
       .product-card .pop-card-cart .fly.dropdown-input:before,
       .product-card .pop-card-cart #product-form .fly.dropdown-input:before, #product-form
       .product-card .pop-card-cart .fly.dropdown-input:before {
-        background-position: -211px -171px; }
+        background-position: -243px -171px; }
   .product-card .pop-card-fly {
     background: #4A90E2;
     left: 6px; }
@@ -6589,14 +6686,14 @@ header {
     #signup-form .checkbox.dropdown-input:before,
     #signup-form #product-form .checkbox.dropdown-input:before, #product-form
     #signup-form .checkbox.dropdown-input:before {
-      background-position: -183px -36px; }
+      background-position: -248px -149px; }
       #signin-form .icon.checkbox.selected, #signin-form #upload-form #upload-models-wrap .checkbox.selected.dropdown-input:before, #upload-form #upload-models-wrap #signin-form .checkbox.selected.dropdown-input:before, #signin-form #product-form .checkbox.selected.dropdown-input:before, #product-form #signin-form .checkbox.selected.dropdown-input:before,
       #signup-form .icon.checkbox.selected,
       #signup-form #upload-form #upload-models-wrap .checkbox.selected.dropdown-input:before, #upload-form #upload-models-wrap
       #signup-form .checkbox.selected.dropdown-input:before,
       #signup-form #product-form .checkbox.selected.dropdown-input:before, #product-form
       #signup-form .checkbox.selected.dropdown-input:before {
-        background-position: -168px -126px; }
+        background-position: -183px -36px; }
   #signin-form input[type=text],
   #signin-form input[type=submit],
   #signin-form input[type=password],

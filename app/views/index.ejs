@@ -6,7 +6,7 @@
     <script src="//upcdn.b0.upaiyun.com/libs/jquery/jquery-2.0.3.min.js"></script>
     <script>
         $(function () {
-            $('.dropdown').hide();
+            $('.dropdown:not(#filter-bar .dropdown, .share-btn-wrap .dropdown, .share-wrap .dropdown, menuitem .dropdown)').hide();
             $('.button').click(function () {
                 if ($(this).next('.dropdown:visible').length) {
                     $('.dropdown').hide();

@@ -116,6 +116,15 @@
         .icon.favor {
           vertical-align: -3px;
           @include sprite-position($icon-favor);
+          &:hover {
+            @include sprite-position($icon-favor-selected);
+          }
+          &.selected {
+            @include sprite-position($icon-favor-selected);
+            &:hover {
+              @include sprite-position($icon-favor);
+            }
+          }
         }
       }
       .watch {
