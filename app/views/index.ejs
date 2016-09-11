@@ -20,61 +20,21 @@
             function switchMask() {
                 if ($('#mask:visible').length) {
                     $('#page-content').removeClass('blur');
-                    $('#mask').hide();
+                    $('#mask').toggleClass('hide');
                 } else {
                     $('#page-content').addClass('blur');
-                    $('#mask').show();
+                    $('#mask').toggleClass('hide');
                 }
             }
 
-            function switchConfirm() {
+            function switchModal(modalId) {
                 switchMask()
-                if ($('#confirm-wrap:visible').length) {
-                    $('#confirm-wrap').hide();
+                if ($(modalId + ':visible').length) {
+                    $(modalId).hide();
                 } else {
-                    $('#confirm-wrap').show();
+                    $(modalId).show();
                 }
             }
-
-            function switchSignIn() {
-                switchMask()
-                if ($('#signin-form-wrap:visible').length) {
-                    $('#signin-form-wrap').hide();
-                } else {
-                    $('#signin-form-wrap').show();
-                }
-            }
-
-            function switchSignUp() {
-                switchMask()
-                if ($('#signup-form-wrap:visible').length) {
-                    $('#signup-form-wrap').hide();
-                } else {
-                    $('#signup-form-wrap').show();
-                }
-            }
-
-            function switchAuthorized() {
-                switchMask()
-                if ($('#authorized-form-wrap:visible').length) {
-                    $('#authorized-form-wrap').hide();
-                } else {
-                    $('#authorized-form-wrap').show();
-                }
-            }
-
-            function switchPhoto() {
-                switchMask()
-                if ($('#photo-wrap:visible').length) {
-                    $('#photo-wrap').hide();
-                } else {
-                    $('#photo-wrap').show();
-                }
-            }
-
-            $('#confirm-form').click(function () {
-                switchConfirm();
-            });
 
             $('.checkbox-btn, .radio-btn').click(function () {
                 $(this).children('.checkbox, .radio').toggleClass('selected');
@@ -87,29 +47,35 @@
             $('#showcase li > a').click(function () {
 
                 $('#page-content').removeClass('blur');
-                $('#mask, #confirm-wrap, .sign-form-wrap, #authorized-form-wrap, #photo-wrap').hide();
+                $('#confirm-wrap, .sign-form-wrap, #authorized-form-wrap, #photo-wrap').hide();
+                $('#mask').addClass('hide');
 
                 switch ($(this).html()) {
                     case 'Sign In':
-                        switchSignIn();
+                        switchModal('#signin-form-wrap');
                         break;
                     case 'Sign Up':
-                        switchSignUp();
+                        switchModal('#signup-form-wrap');
+                        break;
+                    case 'Password':
+                        switchModal('#forgot-password-form-wrap');
                         break;
                     case 'Confirm':
-                        switchConfirm();
+                        switchModal('#confirm-wrap');
                         break;
                     case 'Authorized':
-                        switchAuthorized();
+                        switchModal('#authorized-form-wrap');
                         break;
                     case 'Photo':
-                        switchPhoto();
+                        switchModal('#photo-wrap');
+                        break;
+                    case 'Report':
+                        switchModal('#report-form-wrap');
                         break;
                 }
             });
 
             $('#model-image-thumbnails li a').eq(0).addClass('selected');
-
 
             $('.dropdown-input > .dropdown-handle').click(function () {
                 $(this).parent().toggleClass('selected');
@@ -123,9 +89,11 @@
     <%- include('partial-header'); %>
     <%- include(page); %>
 </div>
-<div id="mask">
+<div id="mask" class="hide">
     <%- include('partial-signin'); %>
     <%- include('partial-signup'); %>
+    <%- include('partial-password'); %>
+    <%- include('partial-report'); %>
     <%- include('partial-confirm'); %>
     <%- include('partial-authorized'); %>
     <%- include('partial-photo'); %>
@@ -146,6 +114,8 @@
         <li><a href="terms">Terms</a></li>
         <li><a>Sign In</a></li>
         <li><a>Sign Up</a></li>
+        <li><a>Password</a></li>
+        <li><a>Report</a></li>
         <li><a>Confirm</a></li>
         <li><a>Photo</a></li>
         <li><a>Authorized</a></li>

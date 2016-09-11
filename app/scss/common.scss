@@ -21,6 +21,7 @@ $theBlue3: #91919f;
 $theBlue4: #4A90E2;
 $theBlue5: #6F869A;
 $theBlue6: #616176;
+$theBlue7: #2B2B36;
 
 html, body {
   background: $theGray9;
@@ -51,7 +52,7 @@ html, body {
 }
 
 #mask {
-  display: none;
+  display: flex;
   position: fixed;
   top: 0;
   right: 0;
@@ -59,12 +60,19 @@ html, body {
   left: 0;
   background: rgba(0, 0, 0, .5);
   overflow: scroll;
+  @include display(flex);
+  @include align-items(center);
+  @include justify-content(center);
+  &.hide {
+    display: none;
+  }
 }
 
 #showcase {
   position: fixed;
   top: 60px;
   left: 0;
+  z-index: 100;
   h2 {
     font-size: 8px;
     color: $thePink1;

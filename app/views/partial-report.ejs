@@ -1,0 +1,22 @@
+<div class="sign-form-wrap" id="report-form-wrap">
+    <h2>PLEASE CHOOSE TO REPORT PROBLEMS</h2>
+    <ul id="report-list">
+        <% [1, 2, 3, 4].forEach(function (i) { %>
+        <li class="<%= i % 2 ? 'selected' : '' %>">
+            <i class="icon check-green"></i>
+            <div class="text">
+                <h3>
+                    Plagiarism
+                </h3>
+                <p>
+                    If you are a serious astronomy fanatic like a lot of us are, you can probably remember that one event in childhood that started you along this exciting hobby.
+                </p>
+            </div>
+        </li>
+        <% }); %>
+    </ul>
+    <button id="report-form-submit">Submit</button>
+    <span class="cross-wrap">
+        <i class="cross"></i>
+    </span>
+</div>

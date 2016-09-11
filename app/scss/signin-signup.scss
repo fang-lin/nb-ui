@@ -1,8 +1,10 @@
 .sign-form-wrap {
   display: none;
-  margin: 80px auto 0 auto;
+  max-width: 100%;
+  margin: 0 40px;
   border-radius: 4px;
   padding: 22px 18px;
+  position: relative;
   @include background-image(linear-gradient(rgba(61, 61, 75, 1), rgba(25, 25, 34, 1)));
   h2 {
     color: #fff;
@@ -26,10 +28,45 @@
       float: right;
     }
   }
+  .cross-wrap {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .3);
+    background: $theBlue7;
+    position: absolute;
+    display: block;
+    padding: 12px;
+    border-radius: 28px;
+    top: -25px;
+    right: -25px;
+    cursor: pointer;
+    .cross {
+      position: relative;
+      display: block;
+      height: 26px;
+      width: 26px;
+      &:before,
+      &:after {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 2px;
+        background: $theGray4;
+        width: 26px;
+        top: 12px;
+        border-radius: 1px;
+      }
+      &:before {
+        @include transform(rotate(45deg));
+      }
+      &:after {
+        @include transform(rotate(-45deg));
+      }
+    }
+  }
 }
 
 #signin-form,
-#signup-form {
+#signup-form,
+#forget-password-form {
   margin: 0 auto;
   .checkbox-wrap {
     @include clearfix;
@@ -68,6 +105,7 @@
   }
   input[type=text],
   input[type=submit],
+  input[type=button],
   input[type=password] {
     font-size: 14px;
     height: 36px;
@@ -94,6 +132,10 @@
   input[type=submit] {
     background: #ea6264;
     margin: 40px 0;
+    color: #fff;
+  }
+  input[type=button] {
+    background: #ea6264;
     color: #fff;
   }
 }
@@ -143,5 +185,85 @@
         color: #fff;
       }
     }
+  }
+}
+
+#forgot-password-form-wrap {
+  width: 454px;
+  #forget-password-form {
+    width: 296px;
+    #send-code-btn {
+      float: right;
+      width: 50%;
+    }
+  }
+}
+
+#report-form-wrap {
+  width: 454px;
+  h2 {
+    font-size: 32px;
+    margin: 24px 0;
+  }
+  #report-list {
+    list-style: none;
+    padding: 0 20px;
+    margin: 0;
+    li {
+      @include clearfix;
+      padding: 10px 0;
+      .icon {
+        display: block;
+        height: 18px;
+        width: 18px;
+        @include sprite-position($icon-check-green);
+        float: left;
+      }
+      .text {
+        float: right;
+        width: 88%;
+        color: #676774;
+        border: solid 1px #676774;
+        border-radius: 4px;
+        padding: 10px;
+        h3 {
+          font-weight: normal;
+          font-size: 16px;
+          margin: 5px 0;
+          padding: 0;
+        }
+        p {
+          font-size: 14px;
+          line-height: 18px;
+          margin: 5px 0;
+          padding: 0;
+        }
+      }
+      &.selected {
+        .icon {
+          @include sprite-position($icon-check-green-selected);
+        }
+        .text {
+          color: #B8E986;
+          border-color: #B8E986;
+          p {
+
+          }
+        }
+      }
+    }
+  }
+  #report-form-submit {
+    font-size: 14px;
+    height: 36px;
+    padding: 0 18px;
+    margin: 20px auto;
+    background: #B8E986;
+    border-radius: 18px;
+    border: medium none;
+    color: #fff;
+    display: block;
+    width: 60%;
+    box-sizing: border-box;
   }
 }
