@@ -85,6 +85,9 @@
     <title>Document</title>
 </head>
 <body>
+<% if(['page-404', 'page-activated'].indexOf(page) > -1) { %>
+<%- include(page); %>
+<% } else { %>
 <div id="page-content" class="">
     <%- include('partial-header'); %>
     <%- include(page); %>
@@ -98,6 +101,7 @@
     <%- include('partial-authorized'); %>
     <%- include('partial-photo'); %>
 </div>
+<% } %>
 <div id="showcase">
     <ul>
         <li><a href="element">Home</a></li>
@@ -112,6 +116,8 @@
         <li><a href="following">Following</a></li>
         <li><a href="model">Model</a></li>
         <li><a href="terms">Terms</a></li>
+        <li><a href="404">404</a></li>
+        <li><a href="activated">Activated</a></li>
         <li><a>Sign In</a></li>
         <li><a>Sign Up</a></li>
         <li><a>Password</a></li>

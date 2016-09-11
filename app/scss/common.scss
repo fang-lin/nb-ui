@@ -126,3 +126,62 @@ hr {
   border: medium none;
   background: $theGray8;
 }
+
+#not-found-img {
+  width: 542px;
+  height: 367px;
+  background-image: url(/images/sprite@3x.png);
+  background-size: $spritesheet-width $spritesheet-height;
+  @include sprite-position($not-found);
+  margin: 100px auto 40px auto;
+}
+
+#not-found-return {
+  font-size: 14px;
+  height: 36px;
+  padding: 0 18px;
+  margin: 40px auto;
+  background: #2A2A36;
+  border-radius: 18px;
+  border: medium none;
+  color: #fff;
+  display: block;
+  width: 260px;
+  box-sizing: border-box;
+}
+
+#activated-wrap {
+  text-align: center;
+  width: 480px;
+  margin: 0 auto;
+  .img {
+    width: 94px;
+    height: 94px;
+    background-image: url(/images/sprite@3x.png);
+    background-size: $spritesheet-width $spritesheet-height;
+    @include sprite-position($happy);
+    margin: 100px auto 40px auto;
+  }
+  h1 {
+    font-size: 24px;
+    font-weight: normal;
+  }
+  p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  button {
+
+    font-size: 14px;
+    height: 36px;
+    padding: 0 18px;
+    margin: 40px auto;
+    background: #2A2A36;
+    border-radius: 18px;
+    border: medium none;
+    color: #fff;
+    display: block;
+    width: 260px;
+    box-sizing: border-box;
+  }
+}
