@@ -1,0 +1,64 @@
+<div id="channel-bar-wrap">
+    <%- include('partial-channel-bar'); %>
+</div>
+<div class="container personal">
+    <div id="personal-detail">
+        <img class="portrait" src="/upload/game_ready_fantasy_goat_3d_model_max_obj_3ds_fbx_c4d_lwo_lw_lws_376aeb90-9854-4611-b225-e401a5890400.jpg"/>
+        <div class="username">
+            <h2>
+                Mike Barnes
+                <i class="icon gear"></i>
+            </h2>
+        </div>
+        <div class="job">
+            <span>UX designer</span>
+            <span>Germany</span>
+        </div>
+        <div class="operate">
+            <button>Follow</button>
+            <a class="icon facebook"></a>
+            <a class="icon twitter"></a>
+            <a class="icon linkedin"></a>
+        </div>
+    </div>
+    <div id="personal-regard-wrap">
+        <ul id="personal-regard">
+            <li>
+                <span class="count">12</span>
+                <label for="" class="item">Works</label>
+            </li>
+            <li>
+                <span class="count">815123</span>
+                <label for="" class="item">Likes</label>
+            </li>
+            <li>
+                <span class="count">1837</span>
+                <label for="" class="item">Follows</label>
+            </li>
+            <li>
+                <span class="count">71</span>
+                <label for="" class="item">Following</label>
+            </li>
+        </ul>
+    </div>
+    <div id="personal-followers">
+        <div class="grid five">
+            <% [1, 2, 3, 4, 5].map(function(col){ %>
+            <div class="column">
+                <% [1, 2].map(function(row){ %>
+                <div class="cell">
+                    <div class="personal-follower-card">
+                        <div class="portrait">
+                            <img src="/upload/large_fantasy_village_and_tower_defense_3d_model_fbx_e3bf7909-f1a4-4f7e-8468-7dbe307a68a7.png" alt="">
+                        </div>
+                        <h3>Tom</h3>
+                        <button>Follow</button>
+                    </div>
+                </div>
+                <% }); %>
+            </div>
+            <% }); %>
+        </div>
+    </div>
+</div>
+<%- include('partial-to-top'); %>

@@ -4177,17 +4177,50 @@ header {
         font-size: 12px;
         display: block; }
 
+#personal-followers,
 #personal-products {
   margin: 30px 0; }
+  #personal-followers > .grid,
   #personal-products > .grid {
     margin: 0 -15px; }
+    #personal-followers > .grid > .column,
     #personal-products > .grid > .column {
       width: 20%;
       padding: 0 15px;
       margin: -30px 0; }
+      #personal-followers > .grid > .column > .cell,
       #personal-products > .grid > .column > .cell {
         margin: 30px 0;
         position: relative; }
+
+#personal-followers > .grid > .column {
+  margin: -50px 0; }
+  #personal-followers > .grid > .column > .cell {
+    margin: 50px 0; }
+
+.personal-follower-card .portrait img {
+  width: 216px;
+  height: 216px;
+  border-radius: 108px; }
+
+.personal-follower-card h3 {
+  font-weight: normal;
+  font-size: 16px;
+  text-align: center;
+  margin: 10px auto; }
+
+.personal-follower-card button {
+  font-size: 14px;
+  height: 36px;
+  padding: 0 18px;
+  margin: 10px auto;
+  background: #ea6264;
+  border-radius: 4px;
+  border: medium none;
+  color: #fff;
+  display: block;
+  box-sizing: border-box;
+  width: 100%; }
 
 #personal-title {
   color: #515254;

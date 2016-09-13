@@ -33,11 +33,14 @@ gulp.task('copy', function () {
 });
 
 gulp.task('watch-sass', function () {
-    return gulp.watch('app/scss/**', ['sass']);
+    return gulp.watch([
+        'app/scss/**',
+        '!app/scss/sprite**'
+    ], ['sass']);
 });
 
 gulp.task('watch-sprite', function () {
-    return gulp.watch('app/watch-slices/**', ['sprite']);
+    return gulp.watch('app/slices/**', ['sprite']);
 });
 
 gulp.task('check-slices', function (done) {
