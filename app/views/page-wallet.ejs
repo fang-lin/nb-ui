@@ -1,0 +1,55 @@
+<div class="container wallet">
+    <h2 id="personal-title">
+        <span>My Wallet</span>
+    </h2>
+    <div id="wallet-board">
+        <div class="column left">
+            <label>Coupon</label>
+            <span>$50</span>
+        </div>
+        <div class="column right">
+            <label>Balance</label>
+            <span>$100</span>
+            <button>Recharge</button>
+        </div>
+    </div>
+    <h3 class="table-title">
+        Transaction History
+    </h3>
+    <table id="wallet-table" cellspacing="0">
+        <thead>
+        <tr>
+            <th class="no">Transaction No.</th>
+            <th class="time">Time</th>
+            <th class="type">Type</th>
+            <th class="amount">Amount</th>
+            <th class="method">Method</th>
+            <th class="order">Order No.</th>
+        </tr>
+        </thead>
+        <tbody>
+        <% [1, 2, 3, 4, 5, 6].map(function () { %>
+        <tr>
+            <td class="no">
+                512412412127
+            </td>
+            <td class="time">
+                11.04.2016 15:32
+            </td>
+            <td class="type">
+                Sale
+            </td>
+            <td class="amount">
+                $7,00
+            </td>
+            <td class="method">
+                Balance
+            </td>
+            <td class="order">
+                #2
+            </td>
+        </tr>
+        <% }); %>
+        </tbody>
+    </table>
+</div>

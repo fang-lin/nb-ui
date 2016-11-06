@@ -47,7 +47,7 @@
             $('#showcase li > a').click(function () {
 
                 $('#page-content').removeClass('blur');
-                $('#confirm-wrap, .sign-form-wrap, #authorized-form-wrap, #photo-wrap').hide();
+                $('#confirm-wrap, .sign-form-wrap, #authorized-form-wrap, #photo-wrap, #application-alert-wrap').hide();
                 $('#mask').addClass('hide');
 
                 switch ($(this).html()) {
@@ -65,6 +65,9 @@
                         break;
                     case 'Authorized':
                         switchModal('#authorized-form-wrap');
+                        break;
+                    case 'Application':
+                        switchModal('#application-alert-wrap');
                         break;
                     case 'Photo':
                         switchModal('#photo-wrap');
@@ -99,12 +102,18 @@
     <%- include('partial-report'); %>
     <%- include('partial-confirm'); %>
     <%- include('partial-authorized'); %>
+    <%- include('partial-application-alert'); %>
     <%- include('partial-photo'); %>
 </div>
 <% } %>
 <div id="showcase">
     <ul>
         <li><a href="element">Home</a></li>
+        <li><a href="check">Check</a></li>
+        <li><a href="applied-failure">Applied Failure</a></li>
+        <li><a href="applied-success">Applied Success</a></li>
+        <li><a href="applying-a">Applying A</a></li>
+        <li><a href="applying-b">Applying B</a></li>
         <li><a href="publish">Publish</a></li>
         <li><a href="personal">Personal</a></li>
         <li><a href="checkout">Checkout</a></li>
@@ -119,6 +128,7 @@
         <li><a href="terms">Terms</a></li>
         <li><a href="404">404</a></li>
         <li><a href="activated">Activated</a></li>
+        <li><a href="wallet">Wallet</a></li>
         <li><a>Sign In</a></li>
         <li><a>Sign Up</a></li>
         <li><a>Password</a></li>
@@ -126,6 +136,7 @@
         <li><a>Confirm</a></li>
         <li><a>Photo</a></li>
         <li><a>Authorized</a></li>
+        <li><a>Application</a></li>
     </ul>
 </div>
 </body>

@@ -1,0 +1,90 @@
+.container.wallet {
+  width: 900px;
+}
+
+.table-title {
+  margin: 20px 0;
+  color: $theGray3;
+  padding: 0;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+#wallet-board {
+  border: solid 1px $theGray5;
+  border-radius: 4px;
+  background: #fff;
+  width: 100%;
+  @include clearfix;
+  padding: 18px 0;
+  .column {
+    float: left;
+    box-sizing: border-box;
+    height: 120px;
+    @include display(flex);
+    @include align-items(center);
+    @include justify-content(center);
+    label {
+      color: $theGray7;
+      font-size: 18px;
+      padding: 0 10px;
+    }
+    span {
+      color: $theGray3;
+      font-size: 44px;
+      margin: 0 10px;
+    }
+    button {
+      margin: 0 10px;
+      padding: 0 20px;
+      line-height: 44px;
+      font-size: 16px;
+      border-radius: 22px;
+      border: solid 1px $thePink1;
+      color: $thePink1;
+      background: none;
+      cursor: pointer;
+    }
+  }
+  .left {
+    width: 40%;
+    border-right: solid 1px $theGray5;
+  }
+  .right {
+    width: 60%;
+    margin-left: -1px;
+  }
+}
+
+#wallet-table {
+  margin: 20px 0;
+  border: solid 1px $theGray5;
+  border-radius: 4px;
+  background: #fff;
+  width: 100%;
+  border-collapse: collapse;
+  th {
+    font-size: 16px;
+    color: $theGray3;
+    font-weight: normal;
+    padding: 14px;
+    border-bottom: solid 1px $theGray5;
+    text-align: center;
+    &.type {
+      text-align: left;
+    }
+  }
+  td {
+    color: $theGray7;
+    position: relative;
+    padding: 20px 14px;
+    border-bottom: solid 1px $theGray5;
+    text-align: center;
+    &.type {
+      text-align: left;
+    }
+    &.no {
+      text-align: center;
+    }
+  }
+}

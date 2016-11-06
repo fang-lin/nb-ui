@@ -1,0 +1,199 @@
+.container.applying-a {
+  width: 900px;
+  color: $theGray3;
+  margin: 20px auto;
+  #applying-a-form {
+    h2 {
+      color: $theGray3;
+      font-size: 18px;
+      font-weight: normal;
+      margin: 20px 0;
+    }
+    #upload-button, #choose-models-button {
+      display: block;
+      line-height: 44px;
+      font-size: 16px;
+      border-radius: 22px;
+      border: solid 1px $theGray3;
+      color: $theGray3;
+      padding: 0 60px;
+      background: none;
+      cursor: pointer;
+      margin: 20px auto;
+    }
+    #applying-a-form-submit {
+      border: none medium;
+      background: $thePink1;
+      line-height: 46px;
+      border-radius: 23px;
+      display: block;
+      padding: 0 60px;
+      font-size: 16px;
+      color: #fff;
+      margin: 60px auto;
+      cursor: pointer;
+      &:disabled {
+        background: $theGray8;
+        box-shadow: none;
+      }
+    }
+    #upload-images-wrap {
+      overflow: hidden;
+      margin: 20px 0;
+      #upload-image-btn-wrap {
+        margin: 24px 0;
+        @include clearfix;
+        #upload-image-btn {
+          float: left;
+          background: #fff;
+          border: solid 1px $theGray5;
+          border-radius: 4px;
+          padding: 0;
+          cursor: pointer;
+          height: 180px;
+          width: 180px;
+          position: relative;
+          .icon.plus {
+            height: 47px;
+            width: 47px;
+            display: block;
+            margin: 67px auto;
+            @include sprite-position($icon-plus);
+          }
+        }
+      }
+    }
+    #upload-models-wrap, #models-detail-b-wrap {
+      margin: 40px 0;
+      @include clearfix;
+      .checkbox-btn {
+        color: $theGray3;
+        padding: 0 20px 0 0;
+      }
+      .icon.checkbox,
+      .icon.radio {
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+        vertical-align: -4px;
+        margin: 0 5px 0 0;
+      }
+      .icon {
+        &.checkbox {
+          @include sprite-position($icon-checkbox-large);
+          &.selected {
+            @include sprite-position($icon-checkbox-large-selected);
+          }
+        }
+        &.radio {
+          @include sprite-position($icon-radio-large);
+          &.selected {
+            @include sprite-position($icon-radio-large-selected);
+          }
+        }
+      }
+    }
+    #models-detail-a-wrap {
+      @include clearfix;
+      margin: 40px -10px;
+      .item {
+        width: 33.33%;
+        padding: 10px;
+        box-sizing: border-box;
+        float: left;
+        label {
+          display: block;
+          color: $theGray3;
+          font-size: 16px;
+          line-height: 18px;
+          height: 18px;
+          margin: 0 0 10px 0;
+          .icon {
+            height: 18px;
+            width: 18px;
+            display: inline-block;
+            &.polygons {
+              @include sprite-position($icon_polygons);
+            }
+            &.vertices {
+              @include sprite-position($icon_vertices);
+            }
+          }
+        }
+        .dropdown-input {
+          position: relative;
+          margin: 0;
+          &:before {
+            content: '';
+            display: block;
+            height: 7px;
+            width: 11px;
+            position: absolute;
+            right: 14px;
+            top: 16px;
+            @extend .icon;
+            @include sprite-position($icon-dropdown);
+          }
+          .dropdown-handle {
+            margin: 0;
+          }
+          .dropdown-list {
+            display: none;
+            position: absolute;
+            z-index: 10;
+            left: 0;
+            right: 0;
+            top: 37px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background: #fff;
+            box-shadow: 0 5px 30px rgba(0, 0, 0, .1);
+            border: solid 1px $theGray10;
+            border-radius: 2px;
+            color: $theGray3;
+            max-height: 300px;
+            li {
+              padding: 10px;
+              font-size: 12px;
+              line-height: 18px;
+              color: $theGray3;
+              cursor: pointer;
+              &:hover {
+                background: $thePink1;
+                color: #fff;
+              }
+              &:first-child {
+                border-radius: 2px 2px 0 0;
+              }
+              &:last-child {
+                border-radius: 0 0 2px 2px;
+              }
+            }
+          }
+          &.selected {
+            .dropdown-list {
+              display: block;
+            }
+          }
+        }
+        input[type=text] {
+          margin: 0;
+          display: block;
+          width: 100%;
+          box-sizing: border-box;
+          resize: none;
+          font-size: 12px;
+          color: $theGray3;
+          padding: 0 10px;
+          line-height: 34px;
+          border: solid 1px $theGray10;
+          border-radius: 2px;
+          @include placeholder {
+            color: $theGray8;
+          }
+        }
+      }
+    }
+  }
+}

@@ -47,3 +47,53 @@
     }
   }
 }
+
+#register-banner {
+  background-image: url(/images/notice_banner_background@3x.png);
+  background-size: 1440px 80px;
+  color: white;
+  text-align: center;
+  line-height: 20px;
+  font-size: 14px;
+  padding: 29px 0;
+  position: relative;
+  p {
+    margin: 0;
+    button {
+      border: solid 1px white;
+      color: white;
+      border-radius: 4px;
+      background: transparent;
+      padding: 0 8px;
+      font-size: 14px;
+      line-height: 20px;
+      cursor: pointer;
+      margin: 0 8px;
+    }
+  }
+  .cross {
+    right: 60px;
+    top: 28px;
+    position: absolute;
+    display: block;
+    height: 27px;
+    width: 27px;
+    cursor: pointer;
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      height: 1px;
+      background: white;
+      width: 27px;
+      top: 13px;
+    }
+    &:before {
+      @include transform(rotate(45deg));
+    }
+    &:after {
+      @include transform(rotate(-45deg));
+    }
+  }
+}

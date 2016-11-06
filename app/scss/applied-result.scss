@@ -1,0 +1,35 @@
+.applied-success, .applied-failure {
+  text-align: center;
+  #smile-img, #frown-img{
+    width: 90px;
+    height: 90px;
+    background-image: url(/images/sprite@3x.png);
+    background-size: $spritesheet-width $spritesheet-height;
+    margin: 100px auto 40px auto;
+  }
+  #smile-img {
+    @include sprite-position($smile);
+  }
+  #frown-img {
+    @include sprite-position($frown);
+  }
+  h2 {
+    color: $thePink1;
+    font-size: 16px;
+    font-weight: normal;
+  }
+  p {
+    color: $theGray3;
+    margin: 0 0 60px 0;
+  }
+  button {
+    cursor: pointer;
+    background: $thePink1;
+    line-height: 34px;
+    font-size: 14px;
+    color: white;
+    border-radius: 17px;
+    padding: 0 14px;
+    border: medium none;
+  }
+}

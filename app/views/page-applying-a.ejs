@@ -1,0 +1,141 @@
+<div class="container applying-a">
+    <form id="applying-a-form" onsubmit="return false;">
+        <p>
+            Pages you view in incognito tabs won’t stick around in your browser’s history, cookie store, or search history after you’ve closed all of your incognito tabs. Any files you download or bookmarks you create will be kept. However,
+            you aren’t invisible. Going incognito doesn’t hide your browsing from your employer, your internet service provider, or the websites you visit.
+        </p>
+        <p>
+            Pages you view in incognito tabs won’t stick around in your browser’s history, cookie store, or search history after you’ve closed all of your incognito tabs. Any files you download or bookmarks you create will be kept. However,
+            you aren’t invisible. Going incognito doesn’t hide your browsing from your employer, your internet service provider, or the websites you visit.
+        </p>
+        <hr>
+        <h2>Step 1：Upload photos (at least 5, up to 20 photo)</h2>
+        <div id="upload-images-wrap">
+            <div id="upload-image-btn-wrap">
+                <a id="upload-image-btn">
+                    <i class="icon plus"></i>
+                </a>
+            </div>
+        </div>
+        <button id="upload-button">Upload</button>
+        <hr>
+        <h2>Step 2：Upload a model package (support zip, rar, tar, gz, 7z)</h2>
+        <div id="upload-models-wrap">
+            <a class="item checkbox-btn">
+                <i class="icon checkbox" id=""></i>
+                <label for="">fxb</label>
+            </a>
+            <a class="item checkbox-btn">
+                <i class="icon checkbox" id=""></i>
+                <label for="">max</label>
+            </a>
+            <a class="item checkbox-btn">
+                <i class="icon checkbox" id=""></i>
+                <label for="">maya</label>
+            </a>
+            <a class="item checkbox-btn">
+                <i class="icon checkbox" id=""></i>
+                <label for="">obj</label>
+            </a>
+            <a class="item checkbox-btn">
+                <i class="icon checkbox" id=""></i>
+                <label for="">c4d</label>
+            </a>
+            <a class="item checkbox-btn">
+                <i class="icon checkbox" id=""></i>
+                <label for="">stl</label>
+            </a>
+            <a class="item checkbox-btn">
+                <i class="icon checkbox" id=""></i>
+                <label for="">zbrush</label>
+            </a>
+            <a class="item checkbox-btn">
+                <i class="icon checkbox" id=""></i>
+                <label for="">other</label>
+            </a>
+        </div>
+        <button id="choose-models-button">Choose file</button>
+        <hr>
+        <h2>Step 3：Add details</h2>
+        <div id="models-detail-a-wrap">
+            <div class="item">
+                <label for="product-title">Title:</label>
+                <input type="text" id="product-title">
+            </div>
+            <div class="item">
+                <label for="product-geometry">Geometry:</label>
+                <div class="dropdown-input">
+                    <input type="text" class="dropdown-handle" id="product-geometry" readonly="readonly" value="AAA AAA">
+                    <ul class="dropdown-list">
+                        <li>
+                            <span>AAA AAA</span>
+                        </li>
+                        <li>
+                            <span>BBB BBB</span>
+                        </li>
+                        <li>
+                            <span>CCC CCC</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item">
+                <label for="product-polygons">
+                    <i class="icon polygons"></i>
+                </label>
+                <input type="text" id="product-polygons" placeholder="polygons">
+            </div>
+            <div class="item">
+                <label for="product-vertices">
+                    <i class="icon vertices"></i>
+                </label>
+                <input type="text" id="product-vertices" placeholder="vertices">
+            </div>
+            <div class="item">
+                <label for="product-category">Category:</label>
+                <div class="dropdown-input">
+                    <input type="text" class="dropdown-handle" id="product-category" readonly="readonly" value="AAA AAA">
+                    <ul class="dropdown-list">
+                        <li>
+                            <span>AAA AAA</span>
+                        </li>
+                        <li>
+                            <span>BBB BBB</span>
+                        </li>
+                        <li>
+                            <span>CCC CCC</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="models-detail-b-wrap">
+            <a class="item checkbox-btn">
+                <i class="icon checkbox" id="product-animation"></i>
+                <label for="product-animation">Animation</label>
+            </a>
+            <a class="item checkbox-btn">
+                <i class="icon checkbox" id="product-low-poly"></i>
+                <label for="product-low-poly">low-poly</label>
+            </a>
+            <a class="item checkbox-btn">
+                <i class="icon checkbox" id="product-texture"></i>
+                <label for="product-texture">Texture</label>
+            </a>
+            <a class="item checkbox-btn">
+                <i class="icon checkbox" id="product-material"></i>
+                <label for="product-material">Material</label>
+            </a>
+            <a class="item checkbox-btn">
+                <i class="icon checkbox selected" id="product-rigged"></i>
+                <label for="product-rigged">Rigged</label>
+            </a>
+            <a class="item checkbox-btn">
+                <i class="icon checkbox" id="product-uvw"></i>
+                <label for="product-uvw">UVW mapping</label>
+            </a>
+        </div>
+        <hr>
+        <button id="applying-a-form-submit">Publish</button>
+    </form>
+</div>

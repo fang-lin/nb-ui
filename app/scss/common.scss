@@ -52,7 +52,6 @@ html, body {
 }
 
 #mask {
-  display: flex;
   position: fixed;
   top: 0;
   right: 0;
@@ -71,8 +70,16 @@ html, body {
 #showcase {
   position: fixed;
   top: 60px;
-  left: 0;
+  left: -65px;
   z-index: 100;
+  transition: all .5s;
+  padding: 4px 5px 4px 0;
+  border-radius: 0 4px 4px 0;
+  &:hover {
+    left: 0;
+    opacity: 1;
+    background: rgba(0, 0, 0, .1);
+  }
   h2 {
     font-size: 8px;
     color: $thePink1;
@@ -83,8 +90,8 @@ html, body {
     padding: 0;
     li {
       background: #fff;
-      line-height: 18px;
-      font-size: 10px;
+      line-height: 14px;
+      font-size: 9px;
       border-radius: 0 2px 2px 0;
       color: #666;
       margin: 1px 0;
