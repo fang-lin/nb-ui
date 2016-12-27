@@ -3183,7 +3183,7 @@ html, body {
 #showcase {
   position: fixed;
   top: 60px;
-  left: -65px;
+  left: 0;
   z-index: 100;
   transition: all .5s;
   padding: 4px 5px 4px 0;
@@ -4936,7 +4936,7 @@ header {
   box-sizing: border-box;
   width: 100%; }
 
-#personal-title {
+#personal-title, #new-project-title {
   color: #515254;
   font-size: 30px;
   line-height: 40px;
@@ -4946,7 +4946,7 @@ header {
   width: 70%;
   text-align: center;
   font-weight: normal; }
-  #personal-title span {
+  #personal-title span, #new-project-title span {
     display: inline-block;
     padding: 0 35px;
     background: #f7f8fa; }
@@ -7980,3 +7980,151 @@ header {
     display: block;
     width: 60%;
     box-sizing: border-box; }
+
+#new-project-form-wrap #new-project-form {
+  width: 950px;
+  margin: 0 auto; }
+  #new-project-form-wrap #new-project-form h3 {
+    font-weight: normal;
+    font-size: 14px;
+    color: #515254;
+    margin: 30px 0; }
+  #new-project-form-wrap #new-project-form hr {
+    margin: 30px 0; }
+  #new-project-form-wrap #new-project-form .line {
+    position: relative;
+    line-height: 0;
+    margin: 30px 0;
+    display: flex; }
+    #new-project-form-wrap #new-project-form .line > label {
+      float: left;
+      font-size: 14px;
+      line-height: 36px;
+      color: #515254;
+      width: 120px;
+      padding: 0 20px 0 0;
+      text-align: right; }
+    #new-project-form-wrap #new-project-form .line input[type=text] {
+      border: solid 1px #d2d2d2;
+      border-radius: 2px;
+      padding: 0 10px;
+      line-height: 34px;
+      font-size: 14px;
+      box-sizing: border-box;
+      color: #515254;
+      flex: 1; }
+      #new-project-form-wrap #new-project-form .line input[type=text].period, #new-project-form-wrap #new-project-form .line input[type=text].country, #new-project-form-wrap #new-project-form .line input[type=text].area-code, #new-project-form-wrap #new-project-form .line input[type=text].phone-code {
+        flex: 0;
+        margin: 0 6px 0 0; }
+      #new-project-form-wrap #new-project-form .line input[type=text].period {
+        width: 140px; }
+      #new-project-form-wrap #new-project-form .line input[type=text].country {
+        width: 120px; }
+      #new-project-form-wrap #new-project-form .line input[type=text].area-code {
+        width: 70px; }
+      #new-project-form-wrap #new-project-form .line input[type=text].phone-code {
+        width: 180px; }
+    #new-project-form-wrap #new-project-form .line > .options {
+      flex: 1;
+      display: flex;
+      line-height: 34px;
+      font-size: 14px;
+      width: 280px;
+      margin: 0 -6px;
+      box-sizing: border-box; }
+      #new-project-form-wrap #new-project-form .line > .options > .option {
+        flex: 0 0 calc(20% - 12px);
+        box-sizing: border-box;
+        border: solid 1px #9b9b9b;
+        margin: 0 6px;
+        border-radius: 2px;
+        text-align: center;
+        color: #9b9b9b; }
+        #new-project-form-wrap #new-project-form .line > .options > .option.selected {
+          background: #ea6264;
+          border: solid 1px #ea6264;
+          color: white; }
+    #new-project-form-wrap #new-project-form .line #change-btn,
+    #new-project-form-wrap #new-project-form .line #cancel-btn,
+    #new-project-form-wrap #new-project-form .line #save-btn {
+      border: solid 1px #ea6264;
+      color: #ea6264;
+      border-radius: 23px;
+      background: transparent;
+      padding: 0 50px;
+      font-size: 14px;
+      line-height: 46px;
+      cursor: pointer; }
+    #new-project-form-wrap #new-project-form .line #cancel-btn,
+    #new-project-form-wrap #new-project-form .line #save-btn {
+      margin: 0 30px; }
+    #new-project-form-wrap #new-project-form .line #change-btn {
+      margin: 36px 0;
+      float: left; }
+  #new-project-form-wrap #new-project-form .photos {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0 -5px;
+    flex-wrap: wrap; }
+    #new-project-form-wrap #new-project-form .photos li {
+      padding: 0;
+      margin: 5px;
+      flex: 0 0 calc(33.3333% - 10px); }
+      #new-project-form-wrap #new-project-form .photos li img {
+        width: 100%;
+        border-radius: 4px; }
+      #new-project-form-wrap #new-project-form .photos li.add {
+        background: white;
+        border-radius: 4px;
+        text-align: center; }
+        #new-project-form-wrap #new-project-form .photos li.add .icon.plus, #new-project-form-wrap #new-project-form .photos li.add .container.applying-a #applying-a-form #models-detail-a-wrap .item .plus.dropdown-input:before, .container.applying-a #applying-a-form #models-detail-a-wrap .item #new-project-form-wrap #new-project-form .photos li.add .plus.dropdown-input:before, #new-project-form-wrap #new-project-form .photos li.add .container.applying-b #applying-b-form #account-detail-wrap .item .plus.dropdown-input:before, .container.applying-b #applying-b-form #account-detail-wrap .item #new-project-form-wrap #new-project-form .photos li.add .plus.dropdown-input:before, #new-project-form-wrap #new-project-form .photos li.add .container.applying-b #applying-b-form #experience-wrap .plus.dropdown-input:before, .container.applying-b #applying-b-form #experience-wrap #new-project-form-wrap #new-project-form .photos li.add .plus.dropdown-input:before, #new-project-form-wrap #new-project-form .photos li.add #upload-form #upload-models-wrap .plus.dropdown-input:before, #upload-form #upload-models-wrap #new-project-form-wrap #new-project-form .photos li.add .plus.dropdown-input:before, #new-project-form-wrap #new-project-form .photos li.add #product-form .plus.dropdown-input:before, #product-form #new-project-form-wrap #new-project-form .photos li.add .plus.dropdown-input:before {
+          height: 47px;
+          width: 47px;
+          display: block;
+          margin: 50px auto 0 auto;
+          background-position: -542px -50px; }
+        #new-project-form-wrap #new-project-form .photos li.add div {
+          color: #b0b0b0;
+          margin: 20px 0 0 0; }
+  #new-project-form-wrap #new-project-form .tips {
+    color: #9b9b9b;
+    font-size: 12px; }
+  #new-project-form-wrap #new-project-form #description {
+    line-height: 20px;
+    font-size: 14px;
+    padding: 10px;
+    border: solid 1px #d2d2d2;
+    border-radius: 2px;
+    background: white;
+    width: 100%;
+    box-sizing: border-box;
+    resize: none;
+    height: 180px; }
+  #new-project-form-wrap #new-project-form #submit-btn {
+    background: #ea6264;
+    line-height: 46px;
+    border-radius: 23px;
+    padding: 0 10px;
+    font-size: 14px;
+    color: #fff;
+    margin: 60px auto 30px auto;
+    cursor: pointer;
+    border: none medium;
+    display: block;
+    width: 170px; }
+  #new-project-form-wrap #new-project-form #save-draft-btn {
+    text-decoration: underline;
+    font-size: 14px;
+    margin: 10px auto;
+    cursor: pointer;
+    border: none medium;
+    display: block;
+    color: #ea6264;
+    text-align: center; }
+
+#new-project-form-wrap .bottom-tips {
+  color: #9b9b9b;
+  font-size: 12px;
+  width: 60%;
+  margin: 40px auto; }
