@@ -8070,9 +8070,24 @@ header {
     #new-project-form-wrap #new-project-form .photos li {
       padding: 0;
       margin: 5px;
-      flex: 0 0 calc(33.3333% - 10px); }
+      flex: 0 0 calc(33.3333% - 10px);
+      position: relative; }
+      #new-project-form-wrap #new-project-form .photos li:hover:after {
+        content: 'Delete';
+        color: #fff;
+        text-align: center;
+        font-size: 12px;
+        line-height: 26px;
+        background: rgba(234, 98, 100, 0.75);
+        border-radius: 0 0 4px 4px;
+        position: absolute;
+        height: 26px;
+        left: 0;
+        right: 0;
+        bottom: 0; }
       #new-project-form-wrap #new-project-form .photos li img {
         width: 100%;
+        height: 100%;
         border-radius: 4px; }
       #new-project-form-wrap #new-project-form .photos li.add {
         background: white;
@@ -8128,3 +8143,113 @@ header {
   font-size: 12px;
   width: 60%;
   margin: 40px auto; }
+
+.project-enquiry {
+  width: 940px; }
+  .project-enquiry h2 {
+    font-weight: normal;
+    color: #515254;
+    font-size: 24px;
+    margin: 40px 0 30px 0; }
+  .project-enquiry h3 {
+    border-left: solid 4px #ea6264;
+    color: #515254;
+    font-weight: normal;
+    margin: 30px 0;
+    padding: 2px 10px;
+    font-size: 14px; }
+  .project-enquiry h4 {
+    font-weight: normal;
+    font-size: 14px;
+    color: #515254;
+    margin: 20px 0; }
+  .project-enquiry hr {
+    margin: 30px 0; }
+  .project-enquiry .requirements {
+    font-size: 14px;
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .project-enquiry .requirements::after {
+      clear: both;
+      content: "";
+      display: table; }
+    .project-enquiry .requirements br {
+      clear: both;
+      height: 0;
+      font-size: 0; }
+    .project-enquiry .requirements li {
+      float: left;
+      color: #515254;
+      margin: 15px 70px 15px 0; }
+      .project-enquiry .requirements li label {
+        display: inline-block;
+        margin-right: 20px; }
+      .project-enquiry .requirements li span {
+        display: inline-block;
+        color: #adadad; }
+  .project-enquiry .steps {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    font-size: 14px;
+    margin: 0 -40px;
+    position: relative; }
+    .project-enquiry .steps:after {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 1px;
+      left: 40px;
+      right: 40px;
+      bottom: 0;
+      background: #adadad; }
+    .project-enquiry .steps li {
+      padding: 12px 0;
+      margin: 0 40px;
+      color: #515254; }
+      .project-enquiry .steps li.selected {
+        color: #ea6264;
+        position: relative; }
+        .project-enquiry .steps li.selected:after {
+          content: '';
+          display: block;
+          position: absolute;
+          height: 2px;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: #ea6264;
+          z-index: 2; }
+  .project-enquiry .photos {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0 -5px;
+    flex-wrap: wrap; }
+    .project-enquiry .photos li {
+      padding: 0;
+      margin: 5px;
+      flex: 0 0 calc(33.3333% - 10px); }
+      .project-enquiry .photos li img {
+        width: 100%;
+        height: 100%;
+        border-radius: 4px; }
+  .project-enquiry .tips {
+    color: #9b9b9b;
+    font-size: 12px; }
+  .project-enquiry .description p {
+    font-size: 14px;
+    color: #adadad;
+    line-height: 20px; }
+  .project-enquiry .item-line {
+    color: #515254;
+    margin: 20px 70px 20px 0;
+    font-size: 14px; }
+    .project-enquiry .item-line label {
+      display: inline-block;
+      margin-right: 20px; }
+    .project-enquiry .item-line span {
+      display: inline-block;
+      color: #adadad;
+      margin-right: 20px; }

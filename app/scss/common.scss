@@ -23,6 +23,12 @@ $theBlue5: #6F869A;
 $theBlue6: #616176;
 $theBlue7: #2B2B36;
 
+@mixin nolist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 html, body {
   background: $theGray9;
   font-family: 'Open Sans', sans-serif;
@@ -70,7 +76,8 @@ html, body {
 #showcase {
   position: fixed;
   top: 60px;
-  left: -65px;
+  //left: -65px;
+  left: 0;
   z-index: 100;
   transition: all .5s;
   padding: 4px 5px 4px 0;
