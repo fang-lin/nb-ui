@@ -72,10 +72,31 @@
     </div>
     <hr>
     <h3>Waiting for Response</h3>
-    <div class="clock-wrap">
-        <i class="icon clock"></i>
-        <span class="time">11:23:43</span>
+    <div class="response-table-wrap">
+        <table>
+            <thead>
+            <tr>
+                <th class="model-th">Model Artist</th>
+                <th class="rmi-th">RMI</th>
+                <th class="price-th">Price($)</th>
+                <th class="time-th">Time(h)</th>
+                <th class="album-th">Works Album</th>
+            </tr>
+            </thead>
+            <tbody>
+            <% [1, 2, 3, 4, 5].map(function(){ %>
+            <tr>
+                <td>A</td>
+                <td>90%</td>
+                <td>50</td>
+                <td>30</td>
+                <td><img src="/upload/large_fantasy_village_and_tower_defense_3d_model_fbx_e3bf7909-f1a4-4f7e-8468-7dbe307a68a7.png" alt=""></td>
+            </tr>
+            <% }); %>
+            </tbody>
+        </table>
     </div>
+    <p class="tips">Tips: Writing blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
     <hr>
     <input class="next-btn" type="button" value="Next">
 </div>

@@ -126,4 +126,68 @@
       margin-right: 20px;
     }
   }
+  .clock-wrap {
+    line-height: 35px;
+    text-align: center;
+    margin: 50px 0;
+    .icon.clock {
+      @include sprite-position($icon-clock);
+      height: 35px;
+      width: 35px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+    .time {
+      font-size: 18px;
+      color: $thePink1;
+    }
+  }
+  .next-btn {
+    background: $theGray6;
+    line-height: 46px;
+    border-radius: 23px;
+    padding: 0 10px;
+    font-size: 14px;
+    color: #fff;
+    margin: 60px auto 30px auto;
+    cursor: pointer;
+    border: none medium;
+    display: block;
+    width: 170px;
+  }
+  .response-table-wrap {
+    table {
+      color: $theGray3;
+      font-size: 14px;
+      width: 100%;
+      th {
+        padding: 20px 0;
+      }
+      td {
+        padding: 5px 0;
+      }
+      th, td {
+        border: medium none;
+        font-weight: normal;
+        text-align: center;
+      }
+      .model-th {
+        width: 10%;
+      }
+      .album-th {
+        width: 10%;
+      }
+      .rmi-th,
+      .time-th,
+      .price-th {
+        width: 26.66%;
+      }
+      img {
+        height: 70px;
+        width: 105px;
+        border-radius: 2px;
+      }
+    }
+  }
 }
