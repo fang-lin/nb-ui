@@ -1,0 +1,85 @@
+<div id="channel-bar-wrap">
+    <%- include('partial-channel-bar-project'); %>
+</div>
+<div class="container project-process">
+    <h2>World War III</h2>
+    <ul class="steps">
+        <li>Inquiry</li>
+        <li class="selected">Trial</li>
+        <li>Pay</li>
+        <li>Build</li>
+        <li>Review</li>
+    </ul>
+    <h3>Place the order</h3>
+    <div class="order-table-wrap">
+        <table>
+            <thead>
+            <tr>
+                <th class="artist-th">Artist</th>
+                <th class="rmi-th">RMI</th>
+                <th class="price-th">Price($)</th>
+                <th class="time-th">Time(h)</th>
+                <th class="album-th">Work Album</th>
+                <th class="portfolio-th">Trail Portfolio</th>
+            </tr>
+            </thead>
+            <tbody>
+            <% ['B', 'C', 'D'].map(function(item){ %>
+            <tr>
+                <td><%= item %></td>
+                <td>89%</td>
+                <td>1000</td>
+                <td>30</td>
+                <td><img src="/upload/large_fantasy_village_and_tower_defense_3d_model_fbx_e3bf7909-f1a4-4f7e-8468-7dbe307a68a7.png" alt=""></td>
+                <td><img src="/upload/large_fantasy_village_and_tower_defense_3d_model_fbx_e3bf7909-f1a4-4f7e-8468-7dbe307a68a7.png" alt=""></td>
+            </tr>
+            <% }); %>
+            </tbody>
+        </table>
+    </div>
+    <div class="line">
+        <label>Which modeler will proceed:</label>
+        <div class="options">
+            <div class="option">B</div>
+            <div class="option">C</div>
+            <div class="option selected">D</div>
+        </div>
+    </div>
+    <div class="item-line">
+        <label>Total:</label>
+        <span>300 dollar</span>
+    </div>
+    <div class="item-line">
+        <label>Inquire time:</label>
+        <span>12h</span>
+    </div>
+    <div class="item-line">
+        <label>Due time:</label>
+        <span>12:00:00</span>
+        <span>12, Dec, 2016</span>
+    </div>
+    <div class="item-line">
+        <label>Payment:</label>
+    </div>
+    <ul class="payment-way">
+        <li id="payment-by-creditcard">
+            <i class="icon creditcard"></i>
+        </li>
+        <li id="payment-by-alipay">
+            <i class="icon alipay"></i>
+        </li>
+        <li id="payment-by-paypal">
+            <i class="icon paypal"></i>
+        </li>
+    </ul>
+    <div class="item-line">
+        <label>Agreement:</label>
+        <span>I'm ...</span>
+    </div>
+    <div class="tips">
+        <i class="icon checkbox"></i>
+        Agree with confidentiality ...
+    </div>
+    <hr>
+    <input class="next-btn enabled" type="button" value="Next">
+</div>

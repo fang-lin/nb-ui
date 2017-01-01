@@ -4,8 +4,8 @@
 <div class="container project-process">
     <h2>World War III</h2>
     <ul class="steps">
-        <li class="selected">Inquiry</li>
-        <li>Trial</li>
+        <li>Inquiry</li>
+        <li class="selected">Trial</li>
         <li>Pay</li>
         <li>Build</li>
         <li>Review</li>
@@ -16,36 +16,7 @@
             <label>Industry:</label>
             <span>Film</span>
         </li>
-        <li>
-            <label>Category:</label>
-            <span>Vehicle</span>
-        </li>
-        <li>
-            <label>Category:</label>
-            <span>Vehicle</span>
-        </li>
-        <br>
-        <li>
-            <label>Category:</label>
-            <span>Vehicle</span>
-        </li>
-        <li>
-            <label>Category:</label>
-            <span>Vehicle</span>
-        </li>
-        <li>
-            <label>Category:</label>
-            <span>Vehicle</span>
-        </li>
     </ul>
-    <h4>Reference Photos:</h4>
-    <ul class="photos">
-        <li><img src="/upload/large_fantasy_village_and_tower_defense_3d_model_fbx_e3bf7909-f1a4-4f7e-8468-7dbe307a68a7.png" alt=""></li>
-        <li><img src="/upload/large_fantasy_village_and_tower_defense_3d_model_fbx_e3bf7909-f1a4-4f7e-8468-7dbe307a68a7.png" alt=""></li>
-        <li><img src="/upload/large_fantasy_village_and_tower_defense_3d_model_fbx_e3bf7909-f1a4-4f7e-8468-7dbe307a68a7.png" alt=""></li>
-        <li><img src="/upload/large_fantasy_village_and_tower_defense_3d_model_fbx_e3bf7909-f1a4-4f7e-8468-7dbe307a68a7.png" alt=""></li>
-    </ul>
-    <p class="tips">Tips: Writing blah blah blah blah blah blah</p>
     <h4>Description</h4>
     <div class="description">
         <p>The demo is available in module directory. To test the demo just go to demo directory in module folder and open index.html in your browser. However, you can build the demo again with npm. To re-build the demo just go to demo
@@ -58,7 +29,11 @@
             directory in module folder and run command.</p>
     </div>
     <div class="item-line">
-        <label>Quotation period:</label>
+        <label>Test Fee:</label>
+        <span>100 dollar</span>
+    </div>
+    <div class="item-line">
+        <label>Test time:</label>
         <span>12h</span>
     </div>
     <div class="item-line">
@@ -67,15 +42,49 @@
         <span>12, Dec, 2016</span>
     </div>
     <div class="item-line">
-        <label>Mobile:</label>
-        <span>China +86 13822222222</span>
+        <label>Has choose:</label>
+        <span>B</span>
+        <span>C</span>
+        <span>D</span>
+    </div>
+    <div class="item-line">
+        <label>Total:</label>
+        <span>300 dollar</span>
+    </div>
+    <div class="item-line">
+        <label>Payment:</label>
+        <span>Alipay</span>
     </div>
     <hr>
-    <h3>Waiting for Response</h3>
-    <div class="clock-wrap">
-        <i class="icon clock"></i>
-        <span class="time">11:23:43</span>
+    <h3>Trail Results</h3>
+    <div class="results-table-wrap">
+        <table>
+            <thead>
+            <tr>
+                <th class="artist-th">Artist</th>
+                <th>Trail Portfolio</th>
+                <th>Submission Time</th>
+                <th class="rate-th">Rate</th>
+            </tr>
+            </thead>
+            <tbody>
+            <% ['B', 'C', 'D'].map(function(item){ %>
+            <tr>
+                <td><%= item %></td>
+                <td><img src="/upload/large_fantasy_village_and_tower_defense_3d_model_fbx_e3bf7909-f1a4-4f7e-8468-7dbe307a68a7.png" alt=""></td>
+                <td>2016/12/2 15:23</td>
+                <td>
+                    <i class="icon star-twinkle"></i>
+                    <i class="icon star-twinkle"></i>
+                    <i class="icon star-twinkle"></i>
+                    <i class="icon star"></i>
+                    <i class="icon star"></i>
+                </td>
+            </tr>
+            <% }); %>
+            </tbody>
+        </table>
     </div>
     <hr>
-    <input class="next-btn" type="button" value="Next">
+    <input class="next-btn enabled" type="button" value="Next">
 </div>
