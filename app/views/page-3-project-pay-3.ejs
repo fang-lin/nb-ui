@@ -24,7 +24,7 @@
             </tr>
             </thead>
             <tbody>
-            <% ['B', 'C', 'D'].map(function(item){ %>
+            <% ['A', 'B', 'C', 'D', 'E'].map(function(item){ %>
             <tr>
                 <td><%= item %></td>
                 <td>89%</td>
@@ -40,9 +40,11 @@
     <div class="line">
         <label>Which modeler will proceed:</label>
         <div class="options">
+            <div class="option">A</div>
             <div class="option">B</div>
             <div class="option">C</div>
             <div class="option selected">D</div>
+            <div class="option">E</div>
         </div>
     </div>
     <div class="item-line">
@@ -81,5 +83,5 @@
         Agree with confidentiality ...
     </div>
     <hr>
-    <input class="next-btn enabled" type="button" value="Next">
+    <input class="next-btn enabled" type="button" value="Pay">
 </div>

@@ -8158,6 +8158,10 @@ header {
     margin: 30px 0;
     padding: 2px 10px;
     font-size: 14px; }
+    .project-process h3 a {
+      float: right;
+      color: #ea6264;
+      text-decoration: underline; }
   .project-process h4 {
     font-weight: normal;
     font-size: 14px;
@@ -8415,10 +8419,29 @@ header {
           background-position: -350px -367px; }
   .project-process .line {
     position: relative;
-    line-height: 0;
     margin: 30px 0;
     line-height: 30px;
     display: flex; }
+    .project-process .line input[type=text] {
+      border: solid 1px #d2d2d2;
+      border-radius: 2px;
+      padding: 0 10px;
+      line-height: 30px;
+      font-size: 14px;
+      box-sizing: border-box;
+      color: #515254;
+      flex: 0; }
+      .project-process .line input[type=text].period, .project-process .line input[type=text].country, .project-process .line input[type=text].area-code, .project-process .line input[type=text].phone-code {
+        flex: 0;
+        margin: 0 6px 0 0; }
+      .project-process .line input[type=text].period {
+        width: 140px; }
+      .project-process .line input[type=text].country {
+        width: 120px; }
+      .project-process .line input[type=text].area-code {
+        width: 70px; }
+      .project-process .line input[type=text].phone-code {
+        width: 180px; }
     .project-process .line > label {
       font-size: 14px;
       color: #515254;
@@ -8442,6 +8465,15 @@ header {
           background: #ea6264;
           border: solid 1px #ea6264;
           color: white; }
+    .project-process .line .browse {
+      color: #ea6264;
+      text-decoration: underline;
+      padding: 0 20px;
+      font-size: 14px; }
+    .project-process .line span {
+      color: #515254;
+      padding: 0 20px;
+      font-size: 14px; }
     .project-process .line #change-btn,
     .project-process .line #cancel-btn,
     .project-process .line #save-btn {
@@ -8459,3 +8491,19 @@ header {
     .project-process .line #change-btn {
       margin: 36px 0;
       float: left; }
+  .project-process .skipped {
+    font-size: 18px;
+    color: #515254;
+    text-align: center;
+    padding: 160px 0; }
+  .project-process .description {
+    line-height: 20px;
+    font-size: 14px;
+    padding: 10px;
+    border: solid 1px #d2d2d2;
+    border-radius: 2px;
+    background: white;
+    width: 100%;
+    box-sizing: border-box;
+    resize: none;
+    height: 180px; }

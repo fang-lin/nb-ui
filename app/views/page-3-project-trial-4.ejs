@@ -5,12 +5,37 @@
     <h2>World War III</h2>
     <ul class="steps">
         <li>Inquiry</li>
-        <li>Trial</li>
-        <li class="selected">Pay</li>
+        <li class="selected">Trial</li>
+        <li>Pay</li>
         <li>Build</li>
         <li>Review</li>
     </ul>
-    <h3>Place the order</h3>
+    <h3>
+        Place the order
+        <a>I don't need trail</a>
+    </h3>
+    <div class="line">
+        <label>File:</label>
+        <input type="text" placeholder="No more than 50MB">
+        <a class="browse">Browse</a>
+    </div>
+    <h4>Description:</h4>
+    <textarea class="description"></textarea>
+    <div class="line">
+        <label>File:</label>
+        <input type="text" value="100">
+        <span>dollar/candidate</span>
+    </div>
+    <div class="line">
+        <label>File:</label>
+        <input type="text" value="12">
+        <span>h</span>
+    </div>
+    <div class="item-line">
+        <label>Due time:</label>
+        <span>12:00:00</span>
+        <span>12, Dec, 2016</span>
+    </div>
     <div class="order-table-wrap">
         <table>
             <thead>
@@ -24,7 +49,7 @@
             </tr>
             </thead>
             <tbody>
-            <% ['B', 'C', 'D'].map(function(item){ %>
+            <% ['A', 'B', 'C', 'D', 'E'].map(function(item){ %>
             <tr>
                 <td><%= item %></td>
                 <td>89%</td>
@@ -40,23 +65,16 @@
     <div class="line">
         <label>Which modeler will proceed:</label>
         <div class="options">
+            <div class="option">A</div>
             <div class="option">B</div>
             <div class="option">C</div>
             <div class="option selected">D</div>
+            <div class="option">E</div>
         </div>
     </div>
     <div class="item-line">
         <label>Total:</label>
         <span>300 dollar</span>
-    </div>
-    <div class="item-line">
-        <label>Inquire time:</label>
-        <span>12h</span>
-    </div>
-    <div class="item-line">
-        <label>Due time:</label>
-        <span>12:00:00</span>
-        <span>12, Dec, 2016</span>
     </div>
     <div class="item-line">
         <label>Payment:</label>
@@ -72,14 +90,6 @@
             <i class="icon paypal"></i>
         </li>
     </ul>
-    <div class="item-line">
-        <label>Agreement:</label>
-        <span>I'm ...</span>
-    </div>
-    <div class="tips">
-        <i class="icon checkbox"></i>
-        Agree with confidentiality ...
-    </div>
     <hr>
-    <input class="next-btn enabled" type="button" value="Next">
+    <input class="next-btn enabled" type="button" value="Pay">
 </div>
