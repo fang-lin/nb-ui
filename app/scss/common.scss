@@ -22,6 +22,7 @@ $theBlue4: #4A90E2;
 $theBlue5: #6F869A;
 $theBlue6: #616176;
 $theBlue7: #2B2B36;
+$theGreen1: #2cbe42;
 
 @mixin nolist {
   list-style: none;
@@ -75,7 +76,7 @@ html, body {
 
 #showcase {
   position: fixed;
-  top: 60px;
+  top: 0px;
   //left: -65px;
   left: 0;
   z-index: 100;

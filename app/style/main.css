@@ -3182,7 +3182,7 @@ html, body {
 
 #showcase {
   position: fixed;
-  top: 60px;
+  top: 0px;
   left: 0;
   z-index: 100;
   transition: all .5s;
@@ -8145,30 +8145,37 @@ header {
   margin: 40px auto; }
 
 .project-process {
-  width: 940px; }
-  .project-process h2 {
+  width: 940px;
+  margin-bottom: 50px; }
+  .project-process > h2 {
     font-weight: normal;
     color: #515254;
     font-size: 24px;
     margin: 40px 0 30px 0; }
-  .project-process h3 {
+  .project-process > h3 {
     border-left: solid 4px #ea6264;
     color: #515254;
     font-weight: normal;
     margin: 30px 0;
     padding: 2px 10px;
     font-size: 14px; }
-    .project-process h3 a {
+    .project-process > h3 a {
       float: right;
       color: #ea6264;
       text-decoration: underline; }
-  .project-process h4 {
+  .project-process > h4 {
     font-weight: normal;
     font-size: 14px;
     color: #515254;
     margin: 20px 0; }
-  .project-process hr {
+  .project-process > hr {
+    height: 0;
+    background: transparent;
+    color: transparent;
+    border-bottom: solid 1px #adadad;
     margin: 30px 0; }
+    .project-process > hr.dashed {
+      border-bottom: dashed 1px #adadad !important; }
   .project-process .requirements {
     font-size: 14px;
     list-style: none;
@@ -8242,6 +8249,8 @@ header {
   .project-process .tips {
     color: #9b9b9b;
     font-size: 12px; }
+    .project-process .tips.center {
+      text-align: center; }
     .project-process .tips .icon, .project-process .tips .container.applying-a #applying-a-form #models-detail-a-wrap .item .dropdown-input:before, .container.applying-a #applying-a-form #models-detail-a-wrap .item .project-process .tips .dropdown-input:before, .project-process .tips .container.applying-b #applying-b-form #account-detail-wrap .item .dropdown-input:before, .container.applying-b #applying-b-form #account-detail-wrap .item .project-process .tips .dropdown-input:before, .project-process .tips .container.applying-b #applying-b-form #experience-wrap .dropdown-input:before, .container.applying-b #applying-b-form #experience-wrap .project-process .tips .dropdown-input:before, .project-process .tips #upload-form #upload-models-wrap .dropdown-input:before, #upload-form #upload-models-wrap .project-process .tips .dropdown-input:before, .project-process .tips #product-form .dropdown-input:before, #product-form .project-process .tips .dropdown-input:before {
       display: inline-block; }
       .project-process .tips .icon.arrow-up, .project-process .tips .container.applying-a #applying-a-form #models-detail-a-wrap .item .arrow-up.dropdown-input:before, .container.applying-a #applying-a-form #models-detail-a-wrap .item .project-process .tips .arrow-up.dropdown-input:before, .project-process .tips .container.applying-b #applying-b-form #account-detail-wrap .item .arrow-up.dropdown-input:before, .container.applying-b #applying-b-form #account-detail-wrap .item .project-process .tips .arrow-up.dropdown-input:before, .project-process .tips .container.applying-b #applying-b-form #experience-wrap .arrow-up.dropdown-input:before, .container.applying-b #applying-b-form #experience-wrap .project-process .tips .arrow-up.dropdown-input:before, .project-process .tips #upload-form #upload-models-wrap .arrow-up.dropdown-input:before, #upload-form #upload-models-wrap .project-process .tips .arrow-up.dropdown-input:before, .project-process .tips #product-form .arrow-up.dropdown-input:before, #product-form .project-process .tips .arrow-up.dropdown-input:before, .project-process .tips .icon.arrow-down, .project-process .tips .container.applying-a #applying-a-form #models-detail-a-wrap .item .arrow-down.dropdown-input:before, .container.applying-a #applying-a-form #models-detail-a-wrap .item .project-process .tips .arrow-down.dropdown-input:before, .project-process .tips .container.applying-b #applying-b-form #account-detail-wrap .item .arrow-down.dropdown-input:before, .container.applying-b #applying-b-form #account-detail-wrap .item .project-process .tips .arrow-down.dropdown-input:before, .project-process .tips .container.applying-b #applying-b-form #experience-wrap .arrow-down.dropdown-input:before, .container.applying-b #applying-b-form #experience-wrap .project-process .tips .arrow-down.dropdown-input:before, .project-process .tips #upload-form #upload-models-wrap .arrow-down.dropdown-input:before, #upload-form #upload-models-wrap .project-process .tips .arrow-down.dropdown-input:before, .project-process .tips #product-form .arrow-down.dropdown-input:before, #product-form .project-process .tips .arrow-down.dropdown-input:before {
@@ -8496,7 +8505,7 @@ header {
     color: #515254;
     text-align: center;
     padding: 160px 0; }
-  .project-process .description {
+  .project-process textarea.description {
     line-height: 20px;
     font-size: 14px;
     padding: 10px;
@@ -8507,3 +8516,220 @@ header {
     box-sizing: border-box;
     resize: none;
     height: 180px; }
+  .project-process .review-btns {
+    display: flex;
+    justify-content: center;
+    margin: 80px 0; }
+    .project-process .review-btns button {
+      line-height: 46px;
+      border-radius: 23px;
+      padding: 0 10px;
+      font-size: 14px;
+      color: #fff;
+      margin: 0 30px;
+      cursor: pointer;
+      border: none medium;
+      display: block;
+      width: 170px; }
+    .project-process .review-btns .confirm-btn {
+      background: #ea6264; }
+    .project-process .review-btns .report-btn {
+      background: #2cbe42; }
+  .project-process .schedule-wrap {
+    display: flex;
+    margin: 0 -10px; }
+    .project-process .schedule-wrap .chat {
+      width: 50%;
+      background: #fff;
+      border-radius: 2px;
+      padding: 0;
+      margin: 0 10px; }
+      .project-process .schedule-wrap .chat:before {
+        top: -6px;
+        right: 16px;
+        border-style: solid;
+        border-color: #e0e0e0 #fff #fff #e0e0e0;
+        border-width: 1px;
+        content: ' ';
+        display: block;
+        height: 10px;
+        width: 10px;
+        background: #fff;
+        position: absolute;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg); }
+      .project-process .schedule-wrap .chat h3 {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: normal;
+        color: #4A90E2;
+        margin: 0;
+        padding: 8px 16px;
+        border-bottom: solid 1px #e0e0e0; }
+      .project-process .schedule-wrap .chat ul {
+        padding: 16px;
+        margin: -20px 0;
+        list-style: none; }
+        .project-process .schedule-wrap .chat ul li {
+          padding: 0;
+          margin: 20px 0; }
+          .project-process .schedule-wrap .chat ul li::after {
+            clear: both;
+            content: "";
+            display: table; }
+          .project-process .schedule-wrap .chat ul li .portrait {
+            height: 38px;
+            width: 38px;
+            border-radius: 19px;
+            float: left; }
+          .project-process .schedule-wrap .chat ul li .cork {
+            overflow: hidden;
+            zoom: 1;
+            padding: 0 0 0 10px;
+            margin: 0; }
+            .project-process .schedule-wrap .chat ul li .cork .msg {
+              position: relative;
+              background: #4A90E2;
+              border-radius: 4px;
+              color: #fff;
+              font-size: 12px;
+              line-height: 18px;
+              padding: 8px 12px; }
+              .project-process .schedule-wrap .chat ul li .cork .msg:before {
+                left: -5px;
+                top: 10px;
+                content: ' ';
+                display: block;
+                height: 10px;
+                width: 10px;
+                background: #4A90E2;
+                position: absolute;
+                -webkit-transform: rotate(45deg);
+                -moz-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                -o-transform: rotate(45deg);
+                transform: rotate(45deg); }
+            .project-process .schedule-wrap .chat ul li .cork .datetime {
+              font-size: 8px;
+              color: #d8d8d8;
+              display: block;
+              line-height: 16px; }
+          .project-process .schedule-wrap .chat ul li.right .portrait {
+            float: right; }
+          .project-process .schedule-wrap .chat ul li.right .cork {
+            padding: 0 10px 0 0; }
+            .project-process .schedule-wrap .chat ul li.right .cork .msg {
+              background: #adadad; }
+              .project-process .schedule-wrap .chat ul li.right .cork .msg:before {
+                right: -5px;
+                top: 10px;
+                left: auto;
+                background: #adadad; }
+      .project-process .schedule-wrap .chat .chat-form {
+        border-top: solid 1px #d8d8d8;
+        padding: 16px;
+        display: flex; }
+        .project-process .schedule-wrap .chat .chat-form input[type=text] {
+          line-height: 30px;
+          border-radius: 15px;
+          border: solid 1px #d8d8d8;
+          padding: 0 16px;
+          margin: 0;
+          font-size: 14px;
+          color: #515254;
+          box-sizing: border-box;
+          flex: 1 0 auto; }
+          .project-process .schedule-wrap .chat .chat-form input[type=text]::-webkit-input-placeholder {
+            color: #d8d8d8; }
+          .project-process .schedule-wrap .chat .chat-form input[type=text]::-moz-placeholder {
+            color: #d8d8d8; }
+          .project-process .schedule-wrap .chat .chat-form input[type=text]:-moz-placeholder {
+            color: #d8d8d8; }
+          .project-process .schedule-wrap .chat .chat-form input[type=text]:-ms-input-placeholder {
+            color: #d8d8d8; }
+        .project-process .schedule-wrap .chat .chat-form input[type=button] {
+          line-height: 30px;
+          border-radius: 15px;
+          border: solid 1px #4A90E2;
+          background: #4A90E2;
+          padding: 0 16px;
+          margin: 0 0 0 10px;
+          flex: 0 0 0;
+          color: white;
+          font-size: 14px;
+          box-sizing: border-box; }
+    .project-process .schedule-wrap .calendar {
+      margin: 0 10px;
+      width: 50%;
+      background: white; }
+      .project-process .schedule-wrap .calendar h4 {
+        color: #515254;
+        text-align: center;
+        display: flex;
+        margin: 0;
+        line-height: 24px;
+        font-weight: normal;
+        border-bottom: solid 1px #efeff1; }
+        .project-process .schedule-wrap .calendar h4 label {
+          flex: 1 0 auto;
+          padding: 15px 20px;
+          font-size: 16px; }
+        .project-process .schedule-wrap .calendar h4 span {
+          font-size: 24px;
+          padding: 16px 20px; }
+      .project-process .schedule-wrap .calendar table {
+        color: #515254;
+        font-size: 14px;
+        width: 100%; }
+        .project-process .schedule-wrap .calendar table th, .project-process .schedule-wrap .calendar table td {
+          padding: 12px 0;
+          font-weight: normal;
+          width: 14.28%;
+          text-align: center; }
+        .project-process .schedule-wrap .calendar table td {
+          background: #fbfbfb; }
+          .project-process .schedule-wrap .calendar table td.selected {
+            background: #ea6264;
+            color: white; }
+          .project-process .schedule-wrap .calendar table td.disabled {
+            color: #adadad; }
+      .project-process .schedule-wrap .calendar .info-wrap {
+        padding: 10px 0; }
+        .project-process .schedule-wrap .calendar .info-wrap .info {
+          font-size: 14px;
+          color: #515254;
+          line-height: 24px;
+          padding: 0 10px; }
+          .project-process .schedule-wrap .calendar .info-wrap .info label {
+            margin-right: 10px; }
+          .project-process .schedule-wrap .calendar .info-wrap .info span {
+            color: #adadad; }
+            .project-process .schedule-wrap .calendar .info-wrap .info span.left-time {
+              color: #ea6264; }
+  .project-process > h5 {
+    font-size: 14px;
+    color: #515254;
+    font-weight: normal;
+    margin: 20px 0; }
+  .project-process .line-fill {
+    color: #515254;
+    font-size: 14px;
+    margin: 20px 0; }
+    .project-process .line-fill::after {
+      clear: both;
+      content: "";
+      display: table; }
+    .project-process .line-fill .underline {
+      text-decoration: underline; }
+    .project-process .line-fill .due-day {
+      color: #ea6264; }
+    .project-process .line-fill .right {
+      float: right; }
+  .project-process .nothing {
+    padding: 50px 0;
+    font-size: 14px;
+    color: #515254;
+    text-align: center; }
