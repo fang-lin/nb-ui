@@ -8733,3 +8733,60 @@ header {
     font-size: 14px;
     color: #515254;
     text-align: center; }
+  .project-process .projects-list > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .project-process .projects-list > ul > li {
+      border-bottom: solid 1px #efeff1;
+      margin: 30px 0 0 0;
+      padding: 0 0 30px 0; }
+      .project-process .projects-list > ul > li:last-child {
+        border-bottom: none medium; }
+      .project-process .projects-list > ul > li > .list-card {
+        border-radius: 4px;
+        background: white;
+        border: solid 1px #efeff1;
+        display: flex;
+        padding: 7px; }
+        .project-process .projects-list > ul > li > .list-card img {
+          height: 140px;
+          width: 140px;
+          border-radius: 4px; }
+        .project-process .projects-list > ul > li > .list-card .project-list-text {
+          color: #515254;
+          font-size: 14px;
+          flex: 1; }
+          .project-process .projects-list > ul > li > .list-card .project-list-text .list-line1 {
+            height: 45px;
+            line-height: 45px;
+            margin: 0 20px 0 30px; }
+            .project-process .projects-list > ul > li > .list-card .project-list-text .list-line1::after {
+              clear: both;
+              content: "";
+              display: table; }
+            .project-process .projects-list > ul > li > .list-card .project-list-text .list-line1 label {
+              font-size: 18px; }
+            .project-process .projects-list > ul > li > .list-card .project-list-text .list-line1 span {
+              float: right; }
+          .project-process .projects-list > ul > li > .list-card .project-list-text .list-info {
+            height: 45px;
+            line-height: 45px;
+            font-size: 14px;
+            margin: 0 20px 0 30px; }
+          .project-process .projects-list > ul > li > .list-card .project-list-text a.list-info {
+            text-decoration: underline;
+            color: #ea6264; }
+          .project-process .projects-list > ul > li > .list-card .project-list-text .list-line2 {
+            height: 45px;
+            line-height: 45px;
+            margin: 0 20px 0 30px; }
+            .project-process .projects-list > ul > li > .list-card .project-list-text .list-line2::after {
+              clear: both;
+              content: "";
+              display: table; }
+            .project-process .projects-list > ul > li > .list-card .project-list-text .list-line2 span {
+              color: #c3c9cf; }
+            .project-process .projects-list > ul > li > .list-card .project-list-text .list-line2 a {
+              float: right;
+              color: #ea6264; }

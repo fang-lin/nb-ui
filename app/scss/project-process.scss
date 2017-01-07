@@ -1,12 +1,13 @@
 .project-process {
   width: 940px;
-  h2 {
+  margin-bottom: 50px;
+  > h2 {
     font-weight: normal;
     color: $theGray3;
     font-size: 24px;
     margin: 40px 0 30px 0;
   }
-  h3 {
+  > h3 {
     border-left: solid 4px $thePink1;
     color: $theGray3;
     font-weight: normal;
@@ -19,14 +20,21 @@
       text-decoration: underline;
     }
   }
-  h4 {
+  > h4 {
     font-weight: normal;
     font-size: 14px;
     color: $theGray3;
     margin: 20px 0;
   }
-  hr {
+  > hr {
+    height: 0;
+    background: transparent;
+    color: transparent;
+    border-bottom: solid 1px $theGray4;
     margin: 30px 0;
+    &.dashed {
+      border-bottom: dashed 1px $theGray4 !important;
+    }
   }
   .requirements {
     font-size: 14px;
@@ -107,6 +115,9 @@
     }
   }
   .tips {
+    &.center {
+      text-align: center;
+    }
     color: #9b9b9b;
     font-size: 12px;
     .icon {
@@ -445,7 +456,7 @@
     text-align: center;
     padding: 160px 0;
   }
-  .description {
+  textarea.description {
     line-height: 20px;
     font-size: 14px;
     padding: 10px;
@@ -456,5 +467,318 @@
     box-sizing: border-box;
     resize: none;
     height: 180px;
+  }
+  .review-btns {
+    display: flex;
+    justify-content: center;
+    margin: 80px 0;
+    button {
+      line-height: 46px;
+      border-radius: 23px;
+      padding: 0 10px;
+      font-size: 14px;
+      color: #fff;
+      margin: 0 30px;
+      cursor: pointer;
+      border: none medium;
+      display: block;
+      width: 170px;
+    }
+    .confirm-btn {
+      background: $thePink1;
+    }
+    .report-btn {
+      background: $theGreen1;
+    }
+  }
+  .schedule-wrap {
+    display: flex;
+    margin: 0 -10px;
+    .chat {
+      width: 50%;
+      background: #fff;
+      border-radius: 2px;
+      padding: 0;
+      margin: 0 10px;
+      &:before {
+        top: -6px;
+        right: 16px;
+        border-style: solid;
+        border-color: #e0e0e0 #fff #fff #e0e0e0;
+        border-width: 1px;
+        content: ' ';
+        display: block;
+        height: 10px;
+        width: 10px;
+        background: #fff;
+        position: absolute;
+        @include transform(rotate(45deg));
+      }
+      h3 {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: normal;
+        color: $theBlue4;
+        margin: 0;
+        padding: 8px 16px;
+        border-bottom: solid 1px #e0e0e0;
+      }
+      ul {
+        padding: 16px;
+        margin: -20px 0;
+        list-style: none;
+        li {
+          padding: 0;
+          margin: 20px 0;
+          @include clearfix;
+          .portrait {
+            height: 38px;
+            width: 38px;
+            border-radius: 19px;
+            float: left;
+          }
+          .cork {
+            overflow: hidden;
+            zoom: 1;
+            padding: 0 0 0 10px;
+            margin: 0;
+            .msg {
+              position: relative;
+              background: $theBlue4;
+              border-radius: 4px;
+              color: #fff;
+              font-size: 12px;
+              line-height: 18px;
+              padding: 8px 12px;
+              &:before {
+                left: -5px;
+                top: 10px;
+                content: ' ';
+                display: block;
+                height: 10px;
+                width: 10px;
+                background: $theBlue4;
+                position: absolute;
+                @include transform(rotate(45deg));
+              }
+            }
+            .datetime {
+              font-size: 8px;
+              color: $theGray8;
+              display: block;
+              line-height: 16px;
+            }
+          }
+          &.right {
+            .portrait {
+              float: right;
+            }
+            .cork {
+              padding: 0 10px 0 0;
+              .msg {
+                background: $theGray4;
+                &:before {
+                  right: -5px;
+                  top: 10px;
+                  left: auto;
+                  background: $theGray4;
+                }
+              }
+            }
+          }
+        }
+      }
+      .chat-form {
+        border-top: solid 1px $theGray8;
+        padding: 16px;
+        display: flex;
+        input[type=text] {
+          line-height: 30px;
+          border-radius: 15px;
+          border: solid 1px $theGray8;
+          padding: 0 16px;
+          margin: 0;
+          font-size: 14px;
+          color: $theGray3;
+          box-sizing: border-box;
+          flex: 1 0 auto;
+          @include placeholder {
+            color: $theGray8;
+          }
+        }
+        input[type=button] {
+          line-height: 30px;
+          border-radius: 15px;
+          border: solid 1px $theBlue4;
+          background: $theBlue4;
+          padding: 0 16px;
+          margin: 0 0 0 10px;
+          flex: 0 0 0;
+          color: white;
+          font-size: 14px;
+          box-sizing: border-box;
+        }
+      }
+    }
+    .calendar {
+      margin: 0 10px;
+      width: 50%;
+      background: white;
+      h4 {
+        color: $theGray3;
+        text-align: center;
+        display: flex;
+        margin: 0;
+        line-height: 24px;
+        font-weight: normal;
+        label {
+          flex: 1 0 auto;
+          padding: 15px 20px;
+          font-size: 16px;
+        }
+        span {
+          font-size: 24px;
+          padding: 16px 20px;
+        }
+        border-bottom: solid 1px $theGray5;
+      }
+      table {
+        color: $theGray3;
+        font-size: 14px;
+        width: 100%;
+        th, td {
+          padding: 12px 0;
+          font-weight: normal;
+          width: 14.28%;
+          text-align: center;
+        }
+        td {
+          background: #fbfbfb;
+          &.selected {
+            background: $thePink1;
+            color: white;
+          }
+          &.disabled {
+            color: $theGray4;
+          }
+        }
+      }
+      .info-wrap {
+        padding: 10px 0;
+        .info {
+          font-size: 14px;
+          color: $theGray3;
+          line-height: 24px;
+          padding: 0 10px;
+          label {
+            margin-right: 10px;
+          }
+          span {
+            color: $theGray4;
+            &.left-time {
+              color: $thePink1;
+            }
+          }
+        }
+      }
+    }
+  }
+  > h5 {
+    font-size: 14px;
+    color: $theGray3;
+    font-weight: normal;
+    margin: 20px 0;
+  }
+  .line-fill {
+    color: $theGray3;
+    font-size: 14px;
+    margin: 20px 0;
+    @include clearfix;
+    .underline {
+      text-decoration: underline;
+    }
+    .due-day {
+      color: $thePink1;
+    }
+    .right {
+      float: right;
+    }
+  }
+  .nothing {
+    padding: 50px 0;
+    font-size: 14px;
+    color: $theGray3;
+    text-align: center;
+  }
+  .projects-list {
+    > ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      > li {
+        &:last-child {
+          border-bottom: none medium;
+        }
+        border-bottom: solid 1px $theGray5;
+        margin: 30px 0 0 0;
+        padding: 0 0 30px 0;
+        > .list-card {
+          border-radius: 4px;
+          background: white;
+          border: solid 1px $theGray5;
+          display: flex;
+          padding: 7px;
+          img {
+            height: 140px;
+            width: 140px;
+            border-radius: 4px;
+          }
+          .project-list-text {
+            color: $theGray3;
+            font-size: 14px;
+            flex: 1;
+            .list-line1 {
+              height: 45px;
+              line-height: 45px;
+              margin: 0 20px 0 30px;
+              @include clearfix;
+              label {
+                font-size: 18px;
+              }
+              span {
+                float: right;
+              }
+            }
+            .list-info {
+              height: 45px;
+              line-height: 45px;
+              font-size: 14px;
+              margin: 0 20px 0 30px;
+            }
+
+            a.list-info {
+              text-decoration: underline;
+              color: $thePink1;
+            }
+            span.list-info {
+
+            }
+            .list-line2 {
+              height: 45px;
+              line-height: 45px;
+              margin: 0 20px 0 30px;
+              @include clearfix;
+              span {
+                color: $theGray6;
+              }
+              a {
+                float: right;
+                color: $thePink1;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }

@@ -1,0 +1,35 @@
+<div id="channel-bar-wrap">
+    <%- include('partial-channel-bar-project'); %>
+</div>
+<div class="container project-process">
+    <div class="projects-list">
+        <ul>
+            <% [1, 2, 3, 4].map(function (i) { %>
+            <li>
+                <div class="list-card">
+                    <img src="upload/large_ch47d_chinook_helicopter_3d_model_fbx_ma_mb_17f490ce-4034-4b3d-815d-889e05f5413f.jpg" alt="">
+                    <div class="project-list-text">
+                        <div class="list-line1">
+                            <label>World War</label>
+                        <span>
+                            5:43:12
+                        </span>
+                        </div>
+                        <div>
+                            <% if(i % 2 === 0) { %>
+                            <a class="list-info">5 Bidding Responses</a>
+                            <% }else{ %>
+                            <span class="list-info">No one bale blah blah blah</span>
+                            <% } %>
+                        </div>
+                        <div class="list-line2">
+                            <span>14, Oct, 2016</span>
+                            <a>Edit</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <% }) %>
+        </ul>
+    </div>
+</div>
