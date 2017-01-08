@@ -1,0 +1,41 @@
+#waiting-alert-wrap {
+  background: #fff;
+  width: 480px;
+  padding: 55px;
+  margin: 0 auto;
+  border-radius: 4px;
+  position: relative;
+  h2 {
+    font-size: 18px;
+    color: $thePink1;
+    margin: 0;
+    padding: 0 0 10px 0;
+    font-weight: normal;
+    text-align: center;
+  }
+  p {
+    font-size: 14px;
+    color: $theGray3;
+    margin: 40px 0;
+  }
+  .btns {
+    text-align: center;
+    button {
+      line-height: 36px;
+      border-radius: 18px;
+      padding: 0 30px;
+      font-size: 14px;
+      color: #fff;
+      margin: 0 35px;
+      cursor: pointer;
+      border: none medium;
+      display: inline-block;
+      &.success {
+        background: $thePink1;
+      }
+      &.failure {
+        background: $theGreen1;
+      }
+    }
+  }
+}

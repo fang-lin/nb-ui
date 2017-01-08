@@ -7344,6 +7344,200 @@ header {
         -o-transform: rotate(-45deg);
         transform: rotate(-45deg); }
 
+#report-alert-wrap {
+  background: #fff;
+  width: 480px;
+  padding: 25px;
+  margin: 0 auto;
+  border-radius: 4px;
+  position: relative; }
+  #report-alert-wrap h2 {
+    font-size: 18px;
+    color: #2cbe42;
+    margin: 0;
+    padding: 0 0 10px 0;
+    font-weight: normal;
+    border-bottom: solid 1px #d2d2d2; }
+  #report-alert-wrap textarea {
+    line-height: 20px;
+    font-size: 14px;
+    padding: 10px;
+    border: solid 1px #d2d2d2;
+    border-radius: 2px;
+    background: white;
+    width: 100%;
+    box-sizing: border-box;
+    resize: none;
+    height: 180px;
+    color: #515254;
+    margin: 15px 0; }
+  #report-alert-wrap .cross-wrap {
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    position: absolute;
+    display: block;
+    padding: 14px;
+    border-radius: 28px;
+    top: -28px;
+    right: 24px;
+    cursor: pointer; }
+    #report-alert-wrap .cross-wrap .cross {
+      position: relative;
+      display: block;
+      height: 27px;
+      width: 27px; }
+      #report-alert-wrap .cross-wrap .cross:before, #report-alert-wrap .cross-wrap .cross:after {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 1px;
+        background: #adadad;
+        width: 27px;
+        top: 13px; }
+      #report-alert-wrap .cross-wrap .cross:before {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg); }
+      #report-alert-wrap .cross-wrap .cross:after {
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg); }
+  #report-alert-wrap button {
+    line-height: 36px;
+    border-radius: 18px;
+    padding: 0 40px;
+    font-size: 14px;
+    color: #fff;
+    margin: 0 auto;
+    cursor: pointer;
+    border: none medium;
+    display: block;
+    background: #2cbe42; }
+
+#review-alert-wrap {
+  background: #fff;
+  width: 480px;
+  padding: 25px;
+  margin: 0 auto;
+  border-radius: 4px;
+  position: relative; }
+  #review-alert-wrap h2 {
+    font-size: 18px;
+    color: #ea6264;
+    margin: 0;
+    padding: 0 0 10px 0;
+    font-weight: normal;
+    border-bottom: solid 1px #d2d2d2; }
+  #review-alert-wrap ul {
+    margin: 0;
+    list-style: none;
+    padding: 10px 0; }
+    #review-alert-wrap ul li {
+      font-size: 14px;
+      color: #515254;
+      flex: 1;
+      text-align: center;
+      margin: 25px 0; }
+      #review-alert-wrap ul li label {
+        display: inline-block;
+        margin-right: 10px;
+        width: 50px;
+        text-align: right; }
+      #review-alert-wrap ul li span .icon, #review-alert-wrap ul li span .container.applying-a #applying-a-form #models-detail-a-wrap .item .dropdown-input:before, .container.applying-a #applying-a-form #models-detail-a-wrap .item #review-alert-wrap ul li span .dropdown-input:before, #review-alert-wrap ul li span .container.applying-b #applying-b-form #account-detail-wrap .item .dropdown-input:before, .container.applying-b #applying-b-form #account-detail-wrap .item #review-alert-wrap ul li span .dropdown-input:before, #review-alert-wrap ul li span .container.applying-b #applying-b-form #experience-wrap .dropdown-input:before, .container.applying-b #applying-b-form #experience-wrap #review-alert-wrap ul li span .dropdown-input:before, #review-alert-wrap ul li span #upload-form #upload-models-wrap .dropdown-input:before, #upload-form #upload-models-wrap #review-alert-wrap ul li span .dropdown-input:before, #review-alert-wrap ul li span #product-form .dropdown-input:before, #product-form #review-alert-wrap ul li span .dropdown-input:before {
+        height: 20px;
+        width: 20px;
+        display: inline-block;
+        vertical-align: -4px; }
+        #review-alert-wrap ul li span .icon.star, #review-alert-wrap ul li span .container.applying-a #applying-a-form #models-detail-a-wrap .item .star.dropdown-input:before, .container.applying-a #applying-a-form #models-detail-a-wrap .item #review-alert-wrap ul li span .star.dropdown-input:before, #review-alert-wrap ul li span .container.applying-b #applying-b-form #account-detail-wrap .item .star.dropdown-input:before, .container.applying-b #applying-b-form #account-detail-wrap .item #review-alert-wrap ul li span .star.dropdown-input:before, #review-alert-wrap ul li span .container.applying-b #applying-b-form #experience-wrap .star.dropdown-input:before, .container.applying-b #applying-b-form #experience-wrap #review-alert-wrap ul li span .star.dropdown-input:before, #review-alert-wrap ul li span #upload-form #upload-models-wrap .star.dropdown-input:before, #upload-form #upload-models-wrap #review-alert-wrap ul li span .star.dropdown-input:before, #review-alert-wrap ul li span #product-form .star.dropdown-input:before, #product-form #review-alert-wrap ul li span .star.dropdown-input:before {
+          background-position: -470px -367px; }
+        #review-alert-wrap ul li span .icon.star-twinkle, #review-alert-wrap ul li span .container.applying-a #applying-a-form #models-detail-a-wrap .item .star-twinkle.dropdown-input:before, .container.applying-a #applying-a-form #models-detail-a-wrap .item #review-alert-wrap ul li span .star-twinkle.dropdown-input:before, #review-alert-wrap ul li span .container.applying-b #applying-b-form #account-detail-wrap .item .star-twinkle.dropdown-input:before, .container.applying-b #applying-b-form #account-detail-wrap .item #review-alert-wrap ul li span .star-twinkle.dropdown-input:before, #review-alert-wrap ul li span .container.applying-b #applying-b-form #experience-wrap .star-twinkle.dropdown-input:before, .container.applying-b #applying-b-form #experience-wrap #review-alert-wrap ul li span .star-twinkle.dropdown-input:before, #review-alert-wrap ul li span #upload-form #upload-models-wrap .star-twinkle.dropdown-input:before, #upload-form #upload-models-wrap #review-alert-wrap ul li span .star-twinkle.dropdown-input:before, #review-alert-wrap ul li span #product-form .star-twinkle.dropdown-input:before, #product-form #review-alert-wrap ul li span .star-twinkle.dropdown-input:before {
+          background-position: -562px -489px; }
+  #review-alert-wrap .cross-wrap {
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    position: absolute;
+    display: block;
+    padding: 14px;
+    border-radius: 28px;
+    top: -28px;
+    right: 24px;
+    cursor: pointer; }
+    #review-alert-wrap .cross-wrap .cross {
+      position: relative;
+      display: block;
+      height: 27px;
+      width: 27px; }
+      #review-alert-wrap .cross-wrap .cross:before, #review-alert-wrap .cross-wrap .cross:after {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 1px;
+        background: #adadad;
+        width: 27px;
+        top: 13px; }
+      #review-alert-wrap .cross-wrap .cross:before {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg); }
+      #review-alert-wrap .cross-wrap .cross:after {
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg); }
+  #review-alert-wrap button {
+    line-height: 36px;
+    border-radius: 18px;
+    padding: 0 40px;
+    font-size: 14px;
+    color: #fff;
+    margin: 0 auto;
+    cursor: pointer;
+    border: none medium;
+    display: block;
+    background: #ea6264; }
+
+#waiting-alert-wrap {
+  background: #fff;
+  width: 480px;
+  padding: 55px;
+  margin: 0 auto;
+  border-radius: 4px;
+  position: relative; }
+  #waiting-alert-wrap h2 {
+    font-size: 18px;
+    color: #ea6264;
+    margin: 0;
+    padding: 0 0 10px 0;
+    font-weight: normal;
+    text-align: center; }
+  #waiting-alert-wrap p {
+    font-size: 14px;
+    color: #515254;
+    margin: 40px 0; }
+  #waiting-alert-wrap .btns {
+    text-align: center; }
+    #waiting-alert-wrap .btns button {
+      line-height: 36px;
+      border-radius: 18px;
+      padding: 0 30px;
+      font-size: 14px;
+      color: #fff;
+      margin: 0 35px;
+      cursor: pointer;
+      border: none medium;
+      display: inline-block; }
+      #waiting-alert-wrap .btns button.success {
+        background: #ea6264; }
+      #waiting-alert-wrap .btns button.failure {
+        background: #2cbe42; }
+
 .container.terms {
   width: 900px; }
   .container.terms p {

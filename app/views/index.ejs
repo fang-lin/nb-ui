@@ -47,7 +47,7 @@
             $('#showcase li > a').click(function () {
 
                 $('#page-content').removeClass('blur');
-                $('#confirm-wrap, .sign-form-wrap, #authorized-form-wrap, #photo-wrap, #application-alert-wrap').hide();
+                $('#confirm-wrap, .sign-form-wrap, #authorized-form-wrap, #photo-wrap, #application-alert-wrap, #report-alert-wrap, #review-alert-wrap, #waiting-alert-wrap').hide();
                 $('#mask').addClass('hide');
 
                 switch ($(this).html()) {
@@ -69,11 +69,20 @@
                     case 'Application':
                         switchModal('#application-alert-wrap');
                         break;
+                    case '3-Report':
+                        switchModal('#report-alert-wrap');
+                        break;
+                    case '3-Review':
+                        switchModal('#review-alert-wrap');
+                    case '3-Waiting':
+                        switchModal('#waiting-alert-wrap');
+                        break;
                     case 'Photo':
                         switchModal('#photo-wrap');
                         break;
                     case 'Report':
                         switchModal('#report-form-wrap');
+                        break;
                         break;
                 }
             });
@@ -103,6 +112,9 @@
     <%- include('partial-confirm'); %>
     <%- include('partial-authorized'); %>
     <%- include('partial-application-alert'); %>
+    <%- include('partial-report-alert'); %>
+    <%- include('partial-review-alert'); %>
+    <%- include('partial-waiting-alert'); %>
     <%- include('partial-photo'); %>
 </div>
 <% } %>
@@ -137,6 +149,10 @@
         <!--<li><a>Photo</a></li>-->
         <!--<li><a>Authorized</a></li>-->
         <!--<li><a>Application</a></li>-->
+        <li><a>3-Report</a></li>
+        <li><a>3-Review</a></li>
+        <li><a>3-Waiting</a></li>
+        <!-- hr -->
         <li><a href="3-success">3-success</a></li>
         <li><a href="3-new-project">3-new-project</a></li>
         <li><a href="3-project-enquiry">3-project-enquiry</a></li>
@@ -151,7 +167,7 @@
         <li><a href="3-project-review">3-project-review</a></li>
         <li><a href="3-project-build">3-project-build</a></li>
         <li><a href="3-project-all">3-project-all</a></li>
-
+        <!-- hr -->
         <li><a href="4-project-enquiry">4-project-enquiry</a></li>
         <li><a href="4-project-enquiry-2">4-project-enquiry-2</a></li>
         <li><a href="4-project-all">4-project-all</a></li>
