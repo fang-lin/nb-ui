@@ -8790,3 +8790,736 @@ header {
             .project-process .projects-list > ul > li > .list-card .project-list-text .list-line2 a {
               float: right;
               color: #ea6264; }
+
+.project-process2 {
+  width: 940px;
+  margin-bottom: 50px; }
+  .project-process2 > h2 {
+    font-weight: normal;
+    color: #515254;
+    font-size: 24px;
+    margin: 40px 0 30px 0; }
+  .project-process2 > h3 {
+    border-left: solid 4px #ea6264;
+    color: #515254;
+    font-weight: normal;
+    margin: 30px 0;
+    padding: 2px 10px;
+    font-size: 14px; }
+    .project-process2 > h3 a {
+      float: right;
+      color: #ea6264;
+      text-decoration: underline; }
+  .project-process2 > h4 {
+    font-weight: normal;
+    font-size: 14px;
+    color: #515254;
+    margin: 20px 0; }
+  .project-process2 > hr {
+    height: 0;
+    background: transparent;
+    color: transparent;
+    border-bottom: solid 1px #adadad;
+    margin: 30px 0; }
+    .project-process2 > hr.dashed {
+      border-bottom: dashed 1px #adadad !important; }
+  .project-process2 .requirements {
+    font-size: 14px;
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .project-process2 .requirements::after {
+      clear: both;
+      content: "";
+      display: table; }
+    .project-process2 .requirements br {
+      clear: both;
+      height: 0;
+      font-size: 0; }
+    .project-process2 .requirements li {
+      float: left;
+      color: #515254;
+      margin: 15px 70px 15px 0; }
+      .project-process2 .requirements li label {
+        display: inline-block;
+        margin-right: 20px; }
+      .project-process2 .requirements li span {
+        display: inline-block;
+        color: #adadad; }
+  .project-process2 .steps {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    font-size: 14px;
+    margin: 0 -40px;
+    position: relative; }
+    .project-process2 .steps:after {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 1px;
+      left: 40px;
+      right: 40px;
+      bottom: 0;
+      background: #adadad; }
+    .project-process2 .steps li {
+      padding: 12px 0;
+      margin: 0 40px;
+      color: #515254; }
+      .project-process2 .steps li.selected {
+        color: #ea6264;
+        position: relative; }
+        .project-process2 .steps li.selected:after {
+          content: '';
+          display: block;
+          position: absolute;
+          height: 2px;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: #ea6264;
+          z-index: 2; }
+  .project-process2 .photos {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0 -5px;
+    flex-wrap: wrap; }
+    .project-process2 .photos li {
+      padding: 0;
+      margin: 5px;
+      flex: 0 0 calc(33.3333% - 10px); }
+      .project-process2 .photos li img {
+        width: 100%;
+        height: 100%;
+        border-radius: 4px; }
+  .project-process2 .tips {
+    color: #9b9b9b;
+    font-size: 12px; }
+    .project-process2 .tips.center {
+      text-align: center; }
+    .project-process2 .tips .icon, .project-process2 .tips .container.applying-a #applying-a-form #models-detail-a-wrap .item .dropdown-input:before, .container.applying-a #applying-a-form #models-detail-a-wrap .item .project-process2 .tips .dropdown-input:before, .project-process2 .tips .container.applying-b #applying-b-form #account-detail-wrap .item .dropdown-input:before, .container.applying-b #applying-b-form #account-detail-wrap .item .project-process2 .tips .dropdown-input:before, .project-process2 .tips .container.applying-b #applying-b-form #experience-wrap .dropdown-input:before, .container.applying-b #applying-b-form #experience-wrap .project-process2 .tips .dropdown-input:before, .project-process2 .tips #upload-form #upload-models-wrap .dropdown-input:before, #upload-form #upload-models-wrap .project-process2 .tips .dropdown-input:before, .project-process2 .tips #product-form .dropdown-input:before, #product-form .project-process2 .tips .dropdown-input:before {
+      display: inline-block; }
+      .project-process2 .tips .icon.arrow-up, .project-process2 .tips .container.applying-a #applying-a-form #models-detail-a-wrap .item .arrow-up.dropdown-input:before, .container.applying-a #applying-a-form #models-detail-a-wrap .item .project-process2 .tips .arrow-up.dropdown-input:before, .project-process2 .tips .container.applying-b #applying-b-form #account-detail-wrap .item .arrow-up.dropdown-input:before, .container.applying-b #applying-b-form #account-detail-wrap .item .project-process2 .tips .arrow-up.dropdown-input:before, .project-process2 .tips .container.applying-b #applying-b-form #experience-wrap .arrow-up.dropdown-input:before, .container.applying-b #applying-b-form #experience-wrap .project-process2 .tips .arrow-up.dropdown-input:before, .project-process2 .tips #upload-form #upload-models-wrap .arrow-up.dropdown-input:before, #upload-form #upload-models-wrap .project-process2 .tips .arrow-up.dropdown-input:before, .project-process2 .tips #product-form .arrow-up.dropdown-input:before, #product-form .project-process2 .tips .arrow-up.dropdown-input:before, .project-process2 .tips .icon.arrow-down, .project-process2 .tips .container.applying-a #applying-a-form #models-detail-a-wrap .item .arrow-down.dropdown-input:before, .container.applying-a #applying-a-form #models-detail-a-wrap .item .project-process2 .tips .arrow-down.dropdown-input:before, .project-process2 .tips .container.applying-b #applying-b-form #account-detail-wrap .item .arrow-down.dropdown-input:before, .container.applying-b #applying-b-form #account-detail-wrap .item .project-process2 .tips .arrow-down.dropdown-input:before, .project-process2 .tips .container.applying-b #applying-b-form #experience-wrap .arrow-down.dropdown-input:before, .container.applying-b #applying-b-form #experience-wrap .project-process2 .tips .arrow-down.dropdown-input:before, .project-process2 .tips #upload-form #upload-models-wrap .arrow-down.dropdown-input:before, #upload-form #upload-models-wrap .project-process2 .tips .arrow-down.dropdown-input:before, .project-process2 .tips #product-form .arrow-down.dropdown-input:before, #product-form .project-process2 .tips .arrow-down.dropdown-input:before {
+        vertical-align: 2px;
+        margin: 0 0 0 6px;
+        height: 4px;
+        width: 10px;
+        line-height: 22px; }
+      .project-process2 .tips .icon.arrow-down, .project-process2 .tips .container.applying-a #applying-a-form #models-detail-a-wrap .item .arrow-down.dropdown-input:before, .container.applying-a #applying-a-form #models-detail-a-wrap .item .project-process2 .tips .arrow-down.dropdown-input:before, .project-process2 .tips .container.applying-b #applying-b-form #account-detail-wrap .item .arrow-down.dropdown-input:before, .container.applying-b #applying-b-form #account-detail-wrap .item .project-process2 .tips .arrow-down.dropdown-input:before, .project-process2 .tips .container.applying-b #applying-b-form #experience-wrap .arrow-down.dropdown-input:before, .container.applying-b #applying-b-form #experience-wrap .project-process2 .tips .arrow-down.dropdown-input:before, .project-process2 .tips #upload-form #upload-models-wrap .arrow-down.dropdown-input:before, #upload-form #upload-models-wrap .project-process2 .tips .arrow-down.dropdown-input:before, .project-process2 .tips #product-form .arrow-down.dropdown-input:before, #product-form .project-process2 .tips .arrow-down.dropdown-input:before {
+        background-position: -588px -139px; }
+      .project-process2 .tips .icon.arrow-up, .project-process2 .tips .container.applying-a #applying-a-form #models-detail-a-wrap .item .arrow-up.dropdown-input:before, .container.applying-a #applying-a-form #models-detail-a-wrap .item .project-process2 .tips .arrow-up.dropdown-input:before, .project-process2 .tips .container.applying-b #applying-b-form #account-detail-wrap .item .arrow-up.dropdown-input:before, .container.applying-b #applying-b-form #account-detail-wrap .item .project-process2 .tips .arrow-up.dropdown-input:before, .project-process2 .tips .container.applying-b #applying-b-form #experience-wrap .arrow-up.dropdown-input:before, .container.applying-b #applying-b-form #experience-wrap .project-process2 .tips .arrow-up.dropdown-input:before, .project-process2 .tips #upload-form #upload-models-wrap .arrow-up.dropdown-input:before, #upload-form #upload-models-wrap .project-process2 .tips .arrow-up.dropdown-input:before, .project-process2 .tips #product-form .arrow-up.dropdown-input:before, #product-form .project-process2 .tips .arrow-up.dropdown-input:before {
+        background-position: -589px -93px; }
+      .project-process2 .tips .icon.checkbox, .project-process2 .tips .container.applying-a #applying-a-form #models-detail-a-wrap .item .checkbox.dropdown-input:before, .container.applying-a #applying-a-form #models-detail-a-wrap .item .project-process2 .tips .checkbox.dropdown-input:before, .project-process2 .tips .container.applying-b #applying-b-form #account-detail-wrap .item .checkbox.dropdown-input:before, .container.applying-b #applying-b-form #account-detail-wrap .item .project-process2 .tips .checkbox.dropdown-input:before, .project-process2 .tips .container.applying-b #applying-b-form #experience-wrap .checkbox.dropdown-input:before, .container.applying-b #applying-b-form #experience-wrap .project-process2 .tips .checkbox.dropdown-input:before, .project-process2 .tips #upload-form #upload-models-wrap .checkbox.dropdown-input:before, #upload-form #upload-models-wrap .project-process2 .tips .checkbox.dropdown-input:before, .project-process2 .tips #product-form .checkbox.dropdown-input:before, #product-form .project-process2 .tips .checkbox.dropdown-input:before, .project-process2 .tips .icon.checkbox-selected, .project-process2 .tips .container.applying-a #applying-a-form #models-detail-a-wrap .item .checkbox-selected.dropdown-input:before, .container.applying-a #applying-a-form #models-detail-a-wrap .item .project-process2 .tips .checkbox-selected.dropdown-input:before, .project-process2 .tips .container.applying-b #applying-b-form #account-detail-wrap .item .checkbox-selected.dropdown-input:before, .container.applying-b #applying-b-form #account-detail-wrap .item .project-process2 .tips .checkbox-selected.dropdown-input:before, .project-process2 .tips .container.applying-b #applying-b-form #experience-wrap .checkbox-selected.dropdown-input:before, .container.applying-b #applying-b-form #experience-wrap .project-process2 .tips .checkbox-selected.dropdown-input:before, .project-process2 .tips #upload-form #upload-models-wrap .checkbox-selected.dropdown-input:before, #upload-form #upload-models-wrap .project-process2 .tips .checkbox-selected.dropdown-input:before, .project-process2 .tips #product-form .checkbox-selected.dropdown-input:before, #product-form .project-process2 .tips .checkbox-selected.dropdown-input:before {
+        vertical-align: -2px;
+        margin: 0 6px 0 0;
+        height: 14px;
+        width: 14px;
+        line-height: 22px; }
+      .project-process2 .tips .icon.checkbox, .project-process2 .tips .container.applying-a #applying-a-form #models-detail-a-wrap .item .checkbox.dropdown-input:before, .container.applying-a #applying-a-form #models-detail-a-wrap .item .project-process2 .tips .checkbox.dropdown-input:before, .project-process2 .tips .container.applying-b #applying-b-form #account-detail-wrap .item .checkbox.dropdown-input:before, .container.applying-b #applying-b-form #account-detail-wrap .item .project-process2 .tips .checkbox.dropdown-input:before, .project-process2 .tips .container.applying-b #applying-b-form #experience-wrap .checkbox.dropdown-input:before, .container.applying-b #applying-b-form #experience-wrap .project-process2 .tips .checkbox.dropdown-input:before, .project-process2 .tips #upload-form #upload-models-wrap .checkbox.dropdown-input:before, #upload-form #upload-models-wrap .project-process2 .tips .checkbox.dropdown-input:before, .project-process2 .tips #product-form .checkbox.dropdown-input:before, #product-form .project-process2 .tips .checkbox.dropdown-input:before {
+        background-position: -588px -125px; }
+      .project-process2 .tips .icon.checkbox-selected, .project-process2 .tips .container.applying-a #applying-a-form #models-detail-a-wrap .item .checkbox-selected.dropdown-input:before, .container.applying-a #applying-a-form #models-detail-a-wrap .item .project-process2 .tips .checkbox-selected.dropdown-input:before, .project-process2 .tips .container.applying-b #applying-b-form #account-detail-wrap .item .checkbox-selected.dropdown-input:before, .container.applying-b #applying-b-form #account-detail-wrap .item .project-process2 .tips .checkbox-selected.dropdown-input:before, .project-process2 .tips .container.applying-b #applying-b-form #experience-wrap .checkbox-selected.dropdown-input:before, .container.applying-b #applying-b-form #experience-wrap .project-process2 .tips .checkbox-selected.dropdown-input:before, .project-process2 .tips #upload-form #upload-models-wrap .checkbox-selected.dropdown-input:before, #upload-form #upload-models-wrap .project-process2 .tips .checkbox-selected.dropdown-input:before, .project-process2 .tips #product-form .checkbox-selected.dropdown-input:before, #product-form .project-process2 .tips .checkbox-selected.dropdown-input:before {
+        background-position: -588px -111px; }
+  .project-process2 .description p {
+    font-size: 14px;
+    color: #adadad;
+    line-height: 20px; }
+  .project-process2 .item-line {
+    color: #515254;
+    margin: 20px 70px 20px 0;
+    font-size: 14px; }
+    .project-process2 .item-line label {
+      display: inline-block;
+      margin-right: 20px; }
+    .project-process2 .item-line span {
+      display: inline-block;
+      color: #adadad;
+      margin-right: 20px; }
+  .project-process2 .clock-wrap {
+    line-height: 35px;
+    text-align: center;
+    margin: 50px 0; }
+    .project-process2 .clock-wrap .icon.clock, .project-process2 .clock-wrap .container.applying-a #applying-a-form #models-detail-a-wrap .item .clock.dropdown-input:before, .container.applying-a #applying-a-form #models-detail-a-wrap .item .project-process2 .clock-wrap .clock.dropdown-input:before, .project-process2 .clock-wrap .container.applying-b #applying-b-form #account-detail-wrap .item .clock.dropdown-input:before, .container.applying-b #applying-b-form #account-detail-wrap .item .project-process2 .clock-wrap .clock.dropdown-input:before, .project-process2 .clock-wrap .container.applying-b #applying-b-form #experience-wrap .clock.dropdown-input:before, .container.applying-b #applying-b-form #experience-wrap .project-process2 .clock-wrap .clock.dropdown-input:before, .project-process2 .clock-wrap #upload-form #upload-models-wrap .clock.dropdown-input:before, #upload-form #upload-models-wrap .project-process2 .clock-wrap .clock.dropdown-input:before, .project-process2 .clock-wrap #product-form .clock.dropdown-input:before, #product-form .project-process2 .clock-wrap .clock.dropdown-input:before {
+      background-position: -542px -309px;
+      height: 35px;
+      width: 35px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 10px; }
+    .project-process2 .clock-wrap .time {
+      font-size: 18px;
+      color: #ea6264; }
+  .project-process2 .next-btn {
+    background: #c3c9cf;
+    line-height: 46px;
+    border-radius: 23px;
+    padding: 0 10px;
+    font-size: 14px;
+    color: #fff;
+    margin: 60px auto 30px auto;
+    cursor: pointer;
+    border: none medium;
+    display: block;
+    width: 170px; }
+    .project-process2 .next-btn.enabled {
+      background: #ea6264; }
+  .project-process2 .response-table-wrap table {
+    color: #515254;
+    font-size: 14px;
+    width: 100%; }
+    .project-process2 .response-table-wrap table th {
+      padding: 20px 0; }
+    .project-process2 .response-table-wrap table td {
+      padding: 5px 0; }
+    .project-process2 .response-table-wrap table th, .project-process2 .response-table-wrap table td {
+      border: medium none;
+      font-weight: normal;
+      text-align: center; }
+    .project-process2 .response-table-wrap table .model-th {
+      width: 10%; }
+    .project-process2 .response-table-wrap table .album-th {
+      width: 10%; }
+    .project-process2 .response-table-wrap table .rmi-th,
+    .project-process2 .response-table-wrap table .time-th,
+    .project-process2 .response-table-wrap table .price-th {
+      width: 26.66%; }
+    .project-process2 .response-table-wrap table img {
+      height: 70px;
+      width: 105px;
+      border-radius: 2px; }
+  .project-process2 .results-table-wrap table {
+    color: #515254;
+    font-size: 14px;
+    width: 100%; }
+    .project-process2 .results-table-wrap table th, .project-process2 .results-table-wrap table td {
+      border: medium none;
+      font-weight: normal;
+      text-align: center; }
+    .project-process2 .results-table-wrap table th {
+      padding: 20px 0; }
+      .project-process2 .results-table-wrap table th.artist-th {
+        width: 8%; }
+      .project-process2 .results-table-wrap table th.rate-th {
+        width: 14%; }
+    .project-process2 .results-table-wrap table td {
+      text-align: center;
+      padding: 5px 0; }
+      .project-process2 .results-table-wrap table td img {
+        width: 100px;
+        height: 70px; }
+      .project-process2 .results-table-wrap table td .icon, .project-process2 .results-table-wrap table td .container.applying-a #applying-a-form #models-detail-a-wrap .item .dropdown-input:before, .container.applying-a #applying-a-form #models-detail-a-wrap .item .project-process2 .results-table-wrap table td .dropdown-input:before, .project-process2 .results-table-wrap table td .container.applying-b #applying-b-form #account-detail-wrap .item .dropdown-input:before, .container.applying-b #applying-b-form #account-detail-wrap .item .project-process2 .results-table-wrap table td .dropdown-input:before, .project-process2 .results-table-wrap table td .container.applying-b #applying-b-form #experience-wrap .dropdown-input:before, .container.applying-b #applying-b-form #experience-wrap .project-process2 .results-table-wrap table td .dropdown-input:before, .project-process2 .results-table-wrap table td #upload-form #upload-models-wrap .dropdown-input:before, #upload-form #upload-models-wrap .project-process2 .results-table-wrap table td .dropdown-input:before, .project-process2 .results-table-wrap table td #product-form .dropdown-input:before, #product-form .project-process2 .results-table-wrap table td .dropdown-input:before {
+        height: 20px;
+        width: 20px;
+        display: inline-block;
+        vertical-align: -4px; }
+        .project-process2 .results-table-wrap table td .icon.star, .project-process2 .results-table-wrap table td .container.applying-a #applying-a-form #models-detail-a-wrap .item .star.dropdown-input:before, .container.applying-a #applying-a-form #models-detail-a-wrap .item .project-process2 .results-table-wrap table td .star.dropdown-input:before, .project-process2 .results-table-wrap table td .container.applying-b #applying-b-form #account-detail-wrap .item .star.dropdown-input:before, .container.applying-b #applying-b-form #account-detail-wrap .item .project-process2 .results-table-wrap table td .star.dropdown-input:before, .project-process2 .results-table-wrap table td .container.applying-b #applying-b-form #experience-wrap .star.dropdown-input:before, .container.applying-b #applying-b-form #experience-wrap .project-process2 .results-table-wrap table td .star.dropdown-input:before, .project-process2 .results-table-wrap table td #upload-form #upload-models-wrap .star.dropdown-input:before, #upload-form #upload-models-wrap .project-process2 .results-table-wrap table td .star.dropdown-input:before, .project-process2 .results-table-wrap table td #product-form .star.dropdown-input:before, #product-form .project-process2 .results-table-wrap table td .star.dropdown-input:before {
+          background-position: -542px -415px; }
+        .project-process2 .results-table-wrap table td .icon.star-twinkle, .project-process2 .results-table-wrap table td .container.applying-a #applying-a-form #models-detail-a-wrap .item .star-twinkle.dropdown-input:before, .container.applying-a #applying-a-form #models-detail-a-wrap .item .project-process2 .results-table-wrap table td .star-twinkle.dropdown-input:before, .project-process2 .results-table-wrap table td .container.applying-b #applying-b-form #account-detail-wrap .item .star-twinkle.dropdown-input:before, .container.applying-b #applying-b-form #account-detail-wrap .item .project-process2 .results-table-wrap table td .star-twinkle.dropdown-input:before, .project-process2 .results-table-wrap table td .container.applying-b #applying-b-form #experience-wrap .star-twinkle.dropdown-input:before, .container.applying-b #applying-b-form #experience-wrap .project-process2 .results-table-wrap table td .star-twinkle.dropdown-input:before, .project-process2 .results-table-wrap table td #upload-form #upload-models-wrap .star-twinkle.dropdown-input:before, #upload-form #upload-models-wrap .project-process2 .results-table-wrap table td .star-twinkle.dropdown-input:before, .project-process2 .results-table-wrap table td #product-form .star-twinkle.dropdown-input:before, #product-form .project-process2 .results-table-wrap table td .star-twinkle.dropdown-input:before {
+          background-position: -582px -269px; }
+  .project-process2 .order-table-wrap table {
+    color: #515254;
+    font-size: 14px;
+    width: 100%; }
+    .project-process2 .order-table-wrap table th, .project-process2 .order-table-wrap table td {
+      border: medium none;
+      font-weight: normal;
+      text-align: center; }
+    .project-process2 .order-table-wrap table th {
+      padding: 20px 0; }
+      .project-process2 .order-table-wrap table th.artist-th {
+        width: 6%; }
+      .project-process2 .order-table-wrap table th.album-th, .project-process2 .order-table-wrap table th.portfolio-th {
+        width: 14%; }
+    .project-process2 .order-table-wrap table td {
+      text-align: center;
+      padding: 5px 0; }
+      .project-process2 .order-table-wrap table td img {
+        width: 100px;
+        height: 70px; }
+      .project-process2 .order-table-wrap table td .icon, .project-process2 .order-table-wrap table td .container.applying-a #applying-a-form #models-detail-a-wrap .item .dropdown-input:before, .container.applying-a #applying-a-form #models-detail-a-wrap .item .project-process2 .order-table-wrap table td .dropdown-input:before, .project-process2 .order-table-wrap table td .container.applying-b #applying-b-form #account-detail-wrap .item .dropdown-input:before, .container.applying-b #applying-b-form #account-detail-wrap .item .project-process2 .order-table-wrap table td .dropdown-input:before, .project-process2 .order-table-wrap table td .container.applying-b #applying-b-form #experience-wrap .dropdown-input:before, .container.applying-b #applying-b-form #experience-wrap .project-process2 .order-table-wrap table td .dropdown-input:before, .project-process2 .order-table-wrap table td #upload-form #upload-models-wrap .dropdown-input:before, #upload-form #upload-models-wrap .project-process2 .order-table-wrap table td .dropdown-input:before, .project-process2 .order-table-wrap table td #product-form .dropdown-input:before, #product-form .project-process2 .order-table-wrap table td .dropdown-input:before {
+        height: 20px;
+        width: 20px;
+        display: inline-block;
+        vertical-align: -4px; }
+        .project-process2 .order-table-wrap table td .icon.star, .project-process2 .order-table-wrap table td .container.applying-a #applying-a-form #models-detail-a-wrap .item .star.dropdown-input:before, .container.applying-a #applying-a-form #models-detail-a-wrap .item .project-process2 .order-table-wrap table td .star.dropdown-input:before, .project-process2 .order-table-wrap table td .container.applying-b #applying-b-form #account-detail-wrap .item .star.dropdown-input:before, .container.applying-b #applying-b-form #account-detail-wrap .item .project-process2 .order-table-wrap table td .star.dropdown-input:before, .project-process2 .order-table-wrap table td .container.applying-b #applying-b-form #experience-wrap .star.dropdown-input:before, .container.applying-b #applying-b-form #experience-wrap .project-process2 .order-table-wrap table td .star.dropdown-input:before, .project-process2 .order-table-wrap table td #upload-form #upload-models-wrap .star.dropdown-input:before, #upload-form #upload-models-wrap .project-process2 .order-table-wrap table td .star.dropdown-input:before, .project-process2 .order-table-wrap table td #product-form .star.dropdown-input:before, #product-form .project-process2 .order-table-wrap table td .star.dropdown-input:before {
+          background-position: -542px -415px; }
+        .project-process2 .order-table-wrap table td .icon.star-twinkle, .project-process2 .order-table-wrap table td .container.applying-a #applying-a-form #models-detail-a-wrap .item .star-twinkle.dropdown-input:before, .container.applying-a #applying-a-form #models-detail-a-wrap .item .project-process2 .order-table-wrap table td .star-twinkle.dropdown-input:before, .project-process2 .order-table-wrap table td .container.applying-b #applying-b-form #account-detail-wrap .item .star-twinkle.dropdown-input:before, .container.applying-b #applying-b-form #account-detail-wrap .item .project-process2 .order-table-wrap table td .star-twinkle.dropdown-input:before, .project-process2 .order-table-wrap table td .container.applying-b #applying-b-form #experience-wrap .star-twinkle.dropdown-input:before, .container.applying-b #applying-b-form #experience-wrap .project-process2 .order-table-wrap table td .star-twinkle.dropdown-input:before, .project-process2 .order-table-wrap table td #upload-form #upload-models-wrap .star-twinkle.dropdown-input:before, #upload-form #upload-models-wrap .project-process2 .order-table-wrap table td .star-twinkle.dropdown-input:before, .project-process2 .order-table-wrap table td #product-form .star-twinkle.dropdown-input:before, #product-form .project-process2 .order-table-wrap table td .star-twinkle.dropdown-input:before {
+          background-position: -582px -269px; }
+  .project-process2 .payment-way {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; }
+    .project-process2 .payment-way li {
+      height: 160px;
+      width: 160px;
+      background: #fff;
+      border-radius: 4px;
+      border: solid 1px #d8d8d8;
+      margin: 0 50px; }
+      .project-process2 .payment-way li .icon, .project-process2 .payment-way li .container.applying-a #applying-a-form #models-detail-a-wrap .item .dropdown-input:before, .container.applying-a #applying-a-form #models-detail-a-wrap .item .project-process2 .payment-way li .dropdown-input:before, .project-process2 .payment-way li .container.applying-b #applying-b-form #account-detail-wrap .item .dropdown-input:before, .container.applying-b #applying-b-form #account-detail-wrap .item .project-process2 .payment-way li .dropdown-input:before, .project-process2 .payment-way li .container.applying-b #applying-b-form #experience-wrap .dropdown-input:before, .container.applying-b #applying-b-form #experience-wrap .project-process2 .payment-way li .dropdown-input:before, .project-process2 .payment-way li #upload-form #upload-models-wrap .dropdown-input:before, #upload-form #upload-models-wrap .project-process2 .payment-way li .dropdown-input:before, .project-process2 .payment-way li #product-form .dropdown-input:before, #product-form .project-process2 .payment-way li .dropdown-input:before {
+        display: block;
+        margin: 64px auto 0 auto; }
+        .project-process2 .payment-way li .icon.creditcard, .project-process2 .payment-way li .container.applying-a #applying-a-form #models-detail-a-wrap .item .creditcard.dropdown-input:before, .container.applying-a #applying-a-form #models-detail-a-wrap .item .project-process2 .payment-way li .creditcard.dropdown-input:before, .project-process2 .payment-way li .container.applying-b #applying-b-form #account-detail-wrap .item .creditcard.dropdown-input:before, .container.applying-b #applying-b-form #account-detail-wrap .item .project-process2 .payment-way li .creditcard.dropdown-input:before, .project-process2 .payment-way li .container.applying-b #applying-b-form #experience-wrap .creditcard.dropdown-input:before, .container.applying-b #applying-b-form #experience-wrap .project-process2 .payment-way li .creditcard.dropdown-input:before, .project-process2 .payment-way li #upload-form #upload-models-wrap .creditcard.dropdown-input:before, #upload-form #upload-models-wrap .project-process2 .payment-way li .creditcard.dropdown-input:before, .project-process2 .payment-way li #product-form .creditcard.dropdown-input:before, #product-form .project-process2 .payment-way li .creditcard.dropdown-input:before {
+          height: 42px;
+          width: 66px;
+          background-position: 0px -525px; }
+        .project-process2 .payment-way li .icon.alipay, .project-process2 .payment-way li .container.applying-a #applying-a-form #models-detail-a-wrap .item .alipay.dropdown-input:before, .container.applying-a #applying-a-form #models-detail-a-wrap .item .project-process2 .payment-way li .alipay.dropdown-input:before, .project-process2 .payment-way li .container.applying-b #applying-b-form #account-detail-wrap .item .alipay.dropdown-input:before, .container.applying-b #applying-b-form #account-detail-wrap .item .project-process2 .payment-way li .alipay.dropdown-input:before, .project-process2 .payment-way li .container.applying-b #applying-b-form #experience-wrap .alipay.dropdown-input:before, .container.applying-b #applying-b-form #experience-wrap .project-process2 .payment-way li .alipay.dropdown-input:before, .project-process2 .payment-way li #upload-form #upload-models-wrap .alipay.dropdown-input:before, #upload-form #upload-models-wrap .project-process2 .payment-way li .alipay.dropdown-input:before, .project-process2 .payment-way li #product-form .alipay.dropdown-input:before, #product-form .project-process2 .payment-way li .alipay.dropdown-input:before {
+          height: 39px;
+          width: 107px;
+          background-position: -350px -403px; }
+        .project-process2 .payment-way li .icon.paypal, .project-process2 .payment-way li .container.applying-a #applying-a-form #models-detail-a-wrap .item .paypal.dropdown-input:before, .container.applying-a #applying-a-form #models-detail-a-wrap .item .project-process2 .payment-way li .paypal.dropdown-input:before, .project-process2 .payment-way li .container.applying-b #applying-b-form #account-detail-wrap .item .paypal.dropdown-input:before, .container.applying-b #applying-b-form #account-detail-wrap .item .project-process2 .payment-way li .paypal.dropdown-input:before, .project-process2 .payment-way li .container.applying-b #applying-b-form #experience-wrap .paypal.dropdown-input:before, .container.applying-b #applying-b-form #experience-wrap .project-process2 .payment-way li .paypal.dropdown-input:before, .project-process2 .payment-way li #upload-form #upload-models-wrap .paypal.dropdown-input:before, #upload-form #upload-models-wrap .project-process2 .payment-way li .paypal.dropdown-input:before, .project-process2 .payment-way li #product-form .paypal.dropdown-input:before, #product-form .project-process2 .payment-way li .paypal.dropdown-input:before {
+          height: 36px;
+          width: 120px;
+          background-position: -350px -367px; }
+  .project-process2 .line {
+    position: relative;
+    margin: 30px 0;
+    line-height: 30px;
+    display: flex; }
+    .project-process2 .line input[type=text] {
+      border: solid 1px #d2d2d2;
+      border-radius: 2px;
+      padding: 0 10px;
+      line-height: 30px;
+      font-size: 14px;
+      box-sizing: border-box;
+      color: #515254;
+      flex: 0; }
+      .project-process2 .line input[type=text].period, .project-process2 .line input[type=text].country, .project-process2 .line input[type=text].area-code, .project-process2 .line input[type=text].phone-code {
+        flex: 0;
+        margin: 0 6px 0 0; }
+      .project-process2 .line input[type=text].period {
+        width: 140px; }
+      .project-process2 .line input[type=text].country {
+        width: 120px; }
+      .project-process2 .line input[type=text].area-code {
+        width: 70px; }
+      .project-process2 .line input[type=text].phone-code {
+        width: 180px; }
+    .project-process2 .line > label {
+      font-size: 14px;
+      color: #515254;
+      padding: 0 20px 0 0;
+      text-align: right; }
+    .project-process2 .line > .options {
+      flex: 1;
+      display: flex;
+      font-size: 14px;
+      margin: 0 -12px;
+      box-sizing: border-box; }
+      .project-process2 .line > .options > .option {
+        box-sizing: border-box;
+        border: solid 1px #9b9b9b;
+        margin: 0 12px;
+        padding: 0 30px;
+        border-radius: 2px;
+        text-align: center;
+        color: #9b9b9b; }
+        .project-process2 .line > .options > .option.selected {
+          background: #ea6264;
+          border: solid 1px #ea6264;
+          color: white; }
+    .project-process2 .line .browse {
+      color: #ea6264;
+      text-decoration: underline;
+      padding: 0 20px;
+      font-size: 14px; }
+    .project-process2 .line span {
+      color: #515254;
+      padding: 0 20px;
+      font-size: 14px; }
+    .project-process2 .line #change-btn,
+    .project-process2 .line #cancel-btn,
+    .project-process2 .line #save-btn {
+      border: solid 1px #ea6264;
+      color: #ea6264;
+      border-radius: 23px;
+      background: transparent;
+      padding: 0 50px;
+      font-size: 14px;
+      line-height: 46px;
+      cursor: pointer; }
+    .project-process2 .line #cancel-btn,
+    .project-process2 .line #save-btn {
+      margin: 0 30px; }
+    .project-process2 .line #change-btn {
+      margin: 36px 0;
+      float: left; }
+  .project-process2 .skipped {
+    font-size: 18px;
+    color: #515254;
+    text-align: center;
+    padding: 160px 0; }
+  .project-process2 textarea.description {
+    line-height: 20px;
+    font-size: 14px;
+    padding: 10px;
+    border: solid 1px #d2d2d2;
+    border-radius: 2px;
+    background: white;
+    width: 100%;
+    box-sizing: border-box;
+    resize: none;
+    height: 180px; }
+  .project-process2 .review-btns {
+    display: flex;
+    justify-content: center;
+    margin: 80px 0; }
+    .project-process2 .review-btns button {
+      line-height: 46px;
+      border-radius: 23px;
+      padding: 0 10px;
+      font-size: 14px;
+      color: #fff;
+      margin: 0 30px;
+      cursor: pointer;
+      border: none medium;
+      display: block;
+      width: 170px; }
+    .project-process2 .review-btns .confirm-btn {
+      background: #ea6264; }
+    .project-process2 .review-btns .report-btn {
+      background: #2cbe42; }
+  .project-process2 .schedule-wrap {
+    display: flex;
+    margin: 0 -10px; }
+    .project-process2 .schedule-wrap .chat {
+      width: 50%;
+      background: #fff;
+      border-radius: 2px;
+      padding: 0;
+      margin: 0 10px; }
+      .project-process2 .schedule-wrap .chat:before {
+        top: -6px;
+        right: 16px;
+        border-style: solid;
+        border-color: #e0e0e0 #fff #fff #e0e0e0;
+        border-width: 1px;
+        content: ' ';
+        display: block;
+        height: 10px;
+        width: 10px;
+        background: #fff;
+        position: absolute;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg); }
+      .project-process2 .schedule-wrap .chat h3 {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: normal;
+        color: #4A90E2;
+        margin: 0;
+        padding: 8px 16px;
+        border-bottom: solid 1px #e0e0e0; }
+      .project-process2 .schedule-wrap .chat ul {
+        padding: 16px;
+        margin: -20px 0;
+        list-style: none; }
+        .project-process2 .schedule-wrap .chat ul li {
+          padding: 0;
+          margin: 20px 0; }
+          .project-process2 .schedule-wrap .chat ul li::after {
+            clear: both;
+            content: "";
+            display: table; }
+          .project-process2 .schedule-wrap .chat ul li .portrait {
+            height: 38px;
+            width: 38px;
+            border-radius: 19px;
+            float: left; }
+          .project-process2 .schedule-wrap .chat ul li .cork {
+            overflow: hidden;
+            zoom: 1;
+            padding: 0 0 0 10px;
+            margin: 0; }
+            .project-process2 .schedule-wrap .chat ul li .cork .msg {
+              position: relative;
+              background: #4A90E2;
+              border-radius: 4px;
+              color: #fff;
+              font-size: 12px;
+              line-height: 18px;
+              padding: 8px 12px; }
+              .project-process2 .schedule-wrap .chat ul li .cork .msg:before {
+                left: -5px;
+                top: 10px;
+                content: ' ';
+                display: block;
+                height: 10px;
+                width: 10px;
+                background: #4A90E2;
+                position: absolute;
+                -webkit-transform: rotate(45deg);
+                -moz-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                -o-transform: rotate(45deg);
+                transform: rotate(45deg); }
+            .project-process2 .schedule-wrap .chat ul li .cork .datetime {
+              font-size: 8px;
+              color: #d8d8d8;
+              display: block;
+              line-height: 16px; }
+          .project-process2 .schedule-wrap .chat ul li.right .portrait {
+            float: right; }
+          .project-process2 .schedule-wrap .chat ul li.right .cork {
+            padding: 0 10px 0 0; }
+            .project-process2 .schedule-wrap .chat ul li.right .cork .msg {
+              background: #adadad; }
+              .project-process2 .schedule-wrap .chat ul li.right .cork .msg:before {
+                right: -5px;
+                top: 10px;
+                left: auto;
+                background: #adadad; }
+      .project-process2 .schedule-wrap .chat .chat-form {
+        border-top: solid 1px #d8d8d8;
+        padding: 16px;
+        display: flex; }
+        .project-process2 .schedule-wrap .chat .chat-form input[type=text] {
+          line-height: 30px;
+          border-radius: 15px;
+          border: solid 1px #d8d8d8;
+          padding: 0 16px;
+          margin: 0;
+          font-size: 14px;
+          color: #515254;
+          box-sizing: border-box;
+          flex: 1 0 auto; }
+          .project-process2 .schedule-wrap .chat .chat-form input[type=text]::-webkit-input-placeholder {
+            color: #d8d8d8; }
+          .project-process2 .schedule-wrap .chat .chat-form input[type=text]::-moz-placeholder {
+            color: #d8d8d8; }
+          .project-process2 .schedule-wrap .chat .chat-form input[type=text]:-moz-placeholder {
+            color: #d8d8d8; }
+          .project-process2 .schedule-wrap .chat .chat-form input[type=text]:-ms-input-placeholder {
+            color: #d8d8d8; }
+        .project-process2 .schedule-wrap .chat .chat-form input[type=button] {
+          line-height: 30px;
+          border-radius: 15px;
+          border: solid 1px #4A90E2;
+          background: #4A90E2;
+          padding: 0 16px;
+          margin: 0 0 0 10px;
+          flex: 0 0 0;
+          color: white;
+          font-size: 14px;
+          box-sizing: border-box; }
+    .project-process2 .schedule-wrap .calendar {
+      margin: 0 10px;
+      width: 50%;
+      background: white; }
+      .project-process2 .schedule-wrap .calendar h4 {
+        color: #515254;
+        text-align: center;
+        display: flex;
+        margin: 0;
+        line-height: 24px;
+        font-weight: normal;
+        border-bottom: solid 1px #efeff1; }
+        .project-process2 .schedule-wrap .calendar h4 label {
+          flex: 1 0 auto;
+          padding: 15px 20px;
+          font-size: 16px; }
+        .project-process2 .schedule-wrap .calendar h4 span {
+          font-size: 24px;
+          padding: 16px 20px; }
+      .project-process2 .schedule-wrap .calendar table {
+        color: #515254;
+        font-size: 14px;
+        width: 100%; }
+        .project-process2 .schedule-wrap .calendar table th, .project-process2 .schedule-wrap .calendar table td {
+          padding: 12px 0;
+          font-weight: normal;
+          width: 14.28%;
+          text-align: center; }
+        .project-process2 .schedule-wrap .calendar table td {
+          background: #fbfbfb; }
+          .project-process2 .schedule-wrap .calendar table td.selected {
+            background: #ea6264;
+            color: white; }
+          .project-process2 .schedule-wrap .calendar table td.disabled {
+            color: #adadad; }
+      .project-process2 .schedule-wrap .calendar .info-wrap {
+        padding: 10px 0; }
+        .project-process2 .schedule-wrap .calendar .info-wrap .info {
+          font-size: 14px;
+          color: #515254;
+          line-height: 24px;
+          padding: 0 10px; }
+          .project-process2 .schedule-wrap .calendar .info-wrap .info label {
+            margin-right: 10px; }
+          .project-process2 .schedule-wrap .calendar .info-wrap .info span {
+            color: #adadad; }
+            .project-process2 .schedule-wrap .calendar .info-wrap .info span.left-time {
+              color: #ea6264; }
+  .project-process2 > h5 {
+    font-size: 14px;
+    color: #515254;
+    font-weight: normal;
+    margin: 20px 0; }
+  .project-process2 .line-fill {
+    color: #515254;
+    font-size: 14px;
+    margin: 20px 0; }
+    .project-process2 .line-fill::after {
+      clear: both;
+      content: "";
+      display: table; }
+    .project-process2 .line-fill .underline {
+      text-decoration: underline; }
+    .project-process2 .line-fill .due-day {
+      color: #ea6264; }
+    .project-process2 .line-fill .right {
+      float: right; }
+  .project-process2 .nothing {
+    padding: 50px 0;
+    font-size: 14px;
+    color: #515254;
+    text-align: center; }
+  .project-process2 .projects-list > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .project-process2 .projects-list > ul > li {
+      border-bottom: solid 1px #efeff1;
+      margin: 30px 0 0 0;
+      padding: 0 0 30px 0; }
+      .project-process2 .projects-list > ul > li:last-child {
+        border-bottom: none medium; }
+      .project-process2 .projects-list > ul > li > .list-card {
+        border-radius: 4px;
+        background: white;
+        border: solid 1px #efeff1;
+        display: flex;
+        padding: 7px; }
+        .project-process2 .projects-list > ul > li > .list-card img {
+          height: 140px;
+          width: 140px;
+          border-radius: 4px; }
+        .project-process2 .projects-list > ul > li > .list-card .project-list-text {
+          color: #515254;
+          font-size: 14px;
+          flex: 1; }
+          .project-process2 .projects-list > ul > li > .list-card .project-list-text .list-line1 {
+            height: 45px;
+            line-height: 45px;
+            margin: 0 20px 0 30px; }
+            .project-process2 .projects-list > ul > li > .list-card .project-list-text .list-line1::after {
+              clear: both;
+              content: "";
+              display: table; }
+            .project-process2 .projects-list > ul > li > .list-card .project-list-text .list-line1 label {
+              font-size: 18px; }
+            .project-process2 .projects-list > ul > li > .list-card .project-list-text .list-line1 span {
+              float: right; }
+          .project-process2 .projects-list > ul > li > .list-card .project-list-text .list-info {
+            height: 45px;
+            line-height: 45px;
+            font-size: 14px;
+            margin: 0 20px 0 30px; }
+          .project-process2 .projects-list > ul > li > .list-card .project-list-text a.list-info {
+            color: #ea6264; }
+          .project-process2 .projects-list > ul > li > .list-card .project-list-text .list-info2 {
+            height: 45px;
+            line-height: 45px;
+            font-size: 14px;
+            margin: 0 20px 0 30px; }
+            .project-process2 .projects-list > ul > li > .list-card .project-list-text .list-info2 span {
+              margin-left: 10px;
+              display: inline-block;
+              color: #c3c9cf; }
+          .project-process2 .projects-list > ul > li > .list-card .project-list-text .list-line2 {
+            height: 45px;
+            line-height: 45px;
+            margin: 0 20px 0 30px; }
+            .project-process2 .projects-list > ul > li > .list-card .project-list-text .list-line2::after {
+              clear: both;
+              content: "";
+              display: table; }
+            .project-process2 .projects-list > ul > li > .list-card .project-list-text .list-line2 span {
+              color: #c3c9cf; }
+          .project-process2 .projects-list > ul > li > .list-card .project-list-text .list-line3 {
+            height: 45px;
+            line-height: 45px;
+            margin: 0 20px 0 30px; }
+            .project-process2 .projects-list > ul > li > .list-card .project-list-text .list-line3::after {
+              clear: both;
+              content: "";
+              display: table; }
+            .project-process2 .projects-list > ul > li > .list-card .project-list-text .list-line3 .left {
+              float: left; }
+            .project-process2 .projects-list > ul > li > .list-card .project-list-text .list-line3 .right {
+              float: right; }
+            .project-process2 .projects-list > ul > li > .list-card .project-list-text .list-line3 .left span, .project-process2 .projects-list > ul > li > .list-card .project-list-text .list-line3 .right span {
+              color: #c3c9cf;
+              margin-left: 10px;
+              display: inline-block; }
+  .project-process2 .add-image {
+    background: white;
+    border-radius: 4px;
+    text-align: center;
+    padding: 0;
+    margin: 5px;
+    list-style: none;
+    margin: 0 -5px;
+    width: 300px;
+    height: 190px; }
+    .project-process2 .add-image .icon.plus, .project-process2 .add-image .container.applying-a #applying-a-form #models-detail-a-wrap .item .plus.dropdown-input:before, .container.applying-a #applying-a-form #models-detail-a-wrap .item .project-process2 .add-image .plus.dropdown-input:before, .project-process2 .add-image .container.applying-b #applying-b-form #account-detail-wrap .item .plus.dropdown-input:before, .container.applying-b #applying-b-form #account-detail-wrap .item .project-process2 .add-image .plus.dropdown-input:before, .project-process2 .add-image .container.applying-b #applying-b-form #experience-wrap .plus.dropdown-input:before, .container.applying-b #applying-b-form #experience-wrap .project-process2 .add-image .plus.dropdown-input:before, .project-process2 .add-image #upload-form #upload-models-wrap .plus.dropdown-input:before, #upload-form #upload-models-wrap .project-process2 .add-image .plus.dropdown-input:before, .project-process2 .add-image #product-form .plus.dropdown-input:before, #product-form .project-process2 .add-image .plus.dropdown-input:before {
+      height: 47px;
+      width: 47px;
+      display: block;
+      margin: 50px auto 0 auto;
+      background-position: -542px -50px; }
+    .project-process2 .add-image div {
+      color: #b0b0b0;
+      margin: 20px 0 0 0; }
+  .project-process2 .tips-center {
+    color: #515254;
+    font-size: 14px;
+    text-align: center; }
+    .project-process2 .tips-center .icon, .project-process2 .tips-center .container.applying-a #applying-a-form #models-detail-a-wrap .item .dropdown-input:before, .container.applying-a #applying-a-form #models-detail-a-wrap .item .project-process2 .tips-center .dropdown-input:before, .project-process2 .tips-center .container.applying-b #applying-b-form #account-detail-wrap .item .dropdown-input:before, .container.applying-b #applying-b-form #account-detail-wrap .item .project-process2 .tips-center .dropdown-input:before, .project-process2 .tips-center .container.applying-b #applying-b-form #experience-wrap .dropdown-input:before, .container.applying-b #applying-b-form #experience-wrap .project-process2 .tips-center .dropdown-input:before, .project-process2 .tips-center #upload-form #upload-models-wrap .dropdown-input:before, #upload-form #upload-models-wrap .project-process2 .tips-center .dropdown-input:before, .project-process2 .tips-center #product-form .dropdown-input:before, #product-form .project-process2 .tips-center .dropdown-input:before {
+      display: inline-block; }
+      .project-process2 .tips-center .icon.arrow-up, .project-process2 .tips-center .container.applying-a #applying-a-form #models-detail-a-wrap .item .arrow-up.dropdown-input:before, .container.applying-a #applying-a-form #models-detail-a-wrap .item .project-process2 .tips-center .arrow-up.dropdown-input:before, .project-process2 .tips-center .container.applying-b #applying-b-form #account-detail-wrap .item .arrow-up.dropdown-input:before, .container.applying-b #applying-b-form #account-detail-wrap .item .project-process2 .tips-center .arrow-up.dropdown-input:before, .project-process2 .tips-center .container.applying-b #applying-b-form #experience-wrap .arrow-up.dropdown-input:before, .container.applying-b #applying-b-form #experience-wrap .project-process2 .tips-center .arrow-up.dropdown-input:before, .project-process2 .tips-center #upload-form #upload-models-wrap .arrow-up.dropdown-input:before, #upload-form #upload-models-wrap .project-process2 .tips-center .arrow-up.dropdown-input:before, .project-process2 .tips-center #product-form .arrow-up.dropdown-input:before, #product-form .project-process2 .tips-center .arrow-up.dropdown-input:before, .project-process2 .tips-center .icon.arrow-down, .project-process2 .tips-center .container.applying-a #applying-a-form #models-detail-a-wrap .item .arrow-down.dropdown-input:before, .container.applying-a #applying-a-form #models-detail-a-wrap .item .project-process2 .tips-center .arrow-down.dropdown-input:before, .project-process2 .tips-center .container.applying-b #applying-b-form #account-detail-wrap .item .arrow-down.dropdown-input:before, .container.applying-b #applying-b-form #account-detail-wrap .item .project-process2 .tips-center .arrow-down.dropdown-input:before, .project-process2 .tips-center .container.applying-b #applying-b-form #experience-wrap .arrow-down.dropdown-input:before, .container.applying-b #applying-b-form #experience-wrap .project-process2 .tips-center .arrow-down.dropdown-input:before, .project-process2 .tips-center #upload-form #upload-models-wrap .arrow-down.dropdown-input:before, #upload-form #upload-models-wrap .project-process2 .tips-center .arrow-down.dropdown-input:before, .project-process2 .tips-center #product-form .arrow-down.dropdown-input:before, #product-form .project-process2 .tips-center .arrow-down.dropdown-input:before {
+        vertical-align: 2px;
+        margin: 0 0 0 6px;
+        height: 4px;
+        width: 10px;
+        line-height: 22px; }
+      .project-process2 .tips-center .icon.arrow-down, .project-process2 .tips-center .container.applying-a #applying-a-form #models-detail-a-wrap .item .arrow-down.dropdown-input:before, .container.applying-a #applying-a-form #models-detail-a-wrap .item .project-process2 .tips-center .arrow-down.dropdown-input:before, .project-process2 .tips-center .container.applying-b #applying-b-form #account-detail-wrap .item .arrow-down.dropdown-input:before, .container.applying-b #applying-b-form #account-detail-wrap .item .project-process2 .tips-center .arrow-down.dropdown-input:before, .project-process2 .tips-center .container.applying-b #applying-b-form #experience-wrap .arrow-down.dropdown-input:before, .container.applying-b #applying-b-form #experience-wrap .project-process2 .tips-center .arrow-down.dropdown-input:before, .project-process2 .tips-center #upload-form #upload-models-wrap .arrow-down.dropdown-input:before, #upload-form #upload-models-wrap .project-process2 .tips-center .arrow-down.dropdown-input:before, .project-process2 .tips-center #product-form .arrow-down.dropdown-input:before, #product-form .project-process2 .tips-center .arrow-down.dropdown-input:before {
+        background-position: -588px -139px; }
+      .project-process2 .tips-center .icon.arrow-up, .project-process2 .tips-center .container.applying-a #applying-a-form #models-detail-a-wrap .item .arrow-up.dropdown-input:before, .container.applying-a #applying-a-form #models-detail-a-wrap .item .project-process2 .tips-center .arrow-up.dropdown-input:before, .project-process2 .tips-center .container.applying-b #applying-b-form #account-detail-wrap .item .arrow-up.dropdown-input:before, .container.applying-b #applying-b-form #account-detail-wrap .item .project-process2 .tips-center .arrow-up.dropdown-input:before, .project-process2 .tips-center .container.applying-b #applying-b-form #experience-wrap .arrow-up.dropdown-input:before, .container.applying-b #applying-b-form #experience-wrap .project-process2 .tips-center .arrow-up.dropdown-input:before, .project-process2 .tips-center #upload-form #upload-models-wrap .arrow-up.dropdown-input:before, #upload-form #upload-models-wrap .project-process2 .tips-center .arrow-up.dropdown-input:before, .project-process2 .tips-center #product-form .arrow-up.dropdown-input:before, #product-form .project-process2 .tips-center .arrow-up.dropdown-input:before {
+        background-position: -589px -93px; }
+      .project-process2 .tips-center .icon.checkbox, .project-process2 .tips-center .container.applying-a #applying-a-form #models-detail-a-wrap .item .checkbox.dropdown-input:before, .container.applying-a #applying-a-form #models-detail-a-wrap .item .project-process2 .tips-center .checkbox.dropdown-input:before, .project-process2 .tips-center .container.applying-b #applying-b-form #account-detail-wrap .item .checkbox.dropdown-input:before, .container.applying-b #applying-b-form #account-detail-wrap .item .project-process2 .tips-center .checkbox.dropdown-input:before, .project-process2 .tips-center .container.applying-b #applying-b-form #experience-wrap .checkbox.dropdown-input:before, .container.applying-b #applying-b-form #experience-wrap .project-process2 .tips-center .checkbox.dropdown-input:before, .project-process2 .tips-center #upload-form #upload-models-wrap .checkbox.dropdown-input:before, #upload-form #upload-models-wrap .project-process2 .tips-center .checkbox.dropdown-input:before, .project-process2 .tips-center #product-form .checkbox.dropdown-input:before, #product-form .project-process2 .tips-center .checkbox.dropdown-input:before, .project-process2 .tips-center .icon.checkbox-selected, .project-process2 .tips-center .container.applying-a #applying-a-form #models-detail-a-wrap .item .checkbox-selected.dropdown-input:before, .container.applying-a #applying-a-form #models-detail-a-wrap .item .project-process2 .tips-center .checkbox-selected.dropdown-input:before, .project-process2 .tips-center .container.applying-b #applying-b-form #account-detail-wrap .item .checkbox-selected.dropdown-input:before, .container.applying-b #applying-b-form #account-detail-wrap .item .project-process2 .tips-center .checkbox-selected.dropdown-input:before, .project-process2 .tips-center .container.applying-b #applying-b-form #experience-wrap .checkbox-selected.dropdown-input:before, .container.applying-b #applying-b-form #experience-wrap .project-process2 .tips-center .checkbox-selected.dropdown-input:before, .project-process2 .tips-center #upload-form #upload-models-wrap .checkbox-selected.dropdown-input:before, #upload-form #upload-models-wrap .project-process2 .tips-center .checkbox-selected.dropdown-input:before, .project-process2 .tips-center #product-form .checkbox-selected.dropdown-input:before, #product-form .project-process2 .tips-center .checkbox-selected.dropdown-input:before {
+        vertical-align: -1px;
+        margin: 0 6px 0 0;
+        height: 14px;
+        width: 14px;
+        line-height: 22px; }
+      .project-process2 .tips-center .icon.checkbox, .project-process2 .tips-center .container.applying-a #applying-a-form #models-detail-a-wrap .item .checkbox.dropdown-input:before, .container.applying-a #applying-a-form #models-detail-a-wrap .item .project-process2 .tips-center .checkbox.dropdown-input:before, .project-process2 .tips-center .container.applying-b #applying-b-form #account-detail-wrap .item .checkbox.dropdown-input:before, .container.applying-b #applying-b-form #account-detail-wrap .item .project-process2 .tips-center .checkbox.dropdown-input:before, .project-process2 .tips-center .container.applying-b #applying-b-form #experience-wrap .checkbox.dropdown-input:before, .container.applying-b #applying-b-form #experience-wrap .project-process2 .tips-center .checkbox.dropdown-input:before, .project-process2 .tips-center #upload-form #upload-models-wrap .checkbox.dropdown-input:before, #upload-form #upload-models-wrap .project-process2 .tips-center .checkbox.dropdown-input:before, .project-process2 .tips-center #product-form .checkbox.dropdown-input:before, #product-form .project-process2 .tips-center .checkbox.dropdown-input:before {
+        background-position: -588px -125px; }
+      .project-process2 .tips-center .icon.checkbox-selected, .project-process2 .tips-center .container.applying-a #applying-a-form #models-detail-a-wrap .item .checkbox-selected.dropdown-input:before, .container.applying-a #applying-a-form #models-detail-a-wrap .item .project-process2 .tips-center .checkbox-selected.dropdown-input:before, .project-process2 .tips-center .container.applying-b #applying-b-form #account-detail-wrap .item .checkbox-selected.dropdown-input:before, .container.applying-b #applying-b-form #account-detail-wrap .item .project-process2 .tips-center .checkbox-selected.dropdown-input:before, .project-process2 .tips-center .container.applying-b #applying-b-form #experience-wrap .checkbox-selected.dropdown-input:before, .container.applying-b #applying-b-form #experience-wrap .project-process2 .tips-center .checkbox-selected.dropdown-input:before, .project-process2 .tips-center #upload-form #upload-models-wrap .checkbox-selected.dropdown-input:before, #upload-form #upload-models-wrap .project-process2 .tips-center .checkbox-selected.dropdown-input:before, .project-process2 .tips-center #product-form .checkbox-selected.dropdown-input:before, #product-form .project-process2 .tips-center .checkbox-selected.dropdown-input:before {
+        background-position: -588px -111px; }
+  .project-process2 #save-draft-btn {
+    text-decoration: underline;
+    font-size: 14px;
+    margin: 10px auto;
+    cursor: pointer;
+    border: none medium;
+    display: block;
+    color: #ea6264;
+    text-align: center; }
+  .project-process2 .download-btn {
+    background: #ea6264;
+    line-height: 30px;
+    border-radius: 23px;
+    padding: 0 20px;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+    border: none medium;
+    display: inline-block;
+    margin: 0 0 0 20px; }

@@ -1,0 +1,148 @@
+<div id="channel-bar-wrap">
+    <%- include('partial-channel-bar-project2'); %>
+</div>
+<div class="container project-process2">
+    <h2>World War III</h2>
+    <ul class="steps">
+        <li>Inquiry</li>
+        <li>Trial</li>
+        <li>Pay</li>
+        <li class="selected">Build</li>
+        <li>Review</li>
+    </ul>
+    <h3>Schedule</h3>
+    <div class="schedule-wrap">
+        <div class="calendar">
+            <h4>
+                <span class="to-prev"><</span>
+                <label>JULY 2014</label>
+                <span class="to-next">></span>
+            </h4>
+            <table>
+                <thead>
+                <tr>
+                    <th>SUN</th>
+                    <th>MON</th>
+                    <th>TUE</th>
+                    <th>WED</th>
+                    <th>THU</th>
+                    <th>FRI</th>
+                    <th>SAT</th>
+                </tr>
+                </thead>
+                <tbody>
+                <%
+                var date = 30;
+                var className = '';
+                var disabled = 'disabled';
+                [0, 1, 2, 3, 4].map(function (r) { %>
+                <tr>
+                    <% [1, 2, 3, 4, 5, 6, 7].map(function (c) {
+                        if (date > 30) {
+                            date = 1;
+                            disabled = disabled ? '' : 'disabled';
+                        } else {
+                            date++;
+                        }
+                        if (date > 10 && date < 20) {
+                            className = 'selected';
+                        } else {
+                            className = ''
+                        }
+                    %>
+                    <td class="<%= className + ' ' + disabled %>"><%= date %></td>
+                    <% }) %>
+                </tr>
+                <% }) %>
+                </tbody>
+            </table>
+            <div class="info-wrap">
+                <div class="info">
+                    <label>Time left:</label>
+                    <span class="left-time">5d:2h:35min</span>
+                </div>
+                <div class="info">
+                    <label>Start date:</label>
+                    <span>17, July, 2014</span>
+                    <label>Due date:</label>
+                    <span>24, July, 2014</span>
+                </div>
+            </div>
+        </div>
+        <div class="chat">
+            <h3>Chat with Harry Meyer</h3>
+            <ul>
+                <li class="left">
+                    <img class="portrait" src="upload/large_ch47d_chinook_helicopter_3d_model_fbx_ma_mb_17f490ce-4034-4b3d-815d-889e05f5413f.jpg" alt="">
+                    <div class="cork">
+                        <div class="msg">Advertising Relationships Vs Business Decisions?</div>
+                        <span class="datetime">06:03AM</span>
+                    </div>
+                </li>
+                <li class="right">
+                    <img class="portrait" src="upload/large_ch47d_chinook_helicopter_3d_model_fbx_ma_mb_17f490ce-4034-4b3d-815d-889e05f5413f.jpg" alt="">
+                    <div class="cork">
+                        <div class="msg">Advertising Relationships Vs Business Decisions?</div>
+                        <span class="datetime">06:03AM</span>
+                    </div>
+                </li>
+                <li class="left">
+                    <img class="portrait" src="upload/large_ch47d_chinook_helicopter_3d_model_fbx_ma_mb_17f490ce-4034-4b3d-815d-889e05f5413f.jpg" alt="">
+                    <div class="cork">
+                        <div class="msg">Advertising Relationships Vs Business Decisions?</div>
+                        <span class="datetime">06:03AM</span>
+                    </div>
+                </li>
+            </ul>
+            <form action="" class="chat-form">
+                <input type="text" placeholder="The enter key to send">
+                <input type="button" value="Send">
+            </form>
+        </div>
+    </div>
+    <hr>
+    <h3>Project progress</h3>
+    <div class="line-fill">
+        <label class="due-day">Full Submission</label>
+        <span class="right">Jan, 14, 2016</span>
+    </div>
+    <input class="next-btn enabled" type="button" value="Download">
+    <hr class="dashed">
+    <div class="line-fill">
+        <label class="due-day">Due Day</label>
+        <span class="right">Jan, 14, 2016</span>
+    </div>
+    <div class="line-fill">
+        <label>Attachment file: <span class="underline">1st day's work.zip</span></label>
+        <span class="right">File Size: 50.23MB</span>
+    </div>
+    <h5>Process Picture:</h5>
+    <ul class="photos">
+        <li><img src="/upload/large_fantasy_village_and_tower_defense_3d_model_fbx_e3bf7909-f1a4-4f7e-8468-7dbe307a68a7.png" alt=""></li>
+        <li><img src="/upload/large_fantasy_village_and_tower_defense_3d_model_fbx_e3bf7909-f1a4-4f7e-8468-7dbe307a68a7.png" alt=""></li>
+        <li><img src="/upload/large_fantasy_village_and_tower_defense_3d_model_fbx_e3bf7909-f1a4-4f7e-8468-7dbe307a68a7.png" alt=""></li>
+        <li><img src="/upload/large_fantasy_village_and_tower_defense_3d_model_fbx_e3bf7909-f1a4-4f7e-8468-7dbe307a68a7.png" alt=""></li>
+        <li><img src="/upload/large_fantasy_village_and_tower_defense_3d_model_fbx_e3bf7909-f1a4-4f7e-8468-7dbe307a68a7.png" alt=""></li>
+    </ul>
+    <hr class="dashed">
+    <div class="line-fill">
+        <label class="due-day">2rd Day</label>
+        <span class="right">Jan, 14, 2016</span>
+    </div>
+    <div class="nothing">ooops, nothing was upload</div>
+    <hr class="dashed">
+    <div class="line-fill">
+        <label class="due-day">Start</label>
+        <span class="right">Jan, 14, 2016</span>
+    </div>
+    <div class="line-fill">
+        <label>Attachment file: <span class="underline">1st day's work.zip</span></label>
+        <span class="right">File Size: 50.23MB</span>
+    </div>
+    <h5>Process Picture:</h5>
+    <ul class="photos">
+        <li><img src="/upload/large_fantasy_village_and_tower_defense_3d_model_fbx_e3bf7909-f1a4-4f7e-8468-7dbe307a68a7.png" alt=""></li>
+        <li><img src="/upload/large_fantasy_village_and_tower_defense_3d_model_fbx_e3bf7909-f1a4-4f7e-8468-7dbe307a68a7.png" alt=""></li>
+        <li><img src="/upload/large_fantasy_village_and_tower_defense_3d_model_fbx_e3bf7909-f1a4-4f7e-8468-7dbe307a68a7.png" alt=""></li>
+    </ul>
+</div>
