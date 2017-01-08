@@ -107,10 +107,43 @@
       padding: 0;
       margin: 5px;
       flex: 0 0 calc(33.3333% - 10px);
+      position: relative;
+      &.editable:hover {
+        &:after {
+          content: 'Delete';
+          color: #fff;
+          text-align: center;
+          font-size: 12px;
+          line-height: 26px;
+          background: rgba(234, 98, 100, .75);
+          border-radius: 0 0 4px 4px;
+          position: absolute;
+          height: 26px;
+          left: 0;
+          right: 0;
+          bottom: 0;
+        }
+      }
       img {
         width: 100%;
         height: 100%;
         border-radius: 4px;
+      }
+      &.add {
+        background: white;
+        border-radius: 4px;
+        text-align: center;
+        .icon.plus {
+          height: 47px;
+          width: 47px;
+          display: block;
+          margin: 50px auto 0 auto;
+          @include sprite-position($icon-plus);
+        }
+        div {
+          color: #b0b0b0;
+          margin: 20px 0 0 0;
+        }
       }
     }
   }
@@ -177,13 +210,15 @@
     line-height: 35px;
     text-align: center;
     margin: 50px 0;
+    color: $theGray3;
+    font-size: 14px;
     .icon.clock {
       @include sprite-position($icon-clock);
       height: 35px;
       width: 35px;
       display: inline-block;
       vertical-align: middle;
-      margin-right: 10px;
+      margin: 0 10px;
     }
     .time {
       font-size: 18px;
@@ -467,6 +502,7 @@
     box-sizing: border-box;
     resize: none;
     height: 180px;
+    color: $theGray3;
   }
   .review-btns {
     display: flex;
@@ -882,5 +918,138 @@
     border: none medium;
     display: inline-block;
     margin: 0 0 0 20px;
+  }
+  .inline-inputs {
+    font-size: 14px;
+    @include nolist;
+    @include clearfix;
+    br {
+      clear: both;
+      height: 0;
+      font-size: 0;
+    }
+    li {
+      float: left;
+      color: $theGray3;
+      margin: 15px 70px 15px 0;
+      label {
+        display: inline-block;
+        margin-right: 10px;
+      }
+      input[type=text] {
+        border: solid 1px $theGray10;
+        border-radius: 2px;
+        padding: 0 10px;
+        line-height: 30px;
+        font-size: 14px;
+        box-sizing: border-box;
+        color: $theGray3;
+        flex: 0;
+        &.period,
+        &.country,
+        &.area-code,
+        &.phone-code {
+          flex: 0;
+          margin: 0 6px 0 0;
+        }
+        &.period {
+          width: 140px;
+        }
+        &.country {
+          width: 120px;
+        }
+        &.area-code {
+          width: 70px;
+        }
+        &.phone-code {
+          width: 180px;
+        }
+      }
+      span {
+        display: inline-block;
+        margin-left: 10px;
+      }
+    }
+  }
+  .not-audit {
+    padding: 20px 0;
+    font-size: 14px;
+    color: $theGray3;
+    text-align: center;
+  }
+  .trial-label {
+    color: $theGray3;
+    text-align: center;
+    margin: 30px 0;
+    font-size: 14px;
+    .icon {
+      display: inline-block;
+      margin-right: 5px;
+      &.waiting {
+        @include sprite-position($icon-waiting);
+        width: 20px;
+        height: 34px;
+        vertical-align: -10px;
+      }
+      &.crying {
+        @include sprite-position($icon-crying);
+        width: 42px;
+        height: 42px;
+        vertical-align: -14px;
+      }
+      &.congratulations {
+        @include sprite-position($icon-congratulations);
+        width: 34px;
+        height: 36px;
+        vertical-align: -10px;
+      }
+    }
+  }
+  .stars {
+    text-align: center;
+    margin: 30px 0;
+    .icon {
+      height: 20px;
+      width: 20px;
+      display: inline-block;
+      vertical-align: -4px;
+      &.star {
+        @include sprite-position($icon-star);
+      }
+      &.star-twinkle {
+        @include sprite-position($icon-star-twinkle);
+      }
+    }
+  }
+  .review-result-detail {
+    display: flex;
+    border: solid 1px $theGray4;
+    padding: 40px 0;
+    margin: 20px 0;
+    border-radius: 4px;
+    > div {
+      font-size: 14px;
+      color: $theGray3;
+      flex: 1;
+      text-align: center;
+      label {
+        display: inline-block;
+        margin-right: 10px;
+      }
+      span {
+        .icon {
+          height: 20px;
+          width: 20px;
+          display: inline-block;
+          vertical-align: -4px;
+          &.star {
+            @include sprite-position($icon-star);
+          }
+          &.star-twinkle {
+            @include sprite-position($icon-star-twinkle);
+          }
+        }
+      }
+    }
   }
 }
