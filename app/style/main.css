@@ -8219,18 +8219,21 @@ header {
       #new-project-form-wrap #new-project-form .line input[type=text].phone-code {
         width: 180px; }
     #new-project-form-wrap #new-project-form .line > .options {
-      flex: 1;
-      display: flex;
+      width: calc(100% - 120px);
       line-height: 34px;
       font-size: 14px;
-      width: 280px;
-      margin: 0 -6px;
+      margin: -6px;
       box-sizing: border-box; }
+      #new-project-form-wrap #new-project-form .line > .options::after {
+        clear: both;
+        content: "";
+        display: table; }
       #new-project-form-wrap #new-project-form .line > .options > .option {
-        flex: 0 0 calc(20% - 12px);
+        float: left;
+        width: 140px;
         box-sizing: border-box;
         border: solid 1px #9b9b9b;
-        margin: 0 6px;
+        margin: 6px;
         border-radius: 2px;
         text-align: center;
         color: #9b9b9b; }
@@ -9301,6 +9304,10 @@ header {
     margin: 30px 0;
     line-height: 30px;
     display: flex; }
+    .project-process2 .line::after {
+      clear: both;
+      content: "";
+      display: table; }
     .project-process2 .line input[type=text] {
       border: solid 1px #d2d2d2;
       border-radius: 2px;
@@ -9682,25 +9689,35 @@ header {
               color: #c3c9cf;
               margin-left: 10px;
               display: inline-block; }
-  .project-process2 .add-image {
-    background: white;
-    border-radius: 4px;
-    text-align: center;
-    padding: 0;
-    margin: 5px;
-    list-style: none;
-    margin: 0 -5px;
-    width: 300px;
-    height: 190px; }
-    .project-process2 .add-image .icon.plus, .project-process2 .add-image .container.applying-a #applying-a-form #models-detail-a-wrap .item .plus.dropdown-input:before, .container.applying-a #applying-a-form #models-detail-a-wrap .item .project-process2 .add-image .plus.dropdown-input:before, .project-process2 .add-image .container.applying-b #applying-b-form #account-detail-wrap .item .plus.dropdown-input:before, .container.applying-b #applying-b-form #account-detail-wrap .item .project-process2 .add-image .plus.dropdown-input:before, .project-process2 .add-image .container.applying-b #applying-b-form #experience-wrap .plus.dropdown-input:before, .container.applying-b #applying-b-form #experience-wrap .project-process2 .add-image .plus.dropdown-input:before, .project-process2 .add-image #upload-form #upload-models-wrap .plus.dropdown-input:before, #upload-form #upload-models-wrap .project-process2 .add-image .plus.dropdown-input:before, .project-process2 .add-image #product-form .plus.dropdown-input:before, #product-form .project-process2 .add-image .plus.dropdown-input:before {
-      height: 47px;
-      width: 47px;
-      display: block;
-      margin: 50px auto 0 auto;
-      background-position: -542px -50px; }
-    .project-process2 .add-image div {
-      color: #b0b0b0;
-      margin: 20px 0 0 0; }
+  .project-process2 .add-images {
+    margin: -11px; }
+    .project-process2 .add-images::after {
+      clear: both;
+      content: "";
+      display: table; }
+    .project-process2 .add-images .add-image {
+      background: white;
+      border-radius: 4px;
+      text-align: center;
+      padding: 0;
+      margin: 6px;
+      list-style: none;
+      width: 300px;
+      height: 190px;
+      float: left; }
+      .project-process2 .add-images .add-image img {
+        width: 300px;
+        height: 190px;
+        border-radius: 4px; }
+      .project-process2 .add-images .add-image .icon.plus, .project-process2 .add-images .add-image .container.applying-a #applying-a-form #models-detail-a-wrap .item .plus.dropdown-input:before, .container.applying-a #applying-a-form #models-detail-a-wrap .item .project-process2 .add-images .add-image .plus.dropdown-input:before, .project-process2 .add-images .add-image .container.applying-b #applying-b-form #account-detail-wrap .item .plus.dropdown-input:before, .container.applying-b #applying-b-form #account-detail-wrap .item .project-process2 .add-images .add-image .plus.dropdown-input:before, .project-process2 .add-images .add-image .container.applying-b #applying-b-form #experience-wrap .plus.dropdown-input:before, .container.applying-b #applying-b-form #experience-wrap .project-process2 .add-images .add-image .plus.dropdown-input:before, .project-process2 .add-images .add-image #upload-form #upload-models-wrap .plus.dropdown-input:before, #upload-form #upload-models-wrap .project-process2 .add-images .add-image .plus.dropdown-input:before, .project-process2 .add-images .add-image #product-form .plus.dropdown-input:before, #product-form .project-process2 .add-images .add-image .plus.dropdown-input:before {
+        height: 47px;
+        width: 47px;
+        display: block;
+        margin: 50px auto 0 auto;
+        background-position: -542px -50px; }
+      .project-process2 .add-images .add-image div {
+        color: #b0b0b0;
+        margin: 20px 0 0 0; }
   .project-process2 .tips-center {
     color: #515254;
     font-size: 14px;

@@ -55,18 +55,23 @@
         }
       }
       > .options {
-        flex: 1;
-        display: flex;
+        width: calc(100% - 120px);
+        //flex: 1;
+        //display: flex;
         line-height: 34px;
         font-size: 14px;
-        width: 280px;
-        margin: 0 -6px;
+        //width: 280px;
+        margin: -6px;
         box-sizing: border-box;
+        @include clearfix;
         > .option {
-          flex: 0 0 calc(20% - 12px);
+          //flex: 0 0 calc(20% - 12px);
+
+          float: left;
+          width: 140px;
           box-sizing: border-box;
           border: solid 1px #9b9b9b;
-          margin: 0 6px;
+          margin: 6px;
           border-radius: 2px;
           text-align: center;
           color: #9b9b9b;
